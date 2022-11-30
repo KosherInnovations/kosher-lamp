@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #E8F9FD;
+}
+
 a {
     text-decoration: none;
 }
@@ -15,6 +19,8 @@ li {
 header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -48,6 +54,18 @@ nav ul li:last-child {
     padding-right: 0;
 }
 
-nav ul li a {
+nav ul li .nav-link {
     color: #000000;
+}
+
+nav ul li a .shopping-cart {
+    max-width: 22px;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: url("resources/light-bg.jpg");
+    background-size: cover;
+    background-position: 50%;
 }
