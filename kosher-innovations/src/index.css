@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+
+nav .navigation-logo {
+  width: 155px;
+  border-radius: 25px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  padding: 0 10px;
+  font-size: 22px;
+}
+
+nav ul li:last-child {
+  padding-right: 0;
+}
+
+nav ul li .nav-link {
+  color: #000000;
+}
+
+nav ul li a .shopping-cart {
+  max-width: 22px;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: url("resources/light-bg.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  background: url("images/dark-bg.webp");
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 100px 20px;
+  box-sizing: border-box;
+}
+
+section .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+section .card .imgBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+section .card:hover .imgBox {
+  transform: translateY(-100px);
+}
+
+section .card .imgBox img {
+  height: 220px;
+  max-width: 100%;
+  margin: 0 0 20px;
+  transition: 0.5s ease-in-out;
+}
+
+section .card:hover .imgBox img {
+  transform: translateY(-40px) scale(1.4);
+}
+
+section .card .imgBox h1 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+section .card .content {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+section .card:hover .content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50px);
+}
+
+section .card .content .size,
+section .card .content .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  width: 100%;
+}
+
+section .card .content h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section .card .content a:hover {
+  background: #68b984;
+}
+
+section .card .content .color .color-picker {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#kmax-steel {
+  background: #a8a8a5;
+}
+
+#kmax-black {
+  background: #000000;
+}
+
+#kmax-blue {
+  background: #090b88;
+}
+#kmax-bronze {
+  background: #422f07;
+}
+
+
+
+#kmax-brown {
+  background: #472407;
+}
+
+#kmax-marble {
+  background: #5f3600;
+}
+#kmax-cherry {
+  background: #851a0c;
+}
+#kmax-ivory {
+  background: #a89879;
+}
+
+#kmax-pink {
+  background: #f199d7;
+}
+
+section .card .content a {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  padding: 12px 30px;
+  background: #fff;
+  border-radius: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
