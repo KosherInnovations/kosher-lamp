@@ -196,7 +196,7 @@ section .card .content .color .color-picker {
   background: #000000;
 }
 
-#kmax-blue {
+#kmax-blue, #gloves-blue {
   background: #090b88;
 }
 #kmax-bronze {
@@ -221,6 +221,10 @@ section .card .content .color .color-picker {
 
 #kmax-pink {
   background: #f199d7;
+}
+
+#gloves-red {
+  background: #fd0505;
 }
 
 section .card .content a {
