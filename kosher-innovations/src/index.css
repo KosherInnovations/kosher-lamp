@@ -78,6 +78,7 @@ section {
   background-size: cover;
   background-position: 50%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -133,6 +134,7 @@ section .card:hover .imgBox img {
 section .card .imgBox h1 {
   color: #000000;
   font-weight: 600;
+  text-align: center;
 }
 
 section .card .content {
