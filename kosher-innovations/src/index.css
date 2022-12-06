@@ -97,6 +97,7 @@ section .card {
   background: rgb(255, 255, 255, 0.1);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
+  transition: 0.5s ease-in-out;
 }
 
 section .card .imgBox {
@@ -107,6 +108,11 @@ section .card .imgBox {
   flex-direction: column;
   padding: 20px;
   transition: 0.5s ease-in-out;
+}
+
+section .card:hover {
+  backdrop-filter: blur(8px);
+  box-shadow: 5px 5px 10px black;
 }
 
 section .card:hover .imgBox {
@@ -125,7 +131,7 @@ section .card:hover .imgBox img {
 }
 
 section .card .imgBox h1 {
-  color: #ffffff;
+  color: #000000;
   font-weight: 600;
 }
 
@@ -158,7 +164,7 @@ section .card .content .color {
 }
 
 section .card .content h3 {
-  color: #fff;
+  color: #000000;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
@@ -180,11 +186,11 @@ section .card .content .color .color-picker {
   cursor: pointer;
 }
 
-#kmax-steel {
+#kmax-steel, #travel-grey {
   background: #a8a8a5;
 }
 
-#kmax-black {
+#kmax-black, #travel-black {
   background: #000000;
 }
 
@@ -197,7 +203,7 @@ section .card .content .color .color-picker {
 
 
 
-#kmax-brown {
+#kmax-brown, #travel-brown {
   background: #472407;
 }
 
