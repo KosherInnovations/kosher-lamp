@@ -59,7 +59,7 @@ nav ul li:last-child {
   padding-right: 0;
 }
 
-nav ul li  {
+nav ul li {
   color: #000000;
   cursor: pointer;
 }
@@ -79,8 +79,6 @@ main {
 section {
   min-height: 100vh;
   width: 100vw;
-  background-size: cover;
-  background-position: 50%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -116,8 +114,11 @@ section .card .imgBox {
 }
 
 section .card:hover {
-  backdrop-filter: blur(8px);
+  background: rgb(255, 255, 255, 0.3);
   box-shadow: 5px 5px 10px black;
+  width: 350px;
+  height: 450px;
+  /* transform: scale(1.15); */
 }
 
 section .card:hover .imgBox {
@@ -161,7 +162,8 @@ section .card:hover .content {
 }
 
 section .card .content .size,
-section .card .content .color {
+section .card .content .color,
+section .card .content .type {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,24 +194,46 @@ section .card .content .color .color-picker {
   cursor: pointer;
 }
 
-#kmax-steel, #travel-grey {
+section .card .content .type .type-picker {
+  color: #000000;
+  background: #ffffff;
+  margin: 0 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px 8px;
+  transition: 0.5s ease-in-out;
+}
+
+section .card .content .type .type-picker:hover {
+  background: #68b984;
+}
+
+#kmax-steel,
+#travel-grey,
+#shissel-grey {
   background: #a8a8a5;
 }
 
-#kmax-black, #travel-black {
+#kmax-black,
+#travel-black {
   background: #000000;
 }
 
-#kmax-blue, #gloves-blue {
+#kmax-blue,
+#gloves-blue,
+#shissel-blue,
+#shabtooth-blue,
+#weektooth-blue, #shroom-blue {
   background: #090b88;
 }
 #kmax-bronze {
   background: #422f07;
 }
 
-
-
-#kmax-brown, #travel-brown {
+#kmax-brown,
+#travel-brown {
   background: #472407;
 }
 
@@ -223,12 +247,32 @@ section .card .content .color .color-picker {
   background: #a89879;
 }
 
-#kmax-pink {
+#kmax-pink,
+#shissel-pink, #shroom-pink {
   background: #f199d7;
 }
 
-#gloves-red {
+#gloves-red,
+#shabtooth-red,
+#weektooth-red, #shroom-red {
   background: #fd0505;
+}
+
+#shissel-beige {
+  background: #e8d08a;
+}
+
+#shabtooth-purple {
+  background: #880959;
+}
+
+#shabtooth-yellow,
+#weektooth-yellow {
+  background: #dfd80f;
+}
+
+#weektooth-green {
+  background: rgb(37, 198, 12);
 }
 
 section .card .content a {

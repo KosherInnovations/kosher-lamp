@@ -10,6 +10,10 @@ import kosherClock from "../../resources/kosher-clock/kosher-clock.jpg";
 import fridgeez from "../../resources/fridg-eez/fridg-eez.jpg";
 import bottleOpener from "../../resources/bottle-opener/bottle-opener.jpg";
 import shroomLamp from "../../resources/shroom-lamp/shroom-red.jpg";
+import tissueImg from "../../resources/tissue/tissue.jpg";
+import decalsImg from "../../resources/decals/decals.jpg";
+import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.jpg";
+import weekTooth from "../../resources/toothbrush/um-toothbrush.jpg";
 
 
 const Products = () => {
@@ -92,6 +96,13 @@ const Products = () => {
             <h1>Smart Shissel</h1>
           </div>
           <div className="content">
+          <h3>Color :</h3>
+            <div className="color">
+              <div className="color-picker" id="shissel-grey"></div>
+              <div className="color-picker" id="shissel-blue"></div>
+              <div className="color-picker" id="shissel-beige"></div>
+              <div className="color-picker" id="shissel-pink"></div>
+            </div>
             <a href="/">Add To Cart</a>
           </div>
         </div>
@@ -137,6 +148,86 @@ const Products = () => {
             <h1>Mushroom KosherLamp</h1>
           </div>
           <div className="content">
+          <h3>Color :</h3>
+            <div className="color">
+              <div className="color-picker" id="shroom-red"></div>
+              <div className="color-picker" id="shroom-blue"></div>
+              <div className="color-picker" id="shroom-pink"></div>
+            </div>
+            <a href="/">Add To Cart</a>
+          </div>
+        </div>
+        <div className="card">
+          <div className="imgBox">
+            <img src={tissueImg} alt="shabbos bathroom tissue"></img>
+            <h1>Shabbos Bathroom Tissue</h1>
+          </div>
+          <div className="content">
+          <h3>Type :</h3>
+            <div className="type">
+              <div className="type-picker" id="trial-pack">
+                <p>1 x 8 Pack</p>
+              </div>
+              <div className="type-picker" id="family-pack">
+                <p>6 x 8 Pack</p>
+              </div>
+              <div className="type-picker" id="club-pack">
+                <p>12 x 8 Pack</p>
+              </div>
+            </div>
+            <a href="/">Add To Cart</a>
+          </div>
+        </div>
+        <div className="card">
+          <div className="imgBox">
+            <img src={decalsImg} alt="wall id decals"></img>
+            <h1>Wall ID Decals</h1>
+          </div>
+          <div className="content">
+          <h3>Type :</h3>
+            <div className="type">
+              <div className="type-picker" id="aleph-bet">
+                <p>Aleph Bet</p>
+              </div>
+              <div className="type-picker" id="asher-yatzar">
+                <p>Asher Yatzar</p>
+              </div>
+              <div className="type-picker" id="mitzvah-train">
+                <p>Mitzvah Train</p>
+              </div>
+            </div>
+            <a href="/">Add To Cart</a>
+          </div>
+        </div>
+        <div className="card">
+          <div className="imgBox">
+            <img src={shabTooth} alt="shabbos toothbrush"></img>
+            <h1>Shabbos Toothbrush</h1>
+          </div>
+          <div className="content">
+          <h3>Color :</h3>
+            <div className="color">
+              <div className="color-picker" id="shabtooth-red"></div>
+              <div className="color-picker" id="shabtooth-purple"></div>
+              <div className="color-picker" id="shabtooth-blue"></div>
+              <div className="color-picker" id="shabtooth-yellow"></div>
+            </div>
+            <a href="/">Add To Cart</a>
+          </div>
+        </div>
+        <div className="card">
+          <div className="imgBox">
+            <img src={weekTooth} alt="weekday toothbrush"></img>
+            <h1>Uncle Moishy Weekday Toothbrush</h1>
+          </div>
+          <div className="content">
+          <h3>Color :</h3>
+            <div className="color">
+              <div className="color-picker" id="weektooth-red"></div>
+              <div className="color-picker" id="weektooth-green"></div>
+              <div className="color-picker" id="weektooth-blue"></div>
+              <div className="color-picker" id="weektooth-yellow"></div>
+            </div>
             <a href="/">Add To Cart</a>
           </div>
         </div>
