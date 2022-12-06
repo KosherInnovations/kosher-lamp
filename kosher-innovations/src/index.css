@@ -74,7 +74,7 @@ main {
   /* background: url("resources/light-bg.jpg");
   background-size: cover;
   background-position: 50%; */
-  background: repeating-linear-gradient(45deg, #CDF0EA, #F9F9F9 100px);
+  background: repeating-linear-gradient(45deg, #cdf0ea, #f9f9f9 100px);
 }
 
 section {
@@ -228,7 +228,8 @@ section .card .content .type .type-picker:hover {
 #gloves-blue,
 #shissel-blue,
 #shabtooth-blue,
-#weektooth-blue, #shroom-blue {
+#weektooth-blue,
+#shroom-blue {
   background: #090b88;
 }
 #kmax-bronze {
@@ -251,13 +252,15 @@ section .card .content .type .type-picker:hover {
 }
 
 #kmax-pink,
-#shissel-pink, #shroom-pink {
+#shissel-pink,
+#shroom-pink {
   background: #f199d7;
 }
 
 #gloves-red,
 #shabtooth-red,
-#weektooth-red, #shroom-red {
+#weektooth-red,
+#shroom-red {
   background: #fd0505;
 }
 
@@ -317,8 +320,123 @@ section .card .content a {
   color: #f51010;
 }
 
-
 .down-arrow {
   width: 85px;
 }
 
+/* Contact section */
+
+#contact {
+  justify-content: space-evenly;
+}
+
+.shipping-policy,
+.contact-form {
+  height: 75vh;
+  width: 45vw;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 85%;
+}
+
+.contact-header {
+  position: relative;
+  bottom: 10%;
+  font-size: 25px;
+}
+
+/* contact form styling */
+input {
+  text-align: center;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  background: #748da6;
+  border-radius: 5px;
+  outline: none;
+  color: #ffffff;
+  font-size: 1em;
+  transition: 0.5s ease-in-out;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.inputBox input:focus ~ span {
+  color: #748da6;
+  transform: translateX(30px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #ffffff;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  letter-spacing: 0.2em;
+}
+
+.inputBox input:focus {
+  border: 1px solid #000000;
+}
+
+.inputBoxMessage {
+  height: 6rem;
+}
+
+.inputBoxMessageInput {
+  height: 6rem;
+  text-align: left;
+}
+
+/* The input buttons */
+
+.inputBoxBtnContainer {
+  text-align: center;
+}
+
+.inputBoxBtn {
+  text-align: center;
+  background-color: #47b5ff;
+  border: 0;
+  width: 8rem;
+  height: 2.25rem;
+  padding: 1%;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+  letter-spacing: 1.25px;
+}
+
+.inputBoxBtn:hover {
+  box-shadow: 10px 10px 20px black;
+  transform: translateY(-10px);
+  transition: 0.5s ease-in-out;
+}
+
+/*  */
