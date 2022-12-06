@@ -71,9 +71,10 @@ nav ul li a .shopping-cart {
 main {
   width: 100%;
   min-height: 100vh;
-  background: url("resources/light-bg.jpg");
+  /* background: url("resources/light-bg.jpg");
   background-size: cover;
-  background-position: 50%;
+  background-position: 50%; */
+  background: repeating-linear-gradient(45deg, #CDF0EA, #F9F9F9 100px);
 }
 
 section {
@@ -306,10 +307,16 @@ section .card .content a {
   flex-direction: column;
 }
 
+#about h1 {
+  text-align: center;
+  min-height: 100vh;
+}
+
 #about h1 span {
   font-size: 120px;
   color: #f51010;
 }
+
 
 .down-arrow {
   width: 85px;
