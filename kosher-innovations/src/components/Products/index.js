@@ -7,6 +7,10 @@ import scrubGlovesRed from "../../resources/scrub-gloves/gloves-red.png";
 import smartShissel from "../../resources/smart-shissel/smart-shissel.jpg";
 import goWash from "../../resources/go-wash/go-wash.jpg";
 import kosherClock from "../../resources/kosher-clock/kosher-clock.jpg";
+import fridgeez from "../../resources/fridg-eez/fridg-eez.jpg";
+import bottleOpener from "../../resources/bottle-opener/bottle-opener.jpg";
+import shroomLamp from "../../resources/shroom-lamp/shroom-red.jpg";
+
 
 const Products = () => {
   return (
@@ -104,6 +108,33 @@ const Products = () => {
           <div className="imgBox">
             <img src={kosherClock} alt="kosher clock"></img>
             <h1>Kosher Clock</h1>
+          </div>
+          <div className="content">
+            <a href="/">Add To Cart</a>
+          </div>
+        </div>
+        <div className="card">
+          <div className="imgBox">
+            <img src={fridgeez} alt="fridg-eez"></img>
+            <h1>Fridg-eez</h1>
+          </div>
+          <div className="content">
+            <a href="/">Add To Cart</a>
+          </div>
+        </div>
+        <div className="card">
+          <div className="imgBox">
+            <img src={bottleOpener} alt="shabbos bottle opener "></img>
+            <h1>Shabbos Bottle Opener </h1>
+          </div>
+          <div className="content">
+            <a href="/">Add To Cart</a>
+          </div>
+        </div>
+        <div className="card">
+          <div className="imgBox">
+            <img src={shroomLamp} alt="mushroom kosher lamp"></img>
+            <h1>Mushroom KosherLamp</h1>
           </div>
           <div className="content">
             <a href="/">Add To Cart</a>
