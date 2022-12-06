@@ -55,8 +55,9 @@ nav ul li:last-child {
   padding-right: 0;
 }
 
-nav ul li .nav-link {
+nav ul li  {
   color: #000000;
+  cursor: pointer;
 }
 
 nav ul li a .shopping-cart {
