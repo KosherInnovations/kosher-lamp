@@ -2,7 +2,7 @@ import React from "react";
 import kLampWhite from "../../resources/kmax/white-kmax.png";
 import travelLampWhite from "../../resources/travel-lamp/white-travel.png";
 import bugChecker from "../../resources/bug-checker/bug-checker.png";
-import warmingTray from "../../resources/warming-tray/warming-tray.jpg";
+import warmingTray from "../../resources/warming-tray/warming-tray.png";
 import scrubGlovesRed from "../../resources/scrub-gloves/gloves-red.png";
 import smartShissel from "../../resources/smart-shissel/smart-shissel.jpg";
 import goWash from "../../resources/go-wash/go-wash.jpg";
