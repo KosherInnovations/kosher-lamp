@@ -106,6 +106,14 @@ section .card {
   transition: 0.5s ease-in-out;
 }
 
+section .card:hover {
+  background: rgb(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 10px black;
+  /* width: 350px; */
+  height: 450px;
+  /* transform: scale(1.15); */
+}
+
 section .card .imgBox {
   position: relative;
   display: flex;
@@ -114,14 +122,6 @@ section .card .imgBox {
   flex-direction: column;
   padding: 20px;
   transition: 0.5s ease-in-out;
-}
-
-section .card:hover {
-  background: rgb(255, 255, 255, 0.3);
-  box-shadow: 5px 5px 10px black;
-  width: 350px;
-  height: 450px;
-  /* transform: scale(1.15); */
 }
 
 section .card:hover .imgBox {
@@ -276,6 +276,10 @@ section .card .content .type .type-picker:hover {
 
 #weektooth-green {
   background: rgb(37, 198, 12);
+}
+
+#kosher-clock {
+  height: 150px;
 }
 
 section .card .content a {

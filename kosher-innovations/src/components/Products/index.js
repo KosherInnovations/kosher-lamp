@@ -5,8 +5,8 @@ import bugChecker from "../../resources/bug-checker/bug-checker.png";
 import warmingTray from "../../resources/warming-tray/warming-tray.png";
 import scrubGlovesRed from "../../resources/scrub-gloves/gloves-red.png";
 import blueShissel from "../../resources/smart-shissel/blue-shissel.png";
-import goWash from "../../resources/go-wash/go-wash.jpg";
-import kosherClock from "../../resources/kosher-clock/kosher-clock.jpg";
+import goWash from "../../resources/go-wash/go-wash.png";
+import kosherClock from "../../resources/kosher-clock/kosher-clock.png";
 import fridgeez from "../../resources/fridg-eez/fridg-eez.jpg";
 import bottleOpener from "../../resources/bottle-opener/bottle-opener.jpg";
 import shroomLamp from "../../resources/shroom-lamp/shroom-red.jpg";
@@ -117,7 +117,7 @@ const Products = () => {
         </div>
         <div className="card">
           <div className="imgBox">
-            <img src={kosherClock} alt="kosher clock"></img>
+            <img src={kosherClock} alt="kosher clock" id="kosher-clock"></img>
             <h1>Kosher Clock</h1>
           </div>
           <div className="content">
