@@ -1,9 +1,11 @@
 import React from "react";
+// import kiLogo from "../../resources/ki_logo.png";
 import downArrow from "../../resources/down-arrow.png";
 
 const About = () => {
   return (
     <section id="about">
+      {/* <img id="ki-logo" src={kiLogo} alt="kosher innovations logo"></img> */}
       <div id="about-us">
         <h1>
           <span>
