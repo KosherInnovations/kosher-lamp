@@ -10,10 +10,10 @@ import kosherClock from "../../resources/kosher-clock/kosher-clock.png";
 import fridgeez from "../../resources/fridg-eez/fridg-eez.png";
 import bottleOpener from "../../resources/bottle-opener/bottle-opener.png";
 import shroomLamp from "../../resources/shroom-lamp/red-shroom.png";
-import tissueImg from "../../resources/tissue/tissue.jpg";
-import decalsImg from "../../resources/decals/decals.jpg";
-import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.jpg";
-import weekTooth from "../../resources/toothbrush/um-toothbrush.jpg";
+import tissueImg from "../../resources/tissue/tissue.png";
+import alephBetImg from "../../resources/decals/aleph-bet.png";
+import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
+import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
 
 
 const Products = () => {
@@ -180,7 +180,7 @@ const Products = () => {
         </div>
         <div className="card">
           <div className="imgBox">
-            <img src={decalsImg} alt="wall id decals"></img>
+            <img src={alephBetImg} alt="wall id decals"></img>
             <h1>Wall ID Decals</h1>
           </div>
           <div className="content">
