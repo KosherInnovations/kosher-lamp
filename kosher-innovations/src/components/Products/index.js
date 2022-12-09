@@ -17,6 +17,7 @@ import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
 
 
 const Products = () => {
+
   return (
     <>
       <section className="product-cards">
@@ -39,7 +40,7 @@ const Products = () => {
               <div className="color-picker" id="kmax-ivory"></div>
               <div className="color-picker" id="kmax-pink"></div>
             </div>
-            <a href="/">Add To Cart</a>
+            <a className="kmax-cart" href="/">Add To Cart</a>
           </div>
         </div>
         <div className="card">

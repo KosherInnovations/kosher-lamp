@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
+import js from "./function.js";
 import Header from "./components/Header";
 // import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -29,6 +30,7 @@ function App() {
     <Page currentPage={ currentPage } ></Page>
     </main>
     {/* <Footer /> */}
+    <script defer src={js}></script>
     </>
   );
 }

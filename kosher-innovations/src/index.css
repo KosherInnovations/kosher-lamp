@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 body::-webkit-scrollbar {
@@ -302,7 +303,8 @@ section .card .content a {
 #about {
   align-items: flex-start;
   justify-content: center;
-  background: #ffffff;
+  background: #f51010;
+  padding-top: 0;
 }
 
 /* #ki-logo {
@@ -318,16 +320,16 @@ section .card .content a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 #about h1 {
   text-align: center;
-  min-height: 100vh;
 }
 
 #about h1 span {
   font-size: 120px;
-  color: #f51010;
+  color: #ffffff;
 }
 
 
