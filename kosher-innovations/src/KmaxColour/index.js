@@ -8,20 +8,44 @@ class KmaxDivs extends React.Component {
     this.items = [
       {
         id: "white",
-        name: "White",
         href: "/white",
       },
       {
         id: "steel",
-        name: "Steel",
         href: "/steel",
       },
       {
         id: "black",
-        name: "Black",
         href: "/black",
       },
-      // Add additional items here...
+      {
+        id: "blue",
+        href: "/blue",
+      },
+      {
+        id: "bronze",
+        href: "/bronze",
+      },
+      {
+        id: "brown",
+        href: "/brown",
+      },
+      {
+        id: "marble",
+        href: "/marble",
+      },
+      {
+        id: "cherry",
+        href: "/cherry",
+      },
+      {
+        id: "ivory",
+        href: "/ivory",
+      },
+      {
+        id: "pink",
+        href: "/pink",
+      },
     ];
 
     // Create an array of div elements with click handlers
@@ -38,7 +62,7 @@ class KmaxDivs extends React.Component {
     });
 
     this.state = {
-      href: "", // Set the initial href for the add to cart button
+      href: "/white", // Set the initial href for the add to cart button
     };
   }
 
