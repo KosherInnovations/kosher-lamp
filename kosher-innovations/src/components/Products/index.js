@@ -20,7 +20,7 @@ const Products = () => {
 
   return (
     <>
-      <section className="product-cards">
+      <section id="cards" className="product-cards">
         <div className="card">
           <div className="imgBox">
             <img src={kLampWhite} alt="KosherLamp MAX"></img>
@@ -29,16 +29,16 @@ const Products = () => {
           <div className="content">
             <h3>Color : </h3>
             <div className="color">
-              <div className="color-picker" id="kmax-white"></div>
-              <div className="color-picker" id="kmax-steel"></div>
-              <div className="color-picker" id="kmax-black"></div>
-              <div className="color-picker" id="kmax-blue"></div>
-              <div className="color-picker" id="kmax-bronze"></div>
-              <div className="color-picker" id="kmax-brown"></div>
-              <div className="color-picker" id="kmax-marble"></div>
-              <div className="color-picker" id="kmax-cherry"></div>
-              <div className="color-picker" id="kmax-ivory"></div>
-              <div className="color-picker" id="kmax-pink"></div>
+              <div className="color-picker kmax" id="kmax-white"></div>
+              <div className="color-picker kmax" id="kmax-steel"></div>
+              <div className="color-picker kmax" id="kmax-black"></div>
+              <div className="color-picker kmax" id="kmax-blue"></div>
+              <div className="color-picker kmax" id="kmax-bronze"></div>
+              <div className="color-picker kmax" id="kmax-brown"></div>
+              <div className="color-picker kmax" id="kmax-marble"></div>
+              <div className="color-picker kmax" id="kmax-cherry"></div>
+              <div className="color-picker kmax" id="kmax-ivory"></div>
+              <div className="color-picker kmax" id="kmax-pink"></div>
             </div>
             <a className="kmax-cart" href="/">Add To Cart</a>
           </div>

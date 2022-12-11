@@ -75,7 +75,7 @@ main {
   /* background: url("resources/light-bg.jpg");
   background-size: cover;
   background-position: 50%; */
-  background: repeating-linear-gradient( #d1fcf5, #F9F9F9 );
+  background: #ffffff;
 }
 
 section {
@@ -91,6 +91,10 @@ section {
 }
 
 /* card section */
+
+#cards {
+  background: linear-gradient(45deg, #000000, #282A3A);
+}
 
 section .card {
   position: relative;
@@ -108,7 +112,7 @@ section .card {
 }
 
 section .card:hover {
-  background: rgb(255, 255, 255, 0.3);
+  /* background: rgb(255, 255, 255, 0.3); */
   box-shadow: 5px 5px 10px black;
   /* width: 350px; */
   height: 450px;
@@ -141,7 +145,7 @@ section .card:hover .imgBox img {
 }
 
 section .card .imgBox h1 {
-  color: #000000;
+  color: #ffffff;
   font-weight: 600;
   text-align: center;
 }
@@ -176,7 +180,7 @@ section .card .content .type {
 }
 
 section .card .content h3 {
-  color: #000000;
+  color: #ffffff;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
