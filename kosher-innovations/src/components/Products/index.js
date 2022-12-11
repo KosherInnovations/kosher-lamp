@@ -1,4 +1,5 @@
 import React from "react";
+import KmaxColour from "../../KmaxColour";
 import kLampWhite from "../../resources/kmax/white-kmax.png";
 import travelLampWhite from "../../resources/travel-lamp/white-travel.png";
 import bugChecker from "../../resources/bug-checker/bug-checker.png";
@@ -28,7 +29,8 @@ const Products = () => {
           </div>
           <div className="content">
             <h3>Color : </h3>
-            <div className="color">
+            < KmaxColour />
+            {/* <div className="color">
               <div className="color-picker kmax" id="kmax-white"></div>
               <div className="color-picker kmax" id="kmax-steel"></div>
               <div className="color-picker kmax" id="kmax-black"></div>
@@ -40,7 +42,7 @@ const Products = () => {
               <div className="color-picker kmax" id="kmax-ivory"></div>
               <div className="color-picker kmax" id="kmax-pink"></div>
             </div>
-            <a className="kmax-cart" href="/">Add To Cart</a>
+            <a className="kmax-cart" href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
