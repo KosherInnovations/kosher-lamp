@@ -18,6 +18,7 @@ import KmaxColour from "../../KmaxColour";
 import TravelColour from "../../TravelColour";
 import GloveColours from "../../GloveColours";
 import ShisselColours from "../../ShisselColours";
+import ShroomColours from "../../ShroomColours";
 
 const Products = () => {
 
@@ -157,12 +158,13 @@ const Products = () => {
           </div>
           <div className="content">
           <h3>Select A Color</h3>
-            <div className="color">
+          < ShroomColours />
+            {/* <div className="color">
               <div className="color-picker" id="shroom-red"></div>
               <div className="color-picker" id="shroom-blue"></div>
               <div className="color-picker" id="shroom-pink"></div>
             </div>
-            <a href="/">Add To Cart</a>
+            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
