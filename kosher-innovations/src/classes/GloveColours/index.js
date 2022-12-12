@@ -8,11 +8,11 @@ class GloveDivs extends React.Component {
     this.items = [
       {
         id: "red",
-        href: "/red",
+        href: "https://www.kosherimage.com/cmd.php?pid=a0a5dfe511e4436f85d2fca1921a117c",
       },
       {
         id: "blue",
-        href: "/blue",
+        href: "https://www.kosherimage.com/cmd.php?pid=2dff3e69a98643e083565edbbb3713d6",
       },
     ];
 

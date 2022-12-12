@@ -15,14 +15,13 @@ import alephBetImg from "../../resources/decals/aleph-bet.png";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
 import KmaxColour from "../../classes/KmaxColours";
-import TravelColour from "../../classes/TravelColour";
+import TravelColour from "../../classes/TravelColours";
 import GloveColours from "../../classes/GloveColours";
 import ShisselColours from "../../classes/ShisselColours";
 import ShroomColours from "../../classes/ShroomColours";
 import TissueTypes from "../../classes/TissueTypes";
 import DecalTypes from "../../classes/DecalTypes";
-import ShabToothColours from "../../classes/ShabToothColours";
-import WeekToothColours from "../../classes/WeekToothColours";
+// import KmaxModal from "../../modals/KmaxModal";
 
 const Products = () => {
 
@@ -35,21 +34,9 @@ const Products = () => {
             <h1>KosherLamp MAX</h1>
           </div>
           <div className="content">
-            <h3>Select A Color : </h3>
+            {/* < KmaxModal /> */}
+            <h3>Select A Color</h3>
             < KmaxColour />
-            {/* <div className="color">
-              <div className="color-picker kmax" id="kmax-white"></div>
-              <div className="color-picker kmax" id="kmax-steel"></div>
-              <div className="color-picker kmax" id="kmax-black"></div>
-              <div className="color-picker kmax" id="kmax-blue"></div>
-              <div className="color-picker kmax" id="kmax-bronze"></div>
-              <div className="color-picker kmax" id="kmax-brown"></div>
-              <div className="color-picker kmax" id="kmax-marble"></div>
-              <div className="color-picker kmax" id="kmax-cherry"></div>
-              <div className="color-picker kmax" id="kmax-ivory"></div>
-              <div className="color-picker kmax" id="kmax-pink"></div>
-            </div>
-            <a className="kmax-cart" href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
@@ -60,13 +47,6 @@ const Products = () => {
           <div className="content">
             <h3>Select A Color</h3>
             < TravelColour />
-            {/* <div className="color">
-              <div className="color-picker" id="travel-white"></div>
-              <div className="color-picker" id="travel-grey"></div>
-              <div className="color-picker" id="travel-black"></div>
-              <div className="color-picker" id="travel-brown"></div>
-            </div>
-            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
@@ -84,7 +64,7 @@ const Products = () => {
             <h1>Shabbos Safe Warming Tray</h1>
           </div>
           <div className="content">
-            <a href="https://www.kosherimage.com/cmd.php?pid=e418af322bd347a18412af62a324be4e">Add To Cart</a>
+            <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=3d47a903d7454e30b3a5b3d4323532af">Add To Cart</a>
           </div>
         </div>
         <div className="card">
@@ -95,11 +75,6 @@ const Products = () => {
           <div className="content">
             <h3>Select A Color</h3>
             < GloveColours />
-            {/* <div className="color">
-              <div className="color-picker" id="gloves-red"></div>
-              <div className="color-picker" id="gloves-blue"></div>
-            </div>
-            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
@@ -110,13 +85,6 @@ const Products = () => {
           <div className="content">
           <h3>Select A Color</h3>
           < ShisselColours />
-            {/* <div className="color">
-              <div className="color-picker" id="shissel-grey"></div>
-              <div className="color-picker" id="shissel-blue"></div>
-              <div className="color-picker" id="shissel-beige"></div>
-              <div className="color-picker" id="shissel-pink"></div>
-            </div>
-            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
@@ -125,7 +93,7 @@ const Products = () => {
             <h1>Go Wash</h1>
           </div>
           <div className="content">
-            <a href="/">Add To Cart</a>
+            <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=76d33ab9cfbe438fa25c8876e344c439">Add To Cart</a>
           </div>
         </div>
         <div className="card">
@@ -134,7 +102,7 @@ const Products = () => {
             <h1>Kosher Clock</h1>
           </div>
           <div className="content">
-            <a href="/">Add To Cart</a>
+            <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=4bb9fb8c67954716bc68708634c6c8ae">Add To Cart</a>
           </div>
         </div>
         <div className="card">
@@ -143,7 +111,7 @@ const Products = () => {
             <h1>Fridg-eez</h1>
           </div>
           <div className="content">
-            <a href="/">Add To Cart</a>
+            <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=6cbbe188b0a54a2ebff575e09afc25ac">Add To Cart</a>
           </div>
         </div>
         <div className="card">
@@ -152,7 +120,7 @@ const Products = () => {
             <h1>Shabbos Bottle Opener </h1>
           </div>
           <div className="content">
-            <a href="/">Add To Cart</a>
+            <a href="https://www.kosherimage.com/cmd.php?pid=a9f059a9b16d4f12a9f10f188911df3b">Add To Cart</a>
           </div>
         </div>
         <div className="card">
@@ -163,12 +131,6 @@ const Products = () => {
           <div className="content">
           <h3>Select A Color</h3>
           < ShroomColours />
-            {/* <div className="color">
-              <div className="color-picker" id="shroom-red"></div>
-              <div className="color-picker" id="shroom-blue"></div>
-              <div className="color-picker" id="shroom-pink"></div>
-            </div>
-            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
@@ -179,18 +141,6 @@ const Products = () => {
           <div className="content">
           <h3>Select A Type</h3>
           < TissueTypes />
-            {/* <div className="type">
-              <div className="type-picker" id="trial-pack">
-                <p>1 x 8 Pack</p>
-              </div>
-              <div className="type-picker" id="family-pack">
-                <p>6 x 8 Pack</p>
-              </div>
-              <div className="type-picker" id="club-pack">
-                <p>12 x 8 Pack</p>
-              </div>
-            </div>
-            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
@@ -201,18 +151,6 @@ const Products = () => {
           <div className="content">
           <h3>Select A Type</h3>
           < DecalTypes />
-            {/* <div className="type">
-              <div className="type-picker" id="aleph-bet">
-                <p>Aleph Bet</p>
-              </div>
-              <div className="type-picker" id="asher-yatzar">
-                <p>Asher Yatzar</p>
-              </div>
-              <div className="type-picker" id="mitzvah-train">
-                <p>Mitzvah Train</p>
-              </div>
-            </div>
-            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
@@ -221,15 +159,8 @@ const Products = () => {
             <h1>Shabbos Toothbrush</h1>
           </div>
           <div className="content">
-          <h3>Select A Color</h3>
-          < ShabToothColours />
-            {/* <div className="color">
-              <div className="color-picker" id="shabtooth-red"></div>
-              <div className="color-picker" id="shabtooth-purple"></div>
-              <div className="color-picker" id="shabtooth-blue"></div>
-              <div className="color-picker" id="shabtooth-yellow"></div>
-            </div>
-            <a href="/">Add To Cart</a> */}
+          <h3>1 x 4 Pack</h3>
+          <a href="https://www.kosherimage.com/cmd.php?pid=d73562f0b42637d3268b40b7e85e7f33">Add To Cart</a>
           </div>
         </div>
         <div className="card">
@@ -238,15 +169,8 @@ const Products = () => {
             <h1>Uncle Moishy Weekday Toothbrush</h1>
           </div>
           <div className="content">
-          <h3>Select A Color</h3>
-          < WeekToothColours />
-            {/* <div className="color">
-              <div className="color-picker" id="weektooth-red"></div>
-              <div className="color-picker" id="weektooth-green"></div>
-              <div className="color-picker" id="weektooth-blue"></div>
-              <div className="color-picker" id="weektooth-yellow"></div>
-            </div>
-            <a href="/">Add To Cart</a> */}
+          <h3>1 x 4 Pack</h3>
+          <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=db93a1eee8ae4979b5a3112c3ef94f28">Add To Cart</a>
           </div>
         </div>
       </section>

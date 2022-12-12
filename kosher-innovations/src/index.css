@@ -21,7 +21,7 @@ li {
   list-style: none;
 }
 
-header {
+.navbar {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
   position: sticky;
@@ -279,7 +279,7 @@ section .card .content .type .type-picker:hover {
   background: #dfd80f;
 }
 
-#weektooth-green {
+#kmax-green, #weektooth-green {
   background: rgb(37, 198, 12);
 }
 

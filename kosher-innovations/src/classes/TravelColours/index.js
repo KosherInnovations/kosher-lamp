@@ -8,19 +8,19 @@ class travelDivs extends React.Component {
     this.items = [
       {
         id: "white",
-        href: "/white",
+        href: "https://www.kosherimage.com/cmd.php?pid=0f59cbfeb19f4a47a417c0ae1c1c3d32",
       },
       {
         id: "grey",
-        href: "/grey",
+        href: "https://www.kosherimage.com/cmd.php?pid=156ef0e192fb4009886fa0e1389288ae",
       },
       {
         id: "black",
-        href: "/black",
+        href: "https://www.kosherimage.com/cmd.php?pid=cd4dc5f4693e42f79a70913656236248",
       },
       {
         id: "brown",
-        href: "/brown",
+        href: "https://www.kosherimage.com/cmd.php?pid=a4642f2f517f4c9ab9f6e356a749412c",
       },
     ];
 

@@ -8,17 +8,17 @@ class TissueDivs extends React.Component {
     this.items = [
       {
         id: "trial",
-        href: "/trial",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=e1d76dfe33f242e9a17e2dd45837ed11",
         heading: "1 x 8 Pack",
       },
       {
         id: "family",
-        href: "/family",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&bid=32d35e429067ce75ec7328e9512c4420",
         heading: "6 x 8 Pack",
       },
       {
         id: "club",
-        href: "/club",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&bid=331a14206e748862986b896f511cbd5f",
         heading: "12 x 8 Pack",
       },
     ];

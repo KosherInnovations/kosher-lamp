@@ -8,17 +8,17 @@ class DecalDivs extends React.Component {
     this.items = [
       {
         id: "aleph-bet",
-        href: "/aleph-bet",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=b1e04916143744b383a9d6ffd3c44c7f",
         heading: "Aleph Bet",
       },
       {
         id: "asher-yatzar",
-        href: "/asher-yatzar",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=4a7df1614bbb4266842a421036ec4762",
         heading: "Asher Yatzar",
       },
       {
         id: "mitzvah-train",
-        href: "/mitzvah-train",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=dee5f1ab0ba84d6c9f79a3389bf16b8a",
         heading: "Mitzvah Train",
       },
     ];

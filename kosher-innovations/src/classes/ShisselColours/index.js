@@ -8,19 +8,19 @@ class KmaxDivs extends React.Component {
     this.items = [
       {
         id: "blue",
-        href: "/blue",
+        href: "https://www.kosherimage.com/cmd.php?pid=1e2781d9e9db40d995552a7c7939c2ea",
       },
       {
         id: "grey",
-        href: "/grey",
+        href: "https://www.kosherimage.com/cmd.php?pid=d25a71ec1a704649ba40277dc6cb11a2",
       },
       {
         id: "beige",
-        href: "/beige",
+        href: "https://www.kosherimage.com/cmd.php?pid=88e6be0e4e2b4b248b2745ce1fbf2e4e",
       },
       {
         id: "pink",
-        href: "/pink",
+        href: "https://www.kosherimage.com/cmd.php?pid=4f01e79e0dd448b382ea6f4ee330de82",
       },
     ];
 
