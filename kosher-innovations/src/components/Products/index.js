@@ -1,5 +1,4 @@
 import React from "react";
-import KmaxColour from "../../KmaxColour";
 import kLampWhite from "../../resources/kmax/white-kmax.png";
 import travelLampWhite from "../../resources/travel-lamp/white-travel.png";
 import bugChecker from "../../resources/bug-checker/bug-checker.png";
@@ -15,7 +14,8 @@ import tissueImg from "../../resources/tissue/tissue.png";
 import alephBetImg from "../../resources/decals/aleph-bet.png";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
-
+import KmaxColour from "../../KmaxColour";
+import TravelColour from "../../TravelColour";
 
 const Products = () => {
 
@@ -52,13 +52,14 @@ const Products = () => {
           </div>
           <div className="content">
             <h3>Select A Color</h3>
-            <div className="color">
+            < TravelColour />
+            {/* <div className="color">
               <div className="color-picker" id="travel-white"></div>
               <div className="color-picker" id="travel-grey"></div>
               <div className="color-picker" id="travel-black"></div>
               <div className="color-picker" id="travel-brown"></div>
             </div>
-            <a href="/">Add To Cart</a>
+            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
