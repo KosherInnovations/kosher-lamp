@@ -20,6 +20,7 @@ import GloveColours from "../../GloveColours";
 import ShisselColours from "../../ShisselColours";
 import ShroomColours from "../../ShroomColours";
 import TissueTypes from "../../TissueTypes";
+import DecalTypes from "../../DecalTypes";
 
 const Products = () => {
 
@@ -197,7 +198,8 @@ const Products = () => {
           </div>
           <div className="content">
           <h3>Select A Type</h3>
-            <div className="type">
+          < DecalTypes />
+            {/* <div className="type">
               <div className="type-picker" id="aleph-bet">
                 <p>Aleph Bet</p>
               </div>
@@ -208,7 +210,7 @@ const Products = () => {
                 <p>Mitzvah Train</p>
               </div>
             </div>
-            <a href="/">Add To Cart</a>
+            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
