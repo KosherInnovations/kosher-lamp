@@ -16,6 +16,7 @@ import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
 import KmaxColour from "../../KmaxColour";
 import TravelColour from "../../TravelColour";
+import GloveColours from "../../GloveColours";
 
 const Products = () => {
 
@@ -87,11 +88,12 @@ const Products = () => {
           </div>
           <div className="content">
             <h3>Select A Color</h3>
-            <div className="color">
+            < GloveColours />
+            {/* <div className="color">
               <div className="color-picker" id="gloves-red"></div>
               <div className="color-picker" id="gloves-blue"></div>
             </div>
-            <a href="/">Add To Cart</a>
+            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
