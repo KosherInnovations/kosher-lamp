@@ -28,7 +28,7 @@ const Products = () => {
             <h1>KosherLamp MAX</h1>
           </div>
           <div className="content">
-            <h3>Color : </h3>
+            <h3>Select A Color : </h3>
             < KmaxColour />
             {/* <div className="color">
               <div className="color-picker kmax" id="kmax-white"></div>
@@ -51,7 +51,7 @@ const Products = () => {
             <h1>Travel Lamp</h1>
           </div>
           <div className="content">
-            <h3>Color :</h3>
+            <h3>Select A Color</h3>
             <div className="color">
               <div className="color-picker" id="travel-white"></div>
               <div className="color-picker" id="travel-grey"></div>
@@ -85,7 +85,7 @@ const Products = () => {
             <h1>Shabbos Scrub Gloves</h1>
           </div>
           <div className="content">
-            <h3>Color :</h3>
+            <h3>Select A Color</h3>
             <div className="color">
               <div className="color-picker" id="gloves-red"></div>
               <div className="color-picker" id="gloves-blue"></div>
@@ -99,7 +99,7 @@ const Products = () => {
             <h1>Smart Shissel</h1>
           </div>
           <div className="content">
-          <h3>Color :</h3>
+          <h3>Select A Color</h3>
             <div className="color">
               <div className="color-picker" id="shissel-grey"></div>
               <div className="color-picker" id="shissel-blue"></div>
@@ -151,7 +151,7 @@ const Products = () => {
             <h1>Mushroom KosherLamp</h1>
           </div>
           <div className="content">
-          <h3>Color :</h3>
+          <h3>Select A Color</h3>
             <div className="color">
               <div className="color-picker" id="shroom-red"></div>
               <div className="color-picker" id="shroom-blue"></div>
@@ -166,7 +166,7 @@ const Products = () => {
             <h1>Shabbos Bathroom Tissue</h1>
           </div>
           <div className="content">
-          <h3>Type :</h3>
+          <h3>Select A Type</h3>
             <div className="type">
               <div className="type-picker" id="trial-pack">
                 <p>1 x 8 Pack</p>
@@ -187,7 +187,7 @@ const Products = () => {
             <h1>Wall ID Decals</h1>
           </div>
           <div className="content">
-          <h3>Type :</h3>
+          <h3>Select A Type</h3>
             <div className="type">
               <div className="type-picker" id="aleph-bet">
                 <p>Aleph Bet</p>
@@ -208,7 +208,7 @@ const Products = () => {
             <h1>Shabbos Toothbrush</h1>
           </div>
           <div className="content">
-          <h3>Color :</h3>
+          <h3>Select A Color</h3>
             <div className="color">
               <div className="color-picker" id="shabtooth-red"></div>
               <div className="color-picker" id="shabtooth-purple"></div>
@@ -224,7 +224,7 @@ const Products = () => {
             <h1>Uncle Moishy Weekday Toothbrush</h1>
           </div>
           <div className="content">
-          <h3>Color :</h3>
+          <h3>Select A Color</h3>
             <div className="color">
               <div className="color-picker" id="weektooth-red"></div>
               <div className="color-picker" id="weektooth-green"></div>
