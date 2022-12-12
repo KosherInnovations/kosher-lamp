@@ -22,6 +22,7 @@ import ShroomColours from "../../classes/ShroomColours";
 import TissueTypes from "../../classes/TissueTypes";
 import DecalTypes from "../../classes/DecalTypes";
 import ShabToothColours from "../../classes/ShabToothColours";
+import WeekToothColours from "../../classes/WeekToothColours";
 
 const Products = () => {
 
@@ -238,13 +239,14 @@ const Products = () => {
           </div>
           <div className="content">
           <h3>Select A Color</h3>
-            <div className="color">
+          < WeekToothColours />
+            {/* <div className="color">
               <div className="color-picker" id="weektooth-red"></div>
               <div className="color-picker" id="weektooth-green"></div>
               <div className="color-picker" id="weektooth-blue"></div>
               <div className="color-picker" id="weektooth-yellow"></div>
             </div>
-            <a href="/">Add To Cart</a>
+            <a href="/">Add To Cart</a> */}
           </div>
         </div>
       </section>
