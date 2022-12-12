@@ -11,8 +11,8 @@ class travelDivs extends React.Component {
         href: "/white",
       },
       {
-        id: "steel",
-        href: "/steel",
+        id: "grey",
+        href: "/grey",
       },
       {
         id: "black",

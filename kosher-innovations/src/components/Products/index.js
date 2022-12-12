@@ -14,13 +14,14 @@ import tissueImg from "../../resources/tissue/tissue.png";
 import alephBetImg from "../../resources/decals/aleph-bet.png";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
-import KmaxColour from "../../KmaxColour";
-import TravelColour from "../../TravelColour";
-import GloveColours from "../../GloveColours";
-import ShisselColours from "../../ShisselColours";
-import ShroomColours from "../../ShroomColours";
-import TissueTypes from "../../TissueTypes";
-import DecalTypes from "../../DecalTypes";
+import KmaxColour from "../../classes/KmaxColours";
+import TravelColour from "../../classes/TravelColour";
+import GloveColours from "../../classes/GloveColours";
+import ShisselColours from "../../classes/ShisselColours";
+import ShroomColours from "../../classes/ShroomColours";
+import TissueTypes from "../../classes/TissueTypes";
+import DecalTypes from "../../classes/DecalTypes";
+import ShabToothColours from "../../classes/ShabToothColours";
 
 const Products = () => {
 
@@ -220,13 +221,14 @@ const Products = () => {
           </div>
           <div className="content">
           <h3>Select A Color</h3>
-            <div className="color">
+          < ShabToothColours />
+            {/* <div className="color">
               <div className="color-picker" id="shabtooth-red"></div>
               <div className="color-picker" id="shabtooth-purple"></div>
               <div className="color-picker" id="shabtooth-blue"></div>
               <div className="color-picker" id="shabtooth-yellow"></div>
             </div>
-            <a href="/">Add To Cart</a>
+            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
