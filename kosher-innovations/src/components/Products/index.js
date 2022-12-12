@@ -19,6 +19,7 @@ import TravelColour from "../../TravelColour";
 import GloveColours from "../../GloveColours";
 import ShisselColours from "../../ShisselColours";
 import ShroomColours from "../../ShroomColours";
+import TissueTypes from "../../TissueTypes";
 
 const Products = () => {
 
@@ -174,7 +175,8 @@ const Products = () => {
           </div>
           <div className="content">
           <h3>Select A Type</h3>
-            <div className="type">
+          < TissueTypes />
+            {/* <div className="type">
               <div className="type-picker" id="trial-pack">
                 <p>1 x 8 Pack</p>
               </div>
@@ -185,7 +187,7 @@ const Products = () => {
                 <p>12 x 8 Pack</p>
               </div>
             </div>
-            <a href="/">Add To Cart</a>
+            <a href="/">Add To Cart</a> */}
           </div>
         </div>
         <div className="card">
