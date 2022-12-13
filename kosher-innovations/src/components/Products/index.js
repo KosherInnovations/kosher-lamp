@@ -1,8 +1,6 @@
 import React from "react";
 import bugChecker from "../../resources/bug-checker/bug-checker.png";
 import warmingTray from "../../resources/warming-tray/warming-tray.png";
-import scrubGlovesRed from "../../resources/scrub-gloves/gloves-red.png";
-import blueShissel from "../../resources/smart-shissel/blue-shissel.png";
 import goWash from "../../resources/go-wash/go-wash.png";
 import kosherClock from "../../resources/kosher-clock/kosher-clock.png";
 import fridgeez from "../../resources/fridg-eez/fridg-eez.png";
@@ -15,7 +13,7 @@ import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
 import KmaxCard from "../../classes/KmaxCard";
 import TravelCard from "../../classes/TravelCard";
 import GloveCard from "../../classes/GloveCard";
-import ShisselColours from "../../classes/ShisselColours";
+import ShisselCard from "../../classes/ShisselCard";
 import ShroomColours from "../../classes/ShroomColours";
 import TissueTypes from "../../classes/TissueTypes";
 import DecalTypes from "../../classes/DecalTypes";
@@ -46,7 +44,8 @@ const Products = () => {
           </div>
         </div>
         < GloveCard />
-        <div className="card">
+        < ShisselCard />
+        {/* <div className="card">
           <div className="imgBox">
             <img src={blueShissel} alt="smart shissel"></img>
             <h1>Smart Shissel</h1>
@@ -55,7 +54,7 @@ const Products = () => {
           <h3>Click On A Color</h3>
           < ShisselColours />
           </div>
-        </div>
+        </div> */}
         <div className="card">
           <div className="imgBox">
             <img src={goWash} alt="go wash"></img>

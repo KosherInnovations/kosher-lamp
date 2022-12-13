@@ -2,7 +2,7 @@ import React from "react";
 import glovesRed from "../../resources/scrub-gloves/gloves-red.png";
 import glovesBlue from "../../resources/scrub-gloves/gloves-blue.png";
 
-class GloveDivs extends React.Component {
+class GloveCard extends React.Component {
   constructor(props) {
     super(props);
 
@@ -71,4 +71,4 @@ class GloveDivs extends React.Component {
   }
 }
 
-export default GloveDivs;
+export default GloveCard;
