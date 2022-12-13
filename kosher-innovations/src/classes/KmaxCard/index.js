@@ -1,6 +1,14 @@
 import React from "react";
 import kLampWhite from "../../resources/kmax/white-kmax.png";
 import kLampSteel from "../../resources/kmax/silver-kmax.png";
+import kLampBlack from "../../resources/kmax/black-kmax.png";
+import kLampBlue from "../../resources/kmax/blue-kmax.png";
+// import kLampGreen from "../../resources/kmax/green-kmax.png";
+import kLampMarble from "../../resources/kmax/marble-kmax.png";
+import kLampCherry from "../../resources/kmax/cherry-kmax.png";
+import kLampIvory from "../../resources/kmax/ivory-kmax.png";
+import kLampPink from "../../resources/kmax/pink-kmax.png";
+
 
 class KmaxCard extends React.Component {
   constructor(props) {
@@ -20,34 +28,48 @@ class KmaxCard extends React.Component {
         imgSrc: kLampSteel,
         altTag: "KosherLamp MAX Steel",
       },
-      // {
-      //   id: "black",
-      //   href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=bc64082aae4b4c1e8bf84860ad7e28e8",
-      // },
-      // {
-      //   id: "blue",
-      //   href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=c7b777faf88748a6aa1785fc3cadda6b",
-      // },
+      {
+        id: "black",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=bc64082aae4b4c1e8bf84860ad7e28e8",
+        imgSrc: kLampBlack,
+        altTag: "KosherLamp MAX Black",
+      },
+      {
+        id: "blue",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=c7b777faf88748a6aa1785fc3cadda6b",
+        imgSrc: kLampBlue,
+        altTag: "KosherLamp MAX Blue",
+      },
       // {
       //   id: "green",
       //   href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=39a0d1a0846f4823a8454d2e693e198e",
+      //   imgSrc: kLampGreen,
+      //   altTag: "KosherLamp MAX Green",
       // },
-      // {
-      //   id: "marble",
-      //   href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=1d455431b3314416b3b3ab4a10f60890",
-      // },
-      // {
-      //   id: "cherry",
-      //   href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=8f4691d63dda490c8a3761a093b8d40d",
-      // },
-      // {
-      //   id: "ivory",
-      //   href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=1fb9df66839e418aa7c54a79ae152c74",
-      // },
-      // {
-      //   id: "pink",
-      //   href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=c6b34023ea794b8ca65b5c63070d230b",
-      // },
+      {
+        id: "marble",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=1d455431b3314416b3b3ab4a10f60890",
+        imgSrc: kLampMarble,
+        altTag: "KosherLamp MAX Marble",
+      },
+      {
+        id: "cherry",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=8f4691d63dda490c8a3761a093b8d40d",
+        imgSrc: kLampCherry,
+        altTag: "KosherLamp MAX Cherry",
+      },
+      {
+        id: "ivory",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=1fb9df66839e418aa7c54a79ae152c74",
+        imgSrc: kLampIvory,
+        altTag: "KosherLamp MAX Ivory",
+      },
+      {
+        id: "pink",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=c6b34023ea794b8ca65b5c63070d230b",
+        imgSrc: kLampPink,
+        altTag: "KosherLamp MAX Pink",
+      },
     ];
 
     // Create an array of div elements with click handlers
