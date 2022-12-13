@@ -14,7 +14,7 @@ import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
 import KmaxCard from "../../classes/KmaxCard";
 import TravelCard from "../../classes/TravelCard";
-import GloveColours from "../../classes/GloveColours";
+import GloveCard from "../../classes/GloveCard";
 import ShisselColours from "../../classes/ShisselColours";
 import ShroomColours from "../../classes/ShroomColours";
 import TissueTypes from "../../classes/TissueTypes";
@@ -45,16 +45,7 @@ const Products = () => {
             <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=3d47a903d7454e30b3a5b3d4323532af">Add To Cart</a>
           </div>
         </div>
-        <div className="card">
-          <div className="imgBox">
-            <img src={scrubGlovesRed} alt="shabbos scrub gloves"></img>
-            <h1>Shabbos Scrub Gloves</h1>
-          </div>
-          <div className="content">
-            <h3>Click On A Color</h3>
-            < GloveColours />
-          </div>
-        </div>
+        < GloveCard />
         <div className="card">
           <div className="imgBox">
             <img src={blueShissel} alt="smart shissel"></img>

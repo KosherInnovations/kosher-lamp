@@ -4,7 +4,7 @@ import travelGrey from "../../resources/travel-lamp/grey-travel.png";
 import travelBlack from "../../resources/travel-lamp/black-travel.png";
 import travelBrown from "../../resources/travel-lamp/brown-travel.png";
 
-class travelDivs extends React.Component {
+class travelCard extends React.Component {
   constructor(props) {
     super(props);
 
@@ -75,16 +75,14 @@ class travelDivs extends React.Component {
           <div className="content">
             <h3>Click On A Color</h3>
             <div className="color">{this.divs}</div>
-        <a className="travel-cart" href={this.state.href}>
-          Add To Cart
-        </a>
+            <a className="travel-cart" href={this.state.href}>
+              Add To Cart
+            </a>
           </div>
         </div>
-
-        
       </>
     );
   }
 }
 
-export default travelDivs;
+export default travelCard;
