@@ -1,6 +1,4 @@
 import React from "react";
-// import kLampWhite from "../../resources/kmax/white-kmax.png";
-import travelLampWhite from "../../resources/travel-lamp/white-travel.png";
 import bugChecker from "../../resources/bug-checker/bug-checker.png";
 import warmingTray from "../../resources/warming-tray/warming-tray.png";
 import scrubGlovesRed from "../../resources/scrub-gloves/gloves-red.png";
@@ -15,13 +13,12 @@ import alephBetImg from "../../resources/decals/aleph-bet.png";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
 import KmaxCard from "../../classes/KmaxCard";
-import TravelColour from "../../classes/TravelColours";
+import TravelCard from "../../classes/TravelCard";
 import GloveColours from "../../classes/GloveColours";
 import ShisselColours from "../../classes/ShisselColours";
 import ShroomColours from "../../classes/ShroomColours";
 import TissueTypes from "../../classes/TissueTypes";
 import DecalTypes from "../../classes/DecalTypes";
-// import KmaxModal from "../../modals/KmaxModal";
 
 const Products = () => {
 
@@ -29,16 +26,7 @@ const Products = () => {
     <>
       <section id="cards" className="product-cards">
         < KmaxCard />
-        <div className="card">
-          <div className="imgBox">
-            <img src={travelLampWhite} alt="travel lamp"></img>
-            <h1>Travel Lamp</h1>
-          </div>
-          <div className="content">
-            <h3>Click On A Color</h3>
-            < TravelColour />
-          </div>
-        </div>
+        < TravelCard />
         <div className="card">
           <div className="imgBox">
             <img src={bugChecker} alt="bug checker"></img>

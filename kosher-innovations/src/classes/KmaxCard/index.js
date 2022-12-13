@@ -108,7 +108,6 @@ class KmaxCard extends React.Component {
           <h1>KosherLamp MAX</h1>
         </div>
         <div className="content">
-          {/* < KmaxModal /> */}
           <h3>Click On A Color</h3>
           <div className="color">{this.divs}</div>
           <a className="kmax-cart" href={this.state.href}>
