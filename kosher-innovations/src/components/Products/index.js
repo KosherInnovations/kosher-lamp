@@ -1,5 +1,5 @@
 import React from "react";
-import kLampWhite from "../../resources/kmax/white-kmax.png";
+// import kLampWhite from "../../resources/kmax/white-kmax.png";
 import travelLampWhite from "../../resources/travel-lamp/white-travel.png";
 import bugChecker from "../../resources/bug-checker/bug-checker.png";
 import warmingTray from "../../resources/warming-tray/warming-tray.png";
@@ -14,7 +14,7 @@ import tissueImg from "../../resources/tissue/tissue.png";
 import alephBetImg from "../../resources/decals/aleph-bet.png";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
-import KmaxColour from "../../classes/KmaxColours";
+import KmaxCard from "../../classes/KmaxCard";
 import TravelColour from "../../classes/TravelColours";
 import GloveColours from "../../classes/GloveColours";
 import ShisselColours from "../../classes/ShisselColours";
@@ -28,24 +28,14 @@ const Products = () => {
   return (
     <>
       <section id="cards" className="product-cards">
-        <div className="card">
-          <div className="imgBox">
-            <img src={kLampWhite} alt="KosherLamp MAX"></img>
-            <h1>KosherLamp MAX</h1>
-          </div>
-          <div className="content">
-            {/* < KmaxModal /> */}
-            <h3>Select A Color</h3>
-            < KmaxColour />
-          </div>
-        </div>
+        < KmaxCard />
         <div className="card">
           <div className="imgBox">
             <img src={travelLampWhite} alt="travel lamp"></img>
             <h1>Travel Lamp</h1>
           </div>
           <div className="content">
-            <h3>Select A Color</h3>
+            <h3>Click On A Color</h3>
             < TravelColour />
           </div>
         </div>
@@ -73,7 +63,7 @@ const Products = () => {
             <h1>Shabbos Scrub Gloves</h1>
           </div>
           <div className="content">
-            <h3>Select A Color</h3>
+            <h3>Click On A Color</h3>
             < GloveColours />
           </div>
         </div>
@@ -83,7 +73,7 @@ const Products = () => {
             <h1>Smart Shissel</h1>
           </div>
           <div className="content">
-          <h3>Select A Color</h3>
+          <h3>Click On A Color</h3>
           < ShisselColours />
           </div>
         </div>
@@ -129,7 +119,7 @@ const Products = () => {
             <h1>Mushroom KosherLamp</h1>
           </div>
           <div className="content">
-          <h3>Select A Color</h3>
+          <h3>Click On A Color</h3>
           < ShroomColours />
           </div>
         </div>
@@ -139,7 +129,7 @@ const Products = () => {
             <h1>Shabbos Bathroom Tissue</h1>
           </div>
           <div className="content">
-          <h3>Select A Type</h3>
+          <h3>Click On A Type</h3>
           < TissueTypes />
           </div>
         </div>
@@ -149,7 +139,7 @@ const Products = () => {
             <h1>Wall ID Decals</h1>
           </div>
           <div className="content">
-          <h3>Select A Type</h3>
+          <h3>Click On A Type</h3>
           < DecalTypes />
           </div>
         </div>
