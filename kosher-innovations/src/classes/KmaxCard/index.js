@@ -1,4 +1,8 @@
-import React from "react";
+import * as React from "react";
+import Box from "@mui/material/Box";
+// import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
 import kLampWhite from "../../resources/kmax/white-kmax.png";
 import kLampSteel from "../../resources/kmax/silver-kmax.png";
 import kLampBlack from "../../resources/kmax/black-kmax.png";
@@ -9,6 +13,50 @@ import kLampCherry from "../../resources/kmax/cherry-kmax.png";
 import kLampIvory from "../../resources/kmax/ivory-kmax.png";
 import kLampPink from "../../resources/kmax/pink-kmax.png";
 
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
+
+function BasicModal() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  return (
+    <>
+      <button className="modal-btn" onClick={handleOpen}>
+        Open modal
+      </button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            KosherLamp MAX Info (USA only)
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            KosherLamp MAX means the most light with a bigger window. A simple
+            twist reveals or hides the light on this innovative reading lamp.
+            It's a practical and innovative idea that's perfect in any room Now
+            you'll have even more light to read on Shabbos!<br></br>
+            <br></br>LED bulbs, energy efficient, new design, easy twist
+            technology, beautiful colours, easy to use thumb-switch, and can be
+            used on Shabbos according to halacha.It's convenient and easy.
+          </Typography>
+        </Box>
+      </Modal>
+    </>
+  );
+}
 
 class KmaxCard extends React.Component {
   constructor(props) {
@@ -108,6 +156,7 @@ class KmaxCard extends React.Component {
           <h1>KosherLamp MAX</h1>
         </div>
         <div className="content">
+          <BasicModal />
           <h3>Click On A Color</h3>
           <div className="color">{this.divs}</div>
           <a className="kmax-cart" href={this.state.href}>
