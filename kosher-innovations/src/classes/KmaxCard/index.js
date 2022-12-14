@@ -1,8 +1,8 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-// import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import infoBtn from "../../resources/info.png";
 import kLampWhite from "../../resources/kmax/white-kmax.png";
 import kLampSteel from "../../resources/kmax/silver-kmax.png";
 import kLampBlack from "../../resources/kmax/black-kmax.png";
@@ -23,16 +23,19 @@ const style = {
   p: 4,
 };
 
-function BasicModal() {
+const BasicModal = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <>
-      <button className="modal-btn" onClick={handleOpen}>
-        Open modal
-      </button>
+      <img
+        onClick={handleOpen}
+        className="info-btn"
+        src={infoBtn}
+        alt="button to open info about KosherLamp MAX"
+      ></img>
       <Modal
         open={open}
         onClose={handleClose}

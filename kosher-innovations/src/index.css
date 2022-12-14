@@ -315,6 +315,10 @@ section .card .content a {
   text-align: justify;
 } 
 
+.info-btn {
+  width: 35px;
+}
+
 /* about section */
 
 #about {
