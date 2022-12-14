@@ -5,7 +5,6 @@ import goWash from "../../resources/go-wash/go-wash.png";
 import kosherClock from "../../resources/kosher-clock/kosher-clock.png";
 import fridgeez from "../../resources/fridg-eez/fridg-eez.png";
 import bottleOpener from "../../resources/bottle-opener/bottle-opener.png";
-import shroomLamp from "../../resources/shroom-lamp/red-shroom.png";
 import tissueImg from "../../resources/tissue/tissue.png";
 import alephBetImg from "../../resources/decals/aleph-bet.png";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
@@ -14,7 +13,7 @@ import KmaxCard from "../../classes/KmaxCard";
 import TravelCard from "../../classes/TravelCard";
 import GloveCard from "../../classes/GloveCard";
 import ShisselCard from "../../classes/ShisselCard";
-import ShroomColours from "../../classes/ShroomColours";
+import ShroomCard from "../../classes/ShroomCard";
 import TissueTypes from "../../classes/TissueTypes";
 import DecalTypes from "../../classes/DecalTypes";
 
@@ -91,16 +90,7 @@ const Products = () => {
             <a href="https://www.kosherimage.com/cmd.php?pid=a9f059a9b16d4f12a9f10f188911df3b">Add To Cart</a>
           </div>
         </div>
-        <div className="card">
-          <div className="imgBox">
-            <img src={shroomLamp} alt="mushroom kosher lamp"></img>
-            <h1>Mushroom KosherLamp</h1>
-          </div>
-          <div className="content">
-          <h3>Click On A Color</h3>
-          < ShroomColours />
-          </div>
-        </div>
+        < ShroomCard />
         <div className="card">
           <div className="imgBox">
             <img src={tissueImg} alt="shabbos bathroom tissue"></img>

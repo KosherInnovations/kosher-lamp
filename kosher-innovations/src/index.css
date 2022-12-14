@@ -93,7 +93,8 @@ section {
 /* card section */
 
 #cards {
-  background: linear-gradient(45deg, #000000, #282A3A);
+  /* background: url("resources/grey-spotted-bg.jpg"); */
+  background: url("resources/grey-painted-bg.webp");
 }
 
 section .card {
