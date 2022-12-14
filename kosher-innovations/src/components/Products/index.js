@@ -6,7 +6,6 @@ import kosherClock from "../../resources/kosher-clock/kosher-clock.png";
 import fridgeez from "../../resources/fridg-eez/fridg-eez.png";
 import bottleOpener from "../../resources/bottle-opener/bottle-opener.png";
 import tissueImg from "../../resources/tissue/tissue.png";
-import alephBetImg from "../../resources/decals/aleph-bet.png";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
 import KmaxCard from "../../classes/KmaxCard";
@@ -15,7 +14,7 @@ import GloveCard from "../../classes/GloveCard";
 import ShisselCard from "../../classes/ShisselCard";
 import ShroomCard from "../../classes/ShroomCard";
 import TissueTypes from "../../classes/TissueTypes";
-import DecalTypes from "../../classes/DecalTypes";
+import DecalCard from "../../classes/DecalCard";
 
 const Products = () => {
 
@@ -101,7 +100,8 @@ const Products = () => {
           < TissueTypes />
           </div>
         </div>
-        <div className="card">
+        < DecalCard />
+        {/* <div className="card">
           <div className="imgBox">
             <img src={alephBetImg} alt="wall id decals"></img>
             <h1>Wall ID Decals</h1>
@@ -110,7 +110,7 @@ const Products = () => {
           <h3>Click On A Type</h3>
           < DecalTypes />
           </div>
-        </div>
+        </div> */}
         <div className="card">
           <div className="imgBox">
             <img src={shabTooth} alt="shabbos toothbrush"></img>
