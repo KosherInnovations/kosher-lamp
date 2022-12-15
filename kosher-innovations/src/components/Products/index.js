@@ -20,7 +20,8 @@ import KmaxCard from "../../classes/KmaxCard";
 import TravelCard from "../../classes/TravelCard";
 import GloveCard from "../../classes/GloveCard";
 import ShisselCard from "../../classes/ShisselCard";
-import ShroomCard from "../../classes/ShroomCard";
+import shroomImg from "../../resources/shroom-lamp/red-shroom.png";
+import ShroomModal from "../../modals/ShroomModal";
 import TissueTypes from "../../classes/TissueTypes";
 import DecalCard from "../../classes/DecalCard";
 
@@ -32,12 +33,12 @@ const Products = () => {
         <TravelCard />
         <div className="card">
           <div className="imgBox">
-            <img src={bugChecker} alt="bug checker"></img>
-            <h1>Bug Checker</h1>
+            <img src={bugChecker} alt="The Bug Checker, a tool used to check fresh produce for bugs" title="Bug Checker"></img>
+            <h1 title="Bug Checker">Bug Checker</h1>
           </div>
           <div className="content">
-            <div className="flex-box">
-              <a href="https://www.kosherimage.com/cmd.php?pid=e418af322bd347a18412af62a324be4e">
+            <div className="flex-box-products-page">
+              <a href="https://www.kosherimage.com/cmd.php?pid=e418af322bd347a18412af62a324be4e" title="add Bug Checker to cart">
                 Add To Cart
               </a>
               <BugCheckerModal />
@@ -46,12 +47,12 @@ const Products = () => {
         </div>
         <div className="card">
           <div className="imgBox">
-            <img src={warmingTray} alt="shabbos safe warming tray"></img>
-            <h1>Shabbos Safe Warming Tray</h1>
+            <img src={warmingTray} alt="The Shabbos Safe Warming Tray, a tool used to safely heat food on shabbos, in accordance with halacha" title="Shabbos Safe Warming Tray"></img>
+            <h1 title="Shabbos Safe Warming Tray">Shabbos Safe Warming Tray</h1>
           </div>
           <div className="content">
-            <div className="flex-box">
-              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=3d47a903d7454e30b3a5b3d4323532af">
+            <div className="flex-box-products-page">
+              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=3d47a903d7454e30b3a5b3d4323532af" title="add Shabbos Safe Warming Tray to cart">
                 Add To Cart
               </a>
               <WarmTrayModal />
@@ -62,12 +63,12 @@ const Products = () => {
         <ShisselCard />
         <div className="card">
           <div className="imgBox">
-            <img src={goWash} alt="go wash"></img>
-            <h1>Go Wash</h1>
+            <img src={goWash} alt="The Go Wash, a portable washing cup" title="Go Wash"></img>
+            <h1 title="Go Wash">Go Wash</h1>
           </div>
           <div className="content">
-            <div className="flex-box">
-              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=76d33ab9cfbe438fa25c8876e344c439">
+            <div className="flex-box-products-page">
+              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=76d33ab9cfbe438fa25c8876e344c439" title="add Go Wash to cart">
                 Add To Cart
               </a>
               <GoWashModal />
@@ -76,12 +77,12 @@ const Products = () => {
         </div>
         <div className="card">
           <div className="imgBox">
-            <img src={kosherClock} alt="kosher clock" id="kosher-clock"></img>
-            <h1>Kosher Clock</h1>
+            <img src={kosherClock} alt="The KosherClock, a portable clock that functions well on shabbos on yom tov" title="KosherClock" id="kosher-clock"></img>
+            <h1 title="KosherClock">KosherClock</h1>
           </div>
           <div className="content">
-            <div className="flex-box">
-              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=4bb9fb8c67954716bc68708634c6c8ae">
+            <div className="flex-box-products-page">
+              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=4bb9fb8c67954716bc68708634c6c8ae" title="add KosherClock to cart">
                 Add To Cart
               </a>
               <KosherClockModal />
@@ -90,12 +91,12 @@ const Products = () => {
         </div>
         <div className="card">
           <div className="imgBox">
-            <img src={fridgeez} alt="fridg-eez"></img>
-            <h1>Fridg-eez</h1>
+            <img src={fridgeez} alt="Fridg-eez, a handy tool that allows you to keep your fridge light off on shabbos and yom tov" title="Fridg-eez"></img>
+            <h1 title="Fridg-eez">Fridg-eez</h1>
           </div>
           <div className="content">
-            <div className="flex-box">
-              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=6cbbe188b0a54a2ebff575e09afc25ac">
+            <div className="flex-box-products-page">
+              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=6cbbe188b0a54a2ebff575e09afc25ac" title="add Fridg-eez to cart">
                 Add To Cart
               </a>
               <FridgeezModal />
@@ -104,23 +105,36 @@ const Products = () => {
         </div>
         <div className="card">
           <div className="imgBox">
-            <img src={bottleOpener} alt="shabbos bottle opener "></img>
-            <h1>Shabbos Bottle Opener </h1>
+            <img src={bottleOpener} alt="The Shabbos Bottle Opener, a tool that allows yout to open bottles open shabbos in accordance with Halacha" title="Shabbos Bottle Opener"></img>
+            <h1 title="Shabbos Bottle Opener">Shabbos Bottle Opener </h1>
           </div>
           <div className="content">
-            <div className="flex-box">
-              <a href="https://www.kosherimage.com/cmd.php?pid=a9f059a9b16d4f12a9f10f188911df3b">
+            <div className="flex-box-products-page">
+              <a href="https://www.kosherimage.com/cmd.php?pid=a9f059a9b16d4f12a9f10f188911df3b" title="add Shabbos Bottle Opener to cart">
                 Add To Cart
               </a>
               <OpenerModal />
             </div>
           </div>
         </div>
-        <ShroomCard />
         <div className="card">
           <div className="imgBox">
-            <img src={tissueImg} alt="shabbos bathroom tissue"></img>
-            <h1>Shabbos Bathroom Tissue</h1>
+            <img src={shroomImg} alt="The Mushroom KosherLamp, a kid friendly version of the popular KosherLamp" title="Mushroom KosherLamp"></img>
+            <h1 className="Mushroom KosherLamp">Mushroom KosherLamp</h1>
+          </div>
+          <div className="content">
+            <div className="flex-box-products-page">
+              <a className="shroom-cart" href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=515cfa6e0de346488d2891efe33e0200" title="add Mushroom KosherLamp to cart">
+                Add To Cart
+              </a>
+              < ShroomModal />
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div className="imgBox">
+            <img src={tissueImg} alt="The Shabbos Bathroom Tissue, a box of tissues which can be placed on a toilet paper dispenser. Each box comes with precut bathroom papers which is in accordance with Halacha" title="Shabbos Bathroom Tissue"></img>
+            <h1 title="Shabbos Bathroom Tissue">Shabbos Bathroom Tissue</h1>
           </div>
           <div className="content">
             <h3>Click On A Type</h3>
@@ -130,13 +144,13 @@ const Products = () => {
         <DecalCard />
         <div className="card">
           <div className="imgBox">
-            <img src={shabTooth} alt="shabbos toothbrush"></img>
-            <h1>Shabbos Toothbrush</h1>
+            <img src={shabTooth} alt="The Shabbos Toothbrush, a 4 pack of Shabbos Toothbrushes which allows you to brush your teeth on Shabbos and Yom Tov in accordance with Halacha" title="Shabbos Toothbrush"></img>
+            <h1 title="Shabbos Toothbrush">Shabbos Toothbrush</h1>
           </div>
           <div className="content">
             <h3>1 x 4 Pack</h3>
             <div className="flex-box">
-              <a href="https://www.kosherimage.com/cmd.php?pid=d73562f0b42637d3268b40b7e85e7f33">
+              <a href="https://www.kosherimage.com/cmd.php?pid=d73562f0b42637d3268b40b7e85e7f33" title="add Shabbos Toothbrush to cart">
                 Add To Cart
               </a>
               <ShabToothModal />
@@ -145,13 +159,13 @@ const Products = () => {
         </div>
         <div className="card">
           <div className="imgBox">
-            <img src={weekTooth} alt="weekday toothbrush"></img>
-            <h1>Uncle Moishy Weekday Toothbrush</h1>
+            <img src={weekTooth} alt="The (Weekday) Uncle Moishy Toothbrush, a 4 pack of weekday toothbrushes which are a great way to get the kids to practice oral hygeiene"></img>
+            <h1 title="Uncle Moishy Weekday Toothbrush">Uncle Moishy Weekday Toothbrush</h1>
           </div>
           <div className="content">
             <h3>1 x 4 Pack</h3>
             <div className="flex-box">
-              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=db93a1eee8ae4979b5a3112c3ef94f28">
+              <a href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=db93a1eee8ae4979b5a3112c3ef94f28" title="add Uncle Moishy Weekday Toothbrush to cart">
                 Add To Cart
               </a>
               <WeekToothModal />

@@ -61,7 +61,7 @@ const BasicModal = () => {
   );
 };
 
-class DecalDivs extends React.Component {
+class DecalCard extends React.Component {
   constructor(props) {
     super(props);
 
@@ -72,21 +72,24 @@ class DecalDivs extends React.Component {
         href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=b1e04916143744b383a9d6ffd3c44c7f",
         heading: "Aleph Bet",
         imgSrc: alephBet,
-        altTag: "Aleph Bet Wall Decal image",
+        titleTag: "Aleph Bet Wall Decal",
+        altTag: "The Aleph Bet Wall Decal, a fun way to decorate your walls",
       },
       {
         id: "asher-yatzar",
         href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=4a7df1614bbb4266842a421036ec4762",
         heading: "Asher Yatzar",
         imgSrc: asherYatzar,
-        altTag: "Asher Yatzar Wall Decal image",
+        titleTag: "Asher Yatzar Wall Decal",
+        altTag: "The Asher Yatzar Wall Decal, a fun way to decorate your walls",
       },
       {
         id: "mitzvah-train",
         href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=dee5f1ab0ba84d6c9f79a3389bf16b8a",
         heading: "Mitzvah Train",
         imgSrc: mitzvahTrain,
-        altTag: "Mitzvah Train Decal image",
+        titleTag: "Mitzvah Train Decal",
+        altTag: "The Mitzvah Train Wall Decal, a fun way to decorate your walls",
       },
     ];
 
@@ -107,7 +110,8 @@ class DecalDivs extends React.Component {
     this.state = {
       href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=b1e04916143744b383a9d6ffd3c44c7f", // Set the initial href for the add to cart button
       src: alephBet,
-      alt: "Aleph Bet Decal image",
+      alt: "The Aleph Bet Wall Decal, a fun way to decorate your walls",
+      title: "The Aleph Bet Wall Decal",
     };
   }
 
@@ -117,6 +121,7 @@ class DecalDivs extends React.Component {
       href: item.href,
       src: item.imgSrc,
       alt: item.altTag,
+      title: item.titleTag,
     });
   }
 
@@ -125,14 +130,14 @@ class DecalDivs extends React.Component {
       <>
         <div className="card">
           <div className="imgBox">
-            <img src={this.state.src} alt={this.state.alt}></img>
-            <h1>Wall ID Decals</h1>
+            <img src={this.state.src} alt={this.state.alt} title={this.state.title}></img>
+            <h1 title={this.state.altTag}>Wall ID Decals</h1>
           </div>
           <div className="content">
             <h3>Click On A Type</h3>
             <div className="type">{this.divs}</div>
             <div className="flex-box">
-              <a className="decal-cart" href={this.state.href}>
+              <a className="decal-cart" href={this.state.href} title={`add ${this.state.title} to cart`}>
                 Add To Cart
               </a>
               <BasicModal />
@@ -144,4 +149,4 @@ class DecalDivs extends React.Component {
   }
 }
 
-export default DecalDivs;
+export default DecalCard;

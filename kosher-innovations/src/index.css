@@ -301,6 +301,16 @@ section .card .content a {
   transition: 0.5s ease-in-out;
 }
 
+section .card .content .flex-box-products-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 25px;
+}
+
 section .card .content .flex-box {
   position: relative;
   top: 25px;
