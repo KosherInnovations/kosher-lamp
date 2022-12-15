@@ -59,7 +59,7 @@ const BasicModal = () => {
       </Modal>
     </>
   );
-}
+};
 
 class KmaxCard extends React.Component {
   constructor(props) {
@@ -159,12 +159,14 @@ class KmaxCard extends React.Component {
           <h1>KosherLamp MAX</h1>
         </div>
         <div className="content">
-          <BasicModal />
           <h3>Click On A Color</h3>
           <div className="color">{this.divs}</div>
-          <a className="kmax-cart" href={this.state.href}>
-            Add To Cart
-          </a>
+          <div className="flex-box">
+            <a className="kmax-cart" href={this.state.href}>
+              Add To Cart
+            </a>
+            <BasicModal />
+          </div>
         </div>
       </div>
     );
