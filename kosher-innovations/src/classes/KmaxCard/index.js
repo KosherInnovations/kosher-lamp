@@ -7,7 +7,7 @@ import kLampWhite from "../../resources/kmax/white-kmax.png";
 import kLampSteel from "../../resources/kmax/silver-kmax.png";
 import kLampBlack from "../../resources/kmax/black-kmax.png";
 import kLampBlue from "../../resources/kmax/blue-kmax.png";
-// import kLampGreen from "../../resources/kmax/green-kmax.png";
+import kLampGreen from "../../resources/kmax/green-kmax.png";
 import kLampMarble from "../../resources/kmax/marble-kmax.png";
 import kLampCherry from "../../resources/kmax/cherry-kmax.png";
 import kLampIvory from "../../resources/kmax/ivory-kmax.png";
@@ -53,7 +53,7 @@ const BasicModal = () => {
             you'll have even more light to read on Shabbos!<br></br>
             <br></br>LED bulbs, energy efficient, new design, easy twist
             technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha.It's convenient and easy.
+            used on Shabbos according to halacha. It's convenient and easy.
           </Typography>
         </Box>
       </Modal>
@@ -91,12 +91,12 @@ class KmaxCard extends React.Component {
         imgSrc: kLampBlue,
         altTag: "KosherLamp MAX Blue",
       },
-      // {
-      //   id: "green",
-      //   href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=39a0d1a0846f4823a8454d2e693e198e",
-      //   imgSrc: kLampGreen,
-      //   altTag: "KosherLamp MAX Green",
-      // },
+      {
+        id: "green",
+        href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=39a0d1a0846f4823a8454d2e693e198e",
+        imgSrc: kLampGreen,
+        altTag: "KosherLamp MAX Green",
+      },
       {
         id: "marble",
         href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=1d455431b3314416b3b3ab4a10f60890",
