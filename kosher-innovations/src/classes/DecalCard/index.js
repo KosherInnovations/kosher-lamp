@@ -129,12 +129,14 @@ class DecalDivs extends React.Component {
             <h1>Wall ID Decals</h1>
           </div>
           <div className="content">
-            < BasicModal />
             <h3>Click On A Type</h3>
             <div className="type">{this.divs}</div>
-            <a className="decal-cart" href={this.state.href}>
-              Add To Cart
-            </a>
+            <div className="flex-box">
+              <a className="decal-cart" href={this.state.href}>
+                Add To Cart
+              </a>
+              <BasicModal />
+            </div>
           </div>
         </div>
       </>
