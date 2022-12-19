@@ -35,16 +35,15 @@ const TissueModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            KosherLamp MAX Info (USA only)
+            Shabbos Bathroom Tissue
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>LED bulbs, energy efficient, new design, easy twist
-            technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha. It's convenient and easy.
+            Easy and convenient. Halachically permissible, Real pre-cut toilet
+            paper in a unique box. No tearing! Hangs on any roll-holder! Now
+            softer, stronger and with beautiful nature-themed boxes. Comes in
+            Blue, Gold, Purple, & Brown<br></br>
+            <br></br> Includes: 120 sheets of 2 ply tissues per box Unique box
+            that dispenses sheets and hangs from roll holder
           </Typography>
         </Box>
       </Modal>

@@ -35,16 +35,22 @@ const FridgeezModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            KosherLamp MAX Info (USA only)
+            Fridg-eez
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>LED bulbs, energy efficient, new design, easy twist
-            technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha. It's convenient and easy.
+            Kosher Fridg-eez holds down your fridge or freezer light switch
+            during Shabbos or Yom Tov. We all need a way to keep the light off
+            during Shabbos or Yom Tov, that is what the Kosher Fridg-eez is for.
+            When Shabbos or Yom Tov is over, simply pull the plastic tab to
+            remove it, letting the fridge light shine again. Fridg-eez is a
+            simple and inexpensive solution to a common problem.<br></br>
+            <br></br>How it works: Kosher Fridg-eez™ is made from reusable
+            velcro. Just stick the two small Fridg-eez strips on either side of
+            the light switch and use the long Fridg-eez velcro strip to hold
+            down the light switch.<br></br>Includes: -2 small self-adhesive velcro
+            strips -1 large velcro strip with sturdy pull-tab Why use Kosher
+            Fridg-eez™? It comes ready to use Efficient Convenient Inexpensive
+            Easy to use Reliable quality
           </Typography>
         </Box>
       </Modal>

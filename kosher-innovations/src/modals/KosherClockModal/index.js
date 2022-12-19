@@ -5,51 +5,52 @@ import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 
 const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    border: "2px solid #000",
-    boxShadow: 24,
-    p: 4,
-  };
-  
-  const KC3Modal = () => {
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-  
-    return (
-      <>
-        <img
-          onClick={handleOpen}
-          className="info-btn"
-          src={infoBtn}
-          alt="button to open info about KosherLamp MAX"
-        ></img>
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          <Box sx={style}>
-            <Typography id="modal-modal-title" variant="h6" component="h2">
-              KosherLamp MAX Info (USA only)
-            </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              KosherLamp MAX means the most light with a bigger window. A simple
-              twist reveals or hides the light on this innovative reading lamp.
-              It's a practical and innovative idea that's perfect in any room Now
-              you'll have even more light to read on Shabbos!<br></br>
-              <br></br>LED bulbs, energy efficient, new design, easy twist
-              technology, beautiful colours, easy to use thumb-switch, and can be
-              used on Shabbos according to halacha. It's convenient and easy.
-            </Typography>
-          </Box>
-        </Modal>
-      </>
-    );
-  };
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
 
-  export default KC3Modal;
+const KC3Modal = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  return (
+    <>
+      <img
+        onClick={handleOpen}
+        className="info-btn"
+        src={infoBtn}
+        alt="button to open info about KosherLamp MAX"
+      ></img>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            KosherClock
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Can be used for Weekdays, Shabbos, Yom Tov, & Travel. Set different
+            alarms, for different times, for different days!<br></br>
+            <br></br> Features - <br></br>Weekday mode: 10 alarms 2 alarm
+            volumes quick time setting <br></br>Shabbos & Yom Tov mode: No
+            problem with muktzah can't press any buttons alarm shuts off after 1
+            minute set multiple alarms to ring 5 minutes apart to act like a
+            snooze feature Travel mode: Screen & buttons are protected slim &
+            compact for travel
+          </Typography>
+        </Box>
+      </Modal>
+    </>
+  );
+};
+
+export default KC3Modal;

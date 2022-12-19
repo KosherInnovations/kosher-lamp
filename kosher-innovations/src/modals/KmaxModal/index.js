@@ -35,7 +35,7 @@ const KmaxModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            KosherLamp MAX Info (USA only)
+            KosherLamp MAX Info
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             KosherLamp MAX means the most light with a bigger window. A simple

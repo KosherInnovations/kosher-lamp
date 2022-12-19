@@ -35,16 +35,16 @@ const GlovesModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            KosherLamp MAX Info (USA only)
+            Shabbos Scrub Gloves
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>LED bulbs, energy efficient, new design, easy twist
-            technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha. It's convenient and easy.
+            Shabbos Scrub Gloves are composed of super durable silicone that
+            protects your hands from cold water and harsh chemicals when washing
+            your dishes. Featuring innovative bristles on the fingers and palm
+            which makes scrubbing a breeze.<br></br><br></br>These gloves are approved by
+            rabbinic authorities and are highly recommended for use on Shabbos,
+            Yom Tov & anytime. Please Consult With Your Personal Rov For The
+            Halachos Of Washing Dishes On Shabbos And Yom Tov.
           </Typography>
         </Box>
       </Modal>

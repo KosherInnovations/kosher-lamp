@@ -35,16 +35,18 @@ const ShisselModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            KosherLamp MAX Info (USA only)
+            Smart Shissel
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>LED bulbs, energy efficient, new design, easy twist
-            technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha. It's convenient and easy.
+            A spill resistant Negel Vasser Bowl. The Smart Shissel has a one way
+            drain that traps water inside, leaving it covered and spill proof.
+            Tomei water is fully covered after washing. Carry the bowl without
+            spilling. If tipped upside down, water remains in inner bowl. Open the
+            plug to pour out used water.<br></br><br></br>Encourage your children to wash without
+            worrying about spills or mess. After washing, water flows to the
+            lower bowl and children won’t be able to play in used water. Children can’t
+            spill water all over themselves, the carpet, the furniture, or dunk
+            their toys in it.
           </Typography>
         </Box>
       </Modal>
