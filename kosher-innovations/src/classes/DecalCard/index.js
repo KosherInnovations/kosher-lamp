@@ -131,7 +131,7 @@ class DecalCard extends React.Component {
         <div className="card">
           <div className="imgBox">
             <img src={this.state.src} alt={this.state.alt} title={this.state.title}></img>
-            <h1 title={this.state.altTag}>Wall ID Decals</h1>
+            <h1 title={this.state.title}>Wall ID Decals</h1>
           </div>
           <div className="content">
             <h3>Click On A Type</h3>

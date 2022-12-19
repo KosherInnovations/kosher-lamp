@@ -11,7 +11,6 @@ import fridgeez from "../../resources/fridg-eez/fridg-eez.png";
 import FridgeezModal from "../../modals/FridgeezModal";
 import bottleOpener from "../../resources/bottle-opener/bottle-opener.png";
 import OpenerModal from "../../modals/OpenerModal";
-import tissueImg from "../../resources/tissue/tissue.png";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
 import ShabToothModal from "../../modals/ShabToothModal";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
@@ -22,7 +21,7 @@ import GloveCard from "../../classes/GloveCard";
 import ShisselCard from "../../classes/ShisselCard";
 import shroomImg from "../../resources/shroom-lamp/red-shroom.png";
 import ShroomModal from "../../modals/ShroomModal";
-import TissueTypes from "../../classes/TissueTypes";
+import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";
 
 const Products = () => {
@@ -120,7 +119,7 @@ const Products = () => {
         <div className="card">
           <div className="imgBox">
             <img src={shroomImg} alt="The Mushroom KosherLamp, a kid friendly version of the popular KosherLamp" title="Mushroom KosherLamp"></img>
-            <h1 className="Mushroom KosherLamp">Mushroom KosherLamp</h1>
+            <h1 className="Mushroom KosherLamp" title="Mushroom KosherLamp">Mushroom KosherLamp</h1>
           </div>
           <div className="content">
             <div className="flex-box-products-page">
@@ -131,16 +130,7 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <div className="card">
-          <div className="imgBox">
-            <img src={tissueImg} alt="The Shabbos Bathroom Tissue, a box of tissues which can be placed on a toilet paper dispenser. Each box comes with precut bathroom papers which is in accordance with Halacha" title="Shabbos Bathroom Tissue"></img>
-            <h1 title="Shabbos Bathroom Tissue">Shabbos Bathroom Tissue</h1>
-          </div>
-          <div className="content">
-            <h3>Click On A Type</h3>
-            <TissueTypes />
-          </div>
-        </div>
+        < TissueCard />
         <DecalCard />
         <div className="card">
           <div className="imgBox">

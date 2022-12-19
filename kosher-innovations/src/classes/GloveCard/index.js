@@ -64,13 +64,15 @@ class GloveCard extends React.Component {
         id: "red",
         href: "https://www.kosherimage.com/cmd.php?pid=a0a5dfe511e4436f85d2fca1921a117c",
         imgSrc: glovesRed,
-        altTag: "Red Scrub Gloves",
+        altTag: "The Shabbos Scrub Gloves, red edition, an awesome way to wash dishes on Shabbos and Yom Tov in accordance with Halacha",
+        titleTag: "Red Shabbos Scrub Gloves",
       },
       {
         id: "blue",
         href: "https://www.kosherimage.com/cmd.php?pid=2dff3e69a98643e083565edbbb3713d6",
         imgSrc: glovesBlue,
-        altTag: "Blue Scrub Gloves",
+        altTag: "The Shabbos Scrub Gloves, blue edition, an awesome way to wash dishes on Shabbos and Yom Tov in accordance with Halacha",
+        titleTag: "Blue Shabbos Scrub Gloves",
       },
     ];
 
@@ -89,7 +91,8 @@ class GloveCard extends React.Component {
     this.state = {
       href: "https://www.kosherimage.com/cmd.php?pid=a0a5dfe511e4436f85d2fca1921a117c", // Set the initial href for the add to cart button
       src: glovesRed,
-      alt: "Red Scrub Gloves",
+      alt: "The Shabbos Scrub Gloves, red edition, an awesome way to wash dishes on Shabbos and Yom Tov in accordance with Halacha",
+      title: "Red Shabbos Scrub Gloves",
     };
   }
 
@@ -99,6 +102,7 @@ class GloveCard extends React.Component {
       href: item.href,
       src: item.imgSrc,
       alt: item.altTag,
+      title: item.titleTag,
     });
   }
 
@@ -107,14 +111,14 @@ class GloveCard extends React.Component {
       <>
         <div className="card">
           <div className="imgBox">
-            <img src={this.state.src} alt={this.state.alt}></img>
-            <h1>Shabbos Scrub Gloves</h1>
+            <img src={this.state.src} alt={this.state.alt} title={this.state.title}></img>
+            <h1 title={this.state.title}>Shabbos Scrub Gloves</h1>
           </div>
           <div className="content">
             <h3>Click On A Color</h3>
             <div className="color">{this.divs}</div>
             <div className="flex-box">
-              <a className="gloves-cart" href={this.state.href}>
+              <a className="gloves-cart" href={this.state.href} title={`add ${this.state.title} to cart`}>
                 Add To Cart
               </a>
               <BasicModal />

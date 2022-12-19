@@ -72,25 +72,29 @@ class travelCard extends React.Component {
         id: "white",
         href: "https://www.kosherimage.com/cmd.php?pid=0f59cbfeb19f4a47a417c0ae1c1c3d32",
         imgSrc: travelWhite,
-        altTag: "Travel Lamp White Image",
+        titleTag: "Travel Lamp White Edition",
+        altTag: "The Travel KosherLamp, white edition. Small enough for travel while still bright enough to light up an entire room."
       },
       {
         id: "grey",
         href: "https://www.kosherimage.com/cmd.php?pid=156ef0e192fb4009886fa0e1389288ae",
         imgSrc: travelGrey,
-        altTag: "Travel Lamp Grey Image",
+        titleTag: "Travel Lamp Grey Edition",
+        altTag: "The Travel KosherLamp, grey edition. Small enough for travel while still bright enough to light up an entire room."
       },
       {
         id: "black",
         href: "https://www.kosherimage.com/cmd.php?pid=cd4dc5f4693e42f79a70913656236248",
         imgSrc: travelBlack,
-        altTag: "Travel Lamp Black Image",
+        titleTag: "Travel Lamp Black Edition",
+        altTag: "The Travel KosherLamp, black edition. Small enough for travel while still bright enough to light up an entire room."
       },
       {
         id: "brown",
         href: "https://www.kosherimage.com/cmd.php?pid=a4642f2f517f4c9ab9f6e356a749412c",
         imgSrc: travelBrown,
-        altTag: "Travel Lamp Brown Image",
+        titleTag: "Travel Lamp Brown Edition",
+        altTag: "The Travel KosherLamp, brown edition. Small enough for travel while still bright enough to light up an entire room."
       },
     ];
 
@@ -109,7 +113,8 @@ class travelCard extends React.Component {
     this.state = {
       href: "https://www.kosherimage.com/cmd.php?pid=0f59cbfeb19f4a47a417c0ae1c1c3d32", // Set the initial href for the add to cart button
       src: travelWhite,
-      alt: "Travel Lamp White Image",
+      title: "Travel Lamp White Edition",
+      alt: "The Travel KosherLamp, white edition. Small enough for travel while still bright enough to light up an entire room.",
     };
   }
 
@@ -119,6 +124,7 @@ class travelCard extends React.Component {
       href: item.href,
       src: item.imgSrc,
       alt: item.altTag,
+      title: item.titleTag
     });
   }
 
@@ -127,14 +133,14 @@ class travelCard extends React.Component {
       <>
         <div className="card">
           <div className="imgBox">
-            <img src={this.state.src} alt={this.state.alt}></img>
-            <h1>Travel Lamp</h1>
+            <img src={this.state.src} alt={this.state.alt} title={this.state.title}></img>
+            <h1 title={this.state.title}>Travel Lamp</h1>
           </div>
           <div className="content">
             <h3>Click On A Color</h3>
             <div className="color">{this.divs}</div>
             <div className="flex-box">
-              <a className="travel-cart" href={this.state.href}>
+              <a className="travel-cart" href={this.state.href} title={`add ${this.state.title} to cart`}>
                 Add To Cart
               </a>
               <BasicModal />

@@ -66,25 +66,29 @@ class ShisselCard extends React.Component {
         id: "blue",
         href: "https://www.kosherimage.com/cmd.php?pid=1e2781d9e9db40d995552a7c7939c2ea",
         imgSrc: shisselBlue,
-        altTag: "Blue Smart Shissel",
+        titleTag: "Blue Smart Shissel",
+        altTag: "The Smart Shissel, blue edition. The smart way to wash Negel Vasser in the morning",
       },
       // {
       //   id: "grey",
       //   href: "https://www.kosherimage.com/cmd.php?pid=d25a71ec1a704649ba40277dc6cb11a2",
       //   imgSrc: shisselGrey,
-      //   altTag: "Grey Smart Shissel",
+      //   titleTag: "Grey Smart Shissel",
+      //   altTag: "The Smart Shissel, grey edition. The smart way to wash Negel Vasser in the morning",
       // },
       {
         id: "beige",
         href: "https://www.kosherimage.com/cmd.php?pid=88e6be0e4e2b4b248b2745ce1fbf2e4e",
         imgSrc: shisselBeige,
-        altTag: "Beige Smart Shissel",
+        titleTag: "Beige Smart Shissel",
+        altTag: "The Smart Shissel, beige edition. The smart way to wash Negel Vasser in the morning",
       },
       {
         id: "pink",
         href: "https://www.kosherimage.com/cmd.php?pid=4f01e79e0dd448b382ea6f4ee330de82",
         imgSrc: shisselPink,
-        altTag: "Pink Smart Shissel",
+        titleTag: "Pink Smart Shissel",
+        altTag: "The Smart Shissel, pink edition. The smart way to wash Negel Vasser in the morning",
       },
     ];
 
@@ -103,7 +107,8 @@ class ShisselCard extends React.Component {
     this.state = {
       href: "https://www.kosherimage.com/cmd.php?pid=1e2781d9e9db40d995552a7c7939c2ea", // Set the initial href for the add to cart button
       src: shisselBlue,
-      alt: "Blue Smart Shissel",
+      title: "Blue Smart Shissel",
+      alt: "The Smart Shissel, blue edition. The smart way to wash Negel Vasser in the morning"
     };
   }
 
@@ -113,6 +118,7 @@ class ShisselCard extends React.Component {
       href: item.href,
       src: item.imgSrc,
       alt: item.altTag,
+      title: item.titleTag,
     });
   }
 
@@ -121,14 +127,14 @@ class ShisselCard extends React.Component {
       <>
         <div className="card">
           <div className="imgBox">
-            <img src={this.state.src} alt={this.state.alt}></img>
-            <h1>Smart Shissel</h1>
+            <img src={this.state.src} alt={this.state.alt} title={this.state.title}></img>
+            <h1 title={this.state.title}>Smart Shissel</h1>
           </div>
           <div className="content">
             <h3>Click On A Color</h3>
             <div className="color">{this.divs}</div>
             <div className="flex-box">
-            <a className="kmax-cart" href={this.state.href}>
+            <a className="kmax-cart" href={this.state.href} title={`add ${this.state.title} to cart`}>
               Add To Cart
             </a>< BasicModal /></div>
           </div>
