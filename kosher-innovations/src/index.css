@@ -106,7 +106,7 @@ section .card {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgb(255, 255, 255, 0.1);
+  background: rgb(255, 255, 255, 0);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   transition: 0.5s ease-in-out;
@@ -219,6 +219,10 @@ section .card .content .type .type-picker:hover {
   background: #68b984;
 }
 
+#travel-card-img {
+  height: 175px;
+}
+
 #kmax-steel,
 #travel-grey,
 #shissel-grey {
@@ -285,7 +289,7 @@ section .card .content .type .type-picker:hover {
 }
 
 #kosher-clock {
-  height: 150px;
+  height: 100px;
 }
 
 section .card .content a {

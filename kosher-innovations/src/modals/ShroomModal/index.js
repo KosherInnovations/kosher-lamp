@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -14,8 +14,8 @@ const style = {
   p: 4,
 };
 
-const BasicModal = () => {
-  const [open, setOpen] = React.useState(false);
+const ShroomModal = () => {
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -53,4 +53,4 @@ const BasicModal = () => {
 };
 
 
-export default BasicModal;
+export default ShroomModal;

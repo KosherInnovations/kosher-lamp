@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -15,7 +15,7 @@ const style = {
 };
 
 const BasicModal = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -35,22 +35,26 @@ const BasicModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            KosherLamp MAX Info (USA only)
+            Bug Checker MAX Info
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>LED bulbs, energy efficient, new design, easy twist
-            technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha. It's convenient and easy.
+            A portable light board. It shines through the leaves but not the bugs.
+            Bug Checker MAX is a steady, bright light - perfect for examining
+            produce for insects. This makes it easy to check a variety of fresh
+            produce such as lettuces, herbs and other leafy vegetables. The
+            bright light illuminates the leaves and makes any insects appear as
+            dark spots. They're much easier to spot when the leaf is lit up.<br></br><br></br>You
+            don't have to avoid the fresh vegetable section of your supermarket
+            any longer. Now you can have really great salads, prepare more
+            interesting dishes, and up your vitamin intake. A great way to check
+            veggies quickly and thoroughly adhering to the highest kosher
+            standards as recommended by the Orthodox Union. Check carefully,
+            Check comfortably, Check confidently.
           </Typography>
         </Box>
       </Modal>
     </>
   );
 };
-
 
 export default BasicModal;

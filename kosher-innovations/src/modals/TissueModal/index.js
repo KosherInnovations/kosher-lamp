@@ -14,7 +14,7 @@ const style = {
   p: 4,
 };
 
-const FridgeezModal = () => {
+const TissueModal = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -52,4 +52,4 @@ const FridgeezModal = () => {
   );
 };
 
-export default FridgeezModal;
+export default TissueModal;

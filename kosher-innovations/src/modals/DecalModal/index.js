@@ -14,7 +14,7 @@ const style = {
   p: 4,
 };
 
-const FridgeezModal = () => {
+const DecalModal = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -25,8 +25,9 @@ const FridgeezModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="button to open info about KosherLamp Travel"
       ></img>
+
       <Modal
         open={open}
         onClose={handleClose}
@@ -35,16 +36,21 @@ const FridgeezModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            KosherLamp MAX Info (USA only)
+            Travel KosherLamp Info (USA only)
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>LED bulbs, energy efficient, new design, easy twist
-            technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha. It's convenient and easy.
+            Designed for use at home or across the World. Small size, bright
+            light. Take Travel KosherLamp with you wherever you go. A simple
+            twist reveals or hides the light on this modern travel size lamp.
+            Small enough for travel while still bright enough to light up an
+            entire room. It's small enough to fit in a carry-on bag or backpack
+            and can even be used for international travel thanks to its
+            universal AC/DC power adapter.<br></br>
+            <br></br>To keep the Travel KosherLamp steady, the bottom has been
+            fitted with non slip rubber pads. Just 1.5lbs (including
+            accessories). Comes with AC/DC Power Adapter, Plug Adapter, & Travel
+            Bag. Travel KosherLamp in its closed position, is less than half the
+            height of the KosherLamp MAX? Now that's convenient!
           </Typography>
         </Box>
       </Modal>
@@ -52,4 +58,4 @@ const FridgeezModal = () => {
   );
 };
 
-export default FridgeezModal;
+export default DecalModal;
