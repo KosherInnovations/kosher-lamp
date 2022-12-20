@@ -34,10 +34,10 @@ const KC3Modal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             KosherClock
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Can be used for Weekdays, Shabbos, Yom Tov, & Travel. Set different
             alarms, for different times, for different days!<br></br>
             <br></br> Features - <br></br>Weekday mode: 10 alarms 2 alarm

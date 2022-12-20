@@ -34,10 +34,10 @@ const KmaxModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             KosherLamp MAX Info
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             KosherLamp MAX means the most light with a bigger window. A simple
             twist reveals or hides the light on this innovative reading lamp.
             It's a practical and innovative idea that's perfect in any room Now

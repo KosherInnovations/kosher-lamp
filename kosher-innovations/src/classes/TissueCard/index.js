@@ -52,7 +52,6 @@ class TissueCard extends React.Component {
       href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=e1d76dfe33f242e9a17e2dd45837ed11", // Set the initial href for the add to cart button
       title: "Shabbos Tissue Trial Pack | 1 x 8",
       alt: "The Shabbos Tissue, trial pack, the bathroom tissue made for use on Shabbos and Yom Tov, and is in accordance with Halacha",
-
     };
   }
 
@@ -69,12 +68,14 @@ class TissueCard extends React.Component {
     return (
       <div className="card">
         <div className="imgBox">
+          <header>
+            <h1 title={this.state.title}>Shabbos Bathroom Tissue</h1>
+          </header>
           <img
             src={tissueImg}
             alt={this.state.alt}
             title={this.state.title}
           ></img>
-          <h1 title={this.state.title}>Shabbos Bathroom Tissue</h1>
         </div>
         <div className="content">
           <h3>Click On A Type</h3>

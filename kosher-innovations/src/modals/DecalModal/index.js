@@ -35,10 +35,10 @@ const DecalModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             Jewish Wall Decals
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Decorate your walls High quality vinyl Decals that can be placed on
             your walls and repositioned without damaging the walls. These
             colorful decals are a perfect way to express your creativity and

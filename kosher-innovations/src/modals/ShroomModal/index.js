@@ -34,10 +34,10 @@ const ShroomModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             Mushroom KosherLamp
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Raise or lower the mushroom cap to hide the light or let it shine.
             Just like the original KosherLamps, you can adjust the light until
             it's just right. Enough light to light up the bedroom, the Mushroom

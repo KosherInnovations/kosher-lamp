@@ -7,12 +7,14 @@ const About = () => {
     <section id="about">
       {/* <img id="ki-logo" src={kiLogo} alt="kosher innovations logo"></img> */}
       <div id="about-us">
-        <h1>
-          <span>
-            Kosher<br></br>Innovations
-          </span>
-          <br></br>The KosherLamp People
-        </h1>
+        <header>
+          <h1>
+            <span>
+              Kosher<br></br>Innovations
+            </span>
+            <br></br>The KosherLamp People
+          </h1>
+        </header>
         <h3>Who We Are</h3>
         <img className="down-arrow" src={downArrow} alt="down arrow"></img>
       </div>

@@ -34,10 +34,10 @@ const GlovesModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             Shabbos Scrub Gloves
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Shabbos Scrub Gloves are composed of super durable silicone that
             protects your hands from cold water and harsh chemicals when washing
             your dishes. Featuring innovative bristles on the fingers and palm

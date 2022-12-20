@@ -32,7 +32,8 @@ class DecalCard extends React.Component {
         heading: "Mitzvah Train",
         imgSrc: mitzvahTrain,
         titleTag: "Mitzvah Train Decal",
-        altTag: "The Mitzvah Train Wall Decal, a fun way to decorate your walls",
+        altTag:
+          "The Mitzvah Train Wall Decal, a fun way to decorate your walls",
       },
     ];
 
@@ -70,24 +71,32 @@ class DecalCard extends React.Component {
 
   render() {
     return (
-      <>
-        <div className="card">
-          <div className="imgBox">
-            <img src={this.state.src} alt={this.state.alt} title={this.state.title}></img>
+      <div className="card">
+        <div className="imgBox">
+          <header>
             <h1 title={this.state.title}>Jewish Wall Decals</h1>
-          </div>
-          <div className="content">
-            <h3>Click On A Type</h3>
-            <div className="type">{this.divs}</div>
-            <div className="flex-box">
-              <a className="decal-cart" href={this.state.href} title={`add ${this.state.title} to cart`}>
-                Add To Cart
-              </a>
-              <DecalModal />
-            </div>
+          </header>
+          <img
+            src={this.state.src}
+            alt={this.state.alt}
+            title={this.state.title}
+          ></img>
+        </div>
+        <div className="content">
+          <h3>Click On A Type</h3>
+          <div className="type">{this.divs}</div>
+          <div className="flex-box">
+            <a
+              className="decal-cart"
+              href={this.state.href}
+              title={`add ${this.state.title} to cart`}
+            >
+              Add To Cart
+            </a>
+            <DecalModal />
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

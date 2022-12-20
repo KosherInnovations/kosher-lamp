@@ -34,10 +34,10 @@ const BasicModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             Bug Checker MAX Info
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             A portable light board. It shines through the leaves but not the bugs.
             Bug Checker MAX is a steady, bright light - perfect for examining
             produce for insects. This makes it easy to check a variety of fresh

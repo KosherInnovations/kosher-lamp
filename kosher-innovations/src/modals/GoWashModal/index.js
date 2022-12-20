@@ -34,10 +34,10 @@ const GoWashModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             Go Wash (Portable washing cup)
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             The Collapsible Washing Cup. Made of sturdy silicone, this handy
             travel accessory is designed to hold the halachically required
             amount of water. Small enough to fit in a purse, hand bag and many

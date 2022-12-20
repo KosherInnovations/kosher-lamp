@@ -34,10 +34,10 @@ const TissueModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             Shabbos Bathroom Tissue
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Easy and convenient. Halachically permissible, Real pre-cut toilet
             paper in a unique box. No tearing! Hangs on any roll-holder! Now
             softer, stronger and with beautiful nature-themed boxes. Comes in

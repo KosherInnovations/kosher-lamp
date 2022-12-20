@@ -34,10 +34,10 @@ const FridgeezModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             Fridg-eez
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Kosher Fridg-eez holds down your fridge or freezer light switch
             during Shabbos or Yom Tov. We all need a way to keep the light off
             during Shabbos or Yom Tov, that is what the Kosher Fridg-eez is for.

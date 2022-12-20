@@ -35,10 +35,10 @@ const TravelModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" component="h3">
             Travel KosherLamp Info
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Designed for use at home or across the World. Small size, bright
             light. Take Travel KosherLamp with you wherever you go. A simple
             twist reveals or hides the light on this modern travel size lamp.
