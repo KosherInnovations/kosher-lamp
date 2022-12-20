@@ -25,7 +25,7 @@ const WeekToothModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="button to open info about Uncle Moishy Weekday Toothbrush"
       ></img>
       <Modal
         open={open}
@@ -35,16 +35,15 @@ const WeekToothModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            KosherLamp MAX Info (USA only)
+            Uncle Moishy Weekday Toothbrush
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>LED bulbs, energy efficient, new design, easy twist
-            technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha. It's convenient and easy.
+            Uncle Moishy Weekday Toothbrush is a fun way to promote oral hygiene
+            for children between the ages of 2 and 9. These bright toothbrushes
+            come packed together in a colorful and affordable 4-pack.<br></br>
+            <br></br>The 4 pack includes a Yellow, Red, Green, & Blue. Cushioned
+            brush head protects tender gums. The attached tongue cleaner is
+            designed to promote fresh breath
           </Typography>
         </Box>
       </Modal>

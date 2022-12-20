@@ -25,7 +25,7 @@ const FridgeezModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="button to open info about Kosher Fridg-eez"
       ></img>
       <Modal
         open={open}

@@ -25,7 +25,7 @@ const ShisselModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="button to open info about Smart Shissel"
       ></img>
       <Modal
         open={open}

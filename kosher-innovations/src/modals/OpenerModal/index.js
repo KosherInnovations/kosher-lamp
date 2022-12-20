@@ -25,7 +25,7 @@ const OpenerModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="button to open info about Shabbos Bottle Opener"
       ></img>
       <Modal
         open={open}
@@ -35,7 +35,7 @@ const OpenerModal = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Shabbos Botle Opener
+            Shabbos Bottle Opener
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Open plastic soda and seltzer bottles on Shabbos and Yom Tov. This

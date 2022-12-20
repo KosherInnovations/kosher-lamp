@@ -25,7 +25,7 @@ const GoWashModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="button to open info about Go Wash"
       ></img>
       <Modal
         open={open}

@@ -25,7 +25,7 @@ const TissueModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="button to open info about Shabbos Bathroom Tissue"
       ></img>
       <Modal
         open={open}
