@@ -72,9 +72,6 @@ nav ul li a .shopping-cart {
 main {
   width: 100%;
   min-height: 100vh;
-  /* background: url("resources/light-bg.jpg");
-  background-size: cover;
-  background-position: 50%; */
   background: #ffffff;
 }
 
@@ -93,8 +90,11 @@ section {
 /* card section */
 
 #cards {
-  /* background: url("resources/grey-spotted-bg.jpg"); */
-  background: url("resources/grey-painted-bg.webp");
+  /* background: url("resources/purple-cloud-bg.jpg"); */
+  /* background: url("resources/light-bg.jpg"); */
+  /* background: url("resources/splatter-painted-bg.jpg"); */
+  /* background: url("resources/water-colour-bg.jpg"); */
+  background: url("resources/textured-painted-bg.webp");
 }
 
 section .card {
@@ -146,7 +146,7 @@ section .card:hover .imgBox img {
 }
 
 section .card .imgBox h1 {
-  color: #ffffff;
+  color: #000000;
   font-weight: 600;
   text-align: center;
 }
@@ -181,7 +181,7 @@ section .card .content .type {
 }
 
 section .card .content h3 {
-  color: #ffffff;
+  color: #000000;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
@@ -238,7 +238,8 @@ section .card .content .type .type-picker:hover {
 #gloves-blue,
 #shissel-blue,
 #shabtooth-blue,
-#weektooth-blue, #shroom-blue {
+#weektooth-blue,
+#shroom-blue {
   background: #090b88;
 }
 #kmax-bronze {
@@ -261,13 +262,15 @@ section .card .content .type .type-picker:hover {
 }
 
 #kmax-pink,
-#shissel-pink, #shroom-pink {
+#shissel-pink,
+#shroom-pink {
   background: #f199d7;
 }
 
 #gloves-red,
 #shabtooth-red,
-#weektooth-red, #shroom-red {
+#weektooth-red,
+#shroom-red {
   background: #fd0505;
 }
 
@@ -284,7 +287,8 @@ section .card .content .type .type-picker:hover {
   background: #dfd80f;
 }
 
-#kmax-green, #weektooth-green {
+#kmax-green,
+#weektooth-green {
   background: rgb(37, 198, 12);
 }
 
@@ -336,7 +340,7 @@ section .card .content .flex-box {
   color: #ffffff;
   border: none;
   text-align: justify;
-} 
+}
 
 .info-btn {
   width: 35px;
@@ -344,7 +348,8 @@ section .card .content .flex-box {
 
 /* carousel styling */
 
-h3, h4 {
+h3,
+h4 {
   width: 100%;
   text-align: center;
   font-size: 26px;
@@ -422,8 +427,6 @@ h5 {
   color: #ffffff;
 }
 
-
 .down-arrow {
   width: 85px;
 }
-
