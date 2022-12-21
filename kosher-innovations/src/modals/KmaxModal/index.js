@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import KmaxCarousel from "../../carousels/KmaxCarousel";
@@ -35,10 +34,10 @@ const KmaxModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             KosherLamp MAX Info
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -50,7 +49,7 @@ const KmaxModal = () => {
             LED bulbs, energy efficient, new design, easy twist
             technology, beautiful colours, easy to use thumb-switch, and can be
             used on Shabbos according to halacha. It's convenient and easy.
-          </Typography>
+          </p>
           <KmaxCarousel />
         </Box>
       </Modal>

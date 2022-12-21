@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import DecalCarousel from "../../carousels/DecalCarousel";
@@ -36,10 +35,10 @@ const DecalModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Jewish Wall Decals
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -54,7 +53,7 @@ const DecalModal = () => {
             and Re-apply anytime. Bring meaning into your home. Show your love
             for Jewish values in your decor. Jewish Wall Decals fuse tradition
             with beautiful designs, highlighting your uniqueness.
-          </Typography>
+          </p>
           <DecalCarousel />
         </Box>
       </Modal>

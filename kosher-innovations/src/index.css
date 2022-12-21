@@ -1,3 +1,7 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Josefin+Sans:ital@1&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Josefin+Sans:ital@1&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -54,6 +58,7 @@ nav ul {
 nav ul li {
   padding: 0 10px;
   font-size: 22px;
+  font-family: 'Cinzel', serif;
 }
 
 nav ul li:last-child {
@@ -147,8 +152,10 @@ section .card:hover .imgBox img {
 
 section .card .imgBox h1 {
   color: #000000;
-  font-weight: 600;
   text-align: center;
+  font-family: "Cinzel", serif;
+  letter-spacing: 1.2px;
+  line-height: 1;
 }
 
 section .card .content {
@@ -183,7 +190,8 @@ section .card .content .type {
 section .card .content h3 {
   color: #000000;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -301,12 +309,13 @@ section .card .content a {
   padding: 12px 30px;
   background: #fff;
   border-radius: 40px;
-  font-weight: 600;
+  font-family: "Cinzel", serif;
   letter-spacing: 1px;
   color: #111;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
+  letter-spacing: 1.5px;
 }
 
 section .card .content .flex-box-products-page {
@@ -342,11 +351,23 @@ section .card .content .flex-box {
   text-align: justify;
 }
 
+.MuiBox-root p {
+  padding-top: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
 .info-btn {
   width: 35px;
 }
 
 /* carousel styling */
+
+h3 {
+  font-family: 'Cinzel', serif;
+}
 
 h3,
 h4 {
@@ -354,15 +375,25 @@ h4 {
   text-align: center;
   font-size: 26px;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 h4 {
   padding-top: 10px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h5 {
   padding: 10px 0 0;
   font-size: 16px;
+}
+
+h5 q {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h5 cite {
+  font-family: "Cinzel", serif;
 }
 
 .carousel-box {

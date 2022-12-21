@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import KosherClockCarousel from "../../carousels/KosherClockCarousel";
@@ -35,10 +34,10 @@ const KC3Modal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             KosherClock
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -51,7 +50,7 @@ const KC3Modal = () => {
             minute set multiple alarms to ring 5 minutes apart to act like a
             snooze feature Travel mode: Screen & buttons are protected slim &
             compact for travel
-          </Typography>
+          </p>
           <KosherClockCarousel />
         </Box>
       </Modal>

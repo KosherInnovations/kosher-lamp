@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import BugCheckerCarousel from "../../carousels/BugCheckerCarousel";
@@ -35,10 +34,10 @@ const BasicModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Bug Checker MAX Info
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -56,7 +55,7 @@ const BasicModal = () => {
             way to check veggies quickly and thoroughly adhering to the highest
             kosher standards as recommended by the Orthodox Union. Check
             carefully, Check comfortably, Check confidently.
-          </Typography>
+          </p>
           <BugCheckerCarousel />
         </Box>
       </Modal>

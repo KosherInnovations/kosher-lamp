@@ -1,6 +1,7 @@
 import * as React from "react";
 import TissueModal from "../../modals/TissueModal";
 import tissueImg from "../../resources/tissue/tissue.png";
+// import twoBoxesImg from "../../resources/tissue/twoBoxes.png";
 
 class TissueCard extends React.Component {
   constructor(props) {

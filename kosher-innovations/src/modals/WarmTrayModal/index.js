@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import WarmTrayCarousel from "../../carousels/WarmTrayCarousel";
@@ -35,10 +34,10 @@ const BasicModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Shabbos Safe Warming Tray (TechYidCo)
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -59,7 +58,7 @@ const BasicModal = () => {
             and Energy Efficient Approved by All Halachic Standards for Shabbos
             and Yom Tov Use Can be Kashered for Pesach (please consult your
             local Rabbi or Halachic Authority).
-          </Typography>
+          </p>
           <WarmTrayCarousel />
         </Box>
       </Modal>

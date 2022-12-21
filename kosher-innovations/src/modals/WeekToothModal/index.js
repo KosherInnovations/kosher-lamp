@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import WeekToothCarousel from "../../carousels/WeekToothCarousel";
@@ -35,10 +34,10 @@ const WeekToothModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Uncle Moishy Weekday Toothbrush
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -49,7 +48,7 @@ const WeekToothModal = () => {
             <br></br>The 4 pack includes a Yellow, Red, Green, & Blue. Cushioned
             brush head protects tender gums. The attached tongue cleaner is
             designed to promote fresh breath
-          </Typography>
+          </p>
           <WeekToothCarousel />
         </Box>
       </Modal>

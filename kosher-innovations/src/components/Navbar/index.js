@@ -6,13 +6,31 @@ const Navbar = (props) => {
 
   return (
     <ul>
-      <li className="nav-link" onClick={() => setCurrentPage(pages[0])}>
+      <li
+        className="nav-link"
+        onClick={() => setCurrentPage(pages[0])}
+        title="Shop Our Products"
+        rel="noopener noreferrer"
+        tabIndex="0"
+      >
         Products
       </li>
-      <li className="nav-link" onClick={() => setCurrentPage(pages[1])}>
+      <li
+        className="nav-link"
+        onClick={() => setCurrentPage(pages[1])}
+        title="Learn More About Our Company"
+        rel="noopener noreferrer"
+        tabIndex="0"
+      >
         About
       </li>
-      <li className="nav-link" onClick={() => setCurrentPage(pages[2])}>
+      <li
+        className="nav-link"
+        onClick={() => setCurrentPage(pages[2])}
+        title="Get in Touch with Us"
+        rel="noopener noreferrer"
+        tabIndex="0"
+      >
         Contact
       </li>
       <li>
@@ -20,7 +38,9 @@ const Navbar = (props) => {
           <img
             src={shoppingCart}
             className="shopping-cart"
-            alt="shopping cart"
+            alt="go to your shopping cart"
+            rel="nofollow noopener noreferrer"
+            tabIndex="0"
           />
         </a>
       </li>

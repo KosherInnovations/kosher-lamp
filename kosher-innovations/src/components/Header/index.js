@@ -10,7 +10,7 @@ const Header = (props) => {
             <img
               src={logo}
               className="navigation-logo"
-              alt="navigation logo"
+              alt="home button"
             />
           </a>
           {props.children}

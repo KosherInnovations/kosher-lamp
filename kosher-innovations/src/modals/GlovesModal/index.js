@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 
@@ -34,18 +33,23 @@ const GlovesModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Shabbos Scrub Gloves
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          </h3>
+          <p
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             Shabbos Scrub Gloves are composed of super durable silicone that
             protects your hands from cold water and harsh chemicals when washing
             your dishes. Featuring innovative bristles on the fingers and palm
-            which makes scrubbing a breeze.<br></br><br></br>These gloves are approved by
-            rabbinic authorities and are highly recommended for use on Shabbos,
-            Yom Tov & anytime. Please Consult With Your Personal Rov For The
-            Halachos Of Washing Dishes On Shabbos And Yom Tov.
-          </Typography>
+            which makes scrubbing a breeze.<br></br>
+            <br></br>These gloves are approved by rabbinic authorities and are
+            highly recommended for use on Shabbos, Yom Tov & anytime. Please
+            Consult With Your Personal Rov For The Halachos Of Washing Dishes On
+            Shabbos And Yom Tov.
+          </p>
         </Box>
       </Modal>
     </>

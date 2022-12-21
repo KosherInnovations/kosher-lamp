@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import TissueCarousel from "../../carousels/TissueCarousel";
@@ -35,10 +34,10 @@ const TissueModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Shabbos Bathroom Tissue
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -49,7 +48,7 @@ const TissueModal = () => {
             Blue, Gold, Purple, & Brown<br></br>
             <br></br> Includes: 120 sheets of 2 ply tissues per box Unique box
             that dispenses sheets and hangs from roll holder
-          </Typography>
+          </p>
           <TissueCarousel />
         </Box>
       </Modal>

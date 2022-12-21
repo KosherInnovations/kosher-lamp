@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import GoWashCarousel from "../../carousels/GoWashCarousel";
@@ -35,10 +34,10 @@ const GoWashModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Go Wash (Portable washing cup)
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -51,7 +50,7 @@ const GoWashModal = () => {
             can take it wherever you go. Highly durable & made of sturdy,
             flexible silicone so you don't have to worry about it breaking from
             being dropped or being squished by heavy items in your travel bag.
-          </Typography>
+          </p>
           <GoWashCarousel />
         </Box>
       </Modal>

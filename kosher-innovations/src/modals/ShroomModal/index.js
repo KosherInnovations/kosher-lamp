@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import ShroomCarousel from "../../carousels/ShroomCarousel";
@@ -35,10 +34,10 @@ const ShroomModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Mushroom KosherLamp
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -56,7 +55,7 @@ const ShroomModal = () => {
             vibrant color to forest scenery but are not meant for human
             consumption. Many artists like to add amanita mushrooms to
             illustrations in children's books since they are so decorative.
-          </Typography>
+          </p>
           <ShroomCarousel />
         </Box>
       </Modal>

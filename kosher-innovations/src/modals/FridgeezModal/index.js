@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import FridgeezCarousel from "../../carousels/FridgeezCarousel";
@@ -35,10 +34,10 @@ const FridgeezModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Fridg-eez
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -56,7 +55,7 @@ const FridgeezModal = () => {
             velcro strips -1 large velcro strip with sturdy pull-tab Why use
             Kosher Fridg-eez™? It comes ready to use Efficient Convenient
             Inexpensive Easy to use Reliable quality
-          </Typography>
+          </p>
           < FridgeezCarousel />
         </Box>
       </Modal>

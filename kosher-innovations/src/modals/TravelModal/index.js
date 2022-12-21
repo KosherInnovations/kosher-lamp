@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import TravelCarousel from "../../carousels/TravelCarousel"
@@ -36,10 +35,10 @@ const TravelModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 id="modal-modal-title" variant="h6" component="h3">
             Travel KosherLamp Info
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          </h3>
+          <p id="modal-modal-description" sx={{ mt: 2 }}>
             Designed for use at home or across the World. Small size, bright
             light. Take Travel KosherLamp with you wherever you go. A simple
             twist reveals or hides the light on this modern travel size lamp.
@@ -52,7 +51,7 @@ const TravelModal = () => {
             accessories). Comes with AC/DC Power Adapter, Plug Adapter, & Travel
             Bag. Travel KosherLamp in its closed position, is less than half the
             height of the KosherLamp MAX? Now that's convenient!
-          </Typography>
+          </p>
           < TravelCarousel />
         </Box>
       </Modal>

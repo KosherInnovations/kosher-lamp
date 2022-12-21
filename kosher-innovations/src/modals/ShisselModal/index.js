@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import ShisselCarousel from "../../carousels/ShisselCarousel";
@@ -35,10 +34,10 @@ const ShisselModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Smart Shissel
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -53,7 +52,7 @@ const ShisselModal = () => {
             children won’t be able to play in used water. Children can’t spill
             water all over themselves, the carpet, the furniture, or dunk their
             toys in it.
-          </Typography>
+          </p>
           <ShisselCarousel />
         </Box>
       </Modal>

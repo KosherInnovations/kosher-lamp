@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
 import ShabToothCarousel from "../../carousels/ShabToothCarousel";
@@ -35,10 +34,10 @@ const ShabtoothModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+          <h3 variant="h6" component="h3">
             Shabbos Toothbrush
-          </Typography>
-          <Typography
+          </h3>
+          <p
             id="modal-modal-description"
             sx={{ mt: 2 }}
             component="h4"
@@ -51,7 +50,7 @@ const ShabtoothModal = () => {
             <br></br>*Permissible for use with liquid mouthwash.<br></br>
             Features: Soft Latex rubber "bristles" won't make gums bleed Widely
             spaced "bristles" won't squeeze liquid
-          </Typography>
+          </p>
           <ShabToothCarousel />
         </Box>
       </Modal>
