@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 body::-webkit-scrollbar {
@@ -20,7 +21,7 @@ li {
   list-style: none;
 }
 
-header {
+.navbar {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
   position: sticky;
@@ -74,7 +75,7 @@ main {
   /* background: url("resources/light-bg.jpg");
   background-size: cover;
   background-position: 50%; */
-  background: repeating-linear-gradient(45deg, #CDF0EA, #F9F9F9 100px);
+  background: #ffffff;
 }
 
 section {
@@ -91,6 +92,11 @@ section {
 
 /* card section */
 
+#cards {
+  /* background: url("resources/grey-spotted-bg.jpg"); */
+  background: url("resources/grey-painted-bg.webp");
+}
+
 section .card {
   position: relative;
   width: 300px;
@@ -100,10 +106,18 @@ section .card {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgb(255, 255, 255, 0.1);
+  background: rgb(255, 255, 255, 0);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   transition: 0.5s ease-in-out;
+}
+
+section .card:hover {
+  /* background: rgb(255, 255, 255, 0.3); */
+  box-shadow: 5px 5px 10px black;
+  /* width: 350px; */
+  height: 450px;
+  /* transform: scale(1.15); */
 }
 
 section .card .imgBox {
@@ -111,17 +125,9 @@ section .card .imgBox {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 20px;
   transition: 0.5s ease-in-out;
-}
-
-section .card:hover {
-  background: rgb(255, 255, 255, 0.3);
-  box-shadow: 5px 5px 10px black;
-  width: 350px;
-  height: 450px;
-  /* transform: scale(1.15); */
 }
 
 section .card:hover .imgBox {
@@ -140,7 +146,7 @@ section .card:hover .imgBox img {
 }
 
 section .card .imgBox h1 {
-  color: #000000;
+  color: #ffffff;
   font-weight: 600;
   text-align: center;
 }
@@ -175,7 +181,7 @@ section .card .content .type {
 }
 
 section .card .content h3 {
-  color: #000000;
+  color: #ffffff;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
@@ -211,6 +217,10 @@ section .card .content .type .type-picker {
 
 section .card .content .type .type-picker:hover {
   background: #68b984;
+}
+
+#travel-card-img {
+  height: 175px;
 }
 
 #kmax-steel,
@@ -274,13 +284,15 @@ section .card .content .type .type-picker:hover {
   background: #dfd80f;
 }
 
-#weektooth-green {
+#kmax-green, #weektooth-green {
   background: rgb(37, 198, 12);
 }
 
+#kosher-clock {
+  height: 100px;
+}
+
 section .card .content a {
-  position: relative;
-  top: 10px;
   display: inline-block;
   padding: 12px 30px;
   background: #fff;
@@ -293,28 +305,121 @@ section .card .content a {
   transition: 0.5s ease-in-out;
 }
 
+section .card .content .flex-box-products-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 25px;
+}
+
+section .card .content .flex-box {
+  position: relative;
+  top: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 25px;
+}
+
+/* modal styling */
+
+.css-1ciqza6 {
+  width: 50vw;
+  height: 80vh;
+  border-radius: 25px;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: none;
+  text-align: justify;
+} 
+
+.info-btn {
+  width: 35px;
+}
+
+/* carousel styling */
+
+h3, h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+h4 {
+  padding-top: 10px;
+}
+
+h5 {
+  padding: 10px 0 0;
+  font-size: 16px;
+}
+
+.carousel-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 140px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #000000;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+}
+
+.author {
+  position: absolute;
+  bottom: 27px;
+  width: 100%;
+}
+
+.btn-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 /* about section */
 
 #about {
   align-items: flex-start;
   justify-content: center;
+  background: #f51010;
+  padding-top: 0;
 }
+
+/* #ki-logo {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  width: 100%;
+  height: 50%;
+} */
 
 #about #about-us {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 #about h1 {
   text-align: center;
-  min-height: 100vh;
 }
 
 #about h1 span {
   font-size: 120px;
-  color: #f51010;
+  color: #ffffff;
 }
 
 

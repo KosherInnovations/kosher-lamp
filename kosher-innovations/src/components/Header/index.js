@@ -4,7 +4,7 @@ import logo from '../../resources/kosher_innovations_logo.png';
 const Header = (props) => {
   return (
     <>
-      <header>
+      <header className="navbar">
         <nav>
           <a href="/">
             <img
