@@ -342,6 +342,38 @@ section .card .content .flex-box {
   width: 35px;
 }
 
+/* carousel styling */
+
+h3, h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+h5 {
+  padding: 10px 0 0;
+  font-size: 16px;
+}
+
+.carousel-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 140px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+}
+
+.btn-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /* about section */
 
 #about {

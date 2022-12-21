@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import KmaxCarousel from "../../carousels/KmaxCarousel";
 
 const style = {
   position: "absolute",
@@ -37,15 +38,22 @@ const KmaxModal = () => {
           <Typography id="modal-modal-title" variant="h6" component="h3">
             KosherLamp MAX Info
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             KosherLamp MAX means the most light with a bigger window. A simple
             twist reveals or hides the light on this innovative reading lamp.
             It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>LED bulbs, energy efficient, new design, easy twist
+            you'll have even more light to read on Shabbos!<br></br><br></br>
+            LED bulbs, energy efficient, new design, easy twist
             technology, beautiful colours, easy to use thumb-switch, and can be
             used on Shabbos according to halacha. It's convenient and easy.
           </Typography>
+          <br></br>
+          <br></br>
+          <KmaxCarousel />
         </Box>
       </Modal>
     </>
