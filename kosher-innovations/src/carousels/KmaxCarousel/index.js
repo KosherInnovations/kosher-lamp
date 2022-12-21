@@ -44,7 +44,7 @@ const KmaxCarousel = () => {
     <Box className="carousel-box">
       <h4>Reviews</h4>
       <h5>{testimonials[index].text}</h5>
-      <h5>{testimonials[index].author}</h5>
+      <h5 className="author">{testimonials[index].author}</h5>
       <div className="btn-box">
         <Button onClick={handlePrev}>Prev</Button>
         <Button onClick={handleNext}>Next</Button>

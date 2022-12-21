@@ -1,7 +1,7 @@
 import * as React from "react";
 import ShisselModal from "../../modals/ShisselModal";
 import shisselBlue from "../../resources/smart-shissel/blue-shissel.png";
-// import shisselGrey from "../../resources/smart-shissel/grey-shissel.png";
+import shisselGrey from "../../resources/smart-shissel/grey-shissel.png";
 import shisselBeige from "../../resources/smart-shissel/beige-shissel.png";
 import shisselPink from "../../resources/smart-shissel/pink-shissel.png";
 
@@ -19,13 +19,13 @@ class ShisselCard extends React.Component {
         altTag:
           "The Smart Shissel, blue edition. The smart way to wash Negel Vasser in the morning",
       },
-      // {
-      //   id: "grey",
-      //   href: "https://www.kosherimage.com/cmd.php?pid=d25a71ec1a704649ba40277dc6cb11a2",
-      //   imgSrc: shisselGrey,
-      //   titleTag: "Grey Smart Shissel",
-      //   altTag: "The Smart Shissel, grey edition. The smart way to wash Negel Vasser in the morning",
-      // },
+      {
+        id: "grey",
+        href: "https://www.kosherimage.com/cmd.php?pid=d25a71ec1a704649ba40277dc6cb11a2",
+        imgSrc: shisselGrey,
+        titleTag: "Grey Smart Shissel",
+        altTag: "The Smart Shissel, grey edition. The smart way to wash Negel Vasser in the morning",
+      },
       {
         id: "beige",
         href: "https://www.kosherimage.com/cmd.php?pid=88e6be0e4e2b4b248b2745ce1fbf2e4e",
