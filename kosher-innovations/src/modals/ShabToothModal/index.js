@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ShabToothCarousel from "../../carousels/ShabToothCarousel";
 
 const style = {
   position: "absolute",
@@ -37,16 +38,21 @@ const ShabtoothModal = () => {
           <Typography id="modal-modal-title" variant="h6" component="h3">
             Shabbos Toothbrush
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             Brush your teeth on Shabbos with these halachically approved special
             Toothbrushes! 4 pack comes with Red, Yellow, Purple and Blue.
             Shabbos Toothbrush™ ensures that melachos are avoided (Sechitah,
             Chavalah, Memareach and Uvdin D'Chol), allowing you to brush your
             teeth on Shabbos according to all opinions.<br></br>
-            <br></br>*Permissible for use with liquid mouthwash.<br></br>Features: Soft
-            Latex rubber "bristles" won't make gums bleed Widely spaced
-            "bristles" won't squeeze liquid
+            <br></br>*Permissible for use with liquid mouthwash.<br></br>
+            Features: Soft Latex rubber "bristles" won't make gums bleed Widely
+            spaced "bristles" won't squeeze liquid
           </Typography>
+          <ShabToothCarousel />
         </Box>
       </Modal>
     </>

@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-// import Typography from "@mui/material/Typography";
 
-const KmaxCarousel = () => {
+const BugCheckerCarousel = () => {
   const [index, setIndex] = useState(0);
 
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the KosherLamp MAX! It's so convenient and easy to use.",
+      text: "I love the Bug Checker! It's so convenient and easy to use.",
       author: "Sarah",
     },
     {
-      text: "The KosherLamp MAX has really improved my Shabbos reading experience.",
+      text: "The Bug Checker has really improved my Shabbos reading experience.",
       author: "David",
     },
     {
-      text: "I love the sleek design of the KosherLamp MAX. It's the perfect addition to my home.",
+      text: "I love the sleek design of the Bug Checker. It's the perfect addition to my home.",
       author: "Rachel",
     },
   ];
@@ -53,4 +52,4 @@ const KmaxCarousel = () => {
   );
 };
 
-export default KmaxCarousel;
+export default BugCheckerCarousel;

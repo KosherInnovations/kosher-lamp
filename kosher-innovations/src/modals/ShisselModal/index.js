@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ShisselCarousel from "../../carousels/ShisselCarousel";
 
 const style = {
   position: "absolute",
@@ -37,17 +38,23 @@ const ShisselModal = () => {
           <Typography id="modal-modal-title" variant="h6" component="h3">
             Smart Shissel
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             A spill resistant Negel Vasser Bowl. The Smart Shissel has a one way
             drain that traps water inside, leaving it covered and spill proof.
             Tomei water is fully covered after washing. Carry the bowl without
-            spilling. If tipped upside down, water remains in inner bowl. Open the
-            plug to pour out used water.<br></br><br></br>Encourage your children to wash without
-            worrying about spills or mess. After washing, water flows to the
-            lower bowl and children won’t be able to play in used water. Children can’t
-            spill water all over themselves, the carpet, the furniture, or dunk
-            their toys in it.
+            spilling. If tipped upside down, water remains in inner bowl. Open
+            the plug to pour out used water.<br></br>
+            <br></br>Encourage your children to wash without worrying about
+            spills or mess. After washing, water flows to the lower bowl and
+            children won’t be able to play in used water. Children can’t spill
+            water all over themselves, the carpet, the furniture, or dunk their
+            toys in it.
           </Typography>
+          <ShisselCarousel />
         </Box>
       </Modal>
     </>

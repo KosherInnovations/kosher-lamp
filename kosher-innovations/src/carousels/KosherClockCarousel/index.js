@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-// import Typography from "@mui/material/Typography";
 
-const KmaxCarousel = () => {
+const KosherClockCarousel = () => {
   const [index, setIndex] = useState(0);
 
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the KosherLamp MAX! It's so convenient and easy to use.",
-      author: "Sarah",
+      text: "I love the Kosher Clock! It's so convenient and easy to use.",
+      author: "Dan",
     },
     {
-      text: "The KosherLamp MAX has really improved my Shabbos reading experience.",
-      author: "David",
+      text: "The Kosher Clock has really improved my Shabbos reading experience.",
+      author: "Derek",
     },
     {
-      text: "I love the sleek design of the KosherLamp MAX. It's the perfect addition to my home.",
-      author: "Rachel",
+      text: "I love the sleek design of the Kosher Clock. It's the perfect addition to my home.",
+      author: "Rani",
     },
   ];
 
@@ -43,8 +42,12 @@ const KmaxCarousel = () => {
   return (
     <Box className="carousel-box">
       <h4>Reviews</h4>
-      <h5><q>{testimonials[index].text}</q></h5>
-      <h5 className="author"><cite>{testimonials[index].author}</cite></h5>
+      <h5>
+        <q>{testimonials[index].text}</q>
+      </h5>
+      <h5 className="author">
+        <cite>{testimonials[index].author}</cite>
+      </h5>
       <div className="btn-box">
         <Button onClick={handlePrev}>Prev</Button>
         <Button onClick={handleNext}>Next</Button>
@@ -53,4 +56,4 @@ const KmaxCarousel = () => {
   );
 };
 
-export default KmaxCarousel;
+export default KosherClockCarousel;

@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-// import Typography from "@mui/material/Typography";
 
-const KmaxCarousel = () => {
+const TravelCarousel = () => {
   const [index, setIndex] = useState(0);
 
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the KosherLamp MAX! It's so convenient and easy to use.",
-      author: "Sarah",
+      text: "I love the Travel KosherLamp! It's so convenient and easy to use.",
+      author: "Dan",
     },
     {
-      text: "The KosherLamp MAX has really improved my Shabbos reading experience.",
-      author: "David",
+      text: "The Travel KosherLamp has really improved my Shabbos reading experience.",
+      author: "Derek",
     },
     {
-      text: "I love the sleek design of the KosherLamp MAX. It's the perfect addition to my home.",
-      author: "Rachel",
+      text: "I love the sleek design of the Travel KosherLamp. It's the perfect addition to my home.",
+      author: "Rani",
     },
   ];
 
@@ -53,4 +52,4 @@ const KmaxCarousel = () => {
   );
 };
 
-export default KmaxCarousel;
+export default TravelCarousel;

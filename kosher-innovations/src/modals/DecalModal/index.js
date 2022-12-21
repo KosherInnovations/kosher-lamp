@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import DecalCarousel from "../../carousels/DecalCarousel";
 
 const style = {
   position: "absolute",
@@ -38,7 +39,11 @@ const DecalModal = () => {
           <Typography id="modal-modal-title" variant="h6" component="h3">
             Jewish Wall Decals
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             Decorate your walls High quality vinyl Decals that can be placed on
             your walls and repositioned without damaging the walls. These
             colorful decals are a perfect way to express your creativity and
@@ -50,6 +55,7 @@ const DecalModal = () => {
             for Jewish values in your decor. Jewish Wall Decals fuse tradition
             with beautiful designs, highlighting your uniqueness.
           </Typography>
+          <DecalCarousel />
         </Box>
       </Modal>
     </>

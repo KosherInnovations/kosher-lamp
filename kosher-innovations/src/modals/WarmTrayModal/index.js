@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import WarmTrayCarousel from "../../carousels/WarmTrayCarousel";
 
 const style = {
   position: "absolute",
@@ -37,7 +38,11 @@ const BasicModal = () => {
           <Typography id="modal-modal-title" variant="h6" component="h3">
             Shabbos Safe Warming Tray (TechYidCo)
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             Designed to safely keep your food warm on Shabbos and Yom Tov.
             Features stainless steel (kasher-able) surface and built in
             electrical safeguards. Designed by a Frum Electronic Engineering
@@ -46,15 +51,16 @@ const BasicModal = () => {
             way to keep their food warm on Shabbos and Yom Tov. Shabbos Safe
             Warming Tray mimics a traditional Jewish blech, & the design allows
             your halachically permissible food to be warmed, but makes Halachic
-            Bishul (cooking) difficult to attain.<br></br><br></br>The
-            Warming Tray is ETL Safety Certified and designed with over 5
-            individual safety features. Features: Beautiful & Durable Brushed
-            Stainless Steel Housing Rubberized handles Revolutionary Patent
-            Pending Design Engineered for Long Term Use Safe, Reliable and
-            Energy Efficient Approved by All Halachic Standards for Shabbos and
-            Yom Tov Use Can be Kashered for Pesach (please consult your local
-            Rabbi or Halachic Authority).
+            Bishul (cooking) difficult to attain.<br></br>
+            <br></br>The Warming Tray is ETL Safety Certified and designed with
+            over 5 individual safety features. Features: Beautiful & Durable
+            Brushed Stainless Steel Housing Rubberized handles Revolutionary
+            Patent Pending Design Engineered for Long Term Use Safe, Reliable
+            and Energy Efficient Approved by All Halachic Standards for Shabbos
+            and Yom Tov Use Can be Kashered for Pesach (please consult your
+            local Rabbi or Halachic Authority).
           </Typography>
+          <WarmTrayCarousel />
         </Box>
       </Modal>
     </>

@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import OpenerCarousel from "../../carousels/OpenerCarousel";
 
 const style = {
   position: "absolute",
@@ -37,7 +38,11 @@ const OpenerModal = () => {
           <Typography id="modal-modal-title" variant="h6" component="h3">
             Shabbos Bottle Opener
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             Open plastic soda and seltzer bottles on Shabbos and Yom Tov. This
             handy device removes the bottle cap without tearing the tamper-proof
             ring. Approved by major Rabbonim. For many years, opening bottle
@@ -51,6 +56,7 @@ const OpenerModal = () => {
             definitely recommended to follow the majority of the Poskim that
             agreed that its אסור.
           </Typography>
+          <OpenerCarousel />
         </Box>
       </Modal>
     </>

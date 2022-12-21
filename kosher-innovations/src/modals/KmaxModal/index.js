@@ -51,8 +51,6 @@ const KmaxModal = () => {
             technology, beautiful colours, easy to use thumb-switch, and can be
             used on Shabbos according to halacha. It's convenient and easy.
           </Typography>
-          <br></br>
-          <br></br>
           <KmaxCarousel />
         </Box>
       </Modal>

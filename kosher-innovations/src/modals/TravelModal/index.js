@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import TravelCarousel from "../../carousels/TravelCarousel"
 
 const style = {
   position: "absolute",
@@ -52,6 +53,7 @@ const TravelModal = () => {
             Bag. Travel KosherLamp in its closed position, is less than half the
             height of the KosherLamp MAX? Now that's convenient!
           </Typography>
+          < TravelCarousel />
         </Box>
       </Modal>
     </>

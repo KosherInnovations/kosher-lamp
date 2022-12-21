@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import GoWashCarousel from "../../carousels/GoWashCarousel";
 
 const style = {
   position: "absolute",
@@ -37,7 +38,11 @@ const GoWashModal = () => {
           <Typography id="modal-modal-title" variant="h6" component="h3">
             Go Wash (Portable washing cup)
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             The Collapsible Washing Cup. Made of sturdy silicone, this handy
             travel accessory is designed to hold the halachically required
             amount of water. Small enough to fit in a purse, hand bag and many
@@ -47,6 +52,7 @@ const GoWashModal = () => {
             flexible silicone so you don't have to worry about it breaking from
             being dropped or being squished by heavy items in your travel bag.
           </Typography>
+          <GoWashCarousel />
         </Box>
       </Modal>
     </>

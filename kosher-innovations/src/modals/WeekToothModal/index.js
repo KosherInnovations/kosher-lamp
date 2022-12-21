@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import WeekToothCarousel from "../../carousels/WeekToothCarousel";
 
 const style = {
   position: "absolute",
@@ -37,7 +38,11 @@ const WeekToothModal = () => {
           <Typography id="modal-modal-title" variant="h6" component="h3">
             Uncle Moishy Weekday Toothbrush
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            component="h4"
+          >
             Uncle Moishy Weekday Toothbrush is a fun way to promote oral hygiene
             for children between the ages of 2 and 9. These bright toothbrushes
             come packed together in a colorful and affordable 4-pack.<br></br>
@@ -45,6 +50,7 @@ const WeekToothModal = () => {
             brush head protects tender gums. The attached tongue cleaner is
             designed to promote fresh breath
           </Typography>
+          <WeekToothCarousel />
         </Box>
       </Modal>
     </>
