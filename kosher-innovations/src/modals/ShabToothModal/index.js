@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import ShabToothCarousel from "../../carousels/ShabToothCarousel";
 
 const style = {
@@ -37,11 +38,7 @@ const ShabtoothModal = () => {
           <h3 variant="h6" component="h3">
             Shabbos Toothbrush
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Brush your teeth on Shabbos with these halachically approved special
             Toothbrushes! 4 pack comes with Red, Yellow, Purple and Blue.
             Shabbos Toothbrush™ ensures that melachos are avoided (Sechitah,
@@ -51,6 +48,13 @@ const ShabtoothModal = () => {
             Features: Soft Latex rubber "bristles" won't make gums bleed Widely
             spaced "bristles" won't squeeze liquid
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <ShabToothCarousel />
         </Box>
       </Modal>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import ShisselCarousel from "../../carousels/ShisselCarousel";
 
 const style = {
@@ -37,11 +38,7 @@ const ShisselModal = () => {
           <h3 variant="h6" component="h3">
             Smart Shissel
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             A spill resistant Negel Vasser Bowl. The Smart Shissel has a one way
             drain that traps water inside, leaving it covered and spill proof.
             Tomei water is fully covered after washing. Carry the bowl without
@@ -53,6 +50,13 @@ const ShisselModal = () => {
             water all over themselves, the carpet, the furniture, or dunk their
             toys in it.
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <ShisselCarousel />
         </Box>
       </Modal>

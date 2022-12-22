@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
+import GloveCarousel from "../../carousels/GloveCarousel";
 
 const style = {
   position: "absolute",
@@ -36,11 +38,7 @@ const GlovesModal = () => {
           <h3 variant="h6" component="h3">
             Shabbos Scrub Gloves
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Shabbos Scrub Gloves are composed of super durable silicone that
             protects your hands from cold water and harsh chemicals when washing
             your dishes. Featuring innovative bristles on the fingers and palm
@@ -50,6 +48,14 @@ const GlovesModal = () => {
             Consult With Your Personal Rov For The Halachos Of Washing Dishes On
             Shabbos And Yom Tov.
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
+          <GloveCarousel />
         </Box>
       </Modal>
     </>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import GoWashCarousel from "../../carousels/GoWashCarousel";
 
 const style = {
@@ -37,11 +38,7 @@ const GoWashModal = () => {
           <h3 variant="h6" component="h3">
             Go Wash (Portable washing cup)
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             The Collapsible Washing Cup. Made of sturdy silicone, this handy
             travel accessory is designed to hold the halachically required
             amount of water. Small enough to fit in a purse, hand bag and many
@@ -51,6 +48,13 @@ const GoWashModal = () => {
             flexible silicone so you don't have to worry about it breaking from
             being dropped or being squished by heavy items in your travel bag.
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <GoWashCarousel />
         </Box>
       </Modal>

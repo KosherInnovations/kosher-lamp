@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import TissueCarousel from "../../carousels/TissueCarousel";
 
 const style = {
@@ -37,11 +38,7 @@ const TissueModal = () => {
           <h3 variant="h6" component="h3">
             Shabbos Bathroom Tissue
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Easy and convenient. Halachically permissible, Real pre-cut toilet
             paper in a unique box. No tearing! Hangs on any roll-holder! Now
             softer, stronger and with beautiful nature-themed boxes. Comes in
@@ -49,6 +46,13 @@ const TissueModal = () => {
             <br></br> Includes: 120 sheets of 2 ply tissues per box Unique box
             that dispenses sheets and hangs from roll holder
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <TissueCarousel />
         </Box>
       </Modal>

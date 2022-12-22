@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import KosherClockCarousel from "../../carousels/KosherClockCarousel";
 
 const style = {
@@ -37,11 +38,7 @@ const KC3Modal = () => {
           <h3 variant="h6" component="h3">
             KosherClock
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Can be used for Weekdays, Shabbos, Yom Tov, & Travel. Set different
             alarms, for different times, for different days!<br></br>
             <br></br> Features - <br></br>Weekday mode: 10 alarms 2 alarm
@@ -51,6 +48,13 @@ const KC3Modal = () => {
             snooze feature Travel mode: Screen & buttons are protected slim &
             compact for travel
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <KosherClockCarousel />
         </Box>
       </Modal>

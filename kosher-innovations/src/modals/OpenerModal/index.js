@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import infoBtn from "../../resources/info.png";
+import infoBtn from "../../resources/info.png";import ScrollDown from "../../resources/scrolling.png";
 import OpenerCarousel from "../../carousels/OpenerCarousel";
 
 const style = {
@@ -55,6 +55,13 @@ const OpenerModal = () => {
             definitely recommended to follow the majority of the Poskim that
             agreed that its אסור.
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <OpenerCarousel />
         </Box>
       </Modal>

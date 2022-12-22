@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import ShroomCarousel from "../../carousels/ShroomCarousel";
 
 const style = {
@@ -37,11 +38,7 @@ const ShroomModal = () => {
           <h3 variant="h6" component="h3">
             Mushroom KosherLamp
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Raise or lower the mushroom cap to hide the light or let it shine.
             Just like the original KosherLamps, you can adjust the light until
             it's just right. Enough light to light up the bedroom, the Mushroom
@@ -56,6 +53,13 @@ const ShroomModal = () => {
             consumption. Many artists like to add amanita mushrooms to
             illustrations in children's books since they are so decorative.
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <ShroomCarousel />
         </Box>
       </Modal>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import DecalCarousel from "../../carousels/DecalCarousel";
 
 const style = {
@@ -38,11 +39,7 @@ const DecalModal = () => {
           <h3 variant="h6" component="h3">
             Jewish Wall Decals
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Decorate your walls High quality vinyl Decals that can be placed on
             your walls and repositioned without damaging the walls. These
             colorful decals are a perfect way to express your creativity and
@@ -54,6 +51,13 @@ const DecalModal = () => {
             for Jewish values in your decor. Jewish Wall Decals fuse tradition
             with beautiful designs, highlighting your uniqueness.
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <DecalCarousel />
         </Box>
       </Modal>

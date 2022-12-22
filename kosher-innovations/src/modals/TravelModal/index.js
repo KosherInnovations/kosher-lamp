@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
-import TravelCarousel from "../../carousels/TravelCarousel"
+import ScrollDown from "../../resources/scrolling.png";
+import TravelCarousel from "../../carousels/TravelCarousel";
 
 const style = {
   position: "absolute",
@@ -36,7 +37,7 @@ const TravelModal = () => {
       >
         <Box sx={style}>
           <h3 id="modal-modal-title" variant="h6" component="h3">
-            Travel KosherLamp Info
+            Travel KosherLamp
           </h3>
           <p id="modal-modal-description" sx={{ mt: 2 }}>
             Designed for use at home or across the World. Small size, bright
@@ -52,7 +53,14 @@ const TravelModal = () => {
             Bag. Travel KosherLamp in its closed position, is less than half the
             height of the KosherLamp MAX? Now that's convenient!
           </p>
-          < TravelCarousel />
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
+          <TravelCarousel />
         </Box>
       </Modal>
     </>

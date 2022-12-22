@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import FridgeezCarousel from "../../carousels/FridgeezCarousel";
 
 const style = {
@@ -37,11 +38,7 @@ const FridgeezModal = () => {
           <h3 variant="h6" component="h3">
             Fridg-eez
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Kosher Fridg-eez holds down your fridge or freezer light switch
             during Shabbos or Yom Tov. We all need a way to keep the light off
             during Shabbos or Yom Tov, that is what the Kosher Fridg-eez is for.
@@ -56,7 +53,14 @@ const FridgeezModal = () => {
             Kosher Fridg-eez™? It comes ready to use Efficient Convenient
             Inexpensive Easy to use Reliable quality
           </p>
-          < FridgeezCarousel />
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
+          <FridgeezCarousel />
         </Box>
       </Modal>
     </>

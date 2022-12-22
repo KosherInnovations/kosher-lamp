@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import BugCheckerCarousel from "../../carousels/BugCheckerCarousel";
 
 const style = {
@@ -37,11 +38,7 @@ const BasicModal = () => {
           <h3 variant="h6" component="h3">
             Bug Checker MAX Info
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             A portable light board. It shines through the leaves but not the
             bugs. Bug Checker MAX is a steady, bright light - perfect for
             examining produce for insects. This makes it easy to check a variety
@@ -56,6 +53,13 @@ const BasicModal = () => {
             kosher standards as recommended by the Orthodox Union. Check
             carefully, Check comfortably, Check confidently.
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <BugCheckerCarousel />
         </Box>
       </Modal>

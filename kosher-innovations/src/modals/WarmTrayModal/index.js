@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
+import ScrollDown from "../../resources/scrolling.png";
 import WarmTrayCarousel from "../../carousels/WarmTrayCarousel";
 
 const style = {
@@ -34,14 +35,10 @@ const BasicModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <h3 variant="h6" component="h3">
+          <h3 id="modal-modal-title" variant="h6" component="h3">
             Shabbos Safe Warming Tray (TechYidCo)
           </h3>
-          <p
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Designed to safely keep your food warm on Shabbos and Yom Tov.
             Features stainless steel (kasher-able) surface and built in
             electrical safeguards. Designed by a Frum Electronic Engineering
@@ -59,6 +56,13 @@ const BasicModal = () => {
             and Yom Tov Use Can be Kashered for Pesach (please consult your
             local Rabbi or Halachic Authority).
           </p>
+          <div className="scroll-logo-box">
+            <img
+              className="scroll-logo"
+              src={ScrollDown}
+              alt="scroll down to read more"
+            ></img>
+          </div>
           <WarmTrayCarousel />
         </Box>
       </Modal>
