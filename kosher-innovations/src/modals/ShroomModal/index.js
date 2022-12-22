@@ -34,31 +34,26 @@ const ShroomModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h3 variant="h6" component="h3">
-            Mushroom KosherLamp
-          </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            Raise or lower the mushroom cap to hide the light or let it shine.
-            Just like the original KosherLamps, you can adjust the light until
-            it's just right. Enough light to light up the bedroom, the Mushroom
-            KosherLamp is perfect for reading in bed, doing a puzzle or enjoying
-            a quiet activity. With four different light settings to get the
-            light just right, your child will want to use Mushroom KosherLamp
-            every night!<br></br>
-            <br></br>Did you know? Yes, there really is a red mushroom with
-            white spots in nature. It's called the Amanita Muscaria They can be
-            found in the forests of the Northern Hemisphere. These mushrooms add
-            vibrant color to forest scenery but are not meant for human
-            consumption. Many artists like to add amanita mushrooms to
-            illustrations in children's books since they are so decorative.
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
+        <Box sx={style} className="modal-box">
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              Mushroom KosherLamp
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              Raise or lower the mushroom cap to hide the light or let it shine.
+              Just like the original KosherLamps, you can adjust the light until
+              it's just right. Enough light to light up the bedroom, the
+              Mushroom KosherLamp is perfect for reading in bed, doing a puzzle
+              or enjoying a quiet activity. With four different light settings
+              to get the light just right, your child will want to use Mushroom
+              KosherLamp every night!<br></br>
+              <br></br>Did you know? Yes, there really is a red mushroom with
+              white spots in nature. It's called the Amanita Muscaria They can
+              be found in the forests of the Northern Hemisphere. These
+              mushrooms add vibrant color to forest scenery but are not meant
+              for human consumption. Many artists like to add amanita mushrooms
+              to illustrations in children's books since they are so decorative.
+            </p>
           </div>
           <ShroomCarousel />
         </Box>

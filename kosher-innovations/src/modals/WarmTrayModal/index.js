@@ -34,34 +34,29 @@ const BasicModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h3 id="modal-modal-title" variant="h6" component="h3">
-            Shabbos Safe Warming Tray (TechYidCo)
-          </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            Designed to safely keep your food warm on Shabbos and Yom Tov.
-            Features stainless steel (kasher-able) surface and built in
-            electrical safeguards. Designed by a Frum Electronic Engineering
-            Technician with safety and Halachic compliance first in mind, the
-            patented design allows the end user a safe, dependable and durable
-            way to keep their food warm on Shabbos and Yom Tov. Shabbos Safe
-            Warming Tray mimics a traditional Jewish blech, & the design allows
-            your halachically permissible food to be warmed, but makes Halachic
-            Bishul (cooking) difficult to attain.<br></br>
-            <br></br>The Warming Tray is ETL Safety Certified and designed with
-            over 5 individual safety features. Features: Beautiful & Durable
-            Brushed Stainless Steel Housing Rubberized handles Revolutionary
-            Patent Pending Design Engineered for Long Term Use Safe, Reliable
-            and Energy Efficient Approved by All Halachic Standards for Shabbos
-            and Yom Tov Use Can be Kashered for Pesach (please consult your
-            local Rabbi or Halachic Authority).
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
+        <Box sx={style} className="modal-box">
+          <div className="product-info">
+            <h3 id="modal-modal-title" variant="h6" component="h3">
+              Shabbos Safe Warming Tray (TechYidCo)
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              Designed to safely keep your food warm on Shabbos and Yom Tov.
+              Features stainless steel (kasher-able) surface and built in
+              electrical safeguards. Designed by a Frum Electronic Engineering
+              Technician with safety and Halachic compliance first in mind, the
+              patented design allows the end user a safe, dependable and durable
+              way to keep their food warm on Shabbos and Yom Tov. Shabbos Safe
+              Warming Tray mimics a traditional Jewish blech, & the design
+              allows your halachically permissible food to be warmed, but makes
+              Halachic Bishul (cooking) difficult to attain.<br></br>
+              <br></br>The Warming Tray is ETL Safety Certified and designed
+              with over 5 individual safety features. Features: Beautiful &
+              Durable Brushed Stainless Steel Housing Rubberized handles
+              Revolutionary Patent Pending Design Engineered for Long Term Use
+              Safe, Reliable and Energy Efficient Approved by All Halachic
+              Standards for Shabbos and Yom Tov Use Can be Kashered for Pesach
+              (please consult your local Rabbi or Halachic Authority).
+            </p>
           </div>
           <WarmTrayCarousel />
         </Box>

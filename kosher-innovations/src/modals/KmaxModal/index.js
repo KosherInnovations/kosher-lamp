@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
-import ScrollDown from "../../resources/scrolling.png";
 import KmaxCarousel from "../../carousels/KmaxCarousel";
 
 const style = {
@@ -34,26 +33,21 @@ const KmaxModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h3 variant="h6" component="h3">
-            KosherLamp MAX Info
-          </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br>
-            <br></br>
-            LED bulbs, energy efficient, new design, easy twist technology,
-            beautiful colours, easy to use thumb-switch, and can be used on
-            Shabbos according to halacha. It's convenient and easy.
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
+        <Box sx={style} className="modal-box">
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              KosherLamp MAX Info
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              KosherLamp MAX means the most light with a bigger window. A simple
+              twist reveals or hides the light on this innovative reading lamp.
+              It's a practical and innovative idea that's perfect in any room
+              Now you'll have even more light to read on Shabbos!<br></br>
+              <br></br>
+              LED bulbs, energy efficient, new design, easy twist technology,
+              beautiful colours, easy to use thumb-switch, and can be used on
+              Shabbos according to halacha. It's convenient and easy.
+            </p>
           </div>
           <KmaxCarousel />
         </Box>

@@ -41,6 +41,7 @@ const GloveCarousel = () => {
 
   return (
     <Box className="carousel-box">
+      <h4>Reviews</h4>
       <h5 className="testimonials-text">
         <q>{testimonials[index].text}</q>
       </h5>

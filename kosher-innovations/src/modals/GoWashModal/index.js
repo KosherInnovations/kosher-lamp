@@ -34,26 +34,22 @@ const GoWashModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h3 variant="h6" component="h3">
-            Go Wash (Portable washing cup)
-          </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            The Collapsible Washing Cup. Made of sturdy silicone, this handy
-            travel accessory is designed to hold the halachically required
-            amount of water. Small enough to fit in a purse, hand bag and many
-            coat and pants pockets.<br></br>
-            <br></br>Go Wash collapses on itself to take up less space so you
-            can take it wherever you go. Highly durable & made of sturdy,
-            flexible silicone so you don't have to worry about it breaking from
-            being dropped or being squished by heavy items in your travel bag.
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
+        <Box sx={style} className="modal-box">
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              Go Wash (Portable washing cup)
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              The Collapsible Washing Cup. Made of sturdy silicone, this handy
+              travel accessory is designed to hold the halachically required
+              amount of water. Small enough to fit in a purse, hand bag and many
+              coat and pants pockets.<br></br>
+              <br></br>Go Wash collapses on itself to take up less space so you
+              can take it wherever you go. Highly durable & made of sturdy,
+              flexible silicone so you don't have to worry about it breaking
+              from being dropped or being squished by heavy items in your travel
+              bag.
+            </p>
           </div>
           <GoWashCarousel />
         </Box>

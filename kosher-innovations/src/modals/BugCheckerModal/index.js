@@ -34,31 +34,27 @@ const BasicModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h3 variant="h6" component="h3">
-            Bug Checker MAX Info
-          </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            A portable light board. It shines through the leaves but not the
-            bugs. Bug Checker MAX is a steady, bright light - perfect for
-            examining produce for insects. This makes it easy to check a variety
-            of fresh produce such as lettuces, herbs and other leafy vegetables.
-            The bright light illuminates the leaves and makes any insects appear
-            as dark spots. They're much easier to spot when the leaf is lit up.
-            <br></br>
-            <br></br>You don't have to avoid the fresh vegetable section of your
-            supermarket any longer. Now you can have really great salads,
-            prepare more interesting dishes, and up your vitamin intake. A great
-            way to check veggies quickly and thoroughly adhering to the highest
-            kosher standards as recommended by the Orthodox Union. Check
-            carefully, Check comfortably, Check confidently.
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
+        <Box sx={style} className="modal-box">
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              Bug Checker MAX Info
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              A portable light board. It shines through the leaves but not the
+              bugs. Bug Checker MAX is a steady, bright light - perfect for
+              examining produce for insects. This makes it easy to check a
+              variety of fresh produce such as lettuces, herbs and other leafy
+              vegetables. The bright light illuminates the leaves and makes any
+              insects appear as dark spots. They're much easier to spot when the
+              leaf is lit up.
+              <br></br>
+              <br></br>You don't have to avoid the fresh vegetable section of
+              your supermarket any longer. Now you can have really great salads,
+              prepare more interesting dishes, and up your vitamin intake. A
+              great way to check veggies quickly and thoroughly adhering to the
+              highest kosher standards as recommended by the Orthodox Union.
+              Check carefully, Check comfortably, Check confidently.
+            </p>
           </div>
           <BugCheckerCarousel />
         </Box>

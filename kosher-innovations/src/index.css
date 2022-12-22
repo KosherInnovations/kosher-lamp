@@ -351,6 +351,10 @@ section .card .content .flex-box {
   text-align: justify;
 }
 
+.product-info, .carousel-box {
+  height: 50%;
+}
+
 .MuiBox-root p {
   padding-top: 15px;
   font-family: "Josefin Sans", sans-serif;
@@ -358,7 +362,7 @@ section .card .content .flex-box {
   letter-spacing: 1px;
   line-height: 1.2;
   overflow-y: scroll;
-  max-height: 45.5vh;
+  max-height: 70%;
 }
 
 .MuiBox-root p::-webkit-scrollbar {
@@ -383,13 +387,13 @@ section .card .content .flex-box {
 }
 
 .testimonials-text {
-  height: 60px;
-  line-height: 1.2;
-  overflow: scroll;
-  padding: 10px;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.testimonials-text::-webkit-scrollbar {
+.testimonials-text q::-webkit-scrollbar {
   display: none;
 }
 
@@ -424,6 +428,10 @@ h5 {
 
 h5 q {
   font-family: "Josefin Sans", sans-serif;
+  line-height: 1.2;
+  overflow: scroll;
+  padding: 10px;
+  height: 100%;
 }
 
 h5 cite {
@@ -443,8 +451,6 @@ h5 cite {
 }
 
 .author {
-  position: absolute;
-  bottom: 27px;
   width: 100%;
 }
 

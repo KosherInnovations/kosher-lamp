@@ -34,31 +34,26 @@ const FridgeezModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h3 variant="h6" component="h3">
-            Fridg-eez
-          </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            Kosher Fridg-eez holds down your fridge or freezer light switch
-            during Shabbos or Yom Tov. We all need a way to keep the light off
-            during Shabbos or Yom Tov, that is what the Kosher Fridg-eez is for.
-            When Shabbos or Yom Tov is over, simply pull the plastic tab to
-            remove it, letting the fridge light shine again. Fridg-eez is a
-            simple and inexpensive solution to a common problem.<br></br>
-            <br></br>How it works: Kosher Fridg-eez™ is made from reusable
-            velcro. Just stick the two small Fridg-eez strips on either side of
-            the light switch and use the long Fridg-eez velcro strip to hold
-            down the light switch.<br></br>Includes: -2 small self-adhesive
-            velcro strips -1 large velcro strip with sturdy pull-tab Why use
-            Kosher Fridg-eez™? It comes ready to use Efficient Convenient
-            Inexpensive Easy to use Reliable quality
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
+        <Box sx={style} className="modal-box">
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              Fridg-eez
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              Kosher Fridg-eez holds down your fridge or freezer light switch
+              during Shabbos or Yom Tov. We all need a way to keep the light off
+              during Shabbos or Yom Tov, that is what the Kosher Fridg-eez is
+              for. When Shabbos or Yom Tov is over, simply pull the plastic tab
+              to remove it, letting the fridge light shine again. Fridg-eez is a
+              simple and inexpensive solution to a common problem.<br></br>
+              <br></br>How it works: Kosher Fridg-eez™ is made from reusable
+              velcro. Just stick the two small Fridg-eez strips on either side
+              of the light switch and use the long Fridg-eez velcro strip to
+              hold down the light switch.<br></br>Includes: -2 small
+              self-adhesive velcro strips -1 large velcro strip with sturdy
+              pull-tab Why use Kosher Fridg-eez™? It comes ready to use
+              Efficient Convenient Inexpensive Easy to use Reliable quality
+            </p>
           </div>
           <FridgeezCarousel />
         </Box>

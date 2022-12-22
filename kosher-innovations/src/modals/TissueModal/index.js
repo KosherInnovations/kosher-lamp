@@ -34,24 +34,19 @@ const TissueModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h3 variant="h6" component="h3">
-            Shabbos Bathroom Tissue
-          </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            Easy and convenient. Halachically permissible, Real pre-cut toilet
-            paper in a unique box. No tearing! Hangs on any roll-holder! Now
-            softer, stronger and with beautiful nature-themed boxes. Comes in
-            Blue, Gold, Purple, & Brown<br></br>
-            <br></br> Includes: 120 sheets of 2 ply tissues per box Unique box
-            that dispenses sheets and hangs from roll holder
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
+        <Box sx={style} className="modal-box">
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              Shabbos Bathroom Tissue
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              Easy and convenient. Halachically permissible, Real pre-cut toilet
+              paper in a unique box. No tearing! Hangs on any roll-holder! Now
+              softer, stronger and with beautiful nature-themed boxes. Comes in
+              Blue, Gold, Purple, & Brown<br></br>
+              <br></br> Includes: 120 sheets of 2 ply tissues per box Unique box
+              that dispenses sheets and hangs from roll holder
+            </p>
           </div>
           <TissueCarousel />
         </Box>

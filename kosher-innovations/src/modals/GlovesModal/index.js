@@ -34,26 +34,21 @@ const GlovesModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h3 variant="h6" component="h3">
-            Shabbos Scrub Gloves
-          </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            Shabbos Scrub Gloves are composed of super durable silicone that
-            protects your hands from cold water and harsh chemicals when washing
-            your dishes. Featuring innovative bristles on the fingers and palm
-            which makes scrubbing a breeze.<br></br>
-            <br></br>These gloves are approved by rabbinic authorities and are
-            highly recommended for use on Shabbos, Yom Tov & anytime. Please
-            Consult With Your Personal Rov For The Halachos Of Washing Dishes On
-            Shabbos And Yom Tov.
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
+        <Box sx={style} className="modal-box">
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              Shabbos Scrub Gloves
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              Shabbos Scrub Gloves are composed of super durable silicone that
+              protects your hands from cold water and harsh chemicals when
+              washing your dishes. Featuring innovative bristles on the fingers
+              and palm which makes scrubbing a breeze.<br></br>
+              <br></br>These gloves are approved by rabbinic authorities and are
+              highly recommended for use on Shabbos, Yom Tov & anytime. Please
+              Consult With Your Personal Rov For The Halachos Of Washing Dishes
+              On Shabbos And Yom Tov.
+            </p>
           </div>
           <GloveCarousel />
         </Box>

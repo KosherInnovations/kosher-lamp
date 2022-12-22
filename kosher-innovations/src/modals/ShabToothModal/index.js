@@ -34,7 +34,8 @@ const ShabtoothModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={style} className="modal-box" >
+          <div className="product-info">
           <h3 variant="h6" component="h3">
             Shabbos Toothbrush
           </h3>
@@ -47,14 +48,7 @@ const ShabtoothModal = () => {
             <br></br>*Permissible for use with liquid mouthwash.<br></br>
             Features: Soft Latex rubber "bristles" won't make gums bleed Widely
             spaced "bristles" won't squeeze liquid
-          </p>
-          <div className="scroll-logo-box">
-            <img
-              className="scroll-logo"
-              src={ScrollDown}
-              alt="scroll down to read more"
-            ></img>
-          </div>
+          </p></div>
           <ShabToothCarousel />
         </Box>
       </Modal>
