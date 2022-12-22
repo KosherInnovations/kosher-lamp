@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.png";
-import ScrollDown from "../../resources/scrolling.png";
 import ShabToothCarousel from "../../carousels/ShabToothCarousel";
 
 const style = {
