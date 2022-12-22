@@ -9,16 +9,40 @@ const KmaxCarousel = () => {
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the KosherLamp MAX! It's so convenient and easy to use.",
-      author: "Sarah",
+      text: "You should know that the Kosher Lamp is my gift of choice to Kallas and new moms! They are so appreciative. It brings real oneg to our Shabbat!",
+      author: "Yehudit S.",
     },
     {
-      text: "The KosherLamp MAX has really improved my Shabbos reading experience.",
-      author: "David",
+      text: "Rabbi Veffer with his Kosherlamp is providing a great service by making Shabbos observance easier for the Jewish People.",
+      author: "Rabbi Ari Kahn, Givat Zeev, Israel",
     },
     {
-      text: "I love the sleek design of the KosherLamp MAX. It's the perfect addition to my home.",
-      author: "Rachel",
+      text: "Every family needs Kosherlamp for shalom bayis",
+      author: "Chaya Krohn, Monsey",
+    },
+    {
+      text: "Shabbos never looked brighter!",
+      author: "Rabbi Shraga Simmons, Jerusalem",
+    },
+    {
+      text: "Now I can read in bed Friday night.",
+      author: "Rabbi Mitch Mandel, Thornhill",
+    },
+    {
+      text: "Perfect to put one in each room when kids have different bed times. My daughter will be thrilled.",
+      author: "Rebbetzen Judy Katsof, Monsey",
+    },
+    {
+      text: "The Almighty gives us Shabbos for “Oneg” (pleasure). The Rambam says this is light. Beautiful!",
+      author: "Rabbi Yonah Yaffe, Jerusalem",
+    },
+    {
+      text: "That’s neat. My wife will love it.",
+      author: "Rabbi Yitzchok Lowenbrau, Baltimore",
+    },
+    {
+      text: "You've really made Shalom Bayis. My boys always fought when going to sleep. ",
+      author: "Faigie M.",
     },
   ];
 

@@ -58,7 +58,7 @@ nav ul {
 nav ul li {
   padding: 0 10px;
   font-size: 22px;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 
 nav ul li:last-child {
@@ -370,8 +370,12 @@ section .card .content .flex-box {
   height: 45px;
   text-align: center;
   position: absolute;
-  top: 70vh;
+  top: 68vh;
   left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .scroll-logo {
@@ -385,7 +389,7 @@ section .card .content .flex-box {
 /* carousel styling */
 
 h3 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 
 h3,
@@ -403,7 +407,7 @@ h4 {
 }
 
 h5 {
-  padding: 10px 0 0;
+  padding: 5px 0 10px 0;
   font-size: 16px;
 }
 
