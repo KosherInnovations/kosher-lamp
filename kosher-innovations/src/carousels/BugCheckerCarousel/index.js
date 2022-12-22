@@ -8,16 +8,24 @@ const BugCheckerCarousel = () => {
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the Bug Checker! It's so convenient and easy to use.",
-      author: "Sarah",
+      text: "This is WONDERFUL!! It makes the task of checking greens & herbs so much easier. Thank you for developing & marketing this innovation!",
+      author: "E. Kuepper",
     },
     {
-      text: "The Bug Checker has really improved my Shabbos reading experience.",
-      author: "David",
+      text: "(The Bug Checker) is good for commercial use for the same reason it works in a private kitchen. It's small, light, portable and easy to use.",
+      author: "E Prizont, Mashgiach. Seattle",
     },
     {
-      text: "I love the sleek design of the Bug Checker. It's the perfect addition to my home.",
-      author: "Rachel",
+      text: "Now that I have the Kosher Innovations Bugchecker and I can see what I couldn't see before; I have to go and do Teshuva for all the bugs I've missed in the past!",
+      author: "Anonymous",
+    },
+    {
+      text: "A fabulous tool for the Kashrus observer. It is a practical, convenient, and useful way to assist in inspecting produce and preventing us from violating the very serious prohibitions of eating insects. The lightweight and compact design make it very easy to keep in the kitchen, thus making it a kitchen gadget that should be found in every Kosher kitchen.",
+      author: "Rabbi Benzion Twerski, Milwaukee Wisconsin",
+    },
+    {
+      text: "I have been thrilled with your Kosher Lamp products, so I was very excited to purchase your Bug Checker Portable Light Board as soon as I heard about it. I have purchased two light boards, in fact - one for me, one as a gift",
+      author: "Chava N, Atlanta, GA",
     },
   ];
 
@@ -38,12 +46,14 @@ const BugCheckerCarousel = () => {
       setIndex(index - 1);
     }
   };
-
   return (
     <Box className="carousel-box">
-      <h4>Reviews</h4>
-      <h5><q>{testimonials[index].text}</q></h5>
-      <h5 className="author"><cite>{testimonials[index].author}</cite></h5>
+      <h5 className="testimonials-text">
+        <q>{testimonials[index].text}</q>
+      </h5>
+      <h5 className="author">
+        <cite>{testimonials[index].author}</cite>
+      </h5>
       <div className="btn-box">
         <Button onClick={handlePrev}>Prev</Button>
         <Button onClick={handleNext}>Next</Button>

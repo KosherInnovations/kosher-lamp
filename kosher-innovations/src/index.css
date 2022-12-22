@@ -382,6 +382,17 @@ section .card .content .flex-box {
   width: 35px;
 }
 
+.testimonials-text {
+  height: 60px;
+  line-height: 1.2;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.testimonials-text::-webkit-scrollbar {
+  display: none;
+}
+
 .info-btn {
   width: 35px;
 }
