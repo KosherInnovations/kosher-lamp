@@ -357,6 +357,12 @@ section .card .content .flex-box {
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.2;
+  overflow-y: scroll;
+  height: 60%;
+}
+
+.MuiBox-root p::-webkit-scrollbar {
+  display: none;
 }
 
 .info-btn {
