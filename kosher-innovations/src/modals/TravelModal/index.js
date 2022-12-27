@@ -34,7 +34,7 @@ const TravelModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style} className="modal-box">
+        <Box sx={style} id="modal-box">
           <div className="product-info">
             <h3 id="modal-modal-title" variant="h6" component="h3">
               Travel KosherLamp

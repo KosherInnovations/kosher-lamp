@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import carouselArrow from "../../resources/carousel-arrow.png";
 
 const OpenerCarousel = () => {
   const [index, setIndex] = useState(0);
@@ -49,8 +49,9 @@ const OpenerCarousel = () => {
         <cite>{testimonials[index].author}</cite>
       </h5>
       <div className="btn-box">
-        <Button onClick={handlePrev}>Prev</Button>
-        <Button onClick={handleNext}>Next</Button>
+      
+        <button onClick={handlePrev} title="go to previous testimonial"><img src={carouselArrow} className="carousel-arrow prev" alt="press to go to previous testimonial" ></img ></ button>
+        <button onClick={handleNext} title="go to next testimonial"><img src={carouselArrow} className="carousel-arrow next" alt="press to go to next testimonial"></img></ button>
       </div>
     </Box>
   );
