@@ -8,41 +8,82 @@ const KmaxCarousel = () => {
   // list of testimonials
   const testimonials = [
     {
-      text: "You should know that the Kosher Lamp is my gift of choice to Kallas and new moms! They are so appreciative. It brings real oneg to our Shabbat!",
-      author: "Yehudit S.",
+      text: "I want one!",
+      author: "Rabbi Stephen Baars, Washington DC",
     },
     {
-      text: "Rabbi Veffer with his Kosherlamp is providing a great service by making Shabbos observance easier for the Jewish People.",
-      author: "Rabbi Ari Kahn, Givat Zeev, Israel",
-    },
-    {
-      text: "Every family needs Kosherlamp for shalom bayis",
-      author: "Chaya Krohn, Monsey",
-    },
-    {
-      text: "Shabbos never looked brighter!",
-      author: "Rabbi Shraga Simmons, Jerusalem",
-    },
-    {
-      text: "Now I can read in bed Friday night.",
-      author: "Rabbi Mitch Mandel, Thornhill",
+      text: "A brillaint idea.",
+      author: "Rabbi Chaim Feld, Cleveland",
     },
     {
       text: "Perfect to put one in each room when kids have different bed times. My daughter will be thrilled.",
       author: "Rebbetzen Judy Katsof, Monsey",
     },
     {
-      text: "The Almighty gives us Shabbos for “Oneg” (pleasure). The Rambam says this is light. Beautiful!",
-      author: "Rabbi Yonah Yaffe, Jerusalem",
+      text: "I want one for every room of the house.",
+      author: "Rebbetzen Naomi Kahn, Givat Zeev, Israel",
     },
     {
-      text: "That’s neat. My wife will love it.",
-      author: "Rabbi Yitzchok Lowenbrau, Baltimore",
+      text: "Now I can send the kids to bed Friday night!",
+      author: "Rebbetzen Chana Appel, Cleveland",
     },
     {
-      text: "You've really made Shalom Bayis. My boys always fought when going to sleep. ",
-      author: "Faigie M.",
+      text: "I’m delighted with Kosherlamp!",
+      author: "Rebbetzen Ahuva Zauderer, Toronto",
     },
+    {
+      text: "My husband will so love this!",
+      author: "Rebbetzen Techiya Levine, Seattle",
+    },
+    {
+      text: "Incredible! My husband will be so thrilled he can sleep in the dark again.",
+      author: "Suzanne Rotter, Toronto",
+    },
+    {
+      text: "Great!",
+      author: "Mimi Jankovits, Hollywood FL",
+    },
+    {
+      text: "Been looking for something like this for years. I can’t wait to read with full light before a nice Shabbos schluff.",
+      author: "Boruch Rabinowitz, Passaic",
+    },
+    {
+      text: "I am the first generation in my family who can read the newspaper in bed on erev Shabbos! Before the KosherLamp, I had to sit at the dining room table to read, then schlep upstairs when I was tired. Now I just put the paper down and adjust the light. Thank you so much!",
+      author: "J.E., Thornhill",
+    },
+    {
+      text: "Fabulous idea! I love to read late.",
+      author: "Frumie Silver, Toronto",
+    },
+    {
+      text: "Unbelieveable!",
+      author: "Mark Halpern, Toronto",
+    },
+    {
+      text: "Loved using it. Very practical.",
+      author: "Sheila Hecker, Toronto",
+    },
+    {
+      text: "Excellent idea for Shabbos or during the week to replace closet and bathroom lights as nightlights.",
+      author: "Laura Biren, Thornhill",
+    },
+    {
+      text: "Now I can sleep while my wife reads.",
+      author: "Kurt Stein, Philadelphia",
+    },
+    {
+      text: "Phenomenal!",
+      author: "Alan Cohen, Los Angeles",
+    },
+    {
+      text: "Every family needs Kosherlamp for shalom bayis",
+      author: "Chaya Krohn, Monsey",
+    },
+    {
+      text: "Thank you... Your service is as good as your products -- and I love my KosherLamp. I have it on a zeiger on Shabbos and Yom Tov in our bedroom",
+      author: "Haviva G.",
+    },
+
   ];
 
   // function to handle going to the next testimonial
@@ -66,11 +107,11 @@ const KmaxCarousel = () => {
   return (
     <Box className="carousel-box">
       <h4>Reviews</h4>
-      <h5 className="testimonials-text">
-        <q>{testimonials[index].text}</q>
+      <h5 className="testimonials-text" title="Read reviews about this product">
+        <p id="testimonials-p" title="Reviews">{testimonials[index].text}</p>
       </h5>
       <h5 className="author">
-        <cite>{testimonials[index].author}</cite>
+        <cite title="Review author">{testimonials[index].author}</cite>
       </h5>
       <div className="btn-box">
       

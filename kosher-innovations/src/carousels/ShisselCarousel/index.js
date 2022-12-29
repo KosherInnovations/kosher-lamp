@@ -8,16 +8,8 @@ const ShisselCarousel = () => {
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the Smart Shissel! It's so convenient and easy to use.",
-      author: "Dan",
-    },
-    {
-      text: "The Smart Shissel has really improved my Shabbos reading experience.",
-      author: "Derek",
-    },
-    {
-      text: "I love the sleek design of the Smart Shissel. It's the perfect addition to my home.",
-      author: "Rani",
+      text: "I was always afraid to give my kids to wash by the bed bc of the spills. Now- no more spills! Unbelievable! It really works!!! THANK YOU KOSHER INNIVATIONS!!",
+      author: "ShisselUser - Amazon Reviewer",
     },
   ];
 
@@ -42,11 +34,11 @@ const ShisselCarousel = () => {
   return (
     <Box className="carousel-box">
       <h4>Reviews</h4>
-      <h5 className="testimonials-text">
-        <q>{testimonials[index].text}</q>
+      <h5 className="testimonials-text" title="Read reviews about this product">
+        <p id="testimonials-p" title="Reviews">{testimonials[index].text}</p>
       </h5>
       <h5 className="author">
-        <cite>{testimonials[index].author}</cite>
+        <cite title="Review author">{testimonials[index].author}</cite>
       </h5>
       <div className="btn-box">
       

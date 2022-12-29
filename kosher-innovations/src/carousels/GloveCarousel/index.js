@@ -42,11 +42,11 @@ const GloveCarousel = () => {
   return (
     <Box className="carousel-box">
       <h4>Reviews</h4>
-      <h5 className="testimonials-text">
-        <q>{testimonials[index].text}</q>
+      <h5 className="testimonials-text" title="Read reviews about this product">
+        <p id="testimonials-p" title="Reviews">{testimonials[index].text}</p>
       </h5>
       <h5 className="author">
-        <cite>{testimonials[index].author}</cite>
+        <cite title="Review author">{testimonials[index].author}</cite>
       </h5>
       <div className="btn-box">
       

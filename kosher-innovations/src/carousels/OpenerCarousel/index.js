@@ -8,16 +8,8 @@ const OpenerCarousel = () => {
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the Opener! It's so convenient and easy to use.",
-      author: "Dan",
-    },
-    {
-      text: "The Opener has really improved my Shabbos reading experience.",
-      author: "Derek",
-    },
-    {
-      text: "I love the sleek design of the Opener. It's the perfect addition to my home.",
-      author: "Rani",
+      text: "",
+      author: "",
     },
   ];
 
@@ -42,16 +34,29 @@ const OpenerCarousel = () => {
   return (
     <Box className="carousel-box">
       <h4>Reviews</h4>
-      <h5 className="testimonials-text">
-        <q>{testimonials[index].text}</q>
+      <h5 className="testimonials-text" title="Read reviews about this product">
+        <p id="testimonials-p" title="Reviews">
+          {testimonials[index].text}
+        </p>
       </h5>
       <h5 className="author">
-        <cite>{testimonials[index].author}</cite>
+        <cite title="Review author">{testimonials[index].author}</cite>
       </h5>
       <div className="btn-box">
-      
-        <button onClick={handlePrev} title="go to previous testimonial"><img src={carouselArrow} className="carousel-arrow prev" alt="press to go to previous testimonial" ></img ></ button>
-        <button onClick={handleNext} title="go to next testimonial"><img src={carouselArrow} className="carousel-arrow next" alt="press to go to next testimonial"></img></ button>
+        <button onClick={handlePrev} title="go to previous testimonial">
+          <img
+            src={carouselArrow}
+            className="carousel-arrow prev"
+            alt="press to go to previous testimonial"
+          ></img>
+        </button>
+        <button onClick={handleNext} title="go to next testimonial">
+          <img
+            src={carouselArrow}
+            className="carousel-arrow next"
+            alt="press to go to next testimonial"
+          ></img>
+        </button>
       </div>
     </Box>
   );
