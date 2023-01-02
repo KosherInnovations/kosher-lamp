@@ -237,6 +237,7 @@ const Products = () => {
             <img
               src={weekTooth}
               alt="The (Weekday) Uncle Moishy Toothbrush, a 4 pack of weekday toothbrushes which are a great way to get the kids to practice oral hygeiene"
+              title="Uncle Moishy Weekday Toothbrush"
             ></img>
           </div>
           <div className="content">
