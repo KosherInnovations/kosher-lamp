@@ -28,8 +28,8 @@ import DecalCard from "../../classes/DecalCard";
 
 const Products = () => {
   return (
-    <>
       <section id="cards" className="product-cards">
+      <h2 className="shipping-header">Orders to New York State and New Jersey tend to arrive in a week or less. For other areas, please allow up to two weeks. These times are approximate.<br></br>Shipping Within USA Only</h2>
         <KmaxCard />
         <TravelCard />
         <div className="card">
@@ -254,7 +254,6 @@ const Products = () => {
           </div>
         </div>
       </section>
-    </>
   );
 };
 

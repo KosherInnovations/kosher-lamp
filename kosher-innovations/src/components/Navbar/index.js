@@ -18,6 +18,15 @@ const Navbar = (props) => {
       <li
         className="nav-link"
         onClick={() => setCurrentPage(pages[1])}
+        title="Shop Our Replacements"
+        rel="noopener noreferrer"
+        tabIndex="0"
+      >
+        Replacements
+      </li>
+      <li
+        className="nav-link"
+        onClick={() => setCurrentPage(pages[2])}
         title="Learn More About Our Company"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -26,7 +35,7 @@ const Navbar = (props) => {
       </li>
       <li
         className="nav-link"
-        onClick={() => setCurrentPage(pages[2])}
+        onClick={() => setCurrentPage(pages[3])}
         title="Get in Touch with Us"
         rel="noopener noreferrer"
         tabIndex="0"

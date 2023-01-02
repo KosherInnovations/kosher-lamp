@@ -96,7 +96,7 @@ section {
   box-sizing: border-box;
 }
 
-/* card section */
+/* card components */
 
 #cards {
   /* background: url("resources/purple-cloud-bg.jpg"); */
@@ -322,7 +322,7 @@ section .card .content a {
   letter-spacing: 1.5px;
 }
 
-section .card .content .flex-box-products-page {
+section .card .content .flex-box-products-page, section .card .content .flex-box-replacements-page {
   position: relative;
   width: 100%;
   height: 100%;
@@ -491,6 +491,23 @@ h5 cite {
   align-items: center;
   justify-content: space-between;
   z-index: -10;
+}
+
+/* replacement section */
+
+.shipping-header {
+  position: absolute;
+  top: 15vh;
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 17px;
+}
+
+.replacement-images {
+  border-radius: 25px;
 }
 
 /* about section */

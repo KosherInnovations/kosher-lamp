@@ -10,6 +10,7 @@ import Page from "./components/Page";
 function App() {
   const [pages] = useState([
     { name: "Products" },
+    { name: "Replacements" },
     { name: "About" },
     { name: "Contact"},
   ]);
