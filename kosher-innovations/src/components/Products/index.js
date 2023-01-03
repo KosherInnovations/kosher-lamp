@@ -27,8 +27,21 @@ import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";
 
 const Products = () => {
+
+//   const cardElements = document.querySelectorAll('.card');
+
+// function animateCardOnScroll() {
+//   for (const card of cardElements) {
+//     if (card.getBoundingClientRect().top < window.innerHeight) {
+//       card.classList.add('animated');
+//     }
+//   }
+// }
+
+// window.addEventListener('scroll', animateCardOnScroll);
+
   return (
-      <section id="cards" className="product-cards">
+      <section id="cards" className="product-cards" >
       <h2 className="shipping-header">Orders to New York State and New Jersey tend to arrive in a week or less. For other areas, please allow up to two weeks. These times are approximate.<br></br>Shipping Within USA Only</h2>
         <KmaxCard />
         <TravelCard />

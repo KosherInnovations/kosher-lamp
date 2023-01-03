@@ -346,6 +346,21 @@ section .card .content .flex-box {
   padding: 0 25px;
 }
 
+/* card animations */
+
+.card.animated {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /* modal styling */
 
 .css-1ciqza6 {
