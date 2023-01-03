@@ -102,10 +102,9 @@ section {
 #cards {
   background-color: #0093e9;
   background-image: repeating-linear-gradient(
-    45deg,
-    #0093e9 7%,
-    #ffffff 50%,
-    #80d0c7 43%
+    55deg,
+    #0093e9 20%,
+    #ffffff 50%
   );
 }
 
