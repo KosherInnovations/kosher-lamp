@@ -100,11 +100,6 @@ section {
 /* card components */
 
 #cards {
-  /* background: url("resources/purple-cloud-bg.jpg"); */
-  /* background: url("resources/light-bg.jpg"); */
-  /* background: url("resources/splatter-painted-bg.jpg"); */
-  /* background: url("resources/water-colour-bg.jpg"); */
-  /* background: url("resources/textured-painted-bg.webp"); */
   background-color: #0093e9;
   background-image: repeating-linear-gradient(
     45deg,
