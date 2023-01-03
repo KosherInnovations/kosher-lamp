@@ -28,7 +28,6 @@ li {
 
 .navbar {
   width: 100%;
-  background: url("resources/textured-painted-bg.webp");
   /* background-position: 50%; */
   background-size: cover;
   opacity: 85%;
@@ -60,18 +59,20 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0 10px;
+  padding: 5px 15px;
+  margin: 5px 10px;
   font-size: 22px;
   font-family: "Cinzel", serif;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 25px;
 }
 
 nav ul li:last-child {
-  padding-right: 0;
-}
-
-nav ul li {
-  color: #000000;
-  cursor: pointer;
+  padding: 0;
+  background: none;
+  border-radius: 0;
 }
 
 nav ul li a .shopping-cart {
@@ -103,7 +104,14 @@ section {
   /* background: url("resources/light-bg.jpg"); */
   /* background: url("resources/splatter-painted-bg.jpg"); */
   /* background: url("resources/water-colour-bg.jpg"); */
-  background: url("resources/textured-painted-bg.webp");
+  /* background: url("resources/textured-painted-bg.webp"); */
+  background-color: #0093e9;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #0093e9 7%,
+    #ffffff 50%,
+    #80d0c7 43%
+  );
 }
 
 section .card {
@@ -322,7 +330,8 @@ section .card .content a {
   letter-spacing: 1.5px;
 }
 
-section .card .content .flex-box-products-page, section .card .content .flex-box-replacements-page {
+section .card .content .flex-box-products-page,
+section .card .content .flex-box-replacements-page {
   position: relative;
   width: 100%;
   height: 100%;
