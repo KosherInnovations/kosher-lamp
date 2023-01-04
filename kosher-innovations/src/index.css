@@ -33,9 +33,9 @@ li {
   right: 25px;
 }
 
+
 .navbar {
   width: 100%;
-  /* background-position: 50%; */
   background-size: cover;
   opacity: 85%;
   position: sticky;
@@ -68,18 +68,28 @@ nav ul {
 nav ul li {
   padding: 5px 15px;
   margin: 5px 10px;
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Cinzel", serif;
   background: #ffffff;
   color: #000000;
   cursor: pointer;
   border-radius: 25px;
+  transition: 0.5s ease-in-out;
+}
+
+nav ul li:hover {
+  background: #FF7D7D;
+  color: #ffffff;
 }
 
 nav ul li:last-child {
   padding: 0;
   background: none;
   border-radius: 0;
+}
+
+nav ul li:last-child:hover {
+  color: unset;
 }
 
 nav ul li a .shopping-cart {
@@ -107,8 +117,7 @@ section {
 /* card components */
 
 #cards {
-  background-color: #0093e9;
-  background-image: repeating-linear-gradient(25deg, #BA94D1 20vh, #ffffff 80vw);
+  background-image: repeating-linear-gradient(35deg, #ffffff 20vh,#BA94D1 80vw);
 }
 
 section .card {
@@ -207,7 +216,8 @@ section .card .content h3 {
 }
 
 section .card .content a:hover {
-  background: #68b984;
+  color: #ffffff;
+  background: #FF7D7D;
 }
 
 section .card .content .color .color-picker {
