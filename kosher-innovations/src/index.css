@@ -6,12 +6,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
   background-color: #ffffff;
-  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -24,6 +24,13 @@ a {
 
 li {
   list-style: none;
+}
+
+.up-arrow {
+  width: 65px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
 }
 
 .navbar {
@@ -101,11 +108,7 @@ section {
 
 #cards {
   background-color: #0093e9;
-  background-image: repeating-linear-gradient(
-    55deg,
-    #0093e9 20%,
-    #ffffff 50%
-  );
+  background-image: repeating-linear-gradient(55deg, #0093e9 20%, #ffffff 50%);
 }
 
 section .card {
