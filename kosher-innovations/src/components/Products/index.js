@@ -28,15 +28,42 @@ import DecalCard from "../../classes/DecalCard";
 
 // onscroll animation is added once the window is loaded in
 
-// window.onload = function animateCardOnScroll() {
-//   const cardElements = document.querySelectorAll(".card");
-//   for (const card of cardElements) {
-//     if (card.getBoundingClientRect().top < window.innerHeight) {
-//       card.classList.add("animated");
-//     }
-//   }
-//   window.addEventListener("scroll", animateCardOnScroll);
-// };
+const animateCardOnScroll = () => {
+  const cardElements = document.querySelectorAll(".card");
+  const viewportHeight = window.innerHeight;
+  for (const card of cardElements) {
+    const rect = card.getBoundingClientRect();
+    const distanceFromBottom = viewportHeight - rect.top;
+    if (distanceFromBottom > 0.35 * viewportHeight) {
+      card.classList.add("animated");
+      card.classList.remove("invisible");
+    } else {
+      card.classList.remove("animated");
+      card.classList.add("invisible");
+    }
+  }
+  window.addEventListener("scroll", animateCardOnScroll);
+}
+
+const debounce = (func, wait) => {
+  let timeout;
+  return function() {
+    const context = this;
+    const args = arguments;
+    const later = function() {
+      timeout = null;
+      func.apply(context, args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+const debouncedAnimateCardOnScroll = debounce(animateCardOnScroll, 100);
+
+window.onload = debouncedAnimateCardOnScroll;
+window.addEventListener("scroll", debouncedAnimateCardOnScroll);
+
 
 
 const Products = () => {
