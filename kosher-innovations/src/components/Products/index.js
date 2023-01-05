@@ -34,7 +34,7 @@ const animateCardOnScroll = () => {
   for (const card of cardElements) {
     const rect = card.getBoundingClientRect();
     const distanceFromBottom = viewportHeight - rect.top;
-    if (distanceFromBottom > 0.35 * viewportHeight) {
+    if (distanceFromBottom > 0.25 * viewportHeight) {
       card.classList.add("animated");
       card.classList.remove("invisible");
     } else {
