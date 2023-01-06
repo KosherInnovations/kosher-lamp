@@ -1,6 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Josefin+Sans:ital@1&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Josefin+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Josefin+Sans:ital@1&display=swap&family=Montserrat&display=swap");
 
 * {
   padding: 0;
@@ -35,7 +35,7 @@ li {
 }
 
 .up-arrow:hover {
-  width: 75px;
+  transform: scale(1.25);
 }
 
 .navbar {
@@ -82,8 +82,9 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background: #BA94D1;
+  background: #FF7D7D;
   color: #ffffff;
+  transform: scale(1.15);
 }
 
 nav ul li:last-child {
@@ -242,13 +243,16 @@ section .card .content .type .type-picker {
   box-sizing: border-box;
   cursor: pointer;
   text-align: center;
+  font-family: "Josefin Sans", sans-serif;
   border-radius: 25px;
-  padding: 4px 8px;
+  padding: 5px 10px;
   transition: 0.5s ease-in-out;
 }
 
 section .card .content .type .type-picker:hover {
-  background: #68b984;
+  background: #FF7D7D;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 #travel-card-img {
@@ -328,10 +332,20 @@ section .card .content .type .type-picker:hover {
   height: 100px;
 }
 
+section .card .product-price {
+  transition: 0.5s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+  color: #2D4263;
+}
+
+section .card:hover .product-price {
+  transform: scale(0) rotate(180deg);
+}
+
 section .card .content a {
   display: inline-block;
   padding: 12px 30px;
-  background: #fff;
+  background: #DFDFDE;
   border-radius: 40px;
   font-family: "Cinzel", serif;
   letter-spacing: 1px;

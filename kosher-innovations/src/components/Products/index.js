@@ -87,6 +87,7 @@ const Products = () => {
             title="Bug Checker"
           ></img>
         </div>
+        <h2 className="product-price">$53.95</h2>
         <div className="content">
           <div className="flex-box-products-page">
             <a
@@ -110,6 +111,7 @@ const Products = () => {
             title="Shabbos Safe Warming Tray"
           ></img>
         </div>
+        <h2 className="product-price">$149.99</h2>
         <div className="content">
           <div className="flex-box-products-page">
             <a
@@ -135,6 +137,7 @@ const Products = () => {
             title="Go Wash"
           ></img>
         </div>
+        <h2 className="product-price">$7.95</h2>
         <div className="content">
           <div className="flex-box-products-page">
             <a
@@ -159,6 +162,7 @@ const Products = () => {
             id="kosher-clock"
           ></img>
         </div>
+        <h2 className="product-price">$23.95</h2>
         <div className="content">
           <div className="flex-box-products-page">
             <a
@@ -182,6 +186,7 @@ const Products = () => {
             title="Fridg-eez"
           ></img>
         </div>
+        <h2 className="product-price">$6.95</h2>
         <div className="content">
           <div className="flex-box-products-page">
             <a
@@ -205,6 +210,7 @@ const Products = () => {
             title="Shabbos Bottle Opener"
           ></img>
         </div>
+        <h2 className="product-price">$14.95</h2>
         <div className="content">
           <div className="flex-box-products-page">
             <a
@@ -230,6 +236,7 @@ const Products = () => {
             title="Mushroom KosherLamp"
           ></img>
         </div>
+        <h2 className="product-price">$44.95</h2>
         <div className="content">
           <div className="flex-box-products-page">
             <a
@@ -256,6 +263,7 @@ const Products = () => {
             title="Shabbos Toothbrush"
           ></img>
         </div>
+        <h2 className="product-price">$18.95</h2>
         <div className="content">
           <h3>1 x 4 Pack</h3>
           <div className="flex-box">
@@ -282,6 +290,7 @@ const Products = () => {
             title="Uncle Moishy Weekday Toothbrush"
           ></img>
         </div>
+        <h2 className="product-price">$6.95</h2>
         <div className="content">
           <h3>1 x 4 Pack</h3>
           <div className="flex-box">

@@ -78,6 +78,7 @@ class TissueCard extends React.Component {
             title={this.state.title}
           ></img>
         </div>
+        <h2 className="product-price">$10.95</h2>
         <div className="content">
           <h3>Click On A Type</h3>
           <div className="type">{this.divs}</div>

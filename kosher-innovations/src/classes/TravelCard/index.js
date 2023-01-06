@@ -62,6 +62,7 @@ class travelCard extends React.Component {
       src: travelWhite,
       title: "Travel Lamp White Edition",
       alt: "The Travel KosherLamp, white edition. Small enough for travel while still bright enough to light up an entire room.",
+      price: "52.95",
     };
   }
 
@@ -77,33 +78,34 @@ class travelCard extends React.Component {
 
   render() {
     return (
-        <div className="card">
-          <div className="imgBox">
-            <header>
-              <h1 title={this.state.title}>Travel Lamp</h1>
-            </header>
-            <img
-              id="travel-card-img"
-              src={this.state.src}
-              alt={this.state.alt}
-              title={this.state.title}
-            ></img>
-          </div>
-          <div className="content">
-            <h3>Click On A Color</h3>
-            <div className="color">{this.divs}</div>
-            <div className="flex-box">
-              <a
-                className="travel-cart"
-                href={this.state.href}
-                title={`add ${this.state.title} to cart`}
-              >
-                Add To Cart
-              </a>
-              <TravelModal />
-            </div>
+      <div className="card">
+        <div className="imgBox">
+          <header>
+            <h1 title={this.state.title}>Travel Lamp</h1>
+          </header>
+          <img
+            id="travel-card-img"
+            src={this.state.src}
+            alt={this.state.alt}
+            title={this.state.title}
+          ></img>
+        </div>
+        <h2 className="product-price">${this.state.price}</h2>
+        <div className="content">
+          <h3>Click On A Color</h3>
+          <div className="color">{this.divs}</div>
+          <div className="flex-box">
+            <a
+              className="travel-cart"
+              href={this.state.href}
+              title={`add ${this.state.title} to cart`}
+            >
+              Add To Cart
+            </a>
+            <TravelModal />
           </div>
         </div>
+      </div>
     );
   }
 }

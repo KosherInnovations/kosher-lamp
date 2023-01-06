@@ -107,6 +107,7 @@ class KmaxCard extends React.Component {
       src: kLampWhite,
       alt: "The KosherLamp MAX, white edition, an aestheically pleasing lamp which is handy for shutting out the lights on Shabbos and Yom Tov",
       title: "KosherLamp MAX White",
+      price: "52.95",
     };
   }
 
@@ -133,6 +134,7 @@ class KmaxCard extends React.Component {
             title={this.state.title}
           ></img>
         </div>
+        <h2 className="product-price">${this.state.price}</h2>
         <div className="content">
           <h3>Click On A Color</h3>
           <div className="color">{this.divs}</div>

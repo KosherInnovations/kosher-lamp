@@ -44,6 +44,7 @@ class GloveCard extends React.Component {
       src: glovesRed,
       alt: "The Shabbos Scrub Gloves, red edition, an awesome way to wash dishes on Shabbos and Yom Tov in accordance with Halacha",
       title: "Red Shabbos Scrub Gloves",
+      price: "7.99",
     };
   }
 
@@ -70,6 +71,8 @@ class GloveCard extends React.Component {
             title={this.state.title}
           ></img>
         </div>
+
+        <h2 className="product-price">${this.state.price}</h2>
         <div className="content">
           <h3>Click On A Color</h3>
           <div className="color">{this.divs}</div>
