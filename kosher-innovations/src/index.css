@@ -397,6 +397,23 @@ section .card .content .flex-box {
   }
 }
 
+/* zoom feature */
+
+/* .zoom-wrapper {
+  position: relative;
+}
+
+.zoom-preview {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: none;
+} */
+
 /* modal styling */
 
 .css-1ciqza6 {
