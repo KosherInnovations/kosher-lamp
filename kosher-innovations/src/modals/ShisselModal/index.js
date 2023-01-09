@@ -26,7 +26,8 @@ const ShisselModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Smart Shissel"
+        alt="Open product info about Smart Shissel"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

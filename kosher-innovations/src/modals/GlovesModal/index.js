@@ -26,7 +26,8 @@ const GlovesModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Shabbos Scrub Gloves"
+        alt="Open product info about Shabbos Scrub Gloves"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

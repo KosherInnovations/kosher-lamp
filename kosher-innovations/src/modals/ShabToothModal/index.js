@@ -26,7 +26,8 @@ const ShabtoothModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Shabbos Toothbrush"
+        alt="Open product info about Shabbos Toothbrush"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

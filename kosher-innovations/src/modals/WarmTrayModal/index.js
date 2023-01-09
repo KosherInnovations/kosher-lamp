@@ -26,7 +26,8 @@ const BasicModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Shabbos Safe Warming Tray"
+        alt="Open product info about Shabbos Safe Warming Tray"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

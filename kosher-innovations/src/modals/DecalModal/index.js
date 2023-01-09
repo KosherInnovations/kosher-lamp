@@ -26,7 +26,8 @@ const DecalModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Jewish Wall Decals"
+        alt="Open product info about Jewish Wall Decals"
+        title="Open product info"
       ></img>
 
       <Modal

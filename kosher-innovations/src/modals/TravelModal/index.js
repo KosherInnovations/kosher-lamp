@@ -26,7 +26,8 @@ const TravelModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Travel KosherLamp "
+        alt="Open product info about Travel KosherLamp"
+        title="Open product info"
       ></img>
 
       <Modal

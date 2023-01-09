@@ -10,29 +10,37 @@ import kLampCherry from "../../resources/kmax/cherry-kmax.png";
 import kLampIvory from "../../resources/kmax/ivory-kmax.png";
 import kLampPink from "../../resources/kmax/pink-kmax.png";
 
-
 // a hover to zoom feature
 
-// const wrapper = document.querySelector(".zoom-wrapper");
-// const preview = document.querySelector(".zoom-preview");
-// const target = document.querySelector(".zoom-target");
-
 // const addZoomFeature = () => {
+//   const wrapper = document.querySelector(".zoom-wrapper");
+//   const preview = document.querySelector(".zoom-preview");
+//   const target = document.querySelector(".zoom-target");
+
+//   let debounceTimer;
+//   let previewX = 0;
+//   let previewY = 0;
 //   wrapper.addEventListener("mousemove", (event) => {
-//     // Calculate the position of the preview box
-//     const x = event.offsetX;
-//     const y = event.offsetY;
-//     const previewX = x - preview.offsetWidth / 2;
-//     const previewY = y - preview.offsetHeight / 2;
+//     clearTimeout(debounceTimer);
+//     debounceTimer = setTimeout(() => {
+//       // Calculate the target position of the preview box
+//       const wrapperRect = wrapper.getBoundingClientRect();
+//       const targetX = event.clientX - wrapperRect.left - preview.offsetWidth / 2;
+//       const targetY = event.clientY - wrapperRect.top - preview.offsetHeight / 2;
 
-//     // Update the background position of the preview box
-//     const backgroundX = -x * 2;
-//     const backgroundY = -y * 2;
-//     preview.style.backgroundPosition = `${backgroundX}px ${backgroundY}px`;
+//       // Use an interpolation function to smooth out the movement of the preview box
+//       previewX = previewX + (targetX - previewX) * 0.1;
+//       previewY = previewY + (targetY - previewY) * 0.1;
 
-//     // Update the position of the preview box
-//     preview.style.left = `${previewX}px`;
-//     preview.style.top = `${previewY}px`;
+//       // Update the background position of the preview box
+//       const backgroundX = -previewX * 2;
+//       const backgroundY = -previewY * 2;
+//       preview.style.backgroundPosition = `${backgroundX -100}px ${backgroundY -100}px`;
+
+//       // Update the position of the preview box
+//       preview.style.left = `${previewX}px`;
+//       preview.style.top = `${previewY}px`;
+//     }, 1); // Debounce interval
 //   });
 
 //   wrapper.addEventListener("mouseover", () => {
@@ -43,13 +51,25 @@ import kLampPink from "../../resources/kmax/pink-kmax.png";
 //     preview.style.display = "block";
 //   });
 
-//   wrapper.addEventListener("mouseout", () => {
-//     // Hide the preview box
-//     preview.style.display = "none";
+//   wrapper.addEventListener("mouseout", (event) => {
+//     // Check if the mouse has left the wrapper element
+//     const relatedTarget = event.relatedTarget || event.toElement;
+//     if (!wrapper.contains(relatedTarget)) {
+//       // Reset the previewX and previewY values to 0
+//       previewX = 0;
+//       previewY = 0;
+  
+//       // Hide the preview box
+//       preview.style.display = "none";
+//     }
 //   });
+    
+  
 // };
 
-// window.onload = addZoomFeature;
+// document.addEventListener("DOMContentLoaded", function () {
+//   addZoomFeature();
+// });
 
 class KmaxCard extends React.Component {
   constructor(props) {

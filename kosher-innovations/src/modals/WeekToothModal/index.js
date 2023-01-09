@@ -26,7 +26,8 @@ const WeekToothModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Uncle Moishy Weekday Toothbrush"
+        alt="Open product info about Uncle Moishy Weekday Toothbrush"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

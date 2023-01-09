@@ -26,7 +26,8 @@ const KC3Modal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherClock"
+        alt="Open product info about KosherClock"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

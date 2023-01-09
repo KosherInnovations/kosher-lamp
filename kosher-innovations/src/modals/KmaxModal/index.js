@@ -26,7 +26,8 @@ const KmaxModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="Open product info about KosherLamp MAX"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

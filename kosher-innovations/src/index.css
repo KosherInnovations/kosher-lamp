@@ -39,6 +39,8 @@ li {
 }
 
 .navbar {
+  /* background-color: #e7e2e2; */
+  background-color: #f0e7e7;
   width: 100%;
   background-size: cover;
   opacity: 85%;
@@ -399,7 +401,7 @@ section .card .content .flex-box {
 
 /* zoom feature */
 
-/* .zoom-wrapper {
+.zoom-wrapper {
   position: relative;
 }
 
@@ -412,7 +414,7 @@ section .card .content .flex-box {
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   display: none;
-} */
+}
 
 /* modal styling */
 
@@ -496,7 +498,14 @@ section .card .content .flex-box {
   position: absolute;
   right: 25px;
   top: 25px;
-  /* display: none; */
+}
+
+.info-btn, .exit-btn {
+  transition: 0.5s ease-in-out;
+}
+
+.info-btn:hover, .exit-btn:hover {
+  transform: scale(1.2) rotate(360deg);
 }
 
 /* carousel styling */

@@ -26,7 +26,8 @@ const BasicModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Bug Checker MAX"
+        alt="Open product info about Bug Checker MAX"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

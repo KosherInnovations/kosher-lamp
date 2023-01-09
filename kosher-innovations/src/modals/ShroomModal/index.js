@@ -26,7 +26,8 @@ const ShroomModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Mushroom KosherLamp"
+        alt="Open product info about Mushroom KosherLamp"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

@@ -26,7 +26,8 @@ const OpenerModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Shabbos Bottle Opener"
+        alt="Open product info about Shabbos Bottle Opener"
+        title="Open product info"
       ></img>
       <Modal
         open={open}

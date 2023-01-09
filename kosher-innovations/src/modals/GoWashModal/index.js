@@ -26,7 +26,8 @@ const GoWashModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Go Wash"
+        alt="Open product info about Go Wash"
+        title="Open product info"
       ></img>
       <Modal
         open={open}
