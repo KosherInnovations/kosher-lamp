@@ -1,5 +1,5 @@
 import React from "react";
-import kiLogo from "../../resources/ki-logo.png";
+import kiLogo from "../../resources/ki-banner-detailed.jpg";
 
 const About = () => {
   return (

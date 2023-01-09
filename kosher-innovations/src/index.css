@@ -355,6 +355,7 @@ section .card .content a {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
+  transform: scale(0);
   letter-spacing: 1.5px;
 }
 
@@ -491,6 +492,15 @@ section .card .content .flex-box {
 
 .info-btn {
   width: 35px;
+  transform: scale(0);
+}
+
+.info-btn:hover {
+  transform: rotate(360deg);
+}
+
+section .card:hover .info-btn, section .card:hover .content a {
+  transform: scale(1);
 }
 
 .exit-btn {
@@ -594,6 +604,7 @@ h5 cite {
   width: 100%;
   text-align: center;
   padding: 0 17px;
+  letter-spacing: 1px;
 }
 
 .replacement-images {
@@ -605,7 +616,7 @@ h5 cite {
 #about {
   align-items: flex-start;
   justify-content: center;
-  background-image: linear-gradient(90deg, #ffffff 50%,#BA94D1 50%);
+  background: linear-gradient(90deg, #ffffff 50%,#BA94D1 50%);
   /* background: url("./resources/ki-big-logo.jpg"); */
   background-position: 50%;
   background-size: contain;
@@ -618,31 +629,36 @@ h5 cite {
 
 #about header h1 {
   width: 100vw;
-  height: 40vh;
-  background: #ffffff;
+  height: 30vh;
+  background: linear-gradient(90deg, #BA94D1 50%,#ffffff 50%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #about header h1 img {
-  padding: 0 0 55px;
-  width: 60vw;
-  /* background: red;
-  border-radius: 25px; */
-  /* height: 100%; */
+  /* padding: 0 0 55px; */
+  width: 80vw;
+  height: 100%;
 }
 
 #about header p {
   font-size: 22px;
   font-family: "Cinzel", serif;
   font-weight: 600;
-  text-shadow: 1px 1px 14px black;
-  padding: 0 25px;
-  height: 40vh;
+  /* text-shadow: 1px 1px 14px black; */
+  position: relative;
+  top: 5vh;
+  padding: 0 10vw;
+  height: 50vh;
+  width: 80vw;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgb(255, 255, 255, 0);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
 }
 
 #about .our-team {
