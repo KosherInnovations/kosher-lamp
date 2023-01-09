@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import infoBtn from "../../resources/info.png";
+import infoBtn from "../../resources/information.png";
+import exitBtn from "../../resources/exit-btn.png";
 import ShabToothCarousel from "../../carousels/ShabToothCarousel";
 
 const style = {
@@ -34,6 +35,13 @@ const ShabtoothModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style} id="modal-box">
+          <img
+            onClick={handleClose}
+            src={exitBtn}
+            title="Exit the product info section"
+            alt="exit icon"
+            className="exit-btn"
+          ></img>
           <div className="product-info">
           <h3 variant="h6" component="h3">
             Shabbos Toothbrush
