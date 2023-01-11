@@ -42,9 +42,7 @@ const Navbar = (props) => {
       >
         Contact
       </li>
-      <li
-      title="Your Shopping Cart"
-      >
+      <li title="Your Shopping Cart">
         <a href="https://www.1shoppingcart.com/app/netcart.asp?MerchantID=49604">
           <img
             src={shoppingCart}
