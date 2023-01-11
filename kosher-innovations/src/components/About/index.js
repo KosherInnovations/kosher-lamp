@@ -106,6 +106,11 @@ const About = () => {
           </div>
         ))}
       </div>
+      <div className="ki-info">
+        <p className="info-box"></p>
+        <p className="info-box"></p>
+        <p className="info-box"></p>
+      </div>
     </section>
   );
 };
