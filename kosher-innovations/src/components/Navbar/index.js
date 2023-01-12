@@ -1,6 +1,16 @@
 import React from "react";
 import shoppingCart from "../../resources/shopping-cart.png";
 
+const hideUpArrow = () => {
+  const upArrow = document.querySelector(".up-arrow");
+  upArrow.style.display = "none";
+};
+
+const showUpArrow = () => {
+  const upArrow = document.querySelector(".up-arrow");
+  upArrow.style.display = "initial";
+};
+
 const Navbar = (props) => {
   const { pages = [], setCurrentPage } = props;
 
@@ -8,7 +18,7 @@ const Navbar = (props) => {
     <ul>
       <li
         className="nav-link"
-        onClick={() => setCurrentPage(pages[0])}
+        onClick={() => {setCurrentPage(pages[0]); showUpArrow();}}
         title="Shop Our Products"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -17,7 +27,7 @@ const Navbar = (props) => {
       </li>
       <li
         className="nav-link"
-        onClick={() => setCurrentPage(pages[1])}
+        onClick={() => {setCurrentPage(pages[1]); showUpArrow();}}
         title="Shop Our Replacements"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -26,7 +36,7 @@ const Navbar = (props) => {
       </li>
       <li
         className="nav-link"
-        onClick={() => setCurrentPage(pages[2])}
+        onClick={() => {setCurrentPage(pages[2]); showUpArrow();}}
         title="Learn More About Our Company"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -35,7 +45,10 @@ const Navbar = (props) => {
       </li>
       <li
         className="nav-link"
-        onClick={() => setCurrentPage(pages[3])}
+        onClick={() => {
+          setCurrentPage(pages[3]);
+          hideUpArrow();
+        }}
         title="Get in Touch with Us"
         rel="noopener noreferrer"
         tabIndex="0"
