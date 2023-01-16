@@ -1,7 +1,7 @@
 {
   "name": "kosher-innovations",
   "version": "0.1.0",
-  "homepage": "http://kosher-innovations.github.io/kosher-image",
+  "homepage": "http://kosherInnovations.github.io/kosher-image",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
