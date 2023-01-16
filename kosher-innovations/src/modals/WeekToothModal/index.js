@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import infoBtn from "../../resources/info.png";
+import infoBtn from "../../resources/information.png";
+import exitBtn from "../../resources/exit-btn.png";
+import WeekToothCarousel from "../../carousels/WeekToothCarousel";
 
 const style = {
   position: "absolute",
@@ -25,7 +26,8 @@ const WeekToothModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Uncle Moishy Weekday Toothbrush"
+        alt="Open product info about Uncle Moishy Weekday Toothbrush"
+        title="Open product info"
       ></img>
       <Modal
         open={open}
@@ -33,18 +35,29 @@ const WeekToothModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
-            Uncle Moishy Weekday Toothbrush
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            Uncle Moishy Weekday Toothbrush is a fun way to promote oral hygiene
-            for children between the ages of 2 and 9. These bright toothbrushes
-            come packed together in a colorful and affordable 4-pack.<br></br>
-            <br></br>The 4 pack includes a Yellow, Red, Green, & Blue. Cushioned
-            brush head protects tender gums. The attached tongue cleaner is
-            designed to promote fresh breath
-          </Typography>
+        <Box sx={style} id="modal-box">
+          <img
+            onClick={handleClose}
+            src={exitBtn}
+            title="Exit the product info section"
+            alt="exit icon"
+            className="exit-btn"
+          ></img>
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              Uncle Moishy Weekday Toothbrush
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              Uncle Moishy Weekday Toothbrush is a fun way to promote oral
+              hygiene for children between the ages of 2 and 9. These bright
+              toothbrushes come packed together in a colorful and affordable
+              4-pack.<br></br>
+              <br></br>The 4 pack includes a Yellow, Red, Green, & Blue.
+              Cushioned brush head protects tender gums. The attached tongue
+              cleaner is designed to promote fresh breath
+            </p>
+          </div>
+          <WeekToothCarousel />
         </Box>
       </Modal>
     </>

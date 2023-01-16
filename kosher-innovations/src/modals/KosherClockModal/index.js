@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import infoBtn from "../../resources/info.png";
+import infoBtn from "../../resources/information.png";
+import exitBtn from "../../resources/exit-btn.png";
+import KosherClockCarousel from "../../carousels/KosherClockCarousel";
 
 const style = {
   position: "absolute",
@@ -25,7 +26,8 @@ const KC3Modal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherClock"
+        alt="Open product info about KosherClock"
+        title="Open product info"
       ></img>
       <Modal
         open={open}
@@ -33,20 +35,31 @@ const KC3Modal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
-            KosherClock
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
-            Can be used for Weekdays, Shabbos, Yom Tov, & Travel. Set different
-            alarms, for different times, for different days!<br></br>
-            <br></br> Features - <br></br>Weekday mode: 10 alarms 2 alarm
-            volumes quick time setting <br></br>Shabbos & Yom Tov mode: No
-            problem with muktzah can't press any buttons alarm shuts off after 1
-            minute set multiple alarms to ring 5 minutes apart to act like a
-            snooze feature Travel mode: Screen & buttons are protected slim &
-            compact for travel
-          </Typography>
+        <Box sx={style} id="modal-box">
+          <img
+            onClick={handleClose}
+            src={exitBtn}
+            title="Exit the product info section"
+            alt="exit icon"
+            className="exit-btn"
+          ></img>
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              KosherClock
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              Can be used for Weekdays, Shabbos, Yom Tov, & Travel. Set
+              different alarms, for different times, for different days!
+              <br></br>
+              <br></br> Features - <br></br>Weekday mode: 10 alarms 2 alarm
+              volumes quick time setting <br></br>Shabbos & Yom Tov mode: No
+              problem with muktzah can't press any buttons alarm shuts off after
+              1 minute set multiple alarms to ring 5 minutes apart to act like a
+              snooze feature Travel mode: Screen & buttons are protected slim &
+              compact for travel
+            </p>
+          </div>
+          <KosherClockCarousel />
         </Box>
       </Modal>
     </>

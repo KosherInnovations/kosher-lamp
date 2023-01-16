@@ -56,6 +56,7 @@ class DecalCard extends React.Component {
       src: alephBet,
       alt: "The Aleph Bet Wall Decal, a fun way to decorate your walls",
       title: "The Aleph Bet Wall Decal",
+      price: "12.50",
     };
   }
 
@@ -82,6 +83,8 @@ class DecalCard extends React.Component {
             title={this.state.title}
           ></img>
         </div>
+
+        <h2 className="product-price">${this.state.price}</h2>
         <div className="content">
           <h3>Click On A Type</h3>
           <div className="type">{this.divs}</div>

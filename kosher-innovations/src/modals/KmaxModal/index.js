@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import infoBtn from "../../resources/info.png";
+import infoBtn from "../../resources/information.png";
+import exitBtn from "../../resources/exit-btn.png";
 import KmaxCarousel from "../../carousels/KmaxCarousel";
 
 const style = {
@@ -26,7 +26,8 @@ const KmaxModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about KosherLamp MAX"
+        alt="Open product info about KosherLamp MAX"
+        title="Open product info"
       ></img>
       <Modal
         open={open}
@@ -34,25 +35,29 @@ const KmaxModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
-            KosherLamp MAX Info
-          </Typography>
-          <Typography
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            component="h4"
-          >
-            KosherLamp MAX means the most light with a bigger window. A simple
-            twist reveals or hides the light on this innovative reading lamp.
-            It's a practical and innovative idea that's perfect in any room Now
-            you'll have even more light to read on Shabbos!<br></br><br></br>
-            LED bulbs, energy efficient, new design, easy twist
-            technology, beautiful colours, easy to use thumb-switch, and can be
-            used on Shabbos according to halacha. It's convenient and easy.
-          </Typography>
-          <br></br>
-          <br></br>
+        <Box sx={style} id="modal-box">
+          <img
+            onClick={handleClose}
+            src={exitBtn}
+            title="Exit the product info section"
+            alt="exit icon"
+            className="exit-btn"
+          ></img>
+          <div className="product-info">
+            <h3 variant="h6" component="h3">
+              KosherLamp MAX Info
+            </h3>
+            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+              KosherLamp MAX means the most light with a bigger window. A simple
+              twist reveals or hides the light on this innovative reading lamp.
+              It's a practical and innovative idea that's perfect in any room
+              Now you'll have even more light to read on Shabbos!<br></br>
+              <br></br>
+              LED bulbs, energy efficient, new design, easy twist technology,
+              beautiful colours, easy to use thumb-switch, and can be used on
+              Shabbos according to halacha. It's convenient and easy.
+            </p>
+          </div>
           <KmaxCarousel />
         </Box>
       </Modal>

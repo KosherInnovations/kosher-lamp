@@ -6,11 +6,11 @@ const Header = (props) => {
     <>
       <header className="navbar">
         <nav>
-          <a href="/">
+          <a href="/" title="Back to homepage">
             <img
               src={logo}
               className="navigation-logo"
-              alt="navigation logo"
+              alt="home button"
             />
           </a>
           {props.children}

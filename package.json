@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,5 @@
   "bugs": {
     "url": "https://github.com/KosherInnovations/kosher-lamp/issues"
   },
-  "homepage": "https://github.com/KosherInnovations/kosher-lamp#readme"
+  "homepage": "https://github.com/KosherInnovations/kosher-lamp"
 }

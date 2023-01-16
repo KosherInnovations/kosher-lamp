@@ -24,7 +24,8 @@ class ShisselCard extends React.Component {
         href: "https://www.kosherimage.com/cmd.php?pid=d25a71ec1a704649ba40277dc6cb11a2",
         imgSrc: shisselGrey,
         titleTag: "Grey Smart Shissel",
-        altTag: "The Smart Shissel, grey edition. The smart way to wash Negel Vasser in the morning",
+        altTag:
+          "The Smart Shissel, grey edition. The smart way to wash Negel Vasser in the morning",
       },
       {
         id: "beige",
@@ -61,6 +62,7 @@ class ShisselCard extends React.Component {
       src: shisselBlue,
       title: "Blue Smart Shissel",
       alt: "The Smart Shissel, blue edition. The smart way to wash Negel Vasser in the morning",
+      price: "19.95",
     };
   }
 
@@ -87,6 +89,8 @@ class ShisselCard extends React.Component {
             title={this.state.title}
           ></img>
         </div>
+
+        <h2 className="product-price">${this.state.price}</h2>
         <div className="content">
           <h3>Click On A Color</h3>
           <div className="color">{this.divs}</div>

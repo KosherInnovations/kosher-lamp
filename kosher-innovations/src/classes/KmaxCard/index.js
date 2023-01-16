@@ -10,6 +10,67 @@ import kLampCherry from "../../resources/kmax/cherry-kmax.png";
 import kLampIvory from "../../resources/kmax/ivory-kmax.png";
 import kLampPink from "../../resources/kmax/pink-kmax.png";
 
+// a hover to zoom feature
+
+// const addZoomFeature = () => {
+//   const wrapper = document.querySelector(".zoom-wrapper");
+//   const preview = document.querySelector(".zoom-preview");
+//   const target = document.querySelector(".zoom-target");
+
+//   let debounceTimer;
+//   let previewX = 0;
+//   let previewY = 0;
+//   wrapper.addEventListener("mousemove", (event) => {
+//     clearTimeout(debounceTimer);
+//     debounceTimer = setTimeout(() => {
+//       // Calculate the target position of the preview box
+//       const wrapperRect = wrapper.getBoundingClientRect();
+//       const targetX = event.clientX - wrapperRect.left - preview.offsetWidth / 2;
+//       const targetY = event.clientY - wrapperRect.top - preview.offsetHeight / 2;
+
+//       // Use an interpolation function to smooth out the movement of the preview box
+//       previewX = previewX + (targetX - previewX) * 0.1;
+//       previewY = previewY + (targetY - previewY) * 0.1;
+
+//       // Update the background position of the preview box
+//       const backgroundX = -previewX * 2;
+//       const backgroundY = -previewY * 2;
+//       preview.style.backgroundPosition = `${backgroundX -100}px ${backgroundY -100}px`;
+
+//       // Update the position of the preview box
+//       preview.style.left = `${previewX}px`;
+//       preview.style.top = `${previewY}px`;
+//     }, 1); // Debounce interval
+//   });
+
+//   wrapper.addEventListener("mouseover", () => {
+//     // Set the background image of the preview box
+//     preview.style.backgroundImage = `url(${target.src})`;
+
+//     // Show the preview box
+//     preview.style.display = "block";
+//   });
+
+//   wrapper.addEventListener("mouseout", (event) => {
+//     // Check if the mouse has left the wrapper element
+//     const relatedTarget = event.relatedTarget || event.toElement;
+//     if (!wrapper.contains(relatedTarget)) {
+//       // Reset the previewX and previewY values to 0
+//       previewX = 0;
+//       previewY = 0;
+  
+//       // Hide the preview box
+//       preview.style.display = "none";
+//     }
+//   });
+    
+  
+// };
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   addZoomFeature();
+// });
+
 class KmaxCard extends React.Component {
   constructor(props) {
     super(props);
@@ -107,6 +168,7 @@ class KmaxCard extends React.Component {
       src: kLampWhite,
       alt: "The KosherLamp MAX, white edition, an aestheically pleasing lamp which is handy for shutting out the lights on Shabbos and Yom Tov",
       title: "KosherLamp MAX White",
+      price: "52.95",
     };
   }
 
@@ -127,12 +189,17 @@ class KmaxCard extends React.Component {
           <header>
             <h1 title={this.state.title}>KosherLamp MAX</h1>
           </header>
-          <img
-            src={this.state.src}
-            alt={this.state.alt}
-            title={this.state.title}
-          ></img>
+          <div className="zoom-wrapper">
+            <img
+              className="zoom-target"
+              src={this.state.src}
+              alt={this.state.alt}
+              title={this.state.title}
+            ></img>
+            <div className="zoom-preview"></div>
+          </div>
         </div>
+        <h2 className="product-price">${this.state.price}</h2>
         <div className="content">
           <h3>Click On A Color</h3>
           <div className="color">{this.divs}</div>

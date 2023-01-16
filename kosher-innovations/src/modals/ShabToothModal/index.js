@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import infoBtn from "../../resources/info.png";
+import infoBtn from "../../resources/information.png";
+import exitBtn from "../../resources/exit-btn.png";
+import ShabToothCarousel from "../../carousels/ShabToothCarousel";
 
 const style = {
   position: "absolute",
@@ -25,7 +26,8 @@ const ShabtoothModal = () => {
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
-        alt="button to open info about Shabbos Toothbrush"
+        alt="Open product info about Shabbos Toothbrush"
+        title="Open product info"
       ></img>
       <Modal
         open={open}
@@ -33,20 +35,29 @@ const ShabtoothModal = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h3">
+        <Box sx={style} id="modal-box">
+          <img
+            onClick={handleClose}
+            src={exitBtn}
+            title="Exit the product info section"
+            alt="exit icon"
+            className="exit-btn"
+          ></img>
+          <div className="product-info">
+          <h3 variant="h6" component="h3">
             Shabbos Toothbrush
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          </h3>
+          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
             Brush your teeth on Shabbos with these halachically approved special
             Toothbrushes! 4 pack comes with Red, Yellow, Purple and Blue.
             Shabbos Toothbrush™ ensures that melachos are avoided (Sechitah,
             Chavalah, Memareach and Uvdin D'Chol), allowing you to brush your
             teeth on Shabbos according to all opinions.<br></br>
-            <br></br>*Permissible for use with liquid mouthwash.<br></br>Features: Soft
-            Latex rubber "bristles" won't make gums bleed Widely spaced
-            "bristles" won't squeeze liquid
-          </Typography>
+            <br></br>*Permissible for use with liquid mouthwash.<br></br>
+            Features: Soft Latex rubber "bristles" won't make gums bleed Widely
+            spaced "bristles" won't squeeze liquid
+          </p></div>
+          <ShabToothCarousel />
         </Box>
       </Modal>
     </>
