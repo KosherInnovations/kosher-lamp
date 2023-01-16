@@ -112,8 +112,8 @@ const About = () => {
         <h4>Who We Are</h4>
         <p className="info-box">
           We are a small Jewish company based out of Toronto. (Yes, our office
-          is in Canada!) Our name explains our mission: Our goal is to
-          invent and market creative products that benefit the Shomer Shabbat
+          is in Canada!) Our name explains our mission: Our goal is to invent
+          and market creative products that benefit the Shomer Shabbat
           community.<br></br>
           <br></br>We are constantly exploring ideas for Jewish products that
           are practical, innovative and halachically permissible. We make sure
@@ -158,7 +158,13 @@ const About = () => {
           "Wouldn't it be great if..." to get something started.<br></br>
           <br></br>Who knows what Kosher Innovations will come up with next?
           Check your local Judaica store, Kosher grocer, hardware, pharmacy or
-          other Jewish stores for new Kosher Innovations products.
+          other Jewish stores for new Kosher Innovations products.<br></br>
+          <br></br>
+          Or check out our{" "}
+          <a className="map-link" href="https://www.google.com/maps/d/viewer?mid=15-DxkcwmeXGIyUiBxfB2ibOJbtQ&hl=en&ll=-3.81666561775622e-14%2C-90.006665&z=1">
+            map
+          </a>{" "}
+          to find a retailer near you
         </p>
       </div>
     </section>

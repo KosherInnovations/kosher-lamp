@@ -743,6 +743,13 @@ h5 cite {
   letter-spacing: 0.8px;
 }
 
+#about .map-link {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 /* contact section */
 
 #contact {
