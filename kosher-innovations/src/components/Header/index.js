@@ -6,7 +6,7 @@ const Header = (props) => {
     <>
       <header className="navbar">
         <nav>
-          <a href="/" title="Back to homepage">
+          <a href="https://kosherinnovations.github.io/kosher-lamp/" title="Back to homepage">
             <img
               src={logo}
               className="navigation-logo"

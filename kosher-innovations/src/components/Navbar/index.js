@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import shoppingCart from "../../resources/shopping-cart.png";
 
 const hideUpArrow = () => {
@@ -8,14 +8,25 @@ const hideUpArrow = () => {
 
 const showUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");
-  upArrow.style.display = "initial";
+  if (window.matchMedia("(min-width: 500px)").matches) {
+    upArrow.style.display = "initial";
+  } else {
+    upArrow.style.display = "none";
+  }
 };
+
 
 const Navbar = (props) => {
   const { pages = [], setCurrentPage } = props;
+  const [active, setActive] = useState("nav-menu")
+
+  const navToggler = () => {
+    active === 'nav-menu' ? setActive('nav-menu nav-active') : setActive('nav-menu');
+  }
 
   return (
-    <ul>
+    <>
+    <ul className={active}>
       <li
         className="nav-link"
         onClick={() => {setCurrentPage(pages[0]); showUpArrow();}}
@@ -67,6 +78,11 @@ const Navbar = (props) => {
         </a>
       </li>
     </ul>
+    <div onClick={navToggler} className="toggler">
+      <div className="line1"></div>
+      <div className="line2"></div>
+      <div className="line3"></div>
+    </div></>
   );
 };
 
