@@ -4,13 +4,13 @@ import logo from '../../resources/kosher_innovations_logo.png';
 const Header = (props) => {
   return (
     <>
-      <header>
+      <header className="navbar">
         <nav>
-          <a href="/">
+          <a href="https://kosherinnovations.github.io/kosher-lamp/" title="Back to homepage">
             <img
               src={logo}
               className="navigation-logo"
-              alt="navigation logo"
+              alt="home button"
             />
           </a>
           {props.children}
