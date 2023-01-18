@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kosher-lamp/static/css/main.4a70a949.css",
-    "main.js": "/kosher-lamp/static/js/main.6a9b98e1.js",
+    "main.css": "/kosher-lamp/static/css/main.f1e49a08.css",
+    "main.js": "/kosher-lamp/static/js/main.99d01a24.js",
     "static/js/787.90000931.chunk.js": "/kosher-lamp/static/js/787.90000931.chunk.js",
     "static/media/gloves-blue.png": "/kosher-lamp/static/media/gloves-blue.1a941547f45cb5c56a17.png",
     "static/media/gloves-red.png": "/kosher-lamp/static/media/gloves-red.999545d68b6ce7b4b46f.png",
@@ -39,18 +39,18 @@
     "static/media/ki-banner-detailed.jpg": "/kosher-lamp/static/media/ki-banner-detailed.196fe52969543ed6b286.jpg",
     "static/media/exit-btn.png": "/kosher-lamp/static/media/exit-btn.4ce1945d9cd1c4169ecc.png",
     "static/media/adapter-1.jpg": "/kosher-lamp/static/media/adapter-1.acf1351213b88a8ad5cf.jpg",
-    "static/media/shopping-cart.png": "/kosher-lamp/static/media/shopping-cart.626a97e2a92094b10e03.png",
     "static/media/up-arrow.png": "/kosher-lamp/static/media/up-arrow.c36f87420a90688750e4.png",
+    "static/media/shopping-cart.png": "/kosher-lamp/static/media/shopping-cart.3dcb3c21e910c5cc9a84.png",
     "static/media/information.png": "/kosher-lamp/static/media/information.070a367e21dba2975c6a.png",
     "static/media/replacement-shade.jpg": "/kosher-lamp/static/media/replacement-shade.54fb4303cdd8505dbe99.jpg",
     "static/media/menu-bar.png": "/kosher-lamp/static/media/menu-bar.1f5fcdc7218d627e62b3.png",
     "index.html": "/kosher-lamp/index.html",
-    "main.4a70a949.css.map": "/kosher-lamp/static/css/main.4a70a949.css.map",
-    "main.6a9b98e1.js.map": "/kosher-lamp/static/js/main.6a9b98e1.js.map",
+    "main.f1e49a08.css.map": "/kosher-lamp/static/css/main.f1e49a08.css.map",
+    "main.99d01a24.js.map": "/kosher-lamp/static/js/main.99d01a24.js.map",
     "787.90000931.chunk.js.map": "/kosher-lamp/static/js/787.90000931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a70a949.css",
-    "static/js/main.6a9b98e1.js"
+    "static/css/main.f1e49a08.css",
+    "static/js/main.99d01a24.js"
   ]
 }
