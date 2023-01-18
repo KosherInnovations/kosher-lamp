@@ -37,13 +37,15 @@ const TravelModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style} id="modal-box">
-          <img
-            onClick={handleClose}
-            src={exitBtn}
-            title="Exit the product info section"
-            alt="exit icon"
-            className="exit-btn"
-          ></img>
+          <div className="exit-btn-container">
+            <img
+              onClick={handleClose}
+              src={exitBtn}
+              title="Exit the product info section"
+              alt="exit icon"
+              className="exit-btn"
+            ></img>
+          </div>
           <div className="product-info">
             <h3 id="modal-modal-title" variant="h6" component="h3">
               Travel KosherLamp
