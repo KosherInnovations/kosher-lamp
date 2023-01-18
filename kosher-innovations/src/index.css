@@ -193,11 +193,16 @@ section .card .imgBox h1 {
   font-family: "Cinzel", serif;
   letter-spacing: 1.2px;
   line-height: 1;
+  transition: 0.5s ease-in-out;
+}
+
+section .card:hover .imgBox h1 {
+  transform: rotate(90deg) scale(0);
 }
 
 section .card .content {
   position: absolute;
-  bottom: 0;
+  top: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,6 +385,7 @@ section .card .content .flex-box-replacements-page {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: row;
   padding: 0 25px;
 }
 
@@ -935,6 +941,10 @@ input {
     width: 45px;
   }
 
+  section .card .content {
+    bottom: 0;
+  }
+
   section .card .content .color .color-picker {
     height: 1.5rem;
     width: 1.5rem;
@@ -961,10 +971,12 @@ input {
 
   section .card {
     width: 90vw;
+    height: 500px;
     margin: 20px 0;
   }
 
-  section .card .content .flex-box {
+  section .card .content .flex-box, section .card .content .flex-box-products-page,
+  section .card .content .flex-box-replacements-page {
     flex-direction: column;
     padding: 0;
   }
