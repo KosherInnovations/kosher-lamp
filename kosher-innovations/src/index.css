@@ -99,25 +99,20 @@ nav ul li:last-child:hover {
 }
 
 nav ul li a .shopping-cart {
-  max-width: 22px;
+  width: 22px;
 }
 
 nav .toggler {
-  background: #ffffff;
   cursor: pointer;
   display: none;
-  border-radius: 10px;
 }
 
-nav .toggler div {
+nav .toggler img {
   width: 3rem;
-  height: .2rem;
-  margin: .4rem;
-  background: #000000;
 }
 
 nav .nav-active {
-  transform: translateX(0);
+  transform: translateX(0) rotate(0deg);
 }
 
 main {
@@ -910,6 +905,15 @@ input {
     display: block;
   }
 
+  nav .toggler .menu-btn {
+    transform: rotate(180deg);
+    transition: 1s ease-in-out;
+  }
+
+  nav .toggler .turned-btn {
+    transform: rotate(-270deg);
+  }
+
   nav ul {
     position: fixed;
     top: 11vh;
@@ -917,9 +921,13 @@ input {
     width: 100%;
     height: 89vh;
     flex-direction: column;
-    transform: translateY(100%);
+    transform: translateY(100%) rotate(180deg);
     background-color: #000000;
     transition: 0.5s ease-in-out;
+  }
+
+  nav ul li a .shopping-cart {
+    width: 45px;
   }
 
   section .card .content .color .color-picker {
@@ -929,11 +937,7 @@ input {
 }
 
 @media screen and (max-width: 500px) {
-  /* nav {
-    overflow: hidden;
-  } */
 
-  
 
   /* card section */
 
