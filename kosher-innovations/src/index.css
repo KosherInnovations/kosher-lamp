@@ -953,16 +953,21 @@ input {
   /* modal */
 
   .MuiBox-root p {
-    padding: 15px 0 0;
+    padding: 0;
+    max-height: 80%;
   }
 
   #modal-box {
     padding: 30px 20px;
   }
 
+  .product-info h3 {
+    display: none;
+  }
+
   .exit-btn-container {
     position: absolute;
-    bottom: 37%;
+    top: 57%;
     left: 0;
     text-align: center;
     width: 100%;
@@ -972,9 +977,14 @@ input {
     position: unset;
   }
 
+  .btn-box {
+    top: 15px;
+    bottom: unset;
+  }
+
   h5 p {
     width: 100%;
-    height: 50%;
+    height: 75%;
   }
 
   #testimonials p {
@@ -987,6 +997,7 @@ input {
   .testimonials-text {
     display: block;
     height: 100%;
+    padding: 0 10px;
   }
 
 }
