@@ -900,6 +900,11 @@ input {
     position: fixed;
     top: 0;
   } 
+
+  nav .navigation-logo {
+    width: 3rem;
+    border-radius: 0;
+  }
   
   nav .toggler {
     display: block;

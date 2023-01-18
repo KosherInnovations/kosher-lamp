@@ -16,6 +16,9 @@ const showUpArrow = () => {
   }
 };
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+}
 
 const Navbar = (props) => {
   const { pages = [], setCurrentPage } = props;
@@ -37,7 +40,9 @@ const Navbar = (props) => {
           setCurrentPage(pages[0]);
           showUpArrow();
           setActive("nav-menu");
-          turned('menu-btn');}}
+          turned('menu-btn');
+          scrollToTop();
+        }}
         title="Shop Our Products"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -50,7 +55,9 @@ const Navbar = (props) => {
           setCurrentPage(pages[1]);
           showUpArrow();
           setActive("nav-menu");
-          turned('menu-btn');}}
+          turned('menu-btn');
+          scrollToTop();
+        }}
         title="Shop Our Replacements"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -63,7 +70,8 @@ const Navbar = (props) => {
           setCurrentPage(pages[2]);
           showUpArrow();
           setActive("nav-menu");
-          turned('menu-btn');}}
+          turned('menu-btn');
+          scrollToTop();}}
         title="Learn More About Our Company"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -77,6 +85,7 @@ const Navbar = (props) => {
           hideUpArrow();
           setActive("nav-menu");
           turned('menu-btn');
+          scrollToTop();
         }}
         title="Get in Touch with Us"
         rel="noopener noreferrer"
