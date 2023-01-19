@@ -112,7 +112,7 @@ nav .toggler img {
 }
 
 nav .nav-active {
-  transform: translateX(0) rotate(0deg);
+  transform: translateX(0);
 }
 
 main {
@@ -196,13 +196,9 @@ section .card .imgBox h1 {
   transition: 0.5s ease-in-out;
 }
 
-section .card:hover .imgBox h1 {
-  transform: rotate(90deg) scale(0);
-}
-
 section .card .content {
   position: absolute;
-  top: 65%;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,7 +436,7 @@ section .card .content .flex-box {
 
 .css-1ciqza6 {
   width: 90vw;
-  height: 100vh;
+  height: 90vh;
   border-radius: 25px;
   background-color: rgb(0, 0, 0, 0.75);
   color: #ffffff;
@@ -458,6 +454,11 @@ section .card .content .flex-box {
 
 .carousel-box {
   height: 35%;
+}
+
+.MuiBox-root button {
+  border: none;
+  background: none;
 }
 
 .MuiBox-root p {
@@ -492,6 +493,7 @@ section .card .content .flex-box {
 .carousel-arrow {
   border: none;
   z-index: 30;
+  width: 30px;
 }
 
 .prev {
@@ -524,7 +526,7 @@ section .card:hover .content a {
 }
 
 .exit-btn {
-  width: 45px;
+  width: 30px;
   position: absolute;
   right: 25px;
   top: 25px;
@@ -932,7 +934,7 @@ input {
     width: 100%;
     height: 89vh;
     flex-direction: column;
-    transform: translateY(100%) rotate(180deg);
+    transform: translateY(100%);
     background-color: #000000;
     transition: 0.5s ease-in-out;
   }
@@ -941,8 +943,8 @@ input {
     width: 45px;
   }
 
-  section .card .content {
-    bottom: 0;
+  section .card:hover .imgBox h1 {
+    transform: rotate(90deg) scale(0);
   }
 
   section .card .content .color .color-picker {
@@ -954,7 +956,11 @@ input {
 
   .MuiBox-root p {
     padding: 0;
-    max-height: 80%;
+    max-height: 90%;
+  }
+
+  .MuiBox-root button {
+    padding: 0 5px;
   }
 
   #modal-box {
@@ -967,10 +973,11 @@ input {
 
   .exit-btn-container {
     position: absolute;
-    top: 57%;
+    top: 0;
     left: 0;
-    text-align: center;
+    text-align: right;
     width: 100%;
+    padding: 10px 20px;
   }
 
   .exit-btn {
@@ -984,7 +991,7 @@ input {
 
   h5 p {
     width: 100%;
-    height: 65%;
+    height: 60%;
   }
 
   #testimonials p {
