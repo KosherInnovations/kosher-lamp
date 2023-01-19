@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kosher-lamp/static/css/main.e9925f9a.css",
-    "main.js": "/kosher-lamp/static/js/main.4788e0a8.js",
+    "main.css": "/kosher-lamp/static/css/main.f9402d6b.css",
+    "main.js": "/kosher-lamp/static/js/main.9cf43737.js",
     "static/js/787.90000931.chunk.js": "/kosher-lamp/static/js/787.90000931.chunk.js",
     "static/media/gloves-blue.png": "/kosher-lamp/static/media/gloves-blue.1a941547f45cb5c56a17.png",
     "static/media/gloves-red.png": "/kosher-lamp/static/media/gloves-red.999545d68b6ce7b4b46f.png",
@@ -37,20 +37,21 @@
     "static/media/white-travel.png": "/kosher-lamp/static/media/white-travel.d1ff85ebea9847ee3792.png",
     "static/media/black-travel.png": "/kosher-lamp/static/media/black-travel.68788f81aeef0a330a11.png",
     "static/media/ki-banner-detailed.jpg": "/kosher-lamp/static/media/ki-banner-detailed.196fe52969543ed6b286.jpg",
-    "static/media/exit-btn.png": "/kosher-lamp/static/media/exit-btn.4ce1945d9cd1c4169ecc.png",
     "static/media/adapter-1.jpg": "/kosher-lamp/static/media/adapter-1.acf1351213b88a8ad5cf.jpg",
+    "static/media/exit-btn.png": "/kosher-lamp/static/media/exit-btn.f61522a8205eb290254e.png",
+    "static/media/information.png": "/kosher-lamp/static/media/information.8be0710b9ff8afe92bbc.png",
     "static/media/up-arrow.png": "/kosher-lamp/static/media/up-arrow.c36f87420a90688750e4.png",
     "static/media/shopping-cart.png": "/kosher-lamp/static/media/shopping-cart.3dcb3c21e910c5cc9a84.png",
-    "static/media/information.png": "/kosher-lamp/static/media/information.070a367e21dba2975c6a.png",
     "static/media/replacement-shade.jpg": "/kosher-lamp/static/media/replacement-shade.54fb4303cdd8505dbe99.jpg",
+    "static/media/carousel-arrow.png": "/kosher-lamp/static/media/carousel-arrow.0939d0d41ddc87f33135.png",
     "static/media/menu-bar.png": "/kosher-lamp/static/media/menu-bar.1f5fcdc7218d627e62b3.png",
     "index.html": "/kosher-lamp/index.html",
-    "main.e9925f9a.css.map": "/kosher-lamp/static/css/main.e9925f9a.css.map",
-    "main.4788e0a8.js.map": "/kosher-lamp/static/js/main.4788e0a8.js.map",
+    "main.f9402d6b.css.map": "/kosher-lamp/static/css/main.f9402d6b.css.map",
+    "main.9cf43737.js.map": "/kosher-lamp/static/js/main.9cf43737.js.map",
     "787.90000931.chunk.js.map": "/kosher-lamp/static/js/787.90000931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9925f9a.css",
-    "static/js/main.4788e0a8.js"
+    "static/css/main.f9402d6b.css",
+    "static/js/main.9cf43737.js"
   ]
 }
