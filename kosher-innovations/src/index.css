@@ -897,6 +897,9 @@ input {
   transition: 0.5s ease-in-out;
 }
 
+@media screen and (min-width: 992px) {
+}
+
 @media screen and (min-width: 768px) {
   .up-arrow {
     display: block;
@@ -1007,9 +1010,20 @@ input {
     padding: 0 10px;
   }
 
+  /* contact section */
+
+  #contact {
+    padding: 11vh 20px 25px;
+  }
+  .map-container, .contact-form {
+    height: 85vh;
+    width: 90vw;
+    margin: 25px 10px;
+  }
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
 
 
   /* card section */
@@ -1085,12 +1099,6 @@ input {
 #contact {
   background: repeating-linear-gradient(35deg, #ffffff, #ba94d1 50%);
   padding: 11vh 20px 25px;
-}
-
-.map-container, .contact-form {
-  height: 65vh;
-  width: 90vw;
-  margin: 25px 10px;
 }
 
 }

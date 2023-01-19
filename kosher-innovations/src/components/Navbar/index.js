@@ -71,7 +71,8 @@ const Navbar = (props) => {
           showUpArrow();
           setActive("nav-menu");
           turned('menu-btn');
-          scrollToTop();}}
+          scrollToTop();
+        }}
         title="Learn More About Our Company"
         rel="noopener noreferrer"
         tabIndex="0"
