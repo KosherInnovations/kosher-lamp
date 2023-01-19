@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kosher-lamp/static/css/main.f9402d6b.css",
+    "main.css": "/kosher-lamp/static/css/main.327dfea0.css",
     "main.js": "/kosher-lamp/static/js/main.9cf43737.js",
     "static/js/787.90000931.chunk.js": "/kosher-lamp/static/js/787.90000931.chunk.js",
     "static/media/gloves-blue.png": "/kosher-lamp/static/media/gloves-blue.1a941547f45cb5c56a17.png",
@@ -46,12 +46,12 @@
     "static/media/carousel-arrow.png": "/kosher-lamp/static/media/carousel-arrow.0939d0d41ddc87f33135.png",
     "static/media/menu-bar.png": "/kosher-lamp/static/media/menu-bar.1f5fcdc7218d627e62b3.png",
     "index.html": "/kosher-lamp/index.html",
-    "main.f9402d6b.css.map": "/kosher-lamp/static/css/main.f9402d6b.css.map",
+    "main.327dfea0.css.map": "/kosher-lamp/static/css/main.327dfea0.css.map",
     "main.9cf43737.js.map": "/kosher-lamp/static/js/main.9cf43737.js.map",
     "787.90000931.chunk.js.map": "/kosher-lamp/static/js/787.90000931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9402d6b.css",
+    "static/css/main.327dfea0.css",
     "static/js/main.9cf43737.js"
   ]
 }
