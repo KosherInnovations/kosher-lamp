@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import shoppingCart from "../../resources/shopping-cart.png";
+import menuBar from "../../resources/menu-bar.png"
 
 const hideUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");
@@ -15,21 +16,33 @@ const showUpArrow = () => {
   }
 };
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+}
 
 const Navbar = (props) => {
   const { pages = [], setCurrentPage } = props;
-  const [active, setActive] = useState("nav-menu")
+  const [active, setActive] = useState("nav-menu");
+  const [original, turned] = useState("menu-btn");
 
   const navToggler = () => {
     active === 'nav-menu' ? setActive('nav-menu nav-active') : setActive('nav-menu');
-  }
+    original === 'menu-btn' ? turned('menu-btn turned-btn') : turned('menu-btn');
+  };
+
 
   return (
     <>
     <ul className={active}>
       <li
         className="nav-link"
-        onClick={() => {setCurrentPage(pages[0]); showUpArrow();}}
+        onClick={() => {
+          setCurrentPage(pages[0]);
+          showUpArrow();
+          setActive("nav-menu");
+          turned('menu-btn');
+          scrollToTop();
+        }}
         title="Shop Our Products"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -38,7 +51,13 @@ const Navbar = (props) => {
       </li>
       <li
         className="nav-link"
-        onClick={() => {setCurrentPage(pages[1]); showUpArrow();}}
+        onClick={() => {
+          setCurrentPage(pages[1]);
+          showUpArrow();
+          setActive("nav-menu");
+          turned('menu-btn');
+          scrollToTop();
+        }}
         title="Shop Our Replacements"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -47,7 +66,12 @@ const Navbar = (props) => {
       </li>
       <li
         className="nav-link"
-        onClick={() => {setCurrentPage(pages[2]); showUpArrow();}}
+        onClick={() => {
+          setCurrentPage(pages[2]);
+          showUpArrow();
+          setActive("nav-menu");
+          turned('menu-btn');
+          scrollToTop();}}
         title="Learn More About Our Company"
         rel="noopener noreferrer"
         tabIndex="0"
@@ -59,6 +83,9 @@ const Navbar = (props) => {
         onClick={() => {
           setCurrentPage(pages[3]);
           hideUpArrow();
+          setActive("nav-menu");
+          turned('menu-btn');
+          scrollToTop();
         }}
         title="Get in Touch with Us"
         rel="noopener noreferrer"
@@ -79,9 +106,7 @@ const Navbar = (props) => {
       </li>
     </ul>
     <div onClick={navToggler} className="toggler">
-      <div className="line1"></div>
-      <div className="line2"></div>
-      <div className="line3"></div>
+      <img src={menuBar} alt="open menu" className={original} ></img>
     </div></>
   );
 };

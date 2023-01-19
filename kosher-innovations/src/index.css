@@ -99,21 +99,16 @@ nav ul li:last-child:hover {
 }
 
 nav ul li a .shopping-cart {
-  max-width: 22px;
+  width: 22px;
 }
 
 nav .toggler {
-  background: #ffffff;
   cursor: pointer;
   display: none;
-  border-radius: 10px;
 }
 
-nav .toggler div {
+nav .toggler img {
   width: 3rem;
-  height: .2rem;
-  margin: .4rem;
-  background: #000000;
 }
 
 nav .nav-active {
@@ -198,6 +193,7 @@ section .card .imgBox h1 {
   font-family: "Cinzel", serif;
   letter-spacing: 1.2px;
   line-height: 1;
+  transition: 0.5s ease-in-out;
 }
 
 section .card .content {
@@ -385,6 +381,7 @@ section .card .content .flex-box-replacements-page {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: row;
   padding: 0 25px;
 }
 
@@ -439,7 +436,7 @@ section .card .content .flex-box {
 
 .css-1ciqza6 {
   width: 90vw;
-  height: 100vh;
+  height: 90vh;
   border-radius: 25px;
   background-color: rgb(0, 0, 0, 0.75);
   color: #ffffff;
@@ -457,6 +454,11 @@ section .card .content .flex-box {
 
 .carousel-box {
   height: 35%;
+}
+
+.MuiBox-root button {
+  border: none;
+  background: none;
 }
 
 .MuiBox-root p {
@@ -491,6 +493,7 @@ section .card .content .flex-box {
 .carousel-arrow {
   border: none;
   z-index: 30;
+  width: 30px;
 }
 
 .prev {
@@ -523,7 +526,7 @@ section .card:hover .content a {
 }
 
 .exit-btn {
-  width: 45px;
+  width: 30px;
   position: absolute;
   right: 25px;
   top: 25px;
@@ -905,9 +908,23 @@ input {
     position: fixed;
     top: 0;
   } 
+
+  nav .navigation-logo {
+    width: 3rem;
+    border-radius: 0;
+  }
   
   nav .toggler {
     display: block;
+  }
+
+  nav .toggler .menu-btn {
+    transform: rotate(180deg);
+    transition: 1s ease-in-out;
+  }
+
+  nav .toggler .turned-btn {
+    transform: rotate(-270deg);
   }
 
   nav ul {
@@ -922,18 +939,78 @@ input {
     transition: 0.5s ease-in-out;
   }
 
+  nav ul li a .shopping-cart {
+    width: 45px;
+  }
+
+  section .card:hover .imgBox h1 {
+    transform: rotate(90deg) scale(0);
+  }
+
   section .card .content .color .color-picker {
     height: 1.5rem;
     width: 1.5rem;
   }
+
+  /* modal */
+
+  .MuiBox-root p {
+    padding: 0;
+    max-height: 90%;
+  }
+
+  .MuiBox-root button {
+    padding: 0 5px;
+  }
+
+  #modal-box {
+    padding: 30px 20px;
+  }
+
+  .product-info h3 {
+    display: none;
+  }
+
+  .exit-btn-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .exit-btn {
+    position: unset;
+  }
+
+  .btn-box {
+    top: 15px;
+    bottom: unset;
+  }
+
+  h5 p {
+    width: 100%;
+    height: 60%;
+  }
+
+  #testimonials p {
+    width: 100%;
+    top: 10px;
+    padding: 0;
+    height: 25vh;
+  }
+
+  .testimonials-text {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
-  /* nav {
-    overflow: hidden;
-  } */
 
-  
 
   /* card section */
 
@@ -952,10 +1029,12 @@ input {
 
   section .card {
     width: 90vw;
+    height: 500px;
     margin: 20px 0;
   }
 
-  section .card .content .flex-box {
+  section .card .content .flex-box, section .card .content .flex-box-products-page,
+  section .card .content .flex-box-replacements-page {
     flex-direction: column;
     padding: 0;
   }
