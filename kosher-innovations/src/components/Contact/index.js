@@ -44,7 +44,7 @@ const Contact = () => {
         <iframe
           title="Kosher Innovations product map"
           src="https://www.google.com/maps/d/embed?mid=15-DxkcwmeXGIyUiBxfB2ibOJbtQ&hl=en&ehbc=2E312F"
-          height="450"
+          // height="450"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
