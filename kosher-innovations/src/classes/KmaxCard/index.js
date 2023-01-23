@@ -164,10 +164,10 @@ class KmaxCard extends React.Component {
     });
 
     this.state = {
-      href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=1e99aeaef8244888a83b5451719f37ba", // Set the initial href for the add to cart button
-      src: kLampWhite,
-      alt: "The KosherLamp MAX, white edition, an aestheically pleasing lamp which is handy for shutting out the lights on Shabbos and Yom Tov",
-      title: "KosherLamp MAX White",
+      href: "https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=786c59a779a84c3fb49490d3a3e5851d", // Set the initial href for the add to cart button
+      src: kLampSteel,
+      alt: "The KosherLamp MAX, steel edition, an aestheically pleasing lamp which is handy for shutting out the lights on Shabbos and Yom Tov",
+      title: "KosherLamp MAX Steel",
       price: "52.95",
     };
   }

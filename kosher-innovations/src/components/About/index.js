@@ -2,44 +2,6 @@ import * as React from "react";
 import kiLogo from "../../resources/ki-banner-detailed.jpg";
 import smilingMan from "../../resources/smiling-man.png";
 
-// onscroll animation is added once the window is loaded in
-
-const animateCardOnScroll = () => {
-  const cardElements = document.querySelectorAll(".card");
-  const viewportHeight = window.innerHeight;
-  for (const card of cardElements) {
-    const rect = card.getBoundingClientRect();
-    const distanceFromBottom = viewportHeight - rect.top;
-    if (distanceFromBottom > 0.25 * viewportHeight) {
-      card.classList.add("animated");
-      card.classList.remove("invisible");
-    } else {
-      card.classList.remove("animated");
-      card.classList.add("invisible");
-    }
-  }
-  window.addEventListener("scroll", animateCardOnScroll);
-};
-
-const debounce = (func, wait) => {
-  let timeout;
-  return function () {
-    const context = this;
-    const args = arguments;
-    const later = function () {
-      timeout = null;
-      func.apply(context, args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-};
-
-const debouncedAnimateCardOnScroll = debounce(animateCardOnScroll, 100);
-
-window.onload = debouncedAnimateCardOnScroll;
-window.addEventListener("scroll", debouncedAnimateCardOnScroll);
-
 const About = () => {
   const team = [
     {

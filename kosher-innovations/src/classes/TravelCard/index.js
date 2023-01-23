@@ -58,10 +58,10 @@ class travelCard extends React.Component {
     });
 
     this.state = {
-      href: "https://www.kosherimage.com/cmd.php?pid=0f59cbfeb19f4a47a417c0ae1c1c3d32", // Set the initial href for the add to cart button
-      src: travelWhite,
-      title: "Travel Lamp White Edition",
-      alt: "The Travel KosherLamp, white edition. Small enough for travel while still bright enough to light up an entire room.",
+      href: "https://www.kosherimage.com/cmd.php?pid=cd4dc5f4693e42f79a70913656236248", // Set the initial href for the add to cart button
+      src: travelBlack,
+      title: "Travel Lamp Black Edition",
+      alt: "The Travel KosherLamp, black edition. Small enough for travel while still bright enough to light up an entire room.",
       price: "52.95",
     };
   }
