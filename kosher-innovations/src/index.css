@@ -25,6 +25,7 @@ li {
 }
 
 .up-arrow {
+  display: none;
   width: 65px;
   position: fixed;
   bottom: 25px;
@@ -98,7 +99,20 @@ nav ul li:last-child:hover {
 }
 
 nav ul li a .shopping-cart {
-  max-width: 22px;
+  width: 22px;
+}
+
+nav .toggler {
+  cursor: pointer;
+  display: none;
+}
+
+nav .toggler img {
+  width: 3rem;
+}
+
+nav .nav-active {
+  transform: translateX(0);
 }
 
 main {
@@ -179,6 +193,7 @@ section .card .imgBox h1 {
   font-family: "Cinzel", serif;
   letter-spacing: 1.2px;
   line-height: 1;
+  transition: 0.5s ease-in-out;
 }
 
 section .card .content {
@@ -366,6 +381,7 @@ section .card .content .flex-box-replacements-page {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: row;
   padding: 0 25px;
 }
 
@@ -382,7 +398,7 @@ section .card .content .flex-box {
 
 /* card animations */
 
-.card.animated {
+/* .card.animated {
   animation: slideInFromLeft 1.25s ease-out;
 }
 
@@ -397,7 +413,7 @@ section .card .content .flex-box {
   100% {
     transform: translateX(0) scale(1);
   }
-}
+} */
 
 /* zoom feature */
 
@@ -420,7 +436,7 @@ section .card .content .flex-box {
 
 .css-1ciqza6 {
   width: 90vw;
-  height: 100vh;
+  height: 90vh;
   border-radius: 25px;
   background-color: rgb(0, 0, 0, 0.75);
   color: #ffffff;
@@ -438,6 +454,11 @@ section .card .content .flex-box {
 
 .carousel-box {
   height: 35%;
+}
+
+.MuiBox-root button {
+  border: none;
+  background: none;
 }
 
 .MuiBox-root p {
@@ -472,6 +493,7 @@ section .card .content .flex-box {
 .carousel-arrow {
   border: none;
   z-index: 30;
+  width: 30px;
 }
 
 .prev {
@@ -504,7 +526,7 @@ section .card:hover .content a {
 }
 
 .exit-btn {
-  width: 45px;
+  width: 30px;
   position: absolute;
   right: 25px;
   top: 25px;
@@ -754,7 +776,7 @@ h5 cite {
 
 #contact {
   padding: 0 20px 25px;
-  background: repeating-linear-gradient(35deg, #ffffff, #ba94d1 10%)
+  background: repeating-linear-gradient(35deg, #ffffff, #ba94d1 1%)
 }
 
 /*  */
@@ -811,7 +833,7 @@ input {
   width: 100%;
   padding: 10px;
   border: 1px solid #fff;
-  background: #017143;
+  background: #ba94d1;
   border-radius: 5px;
   outline: none;
   color: #ffffff;
@@ -825,13 +847,13 @@ input {
   padding: 10px;
   pointer-events: none;
   font-size: 1em;
-  color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
 }
 
 .inputBox input:focus ~ span {
-  color: #017143;
+  color: #000000;
   transform: translateX(30px) translateY(-7px);
   font-size: 0.65em;
   padding: 0 10px;
@@ -862,8 +884,8 @@ input {
 
 .inputBoxBtn {
   text-align: center;
-  background-color: #1247b8;
-  border: 0;
+  background: #ff7d7d;
+  border: none;
   width: 8rem;
   height: 2.25rem;
   padding: 1%;
@@ -873,4 +895,217 @@ input {
   border-radius: 5px;
   letter-spacing: 1.25px;
   transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 768px) {
+  .up-arrow {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .navbar {
+    position: fixed;
+    top: 0;
+  } 
+
+  nav .navigation-logo {
+    width: 3rem;
+    border-radius: 0;
+  }
+  
+  nav .toggler {
+    display: block;
+  }
+
+  nav .toggler .menu-btn {
+    transform: rotate(180deg);
+    transition: 1s ease-in-out;
+  }
+
+  nav .toggler .turned-btn {
+    transform: rotate(-270deg);
+  }
+
+  nav ul {
+    position: fixed;
+    top: 11vh;
+    right: 0;
+    width: 100%;
+    height: 89vh;
+    flex-direction: column;
+    transform: translateY(100%);
+    background-color: #000000;
+    transition: 0.5s ease-in-out;
+  }
+
+  nav ul li a .shopping-cart {
+    width: 45px;
+  }
+
+  .shipping-header {
+    position: relative;
+    top: unset;
+  }
+
+  section .card {
+    height: 500px;
+    width: 70vw;
+  }
+
+  section .card:hover .imgBox h1 {
+    transform: rotate(90deg) scale(0);
+  }
+
+  section .card .content .color .color-picker {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  /* modal */
+
+  .MuiBox-root p {
+    padding: 0;
+    max-height: 90%;
+  }
+
+  .MuiBox-root button {
+    padding: 0 5px;
+  }
+
+  #modal-box {
+    padding: 30px 20px;
+  }
+
+  .product-info h3 {
+    display: none;
+  }
+
+  .exit-btn-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .exit-btn {
+    position: unset;
+  }
+
+  .btn-box {
+    top: 15px;
+    bottom: unset;
+  }
+
+  h5 p {
+    width: 100%;
+    height: 60%;
+  }
+
+  #testimonials p {
+    width: 100%;
+    top: 10px;
+    padding: 0;
+    height: 25vh;
+  }
+
+  .testimonials-text {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+  }
+
+  /* about section */
+  #about header .about-ki img {
+    width: 75vw;
+    height: 55%;
+  }
+
+  /* contact section */
+
+  #contact {
+    padding: 11vh 20px 25px;
+  }
+  .map-container, .contact-form {
+    height: 85vh;
+    width: 90vw;
+    margin: 25px 10px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+
+  /* card section */
+
+  section {
+    padding: 11vh 20px 25px;
+  }
+
+  #cards {
+    background: repeating-linear-gradient(35deg, #ffffff, #ba94d1 90vw);
+  }
+
+  section .card {
+    margin: 20px 0;
+    width: 90vw;
+  }
+
+  section .card .content .flex-box, section .card .content .flex-box-products-page,
+  section .card .content .flex-box-replacements-page {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .info-btn {
+    position: relative;
+    top: 15px;
+  }
+
+  /* about section */
+
+  #about header .about-ki img {
+    width: 70vw;
+    height: 100px;
+  }
+
+  #about header p {
+    width: 95vw;
+    height: unset;
+    top: 0;
+    font-weight: 400;
+    padding: 20px;
+  }
+
+  #about .our-team {
+    padding: 50px 25px 0;
+  }
+
+  #about .our-team .card {
+    width: 90vw;
+    margin: 20px 0;
+  }
+
+  #about .ki-info h4 {
+    height: 40vh;
+  }
+
+#about .ki-info .info-box {
+  width: 95vw;
+  padding: 20px;
+}
+
+/* contact section */
+
+#contact {
+  background: repeating-linear-gradient(35deg, #ffffff, #ba94d1 50%);
+  padding: 11vh 20px 25px;
+}
+
 }
