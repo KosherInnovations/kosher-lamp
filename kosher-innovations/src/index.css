@@ -136,7 +136,7 @@ section {
 /* card components */
 
 #cards {
-  background: repeating-linear-gradient(35deg, #ffffff 20vh, #ba94d1 80vw);
+  background: repeating-linear-gradient(35deg, #B2B2B2 20vh, #D8D8D8 80vw);
 }
 
 section .card {
@@ -396,25 +396,6 @@ section .card .content .flex-box {
   padding: 0 25px;
 }
 
-/* card animations */
-
-/* .card.animated {
-  animation: slideInFromLeft 1.25s ease-out;
-}
-
-.card.invisible {
-  opacity: 0;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%) scale(0) rotate(35deg);
-  }
-  100% {
-    transform: translateX(0) scale(1);
-  }
-} */
-
 /* zoom feature */
 
 .zoom-wrapper {
@@ -629,6 +610,7 @@ h5 cite {
   text-align: center;
   padding: 0 17px;
   letter-spacing: 1px;
+  transition: 0.5s ease-in-out;
 }
 
 .replacement-images {
@@ -965,6 +947,17 @@ input {
     width: 1.5rem;
   }
 
+  section .card .content .flex-box, section .card .content .flex-box-products-page,
+  section .card .content .flex-box-replacements-page {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .info-btn {
+    position: relative;
+    top: 15px;
+  }
+
   /* modal */
 
   .MuiBox-root p {
@@ -1049,23 +1042,12 @@ input {
   }
 
   #cards {
-    background: repeating-linear-gradient(35deg, #ffffff, #ba94d1 90vw);
+    background: repeating-linear-gradient(35deg, #ffffff, #EAE0DA 90vw);
   }
 
   section .card {
     margin: 20px 0;
     width: 90vw;
-  }
-
-  section .card .content .flex-box, section .card .content .flex-box-products-page,
-  section .card .content .flex-box-replacements-page {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .info-btn {
-    position: relative;
-    top: 15px;
   }
 
   /* about section */
