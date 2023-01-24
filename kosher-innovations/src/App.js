@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import upArrow from "./resources/up-arrow.png";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
-// import Products from './components/Products';
 
 function App() {
   const [pages] = useState([

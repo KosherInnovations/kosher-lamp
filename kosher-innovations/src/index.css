@@ -42,10 +42,10 @@ li {
   /* background-color: #f0e7e7; */
   width: 100%;
   background-size: cover;
-  opacity: 85%;
   position: relative;
   top: 0;
   z-index: 1000;
+  opacity: 0;
 }
 
 nav {
@@ -61,6 +61,8 @@ nav {
 nav .navigation-logo {
   width: 155px;
   border-radius: 25px;
+  opacity: 0;
+  transform: translate(50px, 0);
 }
 
 nav ul {
@@ -68,6 +70,8 @@ nav ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  opacity: 0;
+  transform: translate(-50px, 0);
 }
 
 nav ul li {
@@ -80,6 +84,7 @@ nav ul li {
   cursor: pointer;
   border-radius: 25px;
   transition: 0.5s ease-in-out;
+  opacity: 0;
 }
 
 nav ul li:hover {
@@ -92,6 +97,7 @@ nav ul li:last-child {
   padding: 0;
   background: none;
   border-radius: 0;
+  opacity: 1;
 }
 
 nav ul li:last-child:hover {

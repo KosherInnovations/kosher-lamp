@@ -1,5 +1,4 @@
 import React from "react";
-// import { gsap } from "gsap/all";
 // The hardcoded card components
 import bugChecker from "../../resources/bug-checker/bug-checker.png";
 import BugCheckerModal from "../../modals/BugCheckerModal";
@@ -26,10 +25,6 @@ import shroomImg from "../../resources/shroom-lamp/red-shroom.png";
 import ShroomModal from "../../modals/ShroomModal";
 import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";
-
-window.addEventListener("DOMContentLoaded", () => {
-  
-});
 
 const Products = () => {
   return (
