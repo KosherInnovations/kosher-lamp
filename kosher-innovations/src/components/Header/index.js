@@ -1,24 +1,36 @@
 import React, { useState, useEffect } from "react";
-import { gsap, TimelineMax, Power3 } from "gsap";
-import logoLarge from '../../resources/kosher_innovations_logo.png';
+import gsap, { Power3 } from "gsap";
+import logoLarge from "../../resources/kosher_innovations_logo.png";
 import logoSmall from "../../resources/ki-logo-no-background.png";
-gsap.registerPlugin(TimelineMax);
 
 const Header = (props) => {
-
   useEffect(() => {
-    let tl = new TimelineMax();
+    const tl = gsap.timeline();
     const mediaQuery1 = window.matchMedia("(min-width: 900px)");
     if (mediaQuery1.matches) {
-      tl.to(".navbar", 2,
-      {opacity: 1, ease: Power3, delay: .5}
-      )
-      tl.to(".navigation-logo", { x: "0", opacity: 1, ease: Power3 })
-      tl.to(".navbar ul", { x: "0", opacity: 1, ease: Power3 }, "<0" )
-      tl.to(".nav-link", .5, { opacity: 1, stagger: .3 }, "<.1");
+      tl.to(".navbar", 2, { scale: 1, ease: Power3, delay: 0.5 });
+      gsap.set(".navigation-logo", { transform: "scale(0)" });
+      gsap.to(".navigation-logo", {
+        transform: "scale(1)",
+        duration: 1,
+        timeline: tl,
+      });
+      gsap.set(".nav-link", { transform: "scale(0)" });
+      gsap.to(".nav-link", {
+        transform: "scale(1)",
+        stagger: { amount: 0.5 },
+        duration: 0.5,
+        delay: 0.1,
+        timeline: tl,
+        onComplete: function switchTransition() {
+          const navLinks = document.querySelectorAll(".nav-link");
+          navLinks.forEach((link) => {
+            link.classList.add("transition");
+          });
+        },
+      });
     }
-    
-  }, [])
+  }, []);
 
   const [sizedLogo, setSizedLogo] = useState(null);
 
@@ -28,7 +40,7 @@ const Header = (props) => {
     } else {
       setSizedLogo(logoSmall);
     }
-  }
+  };
 
   useEffect(() => {
     getLogo();
@@ -42,7 +54,10 @@ const Header = (props) => {
     <>
       <header className="navbar">
         <nav>
-          <a href="https://kosherinnovations.github.io/kosher-lamp/" title="Back to homepage">
+          <a
+            href="https://kosherinnovations.github.io/kosher-lamp/"
+            title="Back to homepage"
+          >
             <img
               src={sizedLogo}
               className="navigation-logo"
