@@ -1,4 +1,5 @@
 import * as React from "react";
+import LazyLoad from "react-lazyload";
 import DecalModal from "../../modals/DecalModal";
 import alephBet from "../../resources/decals/aleph-bet.png";
 import asherYatzar from "../../resources/decals/asher-yatzar.png";
@@ -77,11 +78,13 @@ class DecalCard extends React.Component {
           <header>
             <h1 title={this.state.title}>Jewish Wall Decals</h1>
           </header>
-          <img
-            src={this.state.src}
-            alt={this.state.alt}
-            title={this.state.title}
-          ></img>
+            <LazyLoad height={200} offset={100}>
+              <img
+                src={this.state.src}
+                alt={this.state.alt}
+                title={this.state.title}
+              ></img>
+            </LazyLoad>
         </div>
 
         <h2 className="product-price">${this.state.price}</h2>

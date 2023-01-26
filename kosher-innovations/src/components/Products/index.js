@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
 // The hardcoded card components
 import bugChecker from "../../resources/bug-checker/bug-checker.png";
 import BugCheckerModal from "../../modals/BugCheckerModal";
@@ -41,11 +42,13 @@ const Products = () => {
           <header>
             <h1 title="Bug Checker">Bug Checker</h1>
           </header>
-          <img
-            src={bugChecker}
-            alt="The Bug Checker, a tool used to check fresh produce for bugs"
-            title="Bug Checker"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={bugChecker}
+              alt="The Bug Checker, a tool used to check fresh produce for bugs"
+              title="Bug Checker"
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$53.95</h2>
         <div className="content">
@@ -65,11 +68,13 @@ const Products = () => {
           <header>
             <h1 title="Shabbos Safe Warming Tray">Shabbos Safe Warming Tray</h1>
           </header>
-          <img
-            src={warmingTray}
-            alt="The Shabbos Safe Warming Tray, a tool used to safely heat food on shabbos, in accordance with halacha"
-            title="Shabbos Safe Warming Tray"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={warmingTray}
+              alt="The Shabbos Safe Warming Tray, a tool used to safely heat food on shabbos, in accordance with halacha"
+              title="Shabbos Safe Warming Tray"
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$149.99</h2>
         <div className="content">
@@ -91,11 +96,13 @@ const Products = () => {
           <header>
             <h1 title="Go Wash">Go Wash</h1>
           </header>
-          <img
-            src={goWash}
-            alt="The Go Wash, a portable washing cup"
-            title="Go Wash"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={goWash}
+              alt="The Go Wash, a portable washing cup"
+              title="Go Wash"
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$7.95</h2>
         <div className="content">
@@ -115,12 +122,14 @@ const Products = () => {
           <header>
             <h1 title="KosherClock">KosherClock</h1>
           </header>
-          <img
-            src={kosherClock}
-            alt="The KosherClock, a portable clock that functions well on shabbos on yom tov"
-            title="KosherClock"
-            id="kosher-clock"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={kosherClock}
+              alt="The KosherClock, a portable clock that functions well on shabbos on yom tov"
+              title="KosherClock"
+              id="kosher-clock"
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$23.95</h2>
         <div className="content">
@@ -140,11 +149,13 @@ const Products = () => {
           <header>
             <h1 title="Fridg-eez">Fridg-eez</h1>
           </header>
-          <img
-            src={fridgeez}
-            alt="Fridg-eez, a handy tool that allows you to keep your fridge light off on shabbos and yom tov"
-            title="Fridg-eez"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={fridgeez}
+              alt="Fridg-eez, a handy tool that allows you to keep your fridge light off on shabbos and yom tov"
+              title="Fridg-eez"
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$6.95</h2>
         <div className="content">
@@ -164,11 +175,13 @@ const Products = () => {
           <header>
             <h1 title="Shabbos Bottle Opener">Shabbos Bottle Opener </h1>
           </header>
-          <img
-            src={bottleOpener}
-            alt="The Shabbos Bottle Opener, a tool that allows yout to open bottles open shabbos in accordance with Halacha"
-            title="Shabbos Bottle Opener"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={bottleOpener}
+              alt="The Shabbos Bottle Opener, a tool that allows yout to open bottles open shabbos in accordance with Halacha"
+              title="Shabbos Bottle Opener"
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$14.95</h2>
         <div className="content">
@@ -190,11 +203,13 @@ const Products = () => {
               Mushroom KosherLamp
             </h1>
           </header>
-          <img
-            src={shroomImg}
-            alt="The Mushroom KosherLamp, a kid friendly version of the popular KosherLamp"
-            title="Mushroom KosherLamp"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+           <img
+             src={shroomImg}
+             alt="The Mushroom KosherLamp, a kid friendly version of the popular KosherLamp"
+             title="Mushroom KosherLamp"
+           ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$44.95</h2>
         <div className="content">
@@ -217,11 +232,13 @@ const Products = () => {
           <header>
             <h1 title="Shabbos Toothbrush">Shabbos Toothbrush</h1>
           </header>
-          <img
-            src={shabTooth}
-            alt="The Shabbos Toothbrush, a 4 pack of Shabbos Toothbrushes which allows you to brush your teeth on Shabbos and Yom Tov in accordance with Halacha"
-            title="Shabbos Toothbrush"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={shabTooth}
+              alt="The Shabbos Toothbrush, a 4 pack of Shabbos Toothbrushes which allows you to brush your teeth on Shabbos and Yom Tov in accordance with Halacha"
+              title="Shabbos Toothbrush"
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$18.95</h2>
         <div className="content">
@@ -244,11 +261,13 @@ const Products = () => {
               Uncle Moishy Weekday Toothbrush
             </h1>
           </header>
-          <img
-            src={weekTooth}
-            alt="The (Weekday) Uncle Moishy Toothbrush, a 4 pack of weekday toothbrushes which are a great way to get the kids to practice oral hygeiene"
-            title="Uncle Moishy Weekday Toothbrush"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={weekTooth}
+              alt="The (Weekday) Uncle Moishy Toothbrush, a 4 pack of weekday toothbrushes which are a great way to get the kids to practice oral hygeiene"
+              title="Uncle Moishy Weekday Toothbrush"
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$6.95</h2>
         <div className="content">

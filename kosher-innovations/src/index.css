@@ -57,6 +57,7 @@ nav {
   padding: 5px 15px;
 }
 
+
 nav .navigation-logo {
   width: 155px;
   border-radius: 25px;
@@ -82,7 +83,7 @@ nav ul li {
 }
 
 .transition {
-  animation-delay: 3s;
+  /* animation-delay: 3s; */
   transition: 0.5s ease-in-out;
 }
 
@@ -183,6 +184,8 @@ section .card:hover .imgBox {
 
 section .card .imgBox img {
   height: 220px;
+  max-height: 220px;
+  width: 100%;
   max-width: 100%;
   margin: 0 0 20px;
   transition: 0.5s ease-in-out;

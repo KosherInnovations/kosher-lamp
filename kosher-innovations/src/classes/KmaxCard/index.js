@@ -1,4 +1,5 @@
 import * as React from "react";
+import LazyLoad from "react-lazyload";
 import KmaxModal from "../../modals/KmaxModal";
 import kLampWhite from "../../resources/kmax/white-kmax.png";
 import kLampSteel from "../../resources/kmax/silver-kmax.png";
@@ -190,12 +191,14 @@ class KmaxCard extends React.Component {
             <h1 title={this.state.title}>KosherLamp MAX</h1>
           </header>
           <div className="zoom-wrapper">
-            <img
-              className="zoom-target"
-              src={this.state.src}
-              alt={this.state.alt}
-              title={this.state.title}
-            ></img>
+            <LazyLoad height={200} offset={100}>
+                <img
+                  className="zoom-target"
+                  src={this.state.src}
+                  alt={this.state.alt}
+                  title={this.state.title}
+                ></img>
+              </ LazyLoad>
             <div className="zoom-preview"></div>
           </div>
         </div>

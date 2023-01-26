@@ -6,7 +6,11 @@ import upArrow from "./resources/up-arrow.png";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 
+
+
+
 function App() {
+
   const [pages] = useState([
     { name: "Products" },
     { name: "Replacements" },

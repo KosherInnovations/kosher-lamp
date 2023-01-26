@@ -1,4 +1,5 @@
 import * as React from "react";
+import LazyLoad from "react-lazyload";
 import TravelModal from "../../modals/TravelModal";
 import travelWhite from "../../resources/travel-lamp/white-travel.png";
 import travelGrey from "../../resources/travel-lamp/grey-travel.png";
@@ -83,12 +84,14 @@ class travelCard extends React.Component {
           <header>
             <h1 title={this.state.title}>Travel Lamp</h1>
           </header>
-          <img
-            id="travel-card-img"
-            src={this.state.src}
-            alt={this.state.alt}
-            title={this.state.title}
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              id="travel-card-img"
+              src={this.state.src}
+              alt={this.state.alt}
+              title={this.state.title}
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">${this.state.price}</h2>
         <div className="content">

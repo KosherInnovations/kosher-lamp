@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import LazyLoad from "react-lazyload";
 import kiLogo from "../../resources/ki-banner-detailed.jpg";
 import smilingMan from "../../resources/smiling-man.png";
 
@@ -38,7 +39,9 @@ const About = () => {
     <section id="about">
       <header>
         <h1 title="About Kosher Innovations" className="about-ki">
-          <img src={kiLogo} alt="Kosher Innovations logo black"></img>
+          <LazyLoad height={200} offset={100}>
+            <img src={kiLogo} alt="Kosher Innovations logo black"></img>
+          </LazyLoad>
         </h1>
         <p>
           Our goal is to invent and market creative products that benefit the
@@ -55,11 +58,13 @@ const About = () => {
                   {teamMember.name}
                 </h1>
               </header>
-              <img
-                src={smilingMan}
-                alt={`${teamMember.name}`}
-                title={`${teamMember.name}`}
-              ></img>
+              <LazyLoad height={200} offset={100}>
+               <img
+                 src={smilingMan}
+                 alt={`${teamMember.name}`}
+                 title={`${teamMember.name}`}
+               ></img>
+              </LazyLoad>
             </div>
             <h2 className="team-member-position">{teamMember.position}</h2>
             <div className="content">
