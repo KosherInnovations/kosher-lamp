@@ -38,11 +38,11 @@ const Header = (props) => {
 
   return (
     <>
-    <header className="navbar">
+    <header className="navbar" rel="preload">
     <nav>
     <a  className="navigation-logo-container" href="https://kosherinnovations.github.io/kosher-lamp/" title="Back to homepage">
       <LazyLoad height={200} offset={100}>
-        <img ref={logoRef} src={sizedLogo} className="navigation-logo" alt="home button" />
+        <img rel="prefetch" ref={logoRef} src={sizedLogo} className="navigation-logo" alt="home button" />
       </LazyLoad>
     </a>
     {props.children}

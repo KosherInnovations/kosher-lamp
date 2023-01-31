@@ -40,7 +40,11 @@ const About = () => {
       <header>
         <h1 title="About Kosher Innovations" className="about-ki">
           <LazyLoad height={200} offset={100}>
-            <img src={kiLogo} alt="Kosher Innovations logo black"></img>
+            <img
+              rel="prefetch"
+              src={kiLogo}
+              alt="Kosher Innovations logo black"
+            ></img>
           </LazyLoad>
         </h1>
         <p>
@@ -59,11 +63,12 @@ const About = () => {
                 </h1>
               </header>
               <LazyLoad height={200} offset={100}>
-               <img
-                 src={smilingMan}
-                 alt={`${teamMember.name}`}
-                 title={`${teamMember.name}`}
-               ></img>
+                <img
+                  rel="prefetch"
+                  src={smilingMan}
+                  alt={`${teamMember.name}`}
+                  title={`${teamMember.name}`}
+                ></img>
               </LazyLoad>
             </div>
             <h2 className="team-member-position">{teamMember.position}</h2>
@@ -128,7 +133,10 @@ const About = () => {
           other Jewish stores for new Kosher Innovations products.<br></br>
           <br></br>
           Or check out our{" "}
-          <a className="map-link" href="https://www.google.com/maps/d/viewer?mid=15-DxkcwmeXGIyUiBxfB2ibOJbtQ&hl=en&ll=-3.81666561775622e-14%2C-90.006665&z=1">
+          <a
+            className="map-link"
+            href="https://www.google.com/maps/d/viewer?mid=15-DxkcwmeXGIyUiBxfB2ibOJbtQ&hl=en&ll=-3.81666561775622e-14%2C-90.006665&z=1"
+          >
             map
           </a>{" "}
           to find a retailer near you

@@ -49,7 +49,7 @@ function App() {
     <>
       <div id="top"></div>
       <a href="#top" title="Back to top">
-        <img className="up-arrow" src={upArrow} alt="back to top"></img>
+        <img rel="prefetch" className="up-arrow" src={upArrow} alt="back to top"></img>
       </a>
       <Header>
         <Navbar

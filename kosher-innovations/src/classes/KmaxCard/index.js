@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import LazyLoad from "react-lazyload";
 import KmaxModal from "../../modals/KmaxModal";
 import kLampWhite from "../../resources/kmax/white-kmax.webp";
@@ -59,13 +59,12 @@ import kLampPink from "../../resources/kmax/pink-kmax.webp";
 //       // Reset the previewX and previewY values to 0
 //       previewX = 0;
 //       previewY = 0;
-  
+
 //       // Hide the preview box
 //       preview.style.display = "none";
 //     }
 //   });
-    
-  
+
 // };
 
 // document.addEventListener("DOMContentLoaded", function () {
@@ -192,13 +191,14 @@ class KmaxCard extends React.Component {
           </header>
           <div className="zoom-wrapper">
             <LazyLoad height={200} offset={100}>
-                <img
-                  className="zoom-target"
-                  src={this.state.src}
-                  alt={this.state.alt}
-                  title={this.state.title}
-                ></img>
-              </ LazyLoad>
+              <img
+                rel="prefetch"
+                className="zoom-target"
+                src={this.state.src}
+                alt={this.state.alt}
+                title={this.state.title}
+              ></img>
+            </LazyLoad>
             <div className="zoom-preview"></div>
           </div>
         </div>

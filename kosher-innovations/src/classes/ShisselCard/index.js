@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import LazyLoad from "react-lazyload";
 import ShisselModal from "../../modals/ShisselModal";
 import shisselBlue from "../../resources/smart-shissel/blue-shissel.webp";
@@ -86,6 +86,7 @@ class ShisselCard extends React.Component {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={this.state.src}
               alt={this.state.alt}
               title={this.state.title}

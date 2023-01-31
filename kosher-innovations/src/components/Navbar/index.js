@@ -125,14 +125,14 @@ const Navbar = (props) => {
             src={shoppingCart}
             className="shopping-cart"
             alt="go to your shopping cart"
-            rel="nofollow noopener noreferrer"
+            rel="prefetch nofollow noopener noreferrer"
             tabIndex="0"
           />
         </a>
       </li>
     </ul>
     <div onClick={navToggler} className="toggler">
-      <img src={menuBar} alt="open menu" className={original} ></img>
+      <img rel="prefetch" src={menuBar} alt="open menu" className={original} ></img>
     </div></>
   );
 };

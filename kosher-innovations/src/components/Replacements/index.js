@@ -6,7 +6,12 @@ import adapterImg from "../../resources/adapter-1.jpg";
 const Replacements = () => {
   return (
     <section id="cards" className="product-cards">
-      <h2 className="shipping-header">Free Shipping On Any Replacement Parts<br></br>Orders to New York State and New Jersey tend to arrive in a week or less. For other areas, please allow up to two weeks. These times are approximate.<br></br>Shipping Within USA Only</h2>
+      <h2 className="shipping-header">
+        Free Shipping On Any Replacement Parts<br></br>Orders to New York State
+        and New Jersey tend to arrive in a week or less. For other areas, please
+        allow up to two weeks. These times are approximate.<br></br>Shipping
+        Within USA Only
+      </h2>
       <div className="card">
         <div className="imgBox">
           <header>
@@ -14,6 +19,7 @@ const Replacements = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               className="replacement-images"
               src={replacementShade}
               alt="The replacement shade for KosherLamp MAX, the shade that goes in the lamp if your shade is broken"
@@ -35,10 +41,13 @@ const Replacements = () => {
       <div className="card">
         <div className="imgBox">
           <header>
-            <h1 title="Travel Lamp Replacement Adapter">Travel Lamp Adapter </h1>
+            <h1 title="Travel Lamp Replacement Adapter">
+              Travel Lamp Adapter{" "}
+            </h1>
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               className="replacement-images"
               src={adapterImg}
               alt="The Travel Lamp Adapter, a replacement adapter for when your adapter is lost, stolen, or broken"
