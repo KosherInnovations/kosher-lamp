@@ -1,5 +1,5 @@
 import React from "react";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 // The hardcoded card components
 import bugChecker from "../../resources/bug-checker/bug-checker.webp";
 import BugCheckerModal from "../../modals/BugCheckerModal";
@@ -28,6 +28,7 @@ import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";
 
 const Products = () => {
+
   return (
     <section id="cards" className="product-cards">
       <h2 className="shipping-header">
@@ -44,6 +45,7 @@ const Products = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={bugChecker}
               alt="The Bug Checker, a tool used to check fresh produce for bugs"
               title="Bug Checker"
@@ -70,6 +72,7 @@ const Products = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={warmingTray}
               alt="The Shabbos Safe Warming Tray, a tool used to safely heat food on shabbos, in accordance with halacha"
               title="Shabbos Safe Warming Tray"
@@ -98,6 +101,7 @@ const Products = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={goWash}
               alt="The Go Wash, a portable washing cup"
               title="Go Wash"
@@ -124,6 +128,7 @@ const Products = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={kosherClock}
               alt="The KosherClock, a portable clock that functions well on shabbos on yom tov"
               title="KosherClock"
@@ -151,6 +156,7 @@ const Products = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={fridgeez}
               alt="Fridg-eez, a handy tool that allows you to keep your fridge light off on shabbos and yom tov"
               title="Fridg-eez"
@@ -177,6 +183,7 @@ const Products = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={bottleOpener}
               alt="The Shabbos Bottle Opener, a tool that allows yout to open bottles open shabbos in accordance with Halacha"
               title="Shabbos Bottle Opener"
@@ -204,11 +211,12 @@ const Products = () => {
             </h1>
           </header>
           <LazyLoad height={200} offset={100}>
-           <img
-             src={shroomImg}
-             alt="The Mushroom KosherLamp, a kid friendly version of the popular KosherLamp"
-             title="Mushroom KosherLamp"
-           ></img>
+            <img
+              rel="prefetch"
+              src={shroomImg}
+              alt="The Mushroom KosherLamp, a kid friendly version of the popular KosherLamp"
+              title="Mushroom KosherLamp"
+            ></img>
           </LazyLoad>
         </div>
         <h2 className="product-price">$44.95</h2>
@@ -234,6 +242,7 @@ const Products = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={shabTooth}
               alt="The Shabbos Toothbrush, a 4 pack of Shabbos Toothbrushes which allows you to brush your teeth on Shabbos and Yom Tov in accordance with Halacha"
               title="Shabbos Toothbrush"
@@ -263,6 +272,7 @@ const Products = () => {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={weekTooth}
               alt="The (Weekday) Uncle Moishy Toothbrush, a 4 pack of weekday toothbrushes which are a great way to get the kids to practice oral hygeiene"
               title="Uncle Moishy Weekday Toothbrush"

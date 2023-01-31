@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Josefin+Sans:ital@1&display=swap&family=Montserrat&display=swap&family=Libre+Baskerville&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Josefin+Sans:ital@1&display=swap&family=Montserrat&display=swap&family=Libre+Baskerville&display=swap"); */
 
 * {
   padding: 0;
@@ -98,10 +98,12 @@ nav ul li:last-child {
   background: none;
   border-radius: 0;
   opacity: 1;
+  transition: 0.5s ease-in-out;
 }
 
 nav ul li:last-child:hover {
   color: unset;
+
 }
 
 nav ul li a .shopping-cart {

@@ -1,7 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
 const Contact = () => {
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -11,12 +10,12 @@ const Contact = () => {
           console.log(result.text);
           let inputs = document.querySelectorAll("input");
           inputs.forEach((input) => (input.value = ""));
-  
+
           let contactHeader = document.getElementById("contact-header");
           contactHeader.style.fontSize = "35px";
           contactHeader.style.color = "green";
           contactHeader.textContent = "Message Sent ✔";
-  
+
           let submitBtn = document.getElementById("submitBtn");
           submitBtn.style.backgroundColor = "green";
         },
@@ -30,18 +29,18 @@ const Contact = () => {
           contactHeader.style.fontSize = "25px";
           contactHeader.style.color = "#000000";
           contactHeader.textContent = "Get In Touch";
-  
+
           let submitBtn = document.getElementById("submitBtn");
           submitBtn.style.backgroundColor = "#1247b8";
         }, 5000);
       });
   };
-  
 
   return (
     <section id="contact">
       <div className="map-container">
         <iframe
+          rel="preconnect"
           title="Kosher Innovations product map"
           src="https://www.google.com/maps/d/embed?mid=15-DxkcwmeXGIyUiBxfB2ibOJbtQ&hl=en&ehbc=2E312F"
           // height="450"

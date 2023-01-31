@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import LazyLoad from "react-lazyload";
 import GlovesModal from "../../modals/GlovesModal";
 import glovesRed from "../../resources/scrub-gloves/gloves-red.webp";
@@ -66,13 +66,14 @@ class GloveCard extends React.Component {
           <header>
             <h1 title={this.state.title}>Shabbos Scrub Gloves</h1>
           </header>
-            <LazyLoad height={200} offset={100}>
-              <img
-                src={this.state.src}
-                alt={this.state.alt}
-                title={this.state.title}
-              ></img>
-            </LazyLoad>
+          <LazyLoad height={200} offset={100}>
+            <img
+              rel="prefetch"
+              src={this.state.src}
+              alt={this.state.alt}
+              title={this.state.title}
+            ></img>
+          </LazyLoad>
         </div>
 
         <h2 className="product-price">${this.state.price}</h2>

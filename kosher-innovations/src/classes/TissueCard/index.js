@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import LazyLoad from "react-lazyload";
 import TissueModal from "../../modals/TissueModal";
 import tissueImg from "../../resources/tissue/tissue.webp";
@@ -75,6 +75,7 @@ class TissueCard extends React.Component {
           </header>
           <LazyLoad height={200} offset={100}>
             <img
+              rel="prefetch"
               src={tissueImg}
               alt={this.state.alt}
               title={this.state.title}
