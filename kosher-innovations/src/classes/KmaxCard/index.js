@@ -1,15 +1,15 @@
 import * as React from "react";
 import LazyLoad from "react-lazyload";
 import KmaxModal from "../../modals/KmaxModal";
-import kLampWhite from "../../resources/kmax/white-kmax.png";
-import kLampSteel from "../../resources/kmax/silver-kmax.png";
-import kLampBlack from "../../resources/kmax/black-kmax.png";
-import kLampBlue from "../../resources/kmax/blue-kmax.png";
-import kLampGreen from "../../resources/kmax/green-kmax.png";
-import kLampMarble from "../../resources/kmax/marble-kmax.png";
-import kLampCherry from "../../resources/kmax/cherry-kmax.png";
-import kLampIvory from "../../resources/kmax/ivory-kmax.png";
-import kLampPink from "../../resources/kmax/pink-kmax.png";
+import kLampWhite from "../../resources/kmax/white-kmax.webp";
+import kLampSteel from "../../resources/kmax/silver-kmax.webp";
+import kLampBlack from "../../resources/kmax/black-kmax.webp";
+import kLampBlue from "../../resources/kmax/blue-kmax.webp";
+import kLampGreen from "../../resources/kmax/green-kmax.webp";
+import kLampMarble from "../../resources/kmax/marble-kmax.webp";
+import kLampCherry from "../../resources/kmax/cherry-kmax.webp";
+import kLampIvory from "../../resources/kmax/ivory-kmax.webp";
+import kLampPink from "../../resources/kmax/pink-kmax.webp";
 
 // a hover to zoom feature
 

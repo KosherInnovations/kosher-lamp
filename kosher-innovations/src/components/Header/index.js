@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
-import logoLarge from "../../resources/kosher_innovations_logo.png";
-import logoSmall from "../../resources/ki-logo-no-background.png";
+import logoLarge from "../../resources/kosher_innovations_logo.webp";
+import logoSmall from "../../resources/ki-logo-no-background.webp";
 import LazyLoad from "react-lazyload";
 const mediaQuery1 = window.matchMedia("(min-width: 900px)");
 const mediaQuery2 = window.matchMedia("(min-width: 768px)");

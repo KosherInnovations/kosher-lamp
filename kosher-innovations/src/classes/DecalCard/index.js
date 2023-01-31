@@ -1,9 +1,9 @@
 import * as React from "react";
 import LazyLoad from "react-lazyload";
 import DecalModal from "../../modals/DecalModal";
-import alephBet from "../../resources/decals/aleph-bet.png";
-import asherYatzar from "../../resources/decals/asher-yatzar.png";
-import mitzvahTrain from "../../resources/decals/mitzvah-train.png";
+import alephBet from "../../resources/decals/aleph-bet.webp";
+import asherYatzar from "../../resources/decals/asher-yatzar.webp";
+import mitzvahTrain from "../../resources/decals/mitzvah-train.webp";
 
 class DecalCard extends React.Component {
   constructor(props) {

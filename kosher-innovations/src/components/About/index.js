@@ -1,7 +1,7 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 import kiLogo from "../../resources/ki-banner-detailed.jpg";
-import smilingMan from "../../resources/smiling-man.png";
+import smilingMan from "../../resources/smiling-man.webp";
 
 const About = () => {
   const team = [

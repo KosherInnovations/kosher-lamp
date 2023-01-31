@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 import Header from "./components/Header";
 // import Footer from "./components/Footer";
-import upArrow from "./resources/up-arrow.png";
+import upArrow from "./resources/up-arrow.webp";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 

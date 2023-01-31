@@ -1,10 +1,10 @@
 import * as React from "react";
 import LazyLoad from "react-lazyload";
 import TravelModal from "../../modals/TravelModal";
-import travelWhite from "../../resources/travel-lamp/white-travel.png";
-import travelGrey from "../../resources/travel-lamp/grey-travel.png";
-import travelBlack from "../../resources/travel-lamp/black-travel.png";
-import travelBrown from "../../resources/travel-lamp/brown-travel.png";
+import travelWhite from "../../resources/travel-lamp/white-travel.webp";
+import travelGrey from "../../resources/travel-lamp/grey-travel.webp";
+import travelBlack from "../../resources/travel-lamp/black-travel.webp";
+import travelBrown from "../../resources/travel-lamp/brown-travel.webp";
 
 class travelCard extends React.Component {
   constructor(props) {

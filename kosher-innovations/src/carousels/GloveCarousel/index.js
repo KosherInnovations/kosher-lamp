@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import carouselArrow from "../../resources/carousel-arrow.png";
+import carouselArrow from "../../resources/carousel-arrow.webp";
 
 const GloveCarousel = () => {
   const [index, setIndex] = useState(0);

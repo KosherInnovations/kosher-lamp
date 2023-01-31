@@ -1,8 +1,8 @@
 import * as React from "react";
 import LazyLoad from "react-lazyload";
 import GlovesModal from "../../modals/GlovesModal";
-import glovesRed from "../../resources/scrub-gloves/gloves-red.png";
-import glovesBlue from "../../resources/scrub-gloves/gloves-blue.png";
+import glovesRed from "../../resources/scrub-gloves/gloves-red.webp";
+import glovesBlue from "../../resources/scrub-gloves/gloves-blue.webp";
 
 class GloveCard extends React.Component {
   constructor(props) {

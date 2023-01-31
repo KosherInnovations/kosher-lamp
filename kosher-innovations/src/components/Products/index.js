@@ -1,28 +1,28 @@
 import React from "react";
 import LazyLoad from 'react-lazyload';
 // The hardcoded card components
-import bugChecker from "../../resources/bug-checker/bug-checker.png";
+import bugChecker from "../../resources/bug-checker/bug-checker.webp";
 import BugCheckerModal from "../../modals/BugCheckerModal";
-import warmingTray from "../../resources/warming-tray/warming-tray.png";
+import warmingTray from "../../resources/warming-tray/warming-tray.webp";
 import WarmTrayModal from "../../modals/WarmTrayModal";
-import goWash from "../../resources/go-wash/go-wash.png";
+import goWash from "../../resources/go-wash/go-wash (1).webp";
 import GoWashModal from "../../modals/GoWashModal";
-import kosherClock from "../../resources/kosher-clock/kosher-clock.png";
+import kosherClock from "../../resources/kosher-clock/kosher-clock (1).webp";
 import KosherClockModal from "../../modals/KosherClockModal";
-import fridgeez from "../../resources/fridg-eez/fridg-eez.png";
+import fridgeez from "../../resources/fridg-eez/fridg-eez_1.webp";
 import FridgeezModal from "../../modals/FridgeezModal";
-import bottleOpener from "../../resources/bottle-opener/bottle-opener.png";
+import bottleOpener from "../../resources/bottle-opener/bottle-opener_1.webp";
 import OpenerModal from "../../modals/OpenerModal";
-import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.png";
+import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.webp";
 import ShabToothModal from "../../modals/ShabToothModal";
-import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.png";
+import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.webp";
 import WeekToothModal from "../../modals/WeekToothModal";
 // The imported card components
 import KmaxCard from "../../classes/KmaxCard";
 import TravelCard from "../../classes/TravelCard";
 import GloveCard from "../../classes/GloveCard";
 import ShisselCard from "../../classes/ShisselCard";
-import shroomImg from "../../resources/shroom-lamp/red-shroom.png";
+import shroomImg from "../../resources/shroom-lamp/red-shroom.webp";
 import ShroomModal from "../../modals/ShroomModal";
 import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";

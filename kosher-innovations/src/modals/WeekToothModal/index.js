@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import infoBtn from "../../resources/information.png";
-import exitBtn from "../../resources/exit-btn.png";
+import infoBtn from "../../resources/information.webp";
+import exitBtn from "../../resources/exit-btn.webp";
 import WeekToothCarousel from "../../carousels/WeekToothCarousel";
 
 const style = {

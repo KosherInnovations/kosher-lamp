@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import gsap from "gsap";
-import shoppingCart from "../../resources/shopping-cart.png";
-import menuBar from "../../resources/menu-bar.png"
+import shoppingCart from "../../resources/shopping-cart.webp";
+import menuBar from "../../resources/menu-bar.webp"
 
 const hideUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");
