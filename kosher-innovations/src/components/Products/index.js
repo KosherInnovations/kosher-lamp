@@ -28,6 +28,7 @@ import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";
 
 const Products = () => {
+
   return (
     <section id="cards" className="product-cards">
       <h2 className="shipping-header">
