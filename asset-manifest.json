@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kosher-lamp/static/css/main.db558614.css",
-    "main.js": "/kosher-lamp/static/js/main.3b70894d.js",
+    "main.css": "/kosher-lamp/static/css/main.67eaafe5.css",
+    "main.js": "/kosher-lamp/static/js/main.d044794e.js",
     "static/js/787.90000931.chunk.js": "/kosher-lamp/static/js/787.90000931.chunk.js",
     "static/media/bottle-opener_1.webp": "/kosher-lamp/static/media/bottle-opener_1.21c9d3439db14d4d6a3f.webp",
     "static/media/gloves-blue.webp": "/kosher-lamp/static/media/gloves-blue.4790738f6da9b4153373.webp",
@@ -28,7 +28,6 @@
     "static/media/beige-shissel.webp": "/kosher-lamp/static/media/beige-shissel.80bb311fdbf4247594d6.webp",
     "static/media/shabbos-toothbrush.webp": "/kosher-lamp/static/media/shabbos-toothbrush.19e65deceda59953b807.webp",
     "static/media/go-wash (1).webp": "/kosher-lamp/static/media/go-wash (1).e8cac7cef90b80c7518c.webp",
-    "static/media/smiling-man.webp": "/kosher-lamp/static/media/smiling-man.e45d4c7f788f5be659b6.webp",
     "static/media/kosher-clock (1).webp": "/kosher-lamp/static/media/kosher-clock (1).d153b1b9e706ebf017d1.webp",
     "static/media/adapter-1.jpg": "/kosher-lamp/static/media/adapter-1.acf1351213b88a8ad5cf.jpg",
     "static/media/blue-kmax.webp": "/kosher-lamp/static/media/blue-kmax.b5c8f276e5d55a0a5923.webp",
@@ -38,22 +37,23 @@
     "static/media/grey-travel.webp": "/kosher-lamp/static/media/grey-travel.23d48264ea9c17c8b31e.webp",
     "static/media/black-travel.webp": "/kosher-lamp/static/media/black-travel.8bf1672dbb66f8a2c17a.webp",
     "static/media/cherry-kmax.webp": "/kosher-lamp/static/media/cherry-kmax.99472099687cb39cc415.webp",
+    "static/media/smiling-man.webp": "/kosher-lamp/static/media/smiling-man.512e6dca03e19d000df1.webp",
     "static/media/replacement-shade.jpg": "/kosher-lamp/static/media/replacement-shade.54fb4303cdd8505dbe99.jpg",
-    "static/media/menu-bar.webp": "/kosher-lamp/static/media/menu-bar.a412495619231391478f.webp",
-    "static/media/information.webp": "/kosher-lamp/static/media/information.97c5dd9931762b11e6a2.webp",
-    "static/media/exit-btn.webp": "/kosher-lamp/static/media/exit-btn.0b691d8fc95ef7f362ef.webp",
-    "static/media/shopping-cart.webp": "/kosher-lamp/static/media/shopping-cart.0eeadabababc1de9b2b6.webp",
-    "static/media/up-arrow.webp": "/kosher-lamp/static/media/up-arrow.6ef502fe2563848d909a.webp",
-    "static/media/carousel-arrow.webp": "/kosher-lamp/static/media/carousel-arrow.440685fb22af02c6eeb5.webp",
-    "static/media/ki-logo-no-background.webp": "/kosher-lamp/static/media/ki-logo-no-background.cba89a2f1c8fafe7dc3a.webp",
-    "static/media/kosher_innovations_logo.webp": "/kosher-lamp/static/media/kosher_innovations_logo.1c5824c61f14e4f1f239.webp",
+    "static/media/information.webp": "/kosher-lamp/static/media/information.fd012b14f9086e3a1369.webp",
+    "static/media/up-arrow.webp": "/kosher-lamp/static/media/up-arrow.1699fa79158fe3a832b1.webp",
+    "static/media/shopping-cart.webp": "/kosher-lamp/static/media/shopping-cart.9a5543397fca873af658.webp",
+    "static/media/exit-btn.webp": "/kosher-lamp/static/media/exit-btn.fe4d554e69934a24964c.webp",
+    "static/media/carousel-arrow.webp": "/kosher-lamp/static/media/carousel-arrow.54cce6a72aa3c6b1c92a.webp",
+    "static/media/menu-bar.webp": "/kosher-lamp/static/media/menu-bar.42fb6a17f67b7b5c9a66.webp",
+    "static/media/ki-logo-no-background.webp": "/kosher-lamp/static/media/ki-logo-no-background.22f7c14c47cba8df16f7.webp",
+    "static/media/kosher_innovations_logo.webp": "/kosher-lamp/static/media/kosher_innovations_logo.144fd6faa07e47d1e366.webp",
     "index.html": "/kosher-lamp/index.html",
-    "main.db558614.css.map": "/kosher-lamp/static/css/main.db558614.css.map",
-    "main.3b70894d.js.map": "/kosher-lamp/static/js/main.3b70894d.js.map",
+    "main.67eaafe5.css.map": "/kosher-lamp/static/css/main.67eaafe5.css.map",
+    "main.d044794e.js.map": "/kosher-lamp/static/js/main.d044794e.js.map",
     "787.90000931.chunk.js.map": "/kosher-lamp/static/js/787.90000931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db558614.css",
-    "static/js/main.3b70894d.js"
+    "static/css/main.67eaafe5.css",
+    "static/js/main.d044794e.js"
   ]
 }
