@@ -1,9 +1,10 @@
 import * as React from "react";
+import LazyLoad from "react-lazyload";
 import ShisselModal from "../../modals/ShisselModal";
-import shisselBlue from "../../resources/smart-shissel/blue-shissel.png";
-import shisselGrey from "../../resources/smart-shissel/grey-shissel.png";
-import shisselBeige from "../../resources/smart-shissel/beige-shissel.png";
-import shisselPink from "../../resources/smart-shissel/pink-shissel.png";
+import shisselBlue from "../../resources/smart-shissel/blue-shissel.webp";
+import shisselGrey from "../../resources/smart-shissel/grey-shissel.webp";
+import shisselBeige from "../../resources/smart-shissel/beige-shissel.webp";
+import shisselPink from "../../resources/smart-shissel/pink-shissel.webp";
 
 class ShisselCard extends React.Component {
   constructor(props) {
@@ -83,11 +84,13 @@ class ShisselCard extends React.Component {
           <header>
             <h1 title={this.state.title}>Smart Shissel</h1>
           </header>
-          <img
-            src={this.state.src}
-            alt={this.state.alt}
-            title={this.state.title}
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={this.state.src}
+              alt={this.state.alt}
+              title={this.state.title}
+            ></img>
+          </LazyLoad>
         </div>
 
         <h2 className="product-price">${this.state.price}</h2>

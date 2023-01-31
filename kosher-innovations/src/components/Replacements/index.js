@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from "react-lazyload";
 import replacementShade from "../../resources/replacement-shade.jpg";
 import adapterImg from "../../resources/adapter-1.jpg";
 
@@ -11,12 +12,14 @@ const Replacements = () => {
           <header>
             <h1 title="Bug Checker">KosherLamp MAX Shade</h1>
           </header>
-          <img
-            className="replacement-images"
-            src={replacementShade}
-            alt="The replacement shade for KosherLamp MAX, the shade that goes in the lamp if your shade is broken"
-            title="KosherLamp MAX Replacement Shade"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              className="replacement-images"
+              src={replacementShade}
+              alt="The replacement shade for KosherLamp MAX, the shade that goes in the lamp if your shade is broken"
+              title="KosherLamp MAX Replacement Shade"
+            ></img>
+          </LazyLoad>
         </div>
         <div className="content">
           <div className="flex-box-replacements-page">
@@ -34,12 +37,14 @@ const Replacements = () => {
           <header>
             <h1 title="Travel Lamp Replacement Adapter">Travel Lamp Adapter </h1>
           </header>
-          <img
-            className="replacement-images"
-            src={adapterImg}
-            alt="The Travel Lamp Adapter, a replacement adapter for when your adapter is lost, stolen, or broken"
-            title="Travel Lamp Replacement Adapter"
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              className="replacement-images"
+              src={adapterImg}
+              alt="The Travel Lamp Adapter, a replacement adapter for when your adapter is lost, stolen, or broken"
+              title="Travel Lamp Replacement Adapter"
+            ></img>
+          </LazyLoad>
         </div>
         <div className="content">
           <div className="flex-box-replacements-page">

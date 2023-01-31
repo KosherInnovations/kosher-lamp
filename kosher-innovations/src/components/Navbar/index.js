@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import shoppingCart from "../../resources/shopping-cart.png";
-import menuBar from "../../resources/menu-bar.png"
+import gsap from "gsap";
+import shoppingCart from "../../resources/shopping-cart.webp";
+import menuBar from "../../resources/menu-bar.webp"
 
 const hideUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");
@@ -30,6 +31,30 @@ const Navbar = (props) => {
     original === 'menu-btn' ? turned('menu-btn turned-btn') : turned('menu-btn');
   };
 
+  window.addEventListener("DOMContentLoaded", () => {
+    const tl = gsap.timeline();
+  const mediaQuery1 = window.matchMedia("(min-width: 900px)");
+  const mediaQuery2 = window.matchMedia("(min-width: 768px)");
+  if (mediaQuery1.matches) {
+    gsap.set(".nav-link", { transform: "scale(0)" })
+      gsap.to(".nav-link", {
+        transform: "scale(1)",
+        stagger: { amount: 0.5 },
+        duration: 0.5,
+        delay: 0.5,
+        timeline: tl,
+        onComplete: function switchTransition() {
+          const navLinks = document.querySelectorAll(".nav-link");
+          navLinks.forEach((link) => {
+            link.classList.add("transition");
+          });
+        },
+      });
+  }
+  if (mediaQuery2.matches) {
+    
+  }
+  })
 
   return (
     <>

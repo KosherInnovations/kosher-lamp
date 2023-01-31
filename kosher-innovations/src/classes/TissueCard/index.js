@@ -1,7 +1,8 @@
 import * as React from "react";
+import LazyLoad from "react-lazyload";
 import TissueModal from "../../modals/TissueModal";
-import tissueImg from "../../resources/tissue/tissue.png";
-// import twoBoxesImg from "../../resources/tissue/twoBoxes.png";
+import tissueImg from "../../resources/tissue/tissue.webp";
+// import twoBoxesImg from "../../resources/tissue/twoBoxes.webp";
 
 class TissueCard extends React.Component {
   constructor(props) {
@@ -72,11 +73,13 @@ class TissueCard extends React.Component {
           <header>
             <h1 title={this.state.title}>Shabbos Bathroom Tissue</h1>
           </header>
-          <img
-            src={tissueImg}
-            alt={this.state.alt}
-            title={this.state.title}
-          ></img>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={tissueImg}
+              alt={this.state.alt}
+              title={this.state.title}
+            ></img>
+          </LazyLoad>
         </div>
         <h2 className="product-price">$10.95</h2>
         <div className="content">

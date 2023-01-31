@@ -42,7 +42,6 @@ li {
   /* background-color: #f0e7e7; */
   width: 100%;
   background-size: cover;
-  opacity: 85%;
   position: relative;
   top: 0;
   z-index: 1000;
@@ -57,6 +56,7 @@ nav {
   justify-content: space-between;
   padding: 5px 15px;
 }
+
 
 nav .navigation-logo {
   width: 155px;
@@ -79,6 +79,11 @@ nav ul li {
   color: #000000;
   cursor: pointer;
   border-radius: 25px;
+  /* transition: 0.5s ease-in-out; */
+}
+
+.transition {
+  /* animation-delay: 3s; */
   transition: 0.5s ease-in-out;
 }
 
@@ -92,6 +97,7 @@ nav ul li:last-child {
   padding: 0;
   background: none;
   border-radius: 0;
+  opacity: 1;
 }
 
 nav ul li:last-child:hover {
@@ -622,7 +628,7 @@ h5 cite {
 #about {
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(90deg, #ffffff 50%, #ba94d1 50%);
+ background: repeating-linear-gradient(35deg, #B2B2B2 50%, #D8D8D8 50%);
   /* background: url("./resources/ki-big-logo.jpg"); */
   background-position: 50%;
   background-size: contain;
@@ -636,7 +642,7 @@ h5 cite {
 #about header .about-ki {
   width: 100vw;
   height: 30vh;
-  background: linear-gradient(90deg, #ba94d1 50%, #ffffff 50%);
+  background: repeating-linear-gradient(35deg, #B2B2B2 50%, #D8D8D8 50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -758,7 +764,7 @@ h5 cite {
 
 #contact {
   padding: 0 20px 25px;
-  background: repeating-linear-gradient(35deg, #ffffff, #ba94d1 1%)
+  background: repeating-linear-gradient(35deg, #B2B2B2, #D8D8D8 1%);
 }
 
 /*  */
@@ -1042,7 +1048,7 @@ input {
   }
 
   #cards {
-    background: repeating-linear-gradient(35deg, #ffffff, #EAE0DA 90vw);
+    background: repeating-linear-gradient(35deg, #B2B2B2, #D8D8D8 90vw);
   }
 
   section .card {
@@ -1086,7 +1092,7 @@ input {
 /* contact section */
 
 #contact {
-  background: repeating-linear-gradient(35deg, #ffffff, #ba94d1 50%);
+  background: repeating-linear-gradient(35deg, #B2B2B2, #D8D8D8 50%);
   padding: 11vh 20px 25px;
 }
 
