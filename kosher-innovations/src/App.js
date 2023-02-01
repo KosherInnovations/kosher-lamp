@@ -28,6 +28,8 @@ function App() {
     if (mediaQuery1.matches) {
       gsap.registerPlugin(ScrollTrigger);
 
+      // const cards = document.querySelectorAll(".card");
+      // gsap.set(cards, { autoAlpha: 0 });
       tl.fromTo(
         "nav .navigation-logo",
         {
@@ -55,6 +57,24 @@ function App() {
         { opacity: "0" },
         { delay: 0.5, opacity: "1" }
       );
+      // ScrollTrigger.batch(cards, {
+      //   interval: 0.5,
+      //   batchMax: 1,
+      //   onEnter: (batch) => {
+      //     tl.fromTo(
+      //       batch,
+      //       1,
+      //       { translateX: "100vw", transform: "scale(0)" },
+      //       {
+      //         translateX: 0,
+      //         transform: "scale(1)",
+      //         autoAlpha: 1,
+      //         ease: Power3,
+      //       },
+      //       0.2
+      //     );
+      //   },
+      // });
     }
     if (mediaQuery2.matches) {
     }
