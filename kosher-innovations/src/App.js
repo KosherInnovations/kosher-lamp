@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { gsap, Power3 } from "gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./index.css";
 import Header from "./components/Header";
 // import Footer from "./components/Footer";
@@ -8,39 +9,7 @@ import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 
 function App() {
-  window.addEventListener("DOMContentLoaded", () => {
-    const tl = gsap.timeline();
-    const mediaQuery1 = window.matchMedia("(min-width: 900px)");
-    const mediaQuery2 = window.matchMedia("(min-width: 768px)");
-    if (mediaQuery1.matches) {
-      gsap.set("nav .navigation-logo", { transform: "scale(0)" });
-      gsap.set(".nav-link", { transform: "scale(0)" });
-      gsap.set(".shipping-header", { opacity: "0" });
-      gsap.set(".card", { scale: 0, translateY: "100vw" });
-
-      tl.to("nav .navigation-logo", {
-        duration: 1,
-        transform: "scale(1)",
-      });
-      tl.to(".nav-link", {
-        transform: "scale(1)",
-        stagger: { amount: 0.5 },
-        duration: 0.5,
-        delay: 0.5,
-        onComplete: function switchTransition() {
-          const navLinks = document.querySelectorAll(".nav-link");
-          navLinks.forEach((link) => {
-            link.classList.add("transition");
-          });
-        },
-      });
-      tl.to(".shipping-header", { delay: 0.5, opacity: "1" });
-      tl.to(".card", { duration: 2.5, scale: 1, translateY: 0, ease: Power3 });
-    }
-    if (mediaQuery2.matches) {
-    }
-  });
-
+  // logic to set the page to the first one
   const [pages] = useState([
     { name: "Products" },
     { name: "Replacements" },
@@ -50,6 +19,48 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
+  // gsap animation logic
+  window.addEventListener("DOMContentLoaded", () => {
+    const tl = gsap.timeline();
+    const mediaQuery1 = window.matchMedia("(min-width: 900px)");
+    const mediaQuery2 = window.matchMedia("(min-width: 768px)");
+
+    if (mediaQuery1.matches) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      tl.fromTo(
+        "nav .navigation-logo",
+        {
+          transform: "scale(0)",
+        },
+        { duration: 2, transform: "scale(1)" }
+      );
+      tl.fromTo(
+        ".nav-link",
+        { transform: "scale(0)" },
+        {
+          transform: "scale(1)",
+          stagger: { amount: 0.5 },
+          duration: 0.5,
+          onComplete: function switchLinkTransition() {
+            const navLinks = document.querySelectorAll(".nav-link");
+            navLinks.forEach((link) => {
+              link.classList.add("transition");
+            });
+          },
+        }
+      );
+      tl.fromTo(
+        ".shipping-header",
+        { opacity: "0" },
+        { delay: 0.5, opacity: "1" }
+      );
+    }
+    if (mediaQuery2.matches) {
+    }
+  });
+
+  // logic to make the .shipping-header disappear when the cards are hovered over
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
     const shippingHeader = document.querySelector(".shipping-header");

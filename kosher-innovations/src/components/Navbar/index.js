@@ -35,30 +35,6 @@ const Navbar = (props) => {
       : turned("menu-btn");
   };
 
-  // window.addEventListener("DOMContentLoaded", () => {
-  //   const tl = gsap.timeline();
-  //   const mediaQuery1 = window.matchMedia("(min-width: 900px)");
-  //   const mediaQuery2 = window.matchMedia("(min-width: 768px)");
-  //   if (mediaQuery1.matches) {
-  //     tl.set(".nav-link", { transform: "scale(0)" });
-  //     tl.to(".nav-link", {
-  //       transform: "scale(1)",
-  //       stagger: { amount: 0.5 },
-  //       duration: 0.5,
-  //       delay: 0.5,
-  //       onComplete: function switchTransition() {
-  //         const navLinks = document.querySelectorAll(".nav-link");
-  //         navLinks.forEach((link) => {
-  //           link.classList.add("transition");
-  //         });
-  //       },
-  //     });
-  //   }
-  //   if (mediaQuery2.matches) {
-      
-  //   }
-  // });
-
   return (
     <>
       <ul className={active}>

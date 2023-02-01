@@ -57,7 +57,6 @@ nav {
   padding: 5px 15px;
 }
 
-
 nav .navigation-logo {
   width: 155px;
   border-radius: 25px;
@@ -83,7 +82,6 @@ nav ul li {
 }
 
 .transition {
-  /* animation-delay: 3s; */
   transition: 0.5s ease-in-out;
 }
 
@@ -103,7 +101,6 @@ nav ul li:last-child {
 
 nav ul li:last-child:hover {
   color: unset;
-
 }
 
 nav ul li a .shopping-cart {
@@ -144,7 +141,7 @@ section {
 /* card components */
 
 #cards {
-  background: repeating-linear-gradient(35deg, #B2B2B2 20vh, #D8D8D8 80vw);
+  background: repeating-linear-gradient(35deg, #b2b2b2 20vh, #d8d8d8 80vw);
 }
 
 section .card {
@@ -159,15 +156,12 @@ section .card {
   background: rgb(255, 255, 255, 0);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
-  transition: all 0.5s ease;
+  transition: 0.5s ease-in-out;
 }
 
 section .card:hover {
-  /* background: rgb(255, 255, 255, 0.3); */
   box-shadow: 5px 5px 10px black;
-  /* width: 350px; */
   height: 450px;
-  /* transform: scale(1.15); */
 }
 
 section .card .imgBox {
@@ -542,7 +536,7 @@ h4 {
   width: 100%;
   text-align: center;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
@@ -630,7 +624,7 @@ h5 cite {
 #about {
   align-items: flex-start;
   justify-content: center;
- background: repeating-linear-gradient(35deg, #B2B2B2 50%, #D8D8D8 50%);
+  background: repeating-linear-gradient(35deg, #b2b2b2 50%, #d8d8d8 50%);
   /* background: url("./resources/ki-big-logo.jpg"); */
   background-position: 50%;
   background-size: contain;
@@ -644,7 +638,7 @@ h5 cite {
 #about header .about-ki {
   width: 100vw;
   height: 30vh;
-  background: repeating-linear-gradient(35deg, #B2B2B2 50%, #D8D8D8 50%);
+  background: repeating-linear-gradient(35deg, #b2b2b2 50%, #d8d8d8 50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -766,7 +760,7 @@ h5 cite {
 
 #contact {
   padding: 0 20px 25px;
-  background: repeating-linear-gradient(35deg, #B2B2B2, #D8D8D8 1%);
+  background: repeating-linear-gradient(35deg, #b2b2b2, #d8d8d8 1%);
 }
 
 /*  */
@@ -897,16 +891,16 @@ input {
 }
 
 @media screen and (max-width: 768px) {
- .navbar {
+  .navbar {
     position: fixed;
     top: 0;
-  } 
+  }
 
   nav .navigation-logo {
     width: 3rem;
     border-radius: 0;
   }
-  
+
   nav .toggler {
     display: block;
   }
@@ -955,7 +949,8 @@ input {
     width: 1.5rem;
   }
 
-  section .card .content .flex-box, section .card .content .flex-box-products-page,
+  section .card .content .flex-box,
+  section .card .content .flex-box-products-page,
   section .card .content .flex-box-replacements-page {
     flex-direction: column;
     padding: 0;
@@ -1032,17 +1027,15 @@ input {
   #contact {
     padding: 11vh 20px 25px;
   }
-  .map-container, .contact-form {
+  .map-container,
+  .contact-form {
     height: 85vh;
     width: 90vw;
     margin: 25px 10px;
   }
-
 }
 
 @media screen and (max-width: 576px) {
-
-
   /* card section */
 
   section {
@@ -1050,7 +1043,7 @@ input {
   }
 
   #cards {
-    background: repeating-linear-gradient(35deg, #B2B2B2, #D8D8D8 90vw);
+    background: repeating-linear-gradient(35deg, #b2b2b2, #d8d8d8 90vw);
   }
 
   section .card {
@@ -1086,16 +1079,15 @@ input {
     height: 40vh;
   }
 
-#about .ki-info .info-box {
-  width: 95vw;
-  padding: 20px;
-}
+  #about .ki-info .info-box {
+    width: 95vw;
+    padding: 20px;
+  }
 
-/* contact section */
+  /* contact section */
 
-#contact {
-  background: repeating-linear-gradient(35deg, #B2B2B2, #D8D8D8 50%);
-  padding: 11vh 20px 25px;
-}
-
+  #contact {
+    background: repeating-linear-gradient(35deg, #b2b2b2, #d8d8d8 50%);
+    padding: 11vh 20px 25px;
+  }
 }
