@@ -99,7 +99,7 @@ const Navbar = (props) => {
           Contact
         </li>
         <li title="Your Shopping Cart">
-          <a href="https://www.1shoppingcart.com/app/netcart.asp?MerchantID=49604">
+          <a href="https://www.1shoppingcart.com/app/netcart.asp?MerchantID=49604" rel="noreferrer" target="_blank">
             <img
               src={shoppingCart}
               className="shopping-cart"

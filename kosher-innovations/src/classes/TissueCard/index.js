@@ -88,6 +88,8 @@ class TissueCard extends React.Component {
           <div className="type">{this.divs}</div>
           <div className="flex-box">
             <a
+              rel="noreferrer"
+              target="_blank"
               className="tissue-cart"
               href={this.state.href}
               title={`add ${this.state.title} to cart`}

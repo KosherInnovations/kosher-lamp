@@ -28,7 +28,6 @@ import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";
 
 const Products = () => {
-
   return (
     <section id="cards" className="product-cards">
       <h2 className="shipping-header">
@@ -56,6 +55,8 @@ const Products = () => {
         <div className="content">
           <div className="flex-box-products-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.kosherimage.com/cmd.php?pid=e418af322bd347a18412af62a324be4e"
               title="add Bug Checker to cart"
             >
@@ -83,6 +84,8 @@ const Products = () => {
         <div className="content">
           <div className="flex-box-products-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=3d47a903d7454e30b3a5b3d4323532af"
               title="add Shabbos Safe Warming Tray to cart"
             >
@@ -112,6 +115,8 @@ const Products = () => {
         <div className="content">
           <div className="flex-box-products-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=76d33ab9cfbe438fa25c8876e344c439"
               title="add Go Wash to cart"
             >
@@ -140,6 +145,8 @@ const Products = () => {
         <div className="content">
           <div className="flex-box-products-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=4bb9fb8c67954716bc68708634c6c8ae"
               title="add KosherClock to cart"
             >
@@ -167,6 +174,8 @@ const Products = () => {
         <div className="content">
           <div className="flex-box-products-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=6cbbe188b0a54a2ebff575e09afc25ac"
               title="add Fridg-eez to cart"
             >
@@ -194,6 +203,8 @@ const Products = () => {
         <div className="content">
           <div className="flex-box-products-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.kosherimage.com/cmd.php?pid=a9f059a9b16d4f12a9f10f188911df3b"
               title="add Shabbos Bottle Opener to cart"
             >
@@ -223,6 +234,8 @@ const Products = () => {
         <div className="content">
           <div className="flex-box-products-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               className="shroom-cart"
               href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=515cfa6e0de346488d2891efe33e0200"
               title="add Mushroom KosherLamp to cart"
@@ -254,6 +267,8 @@ const Products = () => {
           <h3>1 x 4 Pack</h3>
           <div className="flex-box">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.kosherimage.com/cmd.php?pid=d73562f0b42637d3268b40b7e85e7f33"
               title="add Shabbos Toothbrush to cart"
             >
@@ -284,6 +299,8 @@ const Products = () => {
           <h3>1 x 4 Pack</h3>
           <div className="flex-box">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=db93a1eee8ae4979b5a3112c3ef94f28"
               title="add Uncle Moishy Weekday Toothbrush to cart"
             >
