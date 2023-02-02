@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { gsap } from "gsap";
+import { gsap, Sine } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./index.css";
 import Header from "./components/Header";
@@ -26,7 +26,7 @@ function App() {
     const mediaQuery2 = window.matchMedia("(min-width: 768px)");
 
     if (mediaQuery1.matches) {
-      gsap.registerPlugin(ScrollTrigger);
+      gsap.registerPlugin(ScrollTrigger, Sine);
 
       // const cards = document.querySelectorAll(".card");
       // gsap.set(cards, { autoAlpha: 0 });
@@ -57,24 +57,6 @@ function App() {
         { opacity: "0" },
         { delay: 0.5, opacity: "1" }
       );
-      // ScrollTrigger.batch(cards, {
-      //   interval: 0.5,
-      //   batchMax: 1,
-      //   onEnter: (batch) => {
-      //     tl.fromTo(
-      //       batch,
-      //       1,
-      //       { translateX: "100vw", transform: "scale(0)" },
-      //       {
-      //         translateX: 0,
-      //         transform: "scale(1)",
-      //         autoAlpha: 1,
-      //         ease: Power3,
-      //       },
-      //       0.2
-      //     );
-      //   },
-      // });
     }
     if (mediaQuery2.matches) {
     }

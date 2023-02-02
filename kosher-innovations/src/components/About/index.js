@@ -1,6 +1,5 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import kiLogo from "../../resources/ki-banner-detailed.jpg";
 import smilingMan from "../../resources/smiling-man.webp";
 
 const About = () => {
@@ -39,28 +38,19 @@ const About = () => {
     <section id="about">
       <header>
         <h1 title="About Kosher Innovations" className="about-ki">
-          <LazyLoad height={200} offset={100}>
-            <img
-              rel="prefetch"
-              src={kiLogo}
-              alt="Kosher Innovations logo black"
-            ></img>
-          </LazyLoad>
-        </h1>
-        <p>
           Our goal is to invent and market creative products that benefit the
           Shomer Shabbat community. We are constantly exploring ideas for Jewish
           products that are practical, innovative and halachically permissible.
-        </p>
+        </h1>
       </header>
       <div className="our-team">
         {team.map((teamMember, i) => (
           <div className="card" key={i}>
             <div className="imgBox">
               <header>
-                <h1 className="team-member-name" title={`${teamMember.name}`}>
+                <h2 className="team-member-name" title={`${teamMember.name}`}>
                   {teamMember.name}
-                </h1>
+                </h2>
               </header>
               <LazyLoad height={200} offset={100}>
                 <img
