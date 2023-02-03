@@ -82,6 +82,8 @@ class GloveCard extends React.Component {
           <div className="color">{this.divs}</div>
           <div className="flex-box">
             <a
+              rel="noreferrer"
+              target="_blank"
               className="gloves-cart"
               href={this.state.href}
               title={`add ${this.state.title} to cart`}

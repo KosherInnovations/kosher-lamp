@@ -30,6 +30,8 @@ const Replacements = () => {
         <div className="content">
           <div className="flex-box-replacements-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=a5d1a7affbdf40fc901ba64b43998a46"
               title="add Replacement Shade to cart"
             >
@@ -58,6 +60,8 @@ const Replacements = () => {
         <div className="content">
           <div className="flex-box-replacements-page">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.1shoppingcart.com/SecureCart/SecureCart.aspx?mid=8C3A2643-E313-4991-9BB0-2D46596FC53F&pid=d8b685c4c5284576a5c677e29206354d"
               title="add Travel Lamp Adapter to cart"
             >
