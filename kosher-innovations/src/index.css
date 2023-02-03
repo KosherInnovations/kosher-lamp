@@ -889,25 +889,37 @@ form .inputBox-country {
   text-align: left;
 }
 
-form .inputBoxHeader {
+form #inputBoxHeader {
   position: absolute;
+  left: 20px;
   padding: 10px;
-  color: #ffffff;
-  font-size: 1em;
-  font-family: "Cinzel", serif;
   pointer-events: none;
+  font-size: 1em;
+  color: #ffffff;
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
 }
 
 form textarea {
-  border: none;
-  width: 100%;
+  border: 1px solid #ffffff;
+  width: 95%;
   background: cornflowerblue;
   border-radius: 5px;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  outline: none;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 5px 0 0;
+  text-transform: unset;
+  font-family: "Cinzel", serif;
 }
 
-.commentBox:focus ~ .inputBoxHeader {
+form textarea:focus {
+  border: 1px solid #000000;
+}
+
+form .commentBox textarea:focus + #inputBoxHeader {
   color: #000000;
   transform: translateX(30px) translateY(-7px);
   font-size: 0.65em;
@@ -917,6 +929,10 @@ form textarea {
   border-right: 1px solid #000000;
   letter-spacing: 0.2em;
 }
+form textarea::-webkit-scrollbar {
+  display: none;
+}
+
 /* The input buttons */
 
 .inputBoxBtnContainer {

@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import CountrySelector from "../CountrySelector";
+
 // import emailjs from "emailjs-com";
 
 const EmailForm = () => {
@@ -78,6 +81,153 @@ const EmailForm = () => {
   //     </form>
   //   </div>
   // );
+
+  const InputBox = ({ inputName, required = false, spanLabel = "" }) => {
+    const [inputValue, setInputValue] = useState("");
+
+    const handleInputChange = (event) => {
+      setInputValue(event.target.value);
+    };
+
+    const inputBoxHeaderStyles = {
+      transform: inputValue.length > 0 ? "scale(0)" : "scale(1)",
+    };
+
+    return (
+      <li className="inputBox">
+        <input
+          name={inputName}
+          required={required}
+          onChange={handleInputChange}
+        />
+        <span style={inputBoxHeaderStyles}>
+          {required ? "*" : ""}
+          {spanLabel}:
+        </span>
+      </li>
+    );
+  };
+
+  const InputBoxList = ({ inputBoxes }) => {
+    return (
+      <>
+        <p>
+          <input
+            type="hidden"
+            name="ARThankyouURL"
+            value="www.kosherimage.com/thanks_comments.html"
+          ></input>
+          <input type="hidden" name="MerchantID" value="49604"></input>
+          <input type="hidden" name="AllowMulti" value="1"></input>
+          <input type="hidden" name="CopyARResponse" value="1"></input>
+          <input
+            type="hidden"
+            name="VisibleFields"
+            value="name,company,Address1,city,state,Email1, Email2,country,workphone,zip,,,,,"
+          ></input>
+          <input
+            type="hidden"
+            name="RequiredFields"
+            value="namecity, Email1"
+          ></input>
+          <input
+            type="hidden"
+            name="Home"
+            value="www.kosher-innovations.com"
+          ></input>
+          <input type="hidden" name="AfID" value="0"></input>
+          <input type="hidden" name="AdID" value="139512"></input>
+          <input type="hidden" name="clientip" value="65.95.151.22"></input>
+        </p>
+        <ul>
+          {inputBoxes.map((inputBox) => (
+            <InputBox
+              key={inputBox.inputName}
+              {...inputBox}
+              spanLabel={inputBox.spanLabel}
+            />
+          ))}
+          <CountrySelector />
+        </ul>
+      </>
+    );
+  };
+
+  const inputBoxes = [
+    {
+      inputName: "name",
+      required: true,
+      spanLabel: "Name",
+    },
+    {
+      inputName: "Company",
+      required: false,
+      spanLabel: "Company",
+    },
+    {
+      inputName: "Email1",
+      required: true,
+      spanLabel: "Email",
+    },
+    {
+      inputName: "Email2",
+      required: true,
+      spanLabel: "Confirm Email",
+    },
+    {
+      inputName: "WorkPhone",
+      required: false,
+      spanLabel: "Phone",
+    },
+    {
+      inputName: "Address1",
+      required: false,
+      spanLabel: "Address",
+    },
+    {
+      inputName: "City",
+      required: true,
+      spanLabel: "City/Town",
+    },
+    {
+      inputName: "State",
+      required: false,
+      spanLabel: "State/Province",
+    },
+    {
+      inputName: "zip",
+      required: false,
+      spanLabel: "Zip/Postal Code",
+    },
+  ];
+
+  const CommentBox = () => {
+    const [textareaValue, setTextareaValue] = useState("");
+
+    const handleTextareaChange = (event) => {
+      setTextareaValue(event.target.value);
+    };
+
+    const inputBoxHeaderStyles = {
+      transform: textareaValue.length > 0 ? "scale(0)" : "scale(1)",
+    };
+
+    return (
+      <li style={{ width: "100%" }} className="commentBox">
+        <textarea
+          cols="60"
+          rows="5"
+          wrap="virtual"
+          name="Field10"
+          onChange={handleTextareaChange}
+        />
+        <span id="inputBoxHeader" style={inputBoxHeaderStyles}>
+          Comments:
+        </span>
+      </li>
+    );
+  };
+
   return (
     <form
       className="contact-form"
@@ -85,38 +235,10 @@ const EmailForm = () => {
       method="post"
       acceptCharset="UTF-8"
     >
-      <p>
-        <input
-          type="hidden"
-          name="ARThankyouURL"
-          value="www.kosherimage.com/thanks_comments.html"
-        ></input>
-        <input type="hidden" name="MerchantID" value="49604"></input>
-        <input type="hidden" name="AllowMulti" value="1"></input>
-        <input type="hidden" name="CopyARResponse" value="1"></input>
-        <input
-          type="hidden"
-          name="VisibleFields"
-          value="name,company,Address1,city,state,Email1, Email2,country,workphone,zip,,,,,"
-        ></input>
-        <input
-          type="hidden"
-          name="RequiredFields"
-          value="namecity, Email1"
-        ></input>
-        <input
-          type="hidden"
-          name="Home"
-          value="www.kosher-innovations.com"
-        ></input>
-        <input type="hidden" name="AfID" value="0"></input>
-        <input type="hidden" name="AdID" value="139512"></input>
-        <input type="hidden" name="clientip" value="65.95.151.22"></input>
-      </p>
       {/* <h4 className="contact-header" id="contact-header">
         Get In Touch
       </h4> */}
-      <ul>
+      {/* <ul>
         <li className="inputBox">
           <input name="name" required="required"></input>
           <span>*Name:</span>
@@ -156,42 +278,88 @@ const EmailForm = () => {
         <li className="inputBox-country">
           <span>*Country</span>
           <select name="Country">
-            <option value="US" className="country-option">USA</option>
-            <option value="CA" className="country-option">Canada</option>
-            <option value="IL" className="country-option">Israel</option>
-            <option value="GB" className="country-option">United Kingdom</option>
-            <option value="AU" className="country-option">Australia</option>
-            <option value="AR" className="country-option">Argentina</option>
-            <option value="AT" className="country-option">Austria</option>
-            <option value="BE" className="country-option">Belgium</option>
-            <option value="BR" className="country-option">Brazil</option>
-            <option value="CL" className="country-option">Chile</option>
-            <option value="FR" className="country-option">France</option>
-            <option value="DE" className="country-option">Germany</option>
-            <option value="GI" className="country-option">Gibraltar</option>
-            <option value="HK" className="country-option">Hong Kong</option>
-            <option value="IE" className="country-option">Ireland</option>
-            <option value="IT" className="country-option">Italy</option>
-            <option value="MX" className="country-option">Mexico</option>
-            <option value="NL" className="country-option">Netherlands</option>
-            <option value="NZ" className="country-option">New Zealand</option>
-            <option value="PA" className="country-option">Panama</option>
-            <option value="PT" className="country-option">Portugal</option>
-            <option value="SG" className="country-option">Singapore</option>
-            <option value="ES" className="country-option">Spain</option>
-            <option value="CH" className="country-option">Switzerland</option>
-            <option value="Other" className="country-option">Other</option>
+            <option value="US" className="country-option">
+              USA
+            </option>
+            <option value="CA" className="country-option">
+              Canada
+            </option>
+            <option value="IL" className="country-option">
+              Israel
+            </option>
+            <option value="GB" className="country-option">
+              United Kingdom
+            </option>
+            <option value="AU" className="country-option">
+              Australia
+            </option>
+            <option value="AR" className="country-option">
+              Argentina
+            </option>
+            <option value="AT" className="country-option">
+              Austria
+            </option>
+            <option value="BE" className="country-option">
+              Belgium
+            </option>
+            <option value="BR" className="country-option">
+              Brazil
+            </option>
+            <option value="CL" className="country-option">
+              Chile
+            </option>
+            <option value="FR" className="country-option">
+              France
+            </option>
+            <option value="DE" className="country-option">
+              Germany
+            </option>
+            <option value="GI" className="country-option">
+              Gibraltar
+            </option>
+            <option value="HK" className="country-option">
+              Hong Kong
+            </option>
+            <option value="IE" className="country-option">
+              Ireland
+            </option>
+            <option value="IT" className="country-option">
+              Italy
+            </option>
+            <option value="MX" className="country-option">
+              Mexico
+            </option>
+            <option value="NL" className="country-option">
+              Netherlands
+            </option>
+            <option value="NZ" className="country-option">
+              New Zealand
+            </option>
+            <option value="PA" className="country-option">
+              Panama
+            </option>
+            <option value="PT" className="country-option">
+              Portugal
+            </option>
+            <option value="SG" className="country-option">
+              Singapore
+            </option>
+            <option value="ES" className="country-option">
+              Spain
+            </option>
+            <option value="CH" className="country-option">
+              Switzerland
+            </option>
+            <option value="Other" className="country-option">
+              Other
+            </option>
           </select>{" "}
         </li>
-      </ul>
+      </ul> */}
+      <InputBoxList inputBoxes={inputBoxes} />
       <br></br>
-      <ul align="center" className="commentBox">
-        <li width="100%" >
-          <input type="hidden" name="required10" value="0"></input>
-          <span className="inputBoxHeader">Comments:</span>
-          <input type="hidden" name="Fieldname10" value="Comments"></input>
-          <textarea cols="60" rows="5" wrap="virtual" name="Field10"></textarea>
-        </li>
+      <ul align="center">
+        <CommentBox />
         <input type="hidden" name="Custom" value="1"></input>
         <input type="hidden" name="Preview" value=""></input>
       </ul>
@@ -207,5 +375,7 @@ const EmailForm = () => {
     </form>
   );
 };
+
+ReactDOM.render(<EmailForm />, document.getElementById("root"));
 
 export default EmailForm;
