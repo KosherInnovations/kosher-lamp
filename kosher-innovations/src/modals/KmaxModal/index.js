@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/information.webp";
-import exitBtn from "../../resources/exit-btn.webp";
 import KmaxCarousel from "../../carousels/KmaxCarousel";
+import AnimateModal  from "../../AnimateModal";
 
 const style = {
   position: "absolute",
@@ -20,10 +20,12 @@ const KmaxModal = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const infoHeader = useRef(null);
+
   return (
     <>
       <img
-        onClick={handleOpen}
+        onClick={() => { handleOpen(); AnimateModal(infoHeader); }}
         className="info-btn"
         src={infoBtn}
         alt="Open product info about KosherLamp MAX"
@@ -37,16 +39,18 @@ const KmaxModal = () => {
       >
         <Box sx={style} id="modal-box">
           <div className="exit-btn-container">
-            <img
+            {/* changing the x button to the div with back */}
+            <h5
               onClick={handleClose}
-              src={exitBtn}
               title="Exit the product info section"
               alt="exit icon"
               className="exit-btn"
-            ></img>
+            >
+              Back
+            </h5>
           </div>
           <div className="product-info">
-            <h3 variant="h6" component="h3">
+            <h3 variant="h6" component="h3" className="info-header" ref={infoHeader}>
               KosherLamp MAX Info
             </h3>
             <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
