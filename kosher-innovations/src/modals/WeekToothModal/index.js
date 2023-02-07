@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import AnimateModal  from "../../AnimateModal";
 import infoBtn from "../../resources/information.webp";
-import exitBtn from "../../resources/exit-btn.webp";
 import WeekToothCarousel from "../../carousels/WeekToothCarousel";
 
 const style = {
@@ -23,7 +23,7 @@ const WeekToothModal = () => {
   return (
     <>
       <img
-        onClick={handleOpen}
+        onClick={() => { handleOpen(); AnimateModal(); }}
         className="info-btn"
         src={infoBtn}
         alt="Open product info about Uncle Moishy Weekday Toothbrush"
@@ -37,13 +37,12 @@ const WeekToothModal = () => {
       >
         <Box sx={style} id="modal-box">
           <div className="exit-btn-container">
-            <img
+            <h5
               onClick={handleClose}
-              src={exitBtn}
               title="Exit the product info section"
               alt="exit icon"
               className="exit-btn"
-            ></img>
+            >Back</h5>
           </div>
           <div className="product-info">
             <h3 variant="h6" component="h3">

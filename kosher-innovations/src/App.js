@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { gsap, Sine } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./index.css";
 import Header from "./components/Header";
 // import Footer from "./components/Footer";
@@ -20,27 +20,38 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   // gsap animation logic
-  window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("load", () => {
     const tl = gsap.timeline();
     const mediaQuery1 = window.matchMedia("(min-width: 900px)");
     const mediaQuery2 = window.matchMedia("(min-width: 768px)");
 
     if (mediaQuery1.matches) {
-      gsap.registerPlugin(ScrollTrigger, Sine);
-
       // const cards = document.querySelectorAll(".card");
-      // gsap.set(cards, { autoAlpha: 0 });
+      // gsap.registerPlugin(ScrollTrigger)
+      // cards.forEach((card) => {
+      //   const tl = gsap.timeline();
+      //   ScrollTrigger.create({
+      //     trigger: card,
+      //     start: "bottom bottom",
+      //     onEnter: () => {
+      //       tl.fromTo(card, { scale: 0 }, { duration: 2, scale: 1 });
+      //     },
+      //   });
+      // });
+      tl.to(".navbar", 2, { height: "11vh" });
       tl.fromTo(
         "nav .navigation-logo",
         {
           transform: "scale(0)",
         },
-        { duration: 2, transform: "scale(1)" }
+        { duration: 2, transform: "scale(1)", visibility: "visible" }
       );
       tl.fromTo(
         ".nav-link",
-        { transform: "scale(0)" },
+        { transform: "scale(0)", y: 50 },
         {
+          visibility: "visible",
+          y: 0,
           transform: "scale(1)",
           stagger: { amount: 0.5 },
           duration: 0.5,
@@ -52,10 +63,11 @@ function App() {
           },
         }
       );
+      tl.to("nav ul li:last-child", { opacity: 1, visibility: "visible" }, "^=0");
       tl.fromTo(
         ".shipping-header",
         { opacity: "0" },
-        { delay: 0.5, opacity: "1" }
+        { delay: 0.5, opacity: "1", visibility: "visible" }
       );
     }
     if (mediaQuery2.matches) {

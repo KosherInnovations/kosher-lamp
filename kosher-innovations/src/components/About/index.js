@@ -43,6 +43,7 @@ const About = () => {
           products that are practical, innovative and halachically permissible.
         </h1>
       </header>
+      <div className="line-transition"></div>
       <div className="our-team">
         {team.map((teamMember, i) => (
           <div className="card" key={i}>
