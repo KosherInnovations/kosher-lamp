@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/information.webp";
 import KmaxCarousel from "../../carousels/KmaxCarousel";
-import AnimateModal  from "../../AnimateModal";
 
 const style = {
   position: "absolute",
@@ -25,7 +24,7 @@ const KmaxModal = () => {
   return (
     <>
       <img
-        onClick={() => { handleOpen(); AnimateModal(infoHeader); }}
+        onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
         alt="Open product info about KosherLamp MAX"

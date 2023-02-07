@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import AnimateModal  from "../../AnimateModal";
 import infoBtn from "../../resources/information.webp";
 import GloveCarousel from "../../carousels/GloveCarousel";
 
@@ -23,7 +22,7 @@ const GlovesModal = () => {
   return (
     <>
       <img
-        onClick={() => { handleOpen(); AnimateModal(); }}
+        onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
         alt="Open product info about Shabbos Scrub Gloves"
