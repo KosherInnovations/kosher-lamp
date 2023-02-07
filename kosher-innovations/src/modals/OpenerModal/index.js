@@ -44,7 +44,7 @@ const OpenerModal = () => {
             >Back</h5>
           </div>
           <div className="product-info">
-            <h3 variant="h6" component="h3">
+            <h3 variant="h6" component="h3" className="info-header">
               Shabbos Bottle Opener
             </h3>
             <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">

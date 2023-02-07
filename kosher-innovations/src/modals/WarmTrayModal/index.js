@@ -44,7 +44,7 @@ const BasicModal = () => {
             >Back</h5>
           </div>
           <div className="product-info">
-            <h3 id="modal-modal-title" variant="h6" component="h3">
+            <h3 id="modal-modal-title" variant="h6" component="h3" className="info-header">
               Shabbos Safe Warming Tray (TechYidCo)
             </h3>
             <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">

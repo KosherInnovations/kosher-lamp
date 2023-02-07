@@ -45,8 +45,8 @@ const TravelModal = () => {
             >Back</h5>
           </div>
           <div className="product-info">
-            <h3 id="modal-modal-title" variant="h6" component="h3">
-              Travel KosherLamp
+            <h3 id="modal-modal-title" variant="h6" component="h3" className="info-header">
+              Travel KosherLamp Info
             </h3>
             <p id="modal-modal-description" sx={{ mt: 2 }}>
               Designed for use at home or across the World. Small size, bright

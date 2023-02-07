@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/information.webp";
@@ -19,7 +19,6 @@ const KmaxModal = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const infoHeader = useRef(null);
 
   return (
     <>
@@ -49,7 +48,7 @@ const KmaxModal = () => {
             </h5>
           </div>
           <div className="product-info">
-            <h3 variant="h6" component="h3" className="info-header" ref={infoHeader}>
+            <h3 variant="h6" component="h3" className="info-header">
               KosherLamp MAX Info
             </h3>
             <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">

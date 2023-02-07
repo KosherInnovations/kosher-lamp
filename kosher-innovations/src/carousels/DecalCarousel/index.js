@@ -41,9 +41,9 @@ const DecalCarousel = () => {
 
   return (
     <Box className="carousel-box">
-      <h4>Reviews</h4>
+      <h4 className="review-header">Reviews</h4>
       <h5 className="testimonials-text" title="Read reviews about this product">
-        <p id="testimonials-p" title="Reviews">{testimonials[index].text}</p>
+        <p className="testimonials-p" title="Reviews">{testimonials[index].text}</p>
       </h5>
       <h5 className="author">
         <cite title="Review author">{testimonials[index].author}</cite>

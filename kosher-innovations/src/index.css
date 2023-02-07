@@ -435,12 +435,13 @@ section .card .content .flex-box {
 
 .product-info {
   height: 65%;
-  border: 1px solid #ff7d7d;
-  border-radius: 5px;
+  /* border: 1px solid #ff7d7d; */
 }
 
-.carousel-box {
-  height: 35%;
+.info-header {
+  background: #ff7d7d;
+  color: #ffffff;
+  border-radius: 5px;
 }
 
 .MuiBox-root button {
@@ -450,8 +451,6 @@ section .card .content .flex-box {
 
 .MuiBox-root p {
   padding: 15px 55px;
-  position: relative;
-  top: 20px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
@@ -459,6 +458,7 @@ section .card .content .flex-box {
   overflow-y: scroll;
   max-height: 70%;
   font-weight: 600;
+  background: #e6f5ff;
 }
 
 .MuiBox-root p::-webkit-scrollbar {
@@ -489,7 +489,7 @@ section .card .content .flex-box {
 }
 
 .testimonials-text {
-  height: 60%;
+  max-height: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,6 +560,12 @@ h4 {
   font-family: "Josefin Sans", sans-serif;
 } */
 
+.review-header {
+  background: #b15757;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
 h5 {
   padding: 5px 0 10px 0;
   font-size: 16px;
@@ -570,12 +576,10 @@ h5 p {
   line-height: 1.2;
   overflow: scroll;
   height: 5rem;
-  position: absolute;
-  width: 70%;
-  bottom: 30%;
+  width: 100%;
 }
 
-#testimonials-p {
+.testimonials-p {
   padding-top: 0;
 }
 
@@ -587,9 +591,9 @@ h5 cite {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 10px 42px;
+  padding: 10px 140px;
   width: 100%;
-  min-height: 140px;
+  height: 35%;
   background: rgba(255, 255, 255, 0.7);
   color: #000000;
   text-align: center;
@@ -628,12 +632,19 @@ h5 cite {
   padding: 0 17px;
   letter-spacing: 1px;
   transition: 0.5s ease-in-out;
-  visibility: hidden;
+  /* scale: 0; */
+  /* visibility: hidden; */
 }
+
+/* .visible {
+  visibility: visible;
+} */
 
 .replacement-images {
   border-radius: 25px;
 }
+
+
 
 /* about section */
 
