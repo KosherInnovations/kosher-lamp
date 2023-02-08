@@ -638,8 +638,8 @@ h5 cite {
   /* visibility: hidden; */
 }
 
-#opacity-view1, #opacity-view2 {
-  
+#opacity-view1,
+#opacity-view2 {
   opacity: 1;
 }
 
@@ -650,8 +650,6 @@ h5 cite {
 .replacement-images {
   border-radius: 25px;
 }
-
-
 
 /* about section */
 
@@ -990,7 +988,27 @@ form textarea::-webkit-scrollbar {
   transition: 0.5s ease-in-out;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
+  #contact {
+    flex-direction: column-reverse;
+    padding: 20px 0 0;
+  }
+  .map-container,
+  .contact-form {
+    width: 90vw;
+    min-height: 70vh;
+    margin: 25px 0;
+  }
+
+  /* .contact-header {
+    display: initial;
+    width: 100%;
+  } */
+
+  .contact-form {
+    height: 100%;
+    padding: 20px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1136,11 +1154,24 @@ form textarea::-webkit-scrollbar {
   #contact {
     padding: 11vh 20px 25px;
   }
+
   .map-container,
   .contact-form {
-    height: 85vh;
     width: 90vw;
     margin: 25px 10px;
+  }
+
+  .map-container {
+    height: 85vh;
+  }
+
+  .contact-form {
+    height: 100%;
+  }
+
+  form .inputBox, form .inputBox-country {
+    width: 60%;
+    margin-bottom: 5%;
   }
 }
 
@@ -1199,4 +1230,10 @@ form textarea::-webkit-scrollbar {
     background: repeating-linear-gradient(35deg, #b2b2b2, #d8d8d8 50%);
     padding: 11vh 20px 25px;
   }
+
+  form .inputBox, form .inputBox-country {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
 }

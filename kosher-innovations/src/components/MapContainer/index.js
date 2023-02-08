@@ -6,7 +6,7 @@ const MapContainer = () => {
       <iframe
         rel="preconnect"
         title="Kosher Innovations product map"
-        src="https://maps.google.com/maps?callback=initMap&q=...&t=m&z=14&output=embed"
+        src="https://www.google.com/maps/d/embed?callback=initMap&mid=15-DxkcwmeXGIyUiBxfB2ibOJbtQ&hl=en&ehbc=2E312F"
         // height="450"
         style={{ border: 0 }}
         allowFullScreen=""

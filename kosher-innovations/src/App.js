@@ -77,13 +77,24 @@ function App() {
           },
         }
       );
-      tl.to("nav ul li:last-child", { opacity: 1, visibility: "visible" }, "^=0");
+      tl.to(
+        "nav ul li:last-child",
+        { opacity: 1, visibility: "visible" },
+        "^=0"
+      );
       tl.fromTo(
         ".shipping-header",
         { opacity: "0" },
-        { delay: 0.5, opacity: "1", onComplete: () => {
-          document.querySelector(".shipping-header").style.opacity = "1";
-        } }
+        {
+          delay: 0.5,
+          opacity: "1",
+          onComplete: () => {
+            let headers = document.querySelectorAll(".shipping-header");
+            headers.forEach(function (header) {
+              header.style.opacity = "1";
+            });
+          },
+        }
       );
     }
     if (mediaQuery2.matches) {
