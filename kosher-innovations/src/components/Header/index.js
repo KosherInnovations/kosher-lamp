@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from "react";
 import logoLarge from "../../resources/kosher_innovations_logo.webp";
 import logoSmall from "../../resources/ki-logo-no-background.webp";
-import LazyLoad from "react-lazyload";
 const mediaQuery2 = window.matchMedia("(min-width: 768px)");
 
 const Header = (props) => {
@@ -34,14 +33,12 @@ const Header = (props) => {
             href="https://kosherinnovations.github.io/kosher-lamp/"
             title="Back to homepage"
           >
-            <LazyLoad height={200} offset={100}>
               <img
                 rel="prefetch"
                 src={sizedLogo}
                 className="navigation-logo"
                 alt="home button"
               />
-            </LazyLoad>
           </a>
           {props.children}
         </nav>
