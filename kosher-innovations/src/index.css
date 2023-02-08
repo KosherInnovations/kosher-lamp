@@ -60,7 +60,6 @@ nav {
 nav .navigation-logo {
   width: 155px;
   border-radius: 25px;
-  visibility: hidden;
 }
 
 nav ul {
@@ -79,7 +78,7 @@ nav ul li {
   color: #000000;
   cursor: pointer;
   border-radius: 25px;
-  visibility: hidden;
+  /* visibility: hidden; */
   /* transition: 0.5s ease-in-out; */
 }
 
@@ -1011,6 +1010,16 @@ form textarea::-webkit-scrollbar {
   }
 }
 
+@media screen and (min-width: 900px) {
+  nav .navigation-logo {
+    visibility: hidden;
+  }
+
+  nav ul li {
+    visibility: hidden;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .up-arrow {
     display: block;
@@ -1169,7 +1178,8 @@ form textarea::-webkit-scrollbar {
     height: 100%;
   }
 
-  form .inputBox, form .inputBox-country {
+  form .inputBox,
+  form .inputBox-country {
     width: 60%;
     margin-bottom: 5%;
   }
@@ -1231,9 +1241,9 @@ form textarea::-webkit-scrollbar {
     padding: 11vh 20px 25px;
   }
 
-  form .inputBox, form .inputBox-country {
+  form .inputBox,
+  form .inputBox-country {
     width: 80%;
     margin-bottom: 5%;
   }
-
 }
