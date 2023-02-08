@@ -40,6 +40,7 @@ const Navbar = (props) => {
       <ul className={active}>
         <li
           className="nav-link"
+          id="nav1"
           onClick={() => {
             setCurrentPage(pages[0]);
             showUpArrow();
@@ -55,6 +56,7 @@ const Navbar = (props) => {
         </li>
         <li
           className="nav-link"
+          id="nav2"
           onClick={() => {
             setCurrentPage(pages[1]);
             showUpArrow();
@@ -99,7 +101,11 @@ const Navbar = (props) => {
           Contact
         </li>
         <li title="Your Shopping Cart">
-          <a href="https://www.1shoppingcart.com/app/netcart.asp?MerchantID=49604" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.1shoppingcart.com/app/netcart.asp?MerchantID=49604"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img
               src={shoppingCart}
               className="shopping-cart"

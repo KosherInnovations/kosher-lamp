@@ -4,9 +4,14 @@ import replacementShade from "../../resources/replacement-shade.jpg";
 import adapterImg from "../../resources/adapter-1.jpg";
 
 const Replacements = () => {
+
+  const addOpacityView = () => {
+    const header2 = document.querySelector(".shipping-header");
+    header2.id = "opacity-view2";
+  };
   return (
-    <section id="cards" className="product-cards">
-      <h2 className="shipping-header">
+    <section id="cards" className="product-cards"  onLoad={addOpacityView}>
+      <h2 className="shipping-header" id="header2">
         Free Shipping On Any Replacement Parts<br></br>Orders to New York State
         and New Jersey tend to arrive in a week or less. For other areas, please
         allow up to two weeks. These times are approximate.<br></br>Shipping

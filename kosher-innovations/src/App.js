@@ -8,6 +8,20 @@ import upArrow from "./resources/up-arrow.webp";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 
+// const targetOpacity = "opacity-view";
+// const shippingHeaders = document.querySelectorAll(".shipping-header");
+
+// const showShippingHeader = () => {
+//   console.log(targetOpacity);
+//   console.log(shippingHeaders);
+//   shippingHeaders.forEach((shippingHeader) => {
+//     shippingHeader.setAttribute("id", targetOpacity);
+//   });
+// };
+
+// // const main = document.querySelector("main");
+// window.addEventListener("click", showShippingHeader)
+
 function App() {
   // logic to set the page to the first one
   const [pages] = useState([
@@ -67,7 +81,9 @@ function App() {
       tl.fromTo(
         ".shipping-header",
         { opacity: "0" },
-        { delay: 0.5, opacity: "1", visibility: "visible" }
+        { delay: 0.5, opacity: "1", onComplete: () => {
+          document.querySelector(".shipping-header").style.opacity = "1";
+        } }
       );
     }
     if (mediaQuery2.matches) {
