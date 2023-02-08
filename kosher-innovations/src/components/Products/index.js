@@ -31,6 +31,7 @@ const Products = () => {
   const addOpacityView = () => {
     const header1 = document.querySelector(".shipping-header");
     header1.id = "opacity-view1";
+    header1.classList.add("transition");
   };
   return (
     <section id="cards" className="product-cards" onLoad={addOpacityView}>

@@ -4,17 +4,15 @@ import replacementShade from "../../resources/replacement-shade.jpg";
 import adapterImg from "../../resources/adapter-1.jpg";
 
 const Replacements = () => {
-
   const addOpacityView = () => {
     const header2 = document.querySelector(".shipping-header");
     header2.id = "opacity-view2";
+    header2.classList.add("transition");
   };
   return (
-    <section id="cards" className="product-cards"  onLoad={addOpacityView}>
+    <section id="cards" className="product-cards" onLoad={addOpacityView}>
       <h2 className="shipping-header" id="header2">
-        Free Shipping On Any Replacement Parts<br></br>Orders to New York State
-        and New Jersey tend to arrive in a week or less. For other areas, please
-        allow up to two weeks. These times are approximate.<br></br>Shipping
+        Free Shipping On Any Replacement Parts<br></br>Shipping
         Within USA Only
       </h2>
       <div className="card">
@@ -32,7 +30,9 @@ const Replacements = () => {
             ></img>
           </LazyLoad>
         </div>
+        <h2 className="product-price">$5.00</h2>
         <div className="content">
+        <h3>Free Shipping</h3>
           <div className="flex-box-replacements-page">
             <a
               rel="noreferrer"
@@ -62,7 +62,9 @@ const Replacements = () => {
             ></img>
           </LazyLoad>
         </div>
+        <h2 className="product-price">$16.00</h2>
         <div className="content">
+          <h3>Free Shipping</h3>
           <div className="flex-box-replacements-page">
             <a
               rel="noreferrer"

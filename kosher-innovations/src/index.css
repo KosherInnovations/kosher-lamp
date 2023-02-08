@@ -631,13 +631,15 @@ h5 cite {
   text-align: center;
   padding: 0 17px;
   letter-spacing: 1px;
-  transition: 0.5s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
   opacity: 0;
+  /* transform: translateY(-50px); */
   /* scale: 0; */
   /* visibility: hidden; */
 }
 
 #opacity-view1, #opacity-view2 {
+  
   opacity: 1;
 }
 
