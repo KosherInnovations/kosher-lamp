@@ -29,6 +29,7 @@ li {
   bottom: 25px;
   right: 25px;
   transition: 0.5s ease-in-out;
+  z-index: 10;
   /* visibility: hidden; */
 }
 
@@ -39,6 +40,7 @@ li {
 .navbar {
   /* background-color: #e7e2e2; */
   /* background-color: #f0e7e7; */
+  background: #ffffff;
   width: 100%;
   height: 0;
   background-size: cover;
@@ -138,13 +140,36 @@ section {
   overflow: hidden;
   padding: 100px 20px 25px;
   box-sizing: border-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section,
+#cards,
+#about,
+#contact {
+  background: url("resources/light-dark-bg.jpg");
+  /* background: url("resources/lightbulb-bg.jpg"); */
+  /* background: url("resources/2lamp-bg.png"); */
+  /* background: url("resources/water-bg.jpeg"); */
+  /* background: #000000; */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#contact {
+  background: url("resources/2lamp-bg.png");
 }
 
 /* card components */
 
-#cards {
-  background: repeating-linear-gradient(35deg, #b2b2b2 20vh, #d8d8d8 80vw);
-}
+/* #cards {
+  
+} */
 
 section .card {
   position: relative;
@@ -156,12 +181,14 @@ section .card {
   align-items: center;
   flex-direction: column;
   background: rgb(255, 255, 255, 0);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+
   transition: 0.5s ease-in-out;
+  /* opacity: 0; */
 }
 
 section .card:hover {
+  backdrop-filter: blur(5px);
   box-shadow: 5px 5px 10px black;
   height: 450px;
 }
@@ -192,7 +219,7 @@ section .card:hover .imgBox img {
 }
 
 section .card .imgBox h1 {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-family: "Cinzel", serif;
   letter-spacing: 1.2px;
@@ -229,7 +256,7 @@ section .card .content .type {
 }
 
 section .card .content h3 {
-  color: #000000;
+  color: #ffffff;
   font-weight: 300;
   font-size: 18px;
   font-family: "Bebas Neue", cursive;
@@ -545,7 +572,7 @@ section .card:hover .content a {
 
 /* carousel styling */
 
-h3 {
+.MuiBox-root h3 {
   font-family: "Cinzel", serif;
   padding: 40px 0;
 }
@@ -627,6 +654,8 @@ h5 cite {
 
 .shipping-header {
   position: absolute;
+  color: #ffffff;
+  background: rgb(255, 255, 255, 0);
   top: 15vh;
   font-family: "Cinzel", serif;
   font-size: 1rem;
@@ -660,15 +689,13 @@ h5 cite {
 #about {
   align-items: flex-start;
   justify-content: center;
-  background: repeating-linear-gradient(35deg, #b2b2b2 50%, #d8d8d8 50%);
-  /* background: url("./resources/ki-big-logo.jpg"); */
+  /* background: repeating-linear-gradient(35deg, #b2b2b2 50%, #d8d8d8 50%);
+  background: url("./resources/ki-big-logo.jpg");
   background-position: 50%;
-  background-size: contain;
+  background-size: contain; */
   background-repeat: no-repeat;
   padding-top: 0;
   text-align: center;
-  /* position: relative;
-  bottom: 10vh; */
 }
 
 #about header .about-ki {
@@ -790,7 +817,7 @@ h5 cite {
 
 #contact {
   padding: 0 20px 25px;
-  background: repeating-linear-gradient(35deg, #b2b2b2, #d8d8d8 1%);
+  /* background: repeating-linear-gradient(35deg, #b2b2b2, #d8d8d8 1%); */
 }
 
 /*  */
@@ -852,6 +879,10 @@ form .country-option {
 form .country-option,
 form select {
   font-family: "Cinzel", serif;
+}
+
+form .inputBox-country span {
+  color: #ffffff;
 }
 
 form select {
@@ -1036,10 +1067,8 @@ form textarea::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px) {
-
   nav {
-    background: repeating-linear-gradient(35deg, #b2b2b2 50%, #d8d8d8 50%);
-    opacity: .8;
+    opacity: 0.8;
   }
 
   .navbar {
@@ -1083,7 +1112,7 @@ form textarea::-webkit-scrollbar {
 
   .shipping-header {
     position: relative;
-    top: unset;
+    top: 3vh;
   }
 
   section .card {
@@ -1200,7 +1229,9 @@ form textarea::-webkit-scrollbar {
     top: 11.5vh;
   }
 
-  #about header .about-ki, #about .our-team,  #about .ki-info {
+  #about header .about-ki,
+  #about .our-team,
+  #about .ki-info {
     position: relative;
     top: 25px;
   }
@@ -1237,10 +1268,6 @@ form textarea::-webkit-scrollbar {
 
   section {
     padding: 11vh 20px 25px;
-  }
-
-  #cards {
-    background: repeating-linear-gradient(35deg, #b2b2b2, #d8d8d8 90vw);
   }
 
   section .card {
@@ -1290,7 +1317,6 @@ form textarea::-webkit-scrollbar {
   /* contact section */
 
   #contact {
-    background: repeating-linear-gradient(35deg, #b2b2b2, #d8d8d8 50%);
     padding: 11vh 20px 25px;
   }
 
