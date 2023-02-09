@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/information.webp";
+import exitIcon from "../../resources/exit-icon.png";
 import TravelCarousel from "../../carousels/TravelCarousel";
 
 const style = {
@@ -42,7 +43,7 @@ const TravelModal = () => {
               title="Exit the product info section"
               alt="exit icon"
               className="exit-btn"
-            >Back</h5>
+            >Back {" "} <img src={exitIcon} alt="exit icon"></img></h5>
           </div>
           <div className="product-info">
             <h3 id="modal-modal-title" variant="h6" component="h3" className="info-header">

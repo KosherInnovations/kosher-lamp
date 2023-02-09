@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/information.webp";
+import exitIcon from "../../resources/exit-icon.png"
 import KmaxCarousel from "../../carousels/KmaxCarousel";
 
 const style = {
@@ -44,7 +45,7 @@ const KmaxModal = () => {
               alt="exit icon"
               className="exit-btn"
             >
-              Back
+              Back {" "} <img src={exitIcon} alt="exit icon"></img>
             </h5>
           </div>
           <div className="product-info">
