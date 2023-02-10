@@ -25,6 +25,7 @@ import Page from "./components/Page";
 function App() {
   // logic to set the page to the first one
   const [pages] = useState([
+    { name: "Home" },
     { name: "Products" },
     { name: "Replacements" },
     { name: "About" },

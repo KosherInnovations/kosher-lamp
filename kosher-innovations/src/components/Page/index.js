@@ -1,12 +1,18 @@
 import React from "react";
-import About from "../About";
-import Products from "../Products";
-import Contact from "../Contact";
-import Replacements from "../Replacements";
 import PageContent from "../PageContent";
+import Home from "../HomePage";
+import Products from "../Products";
+import Replacements from "../Replacements";
+import About from "../About";
+import Contact from "../Contact";
+
 
 const Page = ({ currentPage }) => {
   const renderPage = () => {
+    if (currentPage.name === "Home") {
+      document.title = "Home";
+      return <Home />;
+    }
     if (currentPage.name === "Products") {
       document.title = "Products";
       return <Products />;

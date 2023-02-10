@@ -38,11 +38,26 @@ const Navbar = (props) => {
   return (
     <>
       <ul className={active}>
+      <li
+          className="nav-link"
+          onClick={() => {
+            setCurrentPage(pages[0]);
+            showUpArrow();
+            setActive("nav-menu");
+            turned("menu-btn");
+            scrollToTop();
+          }}
+          title="Shop Our Products"
+          rel="noopener noreferrer"
+          tabIndex="0"
+        >
+          Home
+        </li>
         <li
           className="nav-link"
           id="nav1"
           onClick={() => {
-            setCurrentPage(pages[0]);
+            setCurrentPage(pages[1]);
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
@@ -58,7 +73,7 @@ const Navbar = (props) => {
           className="nav-link"
           id="nav2"
           onClick={() => {
-            setCurrentPage(pages[1]);
+            setCurrentPage(pages[2]);
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
@@ -73,7 +88,7 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[2]);
+            setCurrentPage(pages[3]);
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
@@ -88,7 +103,7 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[3]);
+            setCurrentPage(pages[4]);
             hideUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
