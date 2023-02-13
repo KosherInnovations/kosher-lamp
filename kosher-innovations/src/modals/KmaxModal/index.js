@@ -52,7 +52,7 @@ const KmaxModal = () => {
             <h3 variant="h6" component="h3" className="info-header">
               KosherLamp MAX Info
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               KosherLamp MAX means the most light with a bigger window. A simple
               twist reveals or hides the light on this innovative reading lamp.
               It's a practical and innovative idea that's perfect in any room

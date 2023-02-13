@@ -48,7 +48,7 @@ const KC3Modal = () => {
             <h3 variant="h6" component="h3" className="info-header">
               KosherClock
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               Can be used for Weekdays, Shabbos, Yom Tov, & Travel. Set
               different alarms, for different times, for different days!
               <br></br>

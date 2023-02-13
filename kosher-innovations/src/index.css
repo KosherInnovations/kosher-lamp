@@ -29,7 +29,7 @@ li {
   bottom: 25px;
   right: 25px;
   transition: 0.5s ease-in-out;
-  z-index: 10;
+  z-index: 100;
   /* visibility: hidden; */
 }
 
@@ -149,7 +149,8 @@ section {
 #cards,
 #about,
 #contact {
-  background: url("resources/light-dark-bg.jpg");
+  background: repeating-linear-gradient(45deg, grey 20%, #000111 80%);
+  /* background: url("resources/light-dark-bg.jpg"); */
   /* background: url("resources/lightbulb-bg.jpg"); */
   /* background: url("resources/2lamp-bg.png"); */
   /* background: url("resources/water-bg.jpeg"); */
@@ -181,14 +182,20 @@ section {
 
 #home .banner-container {
   width: 100%;
-  min-height: 100vh;
-  z-index: 100;
+  min-height: 89vh;
   background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#home .banner-container .banner {
-  width: 100vw;
-  
+#home .banner-container .bannerImg1 {
+  width: 80vw;
+}
+
+#home .banner-container .bannerImg2 {
+  width: 80vw;
 }
 
 #home .display-grid {
@@ -199,14 +206,13 @@ section {
   justify-content: center;
   grid-template-columns: 50vw 35vw;
   grid-gap: 5vw;
-  z-index: 11;
 }
 
 #home .display-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 #home .card-1 {
@@ -226,7 +232,61 @@ section {
   width: 100%;
 }
 
+#home .card-3 {
+  background: url("resources/warming-tray/warmtray-example.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
 
+#home .card-4 {
+  background: url("resources/kosher-clock/kc3-example.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+#home .feature-area {
+  width: 100%;
+  min-height: 55vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home .feature-area h1 {
+  width: 75%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+#home .feature-area img {
+  width: 100%;
+}
+
+#home .feature-area p {
+  padding: 10px 25px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Cinzel", serif;
+}
+
+#home .feature-area button {
+  all: unset;
+  background: #ff7d7d;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-family: "Cinzel", serif;
+}
 
 
 /* card components */
@@ -1107,6 +1167,10 @@ form textarea::-webkit-scrollbar {
   .contact-form {
     height: 100%;
     padding: 20px 0;
+  }
+
+  .inputBoxBtn {
+    margin: 20px 0;
   }
 }
 

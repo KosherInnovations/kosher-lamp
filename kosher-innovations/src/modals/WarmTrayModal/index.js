@@ -48,7 +48,7 @@ const BasicModal = () => {
             <h3 id="modal-modal-title" variant="h6" component="h3" className="info-header">
               Shabbos Safe Warming Tray (TechYidCo)
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               Designed to safely keep your food warm on Shabbos and Yom Tov.
               Features stainless steel (kasher-able) surface and built in
               electrical safeguards. Designed by a Frum Electronic Engineering

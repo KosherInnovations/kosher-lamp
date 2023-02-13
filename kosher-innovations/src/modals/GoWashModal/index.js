@@ -48,7 +48,7 @@ const GoWashModal = () => {
             <h3 variant="h6" component="h3" className="info-header">
               Go Wash (Portable washing cup)
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               The Collapsible Washing Cup. Made of sturdy silicone, this handy
               travel accessory is designed to hold the halachically required
               amount of water. Small enough to fit in a purse, hand bag and many

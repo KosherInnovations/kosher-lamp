@@ -48,7 +48,7 @@ const ShabtoothModal = () => {
           <h3 variant="h6" component="h3" className="info-header">
             Shabbos Toothbrush
           </h3>
-          <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+          <p id="modal-modal-description" component="h4">
             Brush your teeth on Shabbos with these halachically approved special
             Toothbrushes! 4 pack comes with Red, Yellow, Purple and Blue.
             Shabbos Toothbrush™ ensures that melachos are avoided (Sechitah,

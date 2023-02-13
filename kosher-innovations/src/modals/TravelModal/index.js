@@ -49,7 +49,7 @@ const TravelModal = () => {
             <h3 id="modal-modal-title" variant="h6" component="h3" className="info-header">
               Travel KosherLamp Info
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }}>
+            <p id="modal-modal-description">
               Designed for use at home or across the World. Small size, bright
               light. Take Travel KosherLamp with you wherever you go. A simple
               twist reveals or hides the light on this modern travel size lamp.

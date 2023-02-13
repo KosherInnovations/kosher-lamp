@@ -48,7 +48,7 @@ const OpenerModal = () => {
             <h3 variant="h6" component="h3" className="info-header">
               Shabbos Bottle Opener
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               Open plastic soda and seltzer bottles on Shabbos and Yom Tov. This
               handy device removes the bottle cap without tearing the
               tamper-proof ring. Approved by major Rabbonim. For many years,

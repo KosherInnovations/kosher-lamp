@@ -48,7 +48,7 @@ const ShroomModal = () => {
             <h3 variant="h6" component="h3" className="info-header">
               Mushroom KosherLamp
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               Raise or lower the mushroom cap to hide the light or let it shine.
               Just like the original KosherLamps, you can adjust the light until
               it's just right. Enough light to light up the bedroom, the

@@ -48,7 +48,7 @@ const BasicModal = () => {
             <h3 variant="h6" component="h3" className="info-header">
               Bug Checker MAX Info
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               A portable light board. It shines through the leaves but not the
               bugs. Bug Checker MAX is a steady, bright light - perfect for
               examining produce for insects. This makes it easy to check a

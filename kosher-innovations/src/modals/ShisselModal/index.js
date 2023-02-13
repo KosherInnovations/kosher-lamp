@@ -48,7 +48,7 @@ const ShisselModal = () => {
             <h3 variant="h6" component="h3" className="info-header">
               Smart Shissel
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               A spill resistant Negel Vasser Bowl. The Smart Shissel has a one
               way drain that traps water inside, leaving it covered and spill
               proof. Tomei water is fully covered after washing. Carry the bowl

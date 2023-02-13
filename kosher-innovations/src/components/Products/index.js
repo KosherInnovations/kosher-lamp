@@ -7,7 +7,7 @@ import warmingTray from "../../resources/warming-tray/warming-tray.webp";
 import WarmTrayModal from "../../modals/WarmTrayModal";
 import goWash from "../../resources/go-wash/go-wash (1).webp";
 import GoWashModal from "../../modals/GoWashModal";
-import kosherClock from "../../resources/kosher-clock/kosher-clock (1).webp";
+import kosherClock from "../../resources/kosher-clock/kosherclock.webp";
 import KosherClockModal from "../../modals/KosherClockModal";
 import fridgeez from "../../resources/fridg-eez/fridg-eez_1.webp";
 import FridgeezModal from "../../modals/FridgeezModal";

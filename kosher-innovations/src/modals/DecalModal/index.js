@@ -49,7 +49,7 @@ const DecalModal = () => {
             <h3 variant="h6" component="h3" className="info-header">
               Jewish Wall Decals
             </h3>
-            <p id="modal-modal-description" sx={{ mt: 2 }} component="h4">
+            <p id="modal-modal-description" component="h4">
               Decorate your walls High quality vinyl Decals that can be placed
               on your walls and repositioned without damaging the walls. These
               colorful decals are a perfect way to express your creativity and
