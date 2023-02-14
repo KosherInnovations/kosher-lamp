@@ -207,7 +207,7 @@ section {
 
 #home .display-grid {
   width: 100%;
-  height: 100%;
+  min-height: 80vh;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -216,43 +216,57 @@ section {
 }
 
 #home .display-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#home .display-grid .container {
+  position: relative;
+}
+
+#home .card-info-area {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  background: rgb(255, 255, 255, 0.35);
+  z-index: 111;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
 }
 
-#home .card-1 {
-  background: url("resources/travel-lamp/4Lamps-lit.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-
+#home .container:hover .card-info-area {
+  opacity: 1;
+  backdrop-filter: blur(5px);
 }
 
-#home .card-2 {
-  background: url("resources/kmax/example (2).webp");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
+#home .card-info-area * {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
-#home .card-3 {
-  background: url("resources/warming-tray/warmtray-example.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
+#home .card-info-area p {
+  margin: 10%;
 }
 
-#home .card-4 {
-  background: url("resources/kosher-clock/kc3-example.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
+#home .card-info-area button {
+  all: unset;
+  color: var(--white);
+  background: var(--pink);
+  padding: 5px 10px;
+  font-family: "Cinzel", serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 5px;
 }
 
 #home .feature-area {
