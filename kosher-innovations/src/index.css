@@ -1247,13 +1247,18 @@ form textarea::-webkit-scrollbar {
     transition: 0.5s ease-in-out;
   }
 
+
+  nav ul li:last-child {
+    visibility: visible;
+  }
+
   nav ul li a .shopping-cart {
     width: 45px;
   }
 
   #home .display-grid {
     padding: 25px 0;
-    grid-template-columns: 80vw;
+    grid-template-columns: 90vw;
   }
 
   #home .card-info-area p {
@@ -1306,13 +1311,13 @@ form textarea::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     word-break: break-word;
-    padding: 0 20px;
+    padding: 20px;
   }
 
   #home .banner-statement h1 {
     width: 100%;
-    font-size: 10.5rem;
-    font-family: 'Tourney', cursive;
+    font-size: 6.5rem;
+    font-family: 'Tourney', cursive, 'Cinzel' serif;
     color: #cd0404;
     margin: 0 0 100px;
     align-self: flex-start;
@@ -1486,7 +1491,7 @@ form textarea::-webkit-scrollbar {
   /* homepage */
 
   #home .card-info-area p {
-    margin: 5;
+    margin: 3%;
   }
 
   /* card section */
