@@ -1250,6 +1250,7 @@ form textarea::-webkit-scrollbar {
 
   nav ul li:last-child {
     visibility: visible;
+    opacity: 1;
   }
 
   nav ul li a .shopping-cart {

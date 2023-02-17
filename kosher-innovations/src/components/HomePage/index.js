@@ -1,11 +1,12 @@
 import React from "react";
-import homeBanner1 from "../../resources/ki-banner-detailed.jpg";
-import homeBanner2 from "../../resources/kmax-5-colours.jpg";
-import displayProd1 from "../../resources/travel-lamp/4Lamps-lit.jpg";
-import displayProd2 from "../../resources/kmax/example-2.jpg";
-import displayProd3 from "../../resources/warming-tray/warmtray-example.png";
-import displayProd4 from "../../resources/kosher-clock/kc3-example.png";
-import kiLogo from "../../resources/ki-banner.jpg";
+import LazyLoad from "react-lazyload";
+import homeBanner1 from "../../resources/ki-banner-detailed.webp";
+import homeBanner2 from "../../resources/kmax-5-colours.webp";
+import displayProd1 from "../../resources/travel-lamp/4Lamps-lit.webp";
+import displayProd2 from "../../resources/kmax/example-2.webp";
+import displayProd3 from "../../resources/warming-tray/warmtray-example.webp";
+import displayProd4 from "../../resources/kosher-clock/kc3-example.webp";
+import kiLogo from "../../resources/ki-banner.webp";
 
 const HomePage = () => {
   return (
@@ -17,24 +18,27 @@ const HomePage = () => {
           </h1>
           <h2>The Makers of Your favorite Jewish Home Products</h2>
         </header>
+        <LazyLoad height={200} offset={100}>
         <img
           className="bannerImg1"
           src={homeBanner1}
           alt="Kosher Innovations homepage banner"
-        ></img>
+        ></img></LazyLoad>
+        <LazyLoad height={200} offset={100}>
         <img
           className="bannerImg2"
           src={homeBanner2}
           alt="Kosher Innovations homepage banner"
-        ></img>
+        ></img></LazyLoad>
       </div>
       <div className="display-grid">
         <div className="container">
+        <LazyLoad height={200} offset={100}>
           <img
             className="display-card card-1"
             src={displayProd1}
             alt="display product"
-          ></img>
+          ></img></LazyLoad>
           <div className="card-info-area">
             <h1>KosherLamp</h1>
             <p>
@@ -45,11 +49,12 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container">
+        <LazyLoad height={200} offset={100}>
           <img
             className="display-card card-2"
             src={displayProd2}
             alt="display product"
-          ></img>
+          ></img></LazyLoad>
           <div className="card-info-area">
             <h1>KosherLamp</h1>
             <p>
@@ -62,16 +67,18 @@ const HomePage = () => {
       </div>
       <div className="feature-area">
         <header title="Kosher Innovations">
-          <img src={kiLogo} alt="Kosher Innovations" className="ki-logo"></img>
+        <LazyLoad height={200} offset={100}>
+          <img src={kiLogo} alt="Kosher Innovations" className="ki-logo"></img></LazyLoad>
         </header>
       </div>
       <div className="display-grid">
         <div className="container">
+        <LazyLoad height={200} offset={100}>
           <img
             className="display-card card-3"
             src={displayProd3}
             alt="display product"
-          ></img>
+          ></img></LazyLoad>
           <div className="card-info-area">
             <h1>KosherLamp</h1>
             <p>
@@ -82,11 +89,12 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container">
+        <LazyLoad height={200} offset={100}>
           <img
             className="display-card card-4"
             src={displayProd4}
             alt="display product"
-          ></img>
+          ></img></LazyLoad>
           <div className="card-info-area">
             <h1>KosherLamp</h1>
             <p>
