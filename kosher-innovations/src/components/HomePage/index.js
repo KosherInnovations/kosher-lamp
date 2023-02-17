@@ -11,6 +11,12 @@ const HomePage = () => {
   return (
     <section id="home">
       <div className="banner-container">
+        <header className="banner-statement">
+          <h1>
+            Kosher<br></br>Innovations
+          </h1>
+          <h2>The Makers of Your favorite Jewish Home Products</h2>
+        </header>
         <img
           className="bannerImg1"
           src={homeBanner1}
@@ -30,7 +36,7 @@ const HomePage = () => {
             alt="display product"
           ></img>
           <div className="card-info-area">
-            <h2>KosherLamp</h2>
+            <h1>KosherLamp</h1>
             <p>
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
@@ -45,7 +51,7 @@ const HomePage = () => {
             alt="display product"
           ></img>
           <div className="card-info-area">
-            <h2>KosherLamp</h2>
+            <h1>KosherLamp</h1>
             <p>
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
@@ -55,9 +61,9 @@ const HomePage = () => {
         </div>
       </div>
       <div className="feature-area">
-        <h1 title="Kosher Innovations">
+        <header title="Kosher Innovations">
           <img src={kiLogo} alt="Kosher Innovations" className="ki-logo"></img>
-        </h1>
+        </header>
       </div>
       <div className="display-grid">
         <div className="container">
@@ -67,7 +73,7 @@ const HomePage = () => {
             alt="display product"
           ></img>
           <div className="card-info-area">
-            <h2>KosherLamp</h2>
+            <h1>KosherLamp</h1>
             <p>
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
@@ -82,7 +88,7 @@ const HomePage = () => {
             alt="display product"
           ></img>
           <div className="card-info-area">
-            <h2>KosherLamp</h2>
+            <h1>KosherLamp</h1>
             <p>
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
