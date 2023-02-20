@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import gsap from "gsap";
 import shoppingCart from "../../resources/shopping-cart.webp";
 import menuBar from "../../resources/menu-bar.webp";
 

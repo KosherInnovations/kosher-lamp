@@ -1331,13 +1331,17 @@ form textarea::-webkit-scrollbar {
     align-self: flex-end;
   }
 
+  #home .feature-area {
+    min-height: 25vh;
+  }
+
   nav ul li a .shopping-cart {
     width: 45px;
   }
 
   .shipping-header {
     position: relative;
-    top: 3vh;
+    top: 0;
   }
 
   section .card {
