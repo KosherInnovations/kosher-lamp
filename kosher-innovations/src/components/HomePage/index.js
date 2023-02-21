@@ -8,7 +8,13 @@ import displayProd3 from "../../resources/warming-tray/warmtray-example.webp";
 import displayProd4 from "../../resources/kosher-clock/kc3-example.webp";
 import kiLogo from "../../resources/ki-banner.webp";
 
-const HomePage = () => {
+const HomePage = (props) => {
+  const { pages = [], setCurrentPage } = props;
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section id="home">
       <div className="banner-container">
@@ -19,26 +25,29 @@ const HomePage = () => {
           <h2>The Makers of Your favorite Jewish Home Products</h2>
         </header>
         <LazyLoad height={200} offset={100}>
-        <img
-          className="bannerImg1"
-          src={homeBanner1}
-          alt="Kosher Innovations homepage banner"
-        ></img></LazyLoad>
+          <img
+            className="bannerImg1"
+            src={homeBanner1}
+            alt="Kosher Innovations homepage banner"
+          ></img>
+        </LazyLoad>
         <LazyLoad height={200} offset={100}>
-        <img
-          className="bannerImg2"
-          src={homeBanner2}
-          alt="Kosher Innovations homepage banner"
-        ></img></LazyLoad>
+          <img
+            className="bannerImg2"
+            src={homeBanner2}
+            alt="Kosher Innovations homepage banner"
+          ></img>
+        </LazyLoad>
       </div>
       <div className="display-grid">
         <div className="container">
-        <LazyLoad height={200} offset={100}>
-          <img
-            className="display-card card-1"
-            src={displayProd1}
-            alt="display product"
-          ></img></LazyLoad>
+          <LazyLoad height={200} offset={100}>
+            <img
+              className="display-card card-1"
+              src={displayProd1}
+              alt="display product"
+            ></img>
+          </LazyLoad>
           <div className="card-info-area">
             <h1>KosherLamp</h1>
             <p>
@@ -49,12 +58,13 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container">
-        <LazyLoad height={200} offset={100}>
-          <img
-            className="display-card card-2"
-            src={displayProd2}
-            alt="display product"
-          ></img></LazyLoad>
+          <LazyLoad height={200} offset={100}>
+            <img
+              className="display-card card-2"
+              src={displayProd2}
+              alt="display product"
+            ></img>
+          </LazyLoad>
           <div className="card-info-area">
             <h1>KosherLamp</h1>
             <p>
@@ -67,18 +77,24 @@ const HomePage = () => {
       </div>
       <div className="feature-area">
         <header title="Kosher Innovations">
-        <LazyLoad height={200} offset={100}>
-          <img src={kiLogo} alt="Kosher Innovations" className="ki-logo"></img></LazyLoad>
+          <LazyLoad height={200} offset={100}>
+            <img
+              src={kiLogo}
+              alt="Kosher Innovations"
+              className="ki-logo"
+            ></img>
+          </LazyLoad>
         </header>
       </div>
       <div className="display-grid">
         <div className="container">
-        <LazyLoad height={200} offset={100}>
-          <img
-            className="display-card card-3"
-            src={displayProd3}
-            alt="display product"
-          ></img></LazyLoad>
+          <LazyLoad height={200} offset={100}>
+            <img
+              className="display-card card-3"
+              src={displayProd3}
+              alt="display product"
+            ></img>
+          </LazyLoad>
           <div className="card-info-area">
             <h1>KosherLamp</h1>
             <p>
@@ -89,12 +105,13 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container">
-        <LazyLoad height={200} offset={100}>
-          <img
-            className="display-card card-4"
-            src={displayProd4}
-            alt="display product"
-          ></img></LazyLoad>
+          <LazyLoad height={200} offset={100}>
+            <img
+              className="display-card card-4"
+              src={displayProd4}
+              alt="display product"
+            ></img>
+          </LazyLoad>
           <div className="card-info-area">
             <h1>KosherLamp</h1>
             <p>
@@ -115,7 +132,14 @@ const HomePage = () => {
         </p>
         <br></br>
         <br></br>
-        <button>View Products</button>
+        <button
+          onClick={() => {
+            setCurrentPage(pages[1]);
+            scrollToTop();
+          }}
+        >
+          View Products
+        </button>
         <br></br>
         <br></br>
         <p>

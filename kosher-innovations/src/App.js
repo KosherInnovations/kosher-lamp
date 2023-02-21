@@ -147,7 +147,11 @@ function App() {
         ></Navbar>
       </Header>
       <main>
-        <Page currentPage={currentPage}></Page>
+        <Page
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        ></Page>
       </main>
       {/* <Footer /> */}
     </>

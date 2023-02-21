@@ -7,11 +7,11 @@ import About from "../About";
 import Contact from "../Contact";
 
 
-const Page = ({ currentPage }) => {
+const Page = ({ currentPage, setCurrentPage, pages }) => {
   const renderPage = () => {
     if (currentPage.name === "Home") {
       document.title = "Home";
-      return <Home />;
+      return <Home pages={pages} setCurrentPage={setCurrentPage} />;
     }
     if (currentPage.name === "Products") {
       document.title = "Products";
