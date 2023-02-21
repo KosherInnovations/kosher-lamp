@@ -36,13 +36,13 @@ const About = () => {
 
   return (
     <section id="about">
-      <header>
+      {/* <header>
         <h1 title="About Kosher Innovations" className="about-ki">
           Our goal is to invent and market creative products that benefit the
           Shomer Shabbat community. We are constantly exploring ideas for Jewish
           products that are practical, innovative and halachically permissible.
         </h1>
-      </header>
+      </header> */}
       <div className="line-transition"></div>
       <div className="our-team">
         {team.map((teamMember, i) => (

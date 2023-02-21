@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import infoBtn from "../../resources/information.webp";
+import infoBtn from "../../resources/info.webp";
 import exitIcon from "../../resources/exit-icon.png"
 import KmaxCarousel from "../../carousels/KmaxCarousel";
 
