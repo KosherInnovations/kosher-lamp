@@ -56,7 +56,14 @@ const HomePage = (props) => {
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
             </p>
-            <button>Learn More</button>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[5]);
+                scrollToTop();
+              }}
+            >
+              Learn More
+            </button>
           </div>
         </div>
         <div className="container">
@@ -73,7 +80,14 @@ const HomePage = (props) => {
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
             </p>
-            <button>Learn More</button>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[6]);
+                scrollToTop();
+              }}
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>

@@ -30,6 +30,8 @@ function App() {
     { name: "Replacements" },
     { name: "About" },
     { name: "Contact" },
+    { name: "Travel KosherLamp" },
+    { name: "KosherLamp MAX" },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);

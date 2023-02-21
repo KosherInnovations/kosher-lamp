@@ -5,7 +5,8 @@ import Products from "../Products";
 import Replacements from "../Replacements";
 import About from "../About";
 import Contact from "../Contact";
-
+import Travel from "../Travel";
+import Kmax from "../Kmax";
 
 const Page = ({ currentPage, setCurrentPage, pages }) => {
   const renderPage = () => {
@@ -28,6 +29,14 @@ const Page = ({ currentPage, setCurrentPage, pages }) => {
     if (currentPage.name === "Contact") {
       document.title = "Contact";
       return <Contact />;
+    }
+    if (currentPage.name === "Travel KosherLamp") {
+      document.title = "Travel KosherLamp";
+      return <Travel />;
+    }
+    if (currentPage.name === "KosherLamp MAX") {
+      document.title = "KosherLamp MAX";
+      return <Kmax />;
     }
   };
 

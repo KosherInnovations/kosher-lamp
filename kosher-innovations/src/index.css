@@ -161,13 +161,15 @@ section {
   /* background: url("resources/light-dark-bg.jpg"); */
   /* background: url("resources/lightbulb-bg.jpg"); */
   /* background: url("resources/2lamp-bg.png"); */
-  background: url("resources/water-bg.avif");
-  /* background: var(--black); */
+  background: url("resources/water-bg.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
 }
+
 
 #contact {
   background: url("resources/2lamp-bg.png");
@@ -182,6 +184,8 @@ section {
   align-items: center;
   justify-content: center;
   background: url("resources/lightbulb-bg.jpg");
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: multiply;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -336,6 +340,17 @@ section {
 
 #home .feature-area button:hover {
   background: var(--off-pink);
+}
+
+/* travel page */
+
+#travel, #kmax {
+  background: var(--white);
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  padding: 50px 20px 25px;
+  /* background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: multiply; */
 }
 
 /* card components */
@@ -1303,6 +1318,12 @@ form textarea::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px) {
+
+  #cards, #about, #contact {
+  background: url("resources/water-mobile-bg.jpg");
+  /* background-size: contain; */
+  background-size: 100% auto;
+  }
   .navbar {
     position: fixed;
     top: 0;
@@ -1369,6 +1390,7 @@ form textarea::-webkit-scrollbar {
   .shipping-header {
     position: relative;
     top: 0;
+    background: rgba(255, 255, 255, 0.178);
   }
 
   section .card {
