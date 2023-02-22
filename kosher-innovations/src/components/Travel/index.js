@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../helpers/changeLettersDark";
 import LazyLoad from "react-lazyload";
 import travelWhite from "../../resources/travel-lamp/white-travel.webp";
 import travelGrey from "../../resources/travel-lamp/grey-travel.webp";
@@ -6,6 +7,10 @@ import travelBlack from "../../resources/travel-lamp/black-travel.webp";
 import travelBrown from "../../resources/travel-lamp/brown-travel.webp";
 
 const Travel = () => {
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+
   const travelCards = [
     {
       id: "white",

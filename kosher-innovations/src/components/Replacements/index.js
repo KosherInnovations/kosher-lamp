@@ -1,9 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
+import changeLettersLight from "../../helpers/changeLettersLight"
 import LazyLoad from "react-lazyload";
 import replacementShade from "../../resources/replacement-shade.jpg";
 import adapterImg from "../../resources/adapter-1.jpg";
 
 const Replacements = () => {
+
+  useEffect(() => {
+    changeLettersLight();
+  }, []);
+
   const addOpacityView = () => {
     const header2 = document.querySelector(".shipping-header");
     header2.id = "opacity-view2";

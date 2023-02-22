@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../helpers/changeLettersDark";
 import LazyLoad from "react-lazyload";
 import homeBanner1 from "../../resources/ki-banner-detailed.webp";
 import homeBanner2 from "../../resources/kmax-5-colours.webp";
@@ -16,6 +17,10 @@ const HomePage = (props) => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
 
   return (
     <section id="home">

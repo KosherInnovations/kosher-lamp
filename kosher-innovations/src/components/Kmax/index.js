@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../helpers/changeLettersDark";
 import LazyLoad from "react-lazyload";
 import kLampWhite from "../../resources/kmax/white-kmax.webp";
 import kLampSteel from "../../resources/kmax/silver-kmax.webp";
@@ -11,6 +12,10 @@ import kLampIvory from "../../resources/kmax/ivory-kmax.webp";
 import kLampPink from "../../resources/kmax/pink-kmax.webp";
 
 const Kmax = () => {
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+
   const kmaxCards = [
     {
       id: "white",

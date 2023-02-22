@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersLight from "../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import smilingMan from "../../resources/smiling-man.webp";
 
 const About = () => {
+  useEffect(() => {
+    changeLettersLight();
+  }, []);
+  
   const team = [
     {
       picture: smilingMan,

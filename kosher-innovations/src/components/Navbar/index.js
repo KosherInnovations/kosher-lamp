@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import shoppingCart from "../../resources/shopping-cart.webp";
-import menuBar from "../../resources/menu-bar.webp";
+// import menuBar from "../../resources/menu-bar.webp";
+import menuBar from "../../resources/list.webp"
 
 const hideUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");

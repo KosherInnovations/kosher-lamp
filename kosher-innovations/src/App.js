@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./index.css";
 import Header from "./components/Header";
@@ -38,7 +38,7 @@ function App() {
 
   // gsap animation logic
   window.addEventListener("load", () => {
-    const tl = gsap.timeline();
+    // const tl = gsap.timeline();
     const mediaQuery1 = window.matchMedia("(min-width: 900px)");
     const mediaQuery2 = window.matchMedia("(min-width: 768px)");
 
@@ -55,50 +55,50 @@ function App() {
       //     },
       //   });
       // });
-      tl.to(".navbar", 2, { height: "11vh" });
-      tl.fromTo(
-        "nav .navigation-logo",
-        {
-          transform: "scale(0)",
-        },
-        { duration: 2, transform: "scale(1)", visibility: "visible" }
-      );
-      tl.fromTo(
-        ".nav-link",
-        { transform: "scale(0)", y: 50 },
-        {
-          visibility: "visible",
-          y: 0,
-          transform: "scale(1)",
-          stagger: { amount: 0.5 },
-          duration: 0.5,
-          onComplete: function switchLinkTransition() {
-            const navLinks = document.querySelectorAll(".nav-link");
-            navLinks.forEach((link) => {
-              link.classList.add("transition");
-            });
-          },
-        }
-      );
-      tl.to(
-        "nav ul li:last-child",
-        { opacity: 1, visibility: "visible" },
-        "^=0"
-      );
-      tl.fromTo(
-        ".shipping-header",
-        { opacity: "0" },
-        {
-          delay: 0.5,
-          opacity: "1",
-          onComplete: () => {
-            let headers = document.querySelectorAll(".shipping-header");
-            headers.forEach(function (header) {
-              header.style.opacity = "1";
-            });
-          },
-        }
-      );
+      // tl.to(".navbar", 2, { height: "11vh" });
+      // tl.fromTo(
+      //   "nav .navigation-logo",
+      //   {
+      //     transform: "scale(0)",
+      //   },
+      //   { duration: 2, transform: "scale(1)", visibility: "visible" }
+      // );
+      // tl.fromTo(
+      //   ".nav-link",
+      //   { transform: "scale(0)", y: 50 },
+      //   {
+      //     visibility: "visible",
+      //     y: 0,
+      //     transform: "scale(1)",
+      //     stagger: { amount: 0.5 },
+      //     duration: 0.5,
+      //     onComplete: function switchLinkTransition() {
+      //       const navLinks = document.querySelectorAll(".nav-link");
+      //       navLinks.forEach((link) => {
+      //         link.classList.add("transition");
+      //       });
+      //     },
+      //   }
+      // );
+      // tl.to(
+      //   "nav ul li:last-child",
+      //   { opacity: 1, visibility: "visible" },
+      //   "^=0"
+      // );
+      // tl.fromTo(
+      //   ".shipping-header",
+      //   { opacity: "0" },
+      //   {
+      //     delay: 0.5,
+      //     opacity: "1",
+      //     onComplete: () => {
+      //       let headers = document.querySelectorAll(".shipping-header");
+      //       headers.forEach(function (header) {
+      //         header.style.opacity = "1";
+      //       });
+      //     },
+      //   }
+      // );
     }
     if (mediaQuery2.matches) {
     }

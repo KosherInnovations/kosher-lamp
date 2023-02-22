@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersLight from "../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 // The hardcoded card components
 import bugChecker from "../../resources/bug-checker/bug-checker.webp";
@@ -28,6 +29,10 @@ import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";
 
 const Products = () => {
+  useEffect(() => {
+    changeLettersLight();
+  }, []);
+
   const addOpacityView = () => {
     const header1 = document.querySelector(".shipping-header");
     header1.id = "opacity-view1";
