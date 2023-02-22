@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import backgroundImg from "../../resources/dark-pattern-bg.jpg";
 import changeLettersLight from "../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import smilingMan from "../../resources/smiling-man.webp";
@@ -7,7 +8,7 @@ const About = () => {
   useEffect(() => {
     changeLettersLight();
   }, []);
-  
+
   const team = [
     {
       picture: smilingMan,
@@ -41,14 +42,7 @@ const About = () => {
 
   return (
     <section id="about">
-      {/* <header>
-        <h1 title="About Kosher Innovations" className="about-ki">
-          Our goal is to invent and market creative products that benefit the
-          Shomer Shabbat community. We are constantly exploring ideas for Jewish
-          products that are practical, innovative and halachically permissible.
-        </h1>
-      </header> */}
-      <div className="line-transition"></div>
+      <img className="bg-img" src={backgroundImg} alt="background"></img>
       <div className="our-team">
         {team.map((teamMember, i) => (
           <div className="card" key={i}>

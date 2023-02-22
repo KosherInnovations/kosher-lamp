@@ -154,11 +154,6 @@ section {
 #cards,
 #about,
 #contact {
-  /* background: repeating-linear-gradient(45deg, grey 20%, #000111 80%); */
-  /* background: url("resources/light-dark-bg.jpg"); */
-  /* background: url("resources/lightbulb-bg.jpg"); */
-  /* background: url("resources/2lamp-bg.png"); */
-  /* background: url("resources/water-bg.webp"); */
   background: url("resources/dark-pattern-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -166,6 +161,10 @@ section {
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
+}
+
+.bg-img {
+  display: none;
 }
 
 /* home page */
@@ -177,8 +176,8 @@ section {
   align-items: center;
   justify-content: center;
   background: url("resources/lightbulb-bg.jpg");
-  background-color: rgba(0, 0, 0, 0.5); 
-  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background-blend-mode: multiply; */
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -337,7 +336,8 @@ section {
 
 /* travel page */
 
-#travel, #kmax {
+#travel,
+#kmax {
   background: var(--white);
   display: grid;
   grid-template-columns: 30vw 30vw 30vw;
@@ -365,6 +365,7 @@ section .card {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
   transition: 0.5s ease-in-out;
   border-radius: 5px;
+  z-index: 111;
 }
 
 section .card:hover {
@@ -565,7 +566,7 @@ section .card .team-member-position {
   transition: 0.5s ease-in-out;
   font-family: "Montserrat", sans-serif;
   background: var(--white);
-  padding: 5px ;
+  padding: 5px;
   border-radius: 5px;
   font-size: 18px;
   letter-spacing: 1px;
@@ -850,6 +851,7 @@ h5 cite {
   padding: 0 17px;
   letter-spacing: 1px;
   opacity: 0;
+  z-index: 110;
 }
 
 #opacity-view1,
@@ -963,6 +965,7 @@ h5 cite {
   overflow: hidden;
   box-sizing: border-box;
   padding: 0 25px;
+  z-index: 50;
 }
 
 #about .ki-info h4 {
@@ -1014,6 +1017,7 @@ h5 cite {
   height: 75vh;
   width: 45vw;
   margin: 0 10px;
+  z-index: 55;
 }
 
 iframe {
@@ -1238,6 +1242,22 @@ form textarea::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 900px) {
+  #cards,
+  #about,
+  #contact {
+    background: transparent;
+  }
+
+  .bg-img {
+    display: initial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    z-index: 10;
+  }
+
   .navbar {
     position: relative;
     top: 0;
@@ -1299,7 +1319,6 @@ form textarea::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px) {
-
   .navbar {
     position: fixed;
     top: 0;

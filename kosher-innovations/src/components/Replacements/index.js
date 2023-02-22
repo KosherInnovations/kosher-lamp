@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import backgroundImg from "../../resources/dark-pattern-bg.jpg";
 import changeLettersLight from "../../helpers/changeLettersLight"
 import LazyLoad from "react-lazyload";
 import replacementShade from "../../resources/replacement-shade.jpg";
@@ -17,6 +18,7 @@ const Replacements = () => {
   };
   return (
     <section id="cards" className="product-cards" onLoad={addOpacityView}>
+      <img className="bg-img" src={backgroundImg} alt="background"></img>
       <h2 className="shipping-header" id="header2">
         Free Shipping On Any Replacement Parts<br></br>Shipping
         Within USA Only
