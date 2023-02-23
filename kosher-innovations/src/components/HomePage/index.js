@@ -1,14 +1,11 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../helpers/changeLettersDark";
+// import changeLettersDark from "../../helpers/changeLettersDark";
+ import changeLettersLight from "../../helpers/changeLettersLight"
 import LazyLoad from "react-lazyload";
-import homeBanner1 from "../../resources/ki-banner-detailed.webp";
-import homeBanner2 from "../../resources/kmax-5-colours.webp";
-// import homeBanner2 from "../../resources/kmax/all-kmax.jpg";
 import displayProd1 from "../../resources/travel-lamp/4Lamps-lit.webp";
 import displayProd2 from "../../resources/kmax/example-2.webp";
 import displayProd3 from "../../resources/warming-tray/warmtray-example.webp";
 import displayProd4 from "../../resources/kosher-clock/kc3-example.webp";
-// import kiLogo from "../../resources/ki-banner.webp";
 import kiLogo from "../../resources/kmax/all-kmax.jpg";
 
 const HomePage = (props) => {
@@ -19,7 +16,8 @@ const HomePage = (props) => {
   };
 
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLettersLight();
   }, []);
 
   return (
@@ -31,20 +29,14 @@ const HomePage = (props) => {
           </h1>
           <h2>The Makers of Your favorite Jewish Home Products</h2>
         </header>
-        <LazyLoad height={200} offset={100}>
-          <img
-            className="bannerImg1"
-            src={homeBanner1}
-            alt="Kosher Innovations homepage banner"
-          ></img>
-        </LazyLoad>
-        <LazyLoad height={200} offset={100}>
-          <img
-            className="bannerImg2"
-            src={homeBanner2}
-            alt="Kosher Innovations homepage banner"
-          ></img>
-        </LazyLoad>
+        <button
+          onClick={() => {
+            setCurrentPage(pages[1]);
+            scrollToTop();
+          }}
+        >
+          View Products
+        </button>
       </div>
       <div className="display-grid">
         <div className="container">

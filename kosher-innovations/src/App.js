@@ -1,26 +1,10 @@
 import React, { useState, useEffect } from "react";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./index.css";
 import Header from "./components/Header";
 // import Footer from "./components/Footer";
 import upArrow from "./resources/up-arrow.webp";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
-
-// const targetOpacity = "opacity-view";
-// const shippingHeaders = document.querySelectorAll(".shipping-header");
-
-// const showShippingHeader = () => {
-//   console.log(targetOpacity);
-//   console.log(shippingHeaders);
-//   shippingHeaders.forEach((shippingHeader) => {
-//     shippingHeader.setAttribute("id", targetOpacity);
-//   });
-// };
-
-// // const main = document.querySelector("main");
-// window.addEventListener("click", showShippingHeader)
 
 function App() {
   // logic to set the page to the first one
@@ -62,6 +46,7 @@ function App() {
     };
   }, [currentPage]);
 
+  // App will return all the components and pass down the necesarry functionality to its children
   return (
     <>
       <div id="top"></div>
