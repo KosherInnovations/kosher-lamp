@@ -141,7 +141,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   overflow: hidden;
   padding: 100px 20px 25px;
   box-sizing: border-box;
@@ -469,6 +469,8 @@ section .card .content .type .type-picker {
   cursor: pointer;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
   border-radius: 25px;
   padding: 5px 10px;
   transition: 0.5s ease-in-out;
@@ -574,7 +576,16 @@ section .card .team-member-position {
 
 section .card:hover .product-price,
 section .card:hover .team-member-position {
-  transform: scale(0) rotate(180deg);
+  transform: scale(0) translateY(-150px);
+}
+
+section .card .team-member-position {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 14px;
 }
 
 section .card .content a {
@@ -1506,13 +1517,13 @@ form textarea::-webkit-scrollbar {
   /* contact section */
 
   #contact {
-    padding: 11vh 20px 25px;
+    padding: 11vh 0 25px;
   }
 
   .map-container,
   .contact-form {
-    width: 80vw;
-    margin: 25px 10px;
+    width: 90vw;
+    margin: 25px 0;
   }
 
   .map-container {
@@ -1523,10 +1534,19 @@ form textarea::-webkit-scrollbar {
     height: 100%;
   }
 
-  form .inputBox,
-  form .inputBox-country {
-    width: 85%;
+  form .inputBox {
+    width: 100%;
     margin-bottom: 5%;
+  }
+
+  form .inputBox-country {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
+  form textarea {
+    width: 100%;
   }
 }
 
@@ -1589,13 +1609,5 @@ form textarea::-webkit-scrollbar {
 
   /* contact section */
 
-  #contact {
-    padding: 11vh 20px 25px;
-  }
-
-  form .inputBox,
-  form .inputBox-country {
-    width: 80%;
-    margin-bottom: 5%;
-  }
+  
 }
