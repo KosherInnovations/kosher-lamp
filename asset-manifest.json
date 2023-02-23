@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kosher-lamp/static/css/main.f4ecd116.css",
-    "main.js": "/kosher-lamp/static/js/main.8c1689da.js",
+    "main.css": "/kosher-lamp/static/css/main.1564ecce.css",
+    "main.js": "/kosher-lamp/static/js/main.20ce25d5.js",
     "static/js/787.90000931.chunk.js": "/kosher-lamp/static/js/787.90000931.chunk.js",
     "static/media/bottle-opener_1.webp": "/kosher-lamp/static/media/bottle-opener_1.21c9d3439db14d4d6a3f.webp",
     "static/media/gloves-blue.webp": "/kosher-lamp/static/media/gloves-blue.4790738f6da9b4153373.webp",
@@ -55,12 +55,12 @@
     "static/media/carousel-arrow.webp": "/kosher-lamp/static/media/carousel-arrow.54cce6a72aa3c6b1c92a.webp",
     "static/media/ki-logo-no-background.webp": "/kosher-lamp/static/media/ki-logo-no-background.22f7c14c47cba8df16f7.webp",
     "index.html": "/kosher-lamp/index.html",
-    "main.f4ecd116.css.map": "/kosher-lamp/static/css/main.f4ecd116.css.map",
-    "main.8c1689da.js.map": "/kosher-lamp/static/js/main.8c1689da.js.map",
+    "main.1564ecce.css.map": "/kosher-lamp/static/css/main.1564ecce.css.map",
+    "main.20ce25d5.js.map": "/kosher-lamp/static/js/main.20ce25d5.js.map",
     "787.90000931.chunk.js.map": "/kosher-lamp/static/js/787.90000931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4ecd116.css",
-    "static/js/main.8c1689da.js"
+    "static/css/main.1564ecce.css",
+    "static/js/main.20ce25d5.js"
   ]
 }
