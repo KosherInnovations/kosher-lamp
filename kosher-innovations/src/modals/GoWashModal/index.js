@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LazyLoad from "react-lazyload";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.webp";
@@ -22,13 +23,15 @@ const GoWashModal = () => {
 
   return (
     <>
-      <img
-        onClick={handleOpen}
-        className="info-btn"
-        src={infoBtn}
-        alt="Open product info about Go Wash"
-        title="Open product info"
-      ></img>
+      <LazyLoad height={200} offset={100}>
+        <img
+          onClick={handleOpen}
+          className="info-btn"
+          src={infoBtn}
+          alt="Open product info about Go Wash"
+          title="Open product info"
+        ></img>
+      </LazyLoad>
       <Modal
         open={open}
         onClose={handleClose}
@@ -42,7 +45,9 @@ const GoWashModal = () => {
               title="Exit the product info section"
               alt="exit icon"
               className="exit-btn"
-            >Back {" "} <img src={exitIcon} alt="exit icon"></img></h5>
+            >
+              Back <img src={exitIcon} alt="exit icon"></img>
+            </h5>
           </div>
           <div className="product-info">
             <h3 variant="h6" component="h3" className="info-header">

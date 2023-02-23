@@ -156,7 +156,7 @@ section {
 #cards,
 #about,
 #contact {
-  background: url("resources/dark-pattern-bg.jpg");
+  background: url("resources/dark-pattern-bg.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -177,8 +177,8 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("resources/dark-pattern-bg.jpg");
-  /* background: url("resources/lightbulb-bg.jpg"); */
+  background: url("resources/dark-pattern-bg.webp");
+  /* background: url("resources/lightbulb-bg.webp"); */
   background-color: rgba(0, 0, 0, 0.5);
   /* background-blend-mode: multiply; */
   background-position: center center;
@@ -911,23 +911,10 @@ h5 cite {
 #about {
   align-items: flex-start;
   justify-content: center;
-  /* background: repeating-linear-gradient(35deg, #b2b2b2 50%, #d8d8d8 50%);
-  background: url("./resources/ki-big-logo.jpg");
-  background-position: 50%;
-  background-size: contain; */
   background-repeat: no-repeat;
   padding-top: 0;
   text-align: center;
 }
-
-/* #about header .about-ki {
-  width: 100vw;
-  height: 30vh;
-  background: repeating-linear-gradient(35deg, #b2b2b2 50%, #d8d8d8 50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 #about header h1 {
   font-size: 22px;
@@ -1369,6 +1356,10 @@ form textarea::-webkit-scrollbar {
     padding: 10vh 0;
   }
 
+  #home .banner-container {
+    height: 90vh;
+  }
+
   #home .banner-statement {
     display: flex;
     flex-direction: column;
@@ -1382,7 +1373,7 @@ form textarea::-webkit-scrollbar {
   #home .banner-statement h1 {
     width: 100%;
     height: 35vh;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-family: "Tourney", cursive, "Cinzel" serif;
     color: #cd0404;
     /* margin: 0 0 100px; */
@@ -1393,9 +1384,11 @@ form textarea::-webkit-scrollbar {
 
   #home .banner-statement h2 {
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-family: "Tourney", cursive;
-    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #home .feature-area {

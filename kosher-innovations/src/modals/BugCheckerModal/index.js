@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LazyLoad from "react-lazyload";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import infoBtn from "../../resources/info.webp";
@@ -22,13 +23,13 @@ const BasicModal = () => {
 
   return (
     <>
-      <img
+      <LazyLoad height={200} offset={100}><img
         onClick={handleOpen}
         className="info-btn"
         src={infoBtn}
         alt="Open product info about Bug Checker MAX"
         title="Open product info"
-      ></img>
+      ></img></LazyLoad>
       <Modal
         open={open}
         onClose={handleClose}

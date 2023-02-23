@@ -46,15 +46,6 @@ const Travel = () => {
     },
   ];
 
-  //   travelCards.forEach((card) => {
-  //     <div className="travel-card" title={card.titleTag}>
-  //       <LazyLoad height={200} offset={100}>
-  //         <img src={card.imgSrc} alt={card.altTag}></img>
-  //       </LazyLoad>
-  //       <a href={card.href}>Add To Cart</a>
-  //     </div>;
-  //   });
-
   const travelCardElements = travelCards.map((card) => (
     <div className="travel-card" title={card.titleTag} key={card.id}>
       <LazyLoad height={200} offset={100}>

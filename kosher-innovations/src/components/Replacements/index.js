@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
-import backgroundImg from "../../resources/dark-pattern-bg.jpg";
+import backgroundImg from "../../resources/dark-pattern-bg.webp";
 import changeLettersLight from "../../helpers/changeLettersLight"
 import LazyLoad from "react-lazyload";
-import replacementShade from "../../resources/replacement-shade.jpg";
-import adapterImg from "../../resources/adapter-1.jpg";
+import replacementShade from "../../resources/replacement-shade.webp";
+import adapterImg from "../../resources/adapter-1.webp";
 
 const Replacements = () => {
 

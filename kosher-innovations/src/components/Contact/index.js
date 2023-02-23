@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import backgroundImg from "../../resources/dark-pattern-bg.jpg";
+import backgroundImg from "../../resources/dark-pattern-bg.webp";
 import changeLettersLight from "../../helpers/changeLettersLight";
 import MapContainer from "../MapContainer";
 import EmailForm from "../EmailForm";
