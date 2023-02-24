@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kosher-lamp/static/css/main.612309e5.css",
-    "main.js": "/kosher-lamp/static/js/main.a8d29dd8.js",
+    "main.css": "/kosher-lamp/static/css/main.a1d23186.css",
+    "main.js": "/kosher-lamp/static/js/main.b103b767.js",
     "static/js/787.90000931.chunk.js": "/kosher-lamp/static/js/787.90000931.chunk.js",
     "static/media/bottle-opener_1.webp": "/kosher-lamp/static/media/bottle-opener_1.21c9d3439db14d4d6a3f.webp",
     "static/media/gloves-blue.webp": "/kosher-lamp/static/media/gloves-blue.4790738f6da9b4153373.webp",
@@ -46,18 +46,17 @@
     "static/media/smiling-man.webp": "/kosher-lamp/static/media/smiling-man.512e6dca03e19d000df1.webp",
     "static/media/list.webp": "/kosher-lamp/static/media/list.7eb9d75e6f810d4845d6.webp",
     "static/media/exit-icon.png": "/kosher-lamp/static/media/exit-icon.2d4604cd8eda39e14f62.png",
-    "static/media/up-arrow.webp": "/kosher-lamp/static/media/up-arrow.1699fa79158fe3a832b1.webp",
     "static/media/shopping-cart.webp": "/kosher-lamp/static/media/shopping-cart.9a5543397fca873af658.webp",
     "static/media/carousel-arrow.webp": "/kosher-lamp/static/media/carousel-arrow.54cce6a72aa3c6b1c92a.webp",
     "static/media/replacement-shade.webp": "/kosher-lamp/static/media/replacement-shade.dacf598165d7bac2777e.webp",
     "static/media/ki-logo-no-background.webp": "/kosher-lamp/static/media/ki-logo-no-background.22f7c14c47cba8df16f7.webp",
     "index.html": "/kosher-lamp/index.html",
-    "main.612309e5.css.map": "/kosher-lamp/static/css/main.612309e5.css.map",
-    "main.a8d29dd8.js.map": "/kosher-lamp/static/js/main.a8d29dd8.js.map",
+    "main.a1d23186.css.map": "/kosher-lamp/static/css/main.a1d23186.css.map",
+    "main.b103b767.js.map": "/kosher-lamp/static/js/main.b103b767.js.map",
     "787.90000931.chunk.js.map": "/kosher-lamp/static/js/787.90000931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.612309e5.css",
-    "static/js/main.a8d29dd8.js"
+    "static/css/main.a1d23186.css",
+    "static/js/main.b103b767.js"
   ]
 }
