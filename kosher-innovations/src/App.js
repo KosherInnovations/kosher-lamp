@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 import Header from "./components/Header";
 // import Footer from "./components/Footer";
-import upArrow from "./resources/up-arrow.webp";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 
@@ -50,13 +49,8 @@ function App() {
   return (
     <>
       <div id="top"></div>
-      <a href="#top" title="Back to top">
-        <img
-          rel="prefetch"
-          className="up-arrow"
-          src={upArrow}
-          alt="back to top"
-        ></img>
+      <a href="#top" title="Back to top" className="up-arrow">
+        Back To Top
       </a>
       <Header>
         <Navbar

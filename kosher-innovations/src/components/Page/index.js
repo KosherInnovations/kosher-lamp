@@ -5,8 +5,8 @@ import Products from "../Products";
 import Replacements from "../Replacements";
 import About from "../About";
 import Contact from "../Contact";
-import Travel from "../Travel";
-import Kmax from "../Kmax";
+import Travel from "../SinglePages/Travel";
+import Kmax from "../SinglePages/Kmax";
 
 const Page = ({ currentPage, setCurrentPage, pages }) => {
   const renderPage = () => {

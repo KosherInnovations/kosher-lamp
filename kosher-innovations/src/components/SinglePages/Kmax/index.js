@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../helpers/changeLettersDark";
+import changeLettersDark from "../../../helpers/changeLettersDark";
 import LazyLoad from "react-lazyload";
-import kLampWhite from "../../resources/kmax/white-kmax.webp";
-import kLampSteel from "../../resources/kmax/silver-kmax.webp";
-import kLampBlack from "../../resources/kmax/black-kmax.webp";
-import kLampBlue from "../../resources/kmax/blue-kmax.webp";
-import kLampGreen from "../../resources/kmax/green-kmax.webp";
-import kLampMarble from "../../resources/kmax/marble-kmax.webp";
-import kLampCherry from "../../resources/kmax/cherry-kmax.webp";
-import kLampIvory from "../../resources/kmax/ivory-kmax.webp";
-import kLampPink from "../../resources/kmax/pink-kmax.webp";
+import kLampWhite from "../../../resources/kmax/white-kmax.webp";
+import kLampSteel from "../../../resources/kmax/silver-kmax.webp";
+import kLampBlack from "../../../resources/kmax/black-kmax.webp";
+import kLampBlue from "../../../resources/kmax/blue-kmax.webp";
+import kLampGreen from "../../../resources/kmax/green-kmax.webp";
+import kLampMarble from "../../../resources/kmax/marble-kmax.webp";
+import kLampCherry from "../../../resources/kmax/cherry-kmax.webp";
+import kLampIvory from "../../../resources/kmax/ivory-kmax.webp";
+import kLampPink from "../../../resources/kmax/pink-kmax.webp";
 
 const Kmax = () => {
   useEffect(() => {
@@ -92,10 +92,11 @@ const Kmax = () => {
   ];
 
   const kmaxCardElements = kmaxCards.map((card) => (
-    <div className="kmax-card" title={card.titleTag} key={card.id}>
+    <div className="single-page-card" title={card.titleTag} key={card.id}>
       <LazyLoad height={200} offset={100}>
         <img src={card.imgSrc} alt={card.altTag} />
       </LazyLoad>
+      <h2 className="product-price">$52.95</h2>
       <a href={card.href}>Add To Cart</a>
     </div>
   ));

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../helpers/changeLettersDark";
+import changeLettersDark from "../../../helpers/changeLettersDark";
 import LazyLoad from "react-lazyload";
-import travelWhite from "../../resources/travel-lamp/white-travel.webp";
-import travelGrey from "../../resources/travel-lamp/grey-travel.webp";
-import travelBlack from "../../resources/travel-lamp/black-travel.webp";
-import travelBrown from "../../resources/travel-lamp/brown-travel.webp";
+import travelWhite from "../../../resources/travel-lamp/white-travel.webp";
+import travelGrey from "../../../resources/travel-lamp/grey-travel.webp";
+import travelBlack from "../../../resources/travel-lamp/black-travel.webp";
+import travelBrown from "../../../resources/travel-lamp/brown-travel.webp";
 
 const Travel = () => {
   useEffect(() => {
@@ -47,11 +47,12 @@ const Travel = () => {
   ];
 
   const travelCardElements = travelCards.map((card) => (
-    <div className="travel-card" title={card.titleTag} key={card.id}>
+    <div className="single-page-card" title={card.titleTag} key={card.id}>
       <LazyLoad height={200} offset={100}>
         <img src={card.imgSrc} alt={card.altTag} />
       </LazyLoad>
-      <a href={card.href}>Add To Cart</a>
+      <h2 className="product-price">$52.95</h2>
+      <a href={card.href} title={`add ${card.titleTag} to cart`}>Add To Cart</a>
     </div>
   ));
 

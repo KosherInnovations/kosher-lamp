@@ -35,17 +35,22 @@ li {
 
 .up-arrow {
   display: none;
-  width: 65px;
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 10px;
+  right: 10px;
   transition: 0.5s ease-in-out;
   z-index: 100;
-  /* visibility: hidden; */
+  background: var(--blue);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Bebas Neue", cursive;
 }
 
 .up-arrow:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
+  background: #066ac7;
 }
 
 .navbar {
@@ -362,16 +367,42 @@ section {
   background: var(--off-pink);
 }
 
-/* travel page */
+/* single item pages */
 
 #travel,
-#kmax {
+#kmax,
+#safeplate,
+#kosherclock {
   background: var(--white);
   display: grid;
   grid-template-columns: 30vw 30vw 30vw;
-  padding: 50px 20px 25px;
-  /* background-color: rgba(0, 0, 0, 0.5); 
-  background-blend-mode: multiply; */
+  /* padding: 50px 20px 25px; */
+}
+
+.single-page-card {
+  min-height: 375px;
+  background: #f3c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 25px 0;
+  border-radius: 5px;
+}
+
+.single-page-card img {
+  width: 75px;
+}
+
+.single-page-card a {
+  background: var(--white);
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.single-page-card a:hover {
+  background: var(--pink);
+  color: var(--white);
 }
 
 /* card components */
@@ -587,12 +618,14 @@ section .card .content .type .type-picker:hover {
   height: 100px;
 }
 
-section .card .product-price {
+section .card .product-price,
+.single-page-card .product-price {
   color: #2d4263;
 }
 
 section .card .product-price,
-section .card .team-member-position {
+section .card .team-member-position,
+.single-page-card .product-price {
   transition: 0.5s ease-in-out;
   font-family: "Montserrat", sans-serif;
   background: var(--white);
@@ -616,19 +649,23 @@ section .card .team-member-position {
   font-size: 14px;
 }
 
-section .card .content a {
+section .card .content a,
+.single-page-card a {
   display: inline-block;
   padding: 12px 30px;
-  background: #dfdfde;
   border-radius: 40px;
   font-family: "Cinzel", serif;
   letter-spacing: 1px;
-  color: #111;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
-  transform: scale(0);
   letter-spacing: 1.5px;
+}
+
+section .card .content a {
+  transform: scale(0);
+  background: #dfdfde;
+  color: #111;
 }
 
 section .card .content .flex-box-products-page,
@@ -1332,6 +1369,13 @@ form textarea::-webkit-scrollbar {
   #home .card-info-area p {
     margin: 10%;
   }
+
+  #travel,
+  #kmax,
+  #safeplate,
+  #kosherclock {
+    grid-template-columns: 40vw 40vw;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1393,6 +1437,13 @@ form textarea::-webkit-scrollbar {
 
   #home .feature-area {
     min-height: 25vh;
+  }
+
+  #travel,
+  #kmax,
+  #safeplate,
+  #kosherclock {
+    grid-template-columns: 55vw;
   }
 
   nav ul li a .shopping-cart {
@@ -1566,6 +1617,15 @@ form textarea::-webkit-scrollbar {
 
   #home .card-info-area p {
     margin: 3%;
+  }
+
+  /* single page cards */
+
+  #travel,
+  #kmax,
+  #safeplate,
+  #kosherclock {
+    grid-template-columns: 90vw;
   }
 
   /* card section */
