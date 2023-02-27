@@ -7,6 +7,8 @@ import About from "../About";
 import Contact from "../Contact";
 import Travel from "../SinglePages/Travel";
 import Kmax from "../SinglePages/Kmax";
+import SafePlate from "../SinglePages/SafePlate";
+import KosherClock from "../SinglePages/KosherClock";
 
 const Page = ({ currentPage, setCurrentPage, pages }) => {
   const renderPage = () => {
@@ -37,6 +39,14 @@ const Page = ({ currentPage, setCurrentPage, pages }) => {
     if (currentPage.name === "KosherLamp MAX") {
       document.title = "KosherLamp MAX";
       return <Kmax />;
+    }
+    if (currentPage.name === "SafePlate") {
+      document.title = "Shabbos Safe Warming Tray";
+      return <SafePlate />;
+    }
+    if (currentPage.name === "KosherClock") {
+      document.title = "KosherClock";
+      return <KosherClock />;
     }
   };
 

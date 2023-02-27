@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import backgroundImg from "../../resources/dark-pattern-bg.webp";
 // import changeLettersDark from "../../helpers/changeLettersDark";
  import changeLettersLight from "../../helpers/changeLettersLight"
 import LazyLoad from "react-lazyload";
@@ -22,6 +23,7 @@ const HomePage = (props) => {
 
   return (
     <section id="home">
+      <img className="bg-img" src={backgroundImg} alt="background"></img>
       <div className="banner-container">
         <header className="banner-statement">
           <h1>
@@ -114,7 +116,14 @@ const HomePage = (props) => {
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
             </p>
-            <button>Learn More</button>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[7]);
+                scrollToTop();
+              }}
+            >
+              Learn More
+            </button>
           </div>
         </div>
         <div className="container">
@@ -131,7 +140,14 @@ const HomePage = (props) => {
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
             </p>
-            <button>Learn More</button>
+            <button
+              onClick={() => {
+                setCurrentPage(pages[8]);
+                scrollToTop();
+              }}
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>

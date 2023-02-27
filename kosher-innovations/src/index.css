@@ -14,6 +14,10 @@
   --blue: #2c94f7;
   --light-transparent: rgba(255, 255, 255, 0.5);
   --dark-transparent: rgba(0, 0, 0, 0.5);
+  --header-font: Tourney, cursive;
+  --main-font: "Bebas Neue", cursive;
+  --main-font-alt: "Cinzel", serif;
+  --secondary-font: "Josefin Sans", sans-serif;
 }
 
 body {
@@ -39,24 +43,20 @@ li {
   bottom: 10px;
   right: 10px;
   transition: 0.5s ease-in-out;
-  z-index: 100;
+  z-index: 950;
   background: var(--blue);
   color: var(--white);
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
-  font-family: "Bebas Neue", cursive;
+  font-family: var(--main-font);
 }
 
 .up-arrow:hover {
-  transform: scale(1.15);
   background: #066ac7;
 }
 
 .navbar {
-  /* background-color: #e7e2e2; */
-  /* background-color: #f0e7e7; */
-  /* background: var(--light-transparent); */
   width: 100%;
   height: 0;
   background-size: cover;
@@ -92,7 +92,8 @@ nav ul li {
   padding: 5px 15px;
   margin: 5px 10px;
   font-size: 18px;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
+  letter-spacing: 1.2px;
   /* background: var(--light-transparent); */
   cursor: pointer;
   border-radius: 25px;
@@ -205,6 +206,7 @@ section {
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  z-index: 550;
 }
 
 #home .banner-statement {
@@ -221,7 +223,7 @@ section {
   width: 45%;
   min-height: 10rem;
   font-size: 4.5rem;
-  font-family: "Tourney", cursive;
+  font-family: var(--header-font);
   color: var(--red);
 }
 
@@ -229,7 +231,7 @@ section {
   width: 45%;
   min-height: 10rem;
   font-size: 2.5rem;
-  font-family: "Tourney", cursive;
+  font-family: var(--header-font);
   background: rgb(255, 255, 255, 0.65);
   color: var(--black);
   border-radius: 5px;
@@ -240,7 +242,7 @@ section {
   all: unset;
   background: var(--red);
   color: var(--white);
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   padding: 5px 10px;
   border-radius: 5px;
   letter-spacing: 1px;
@@ -254,6 +256,7 @@ section {
   justify-content: center;
   grid-template-columns: 50vw 35vw;
   grid-gap: 5vw;
+  z-index: 450;
 }
 
 #home .display-card {
@@ -290,7 +293,7 @@ section {
 
 #home .card-info-area * {
   text-align: center;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -309,7 +312,7 @@ section {
   color: var(--white);
   background: var(--pink);
   padding: 5px 10px;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   letter-spacing: 1px;
   border-radius: 5px;
   transition: 0.5s ease-in-out;
@@ -327,6 +330,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 455;
 }
 
 #home .feature-area:last-child {
@@ -350,7 +354,7 @@ section {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
 }
 
 #home .feature-area button {
@@ -359,7 +363,7 @@ section {
   color: var(--white);
   border-radius: 5px;
   padding: 5px 20px;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   transition: 0.5s ease-in-out;
 }
 
@@ -374,14 +378,32 @@ section {
 #safeplate,
 #kosherclock {
   background: var(--white);
+}
+
+#travel,
+#kmax {
   display: grid;
   grid-template-columns: 30vw 30vw 30vw;
-  /* padding: 50px 20px 25px; */
+}
+
+#safeplate,
+#kosherclock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.only-card {
+  min-width: 350px;
+}
+
+#only-card-img {
+  width: 300px;
 }
 
 .single-page-card {
   min-height: 375px;
-  background: #f3c8c8;
+  background: #609ba5;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -415,7 +437,7 @@ section .card {
   position: relative;
   width: 300px;
   height: 400px;
-  margin: 20px 40px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,7 +483,7 @@ section .card:hover .imgBox img {
 section .card .imgBox h1 {
   color: var(--white);
   text-align: center;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   letter-spacing: 1.2px;
   line-height: 1;
   transition: 0.5s ease-in-out;
@@ -499,7 +521,7 @@ section .card .content h3 {
   color: var(--white);
   font-weight: 300;
   font-size: 18px;
-  font-family: "Bebas Neue", cursive;
+  font-family: var(--main-font);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -527,7 +549,7 @@ section .card .content .type .type-picker {
   box-sizing: border-box;
   cursor: pointer;
   text-align: center;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--secondary-font);
   letter-spacing: 1px;
   font-weight: bold;
   border-radius: 25px;
@@ -627,7 +649,7 @@ section .card .product-price,
 section .card .team-member-position,
 .single-page-card .product-price {
   transition: 0.5s ease-in-out;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--main-font-alt);
   background: var(--white);
   padding: 5px;
   border-radius: 5px;
@@ -654,7 +676,7 @@ section .card .content a,
   display: inline-block;
   padding: 12px 30px;
   border-radius: 40px;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
@@ -741,7 +763,7 @@ section .card .content .flex-box {
 
 .MuiBox-root p {
   padding: 15px 55px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.2;
@@ -814,7 +836,7 @@ section .card:hover .content a {
   background: cornflowerblue;
   color: var(--white);
   letter-spacing: 1px;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
 }
 
 .info-btn,
@@ -837,23 +859,19 @@ section .card:hover .content a {
 /* carousel styling */
 
 .MuiBox-root h3 {
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   padding: 40px 0;
 }
 
 h3,
 h4 {
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   width: 100%;
   text-align: center;
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 1px;
 }
-
-/* h4 {
-  font-family: "Josefin Sans", sans-serif;
-} */
 
 .review-header {
   background: #b15757;
@@ -867,7 +885,7 @@ h5 {
 }
 
 h5 p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--secondary-font);
   line-height: 1.2;
   overflow: scroll;
   height: 8rem;
@@ -879,7 +897,7 @@ h5 p {
 }
 
 h5 cite {
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
 }
 
 .carousel-box {
@@ -919,7 +937,7 @@ h5 cite {
 .shipping-header {
   color: var(--white);
   background: rgb(255, 255, 255, 0);
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   font-size: 1rem;
   left: 0;
   width: 100%;
@@ -955,7 +973,7 @@ h5 cite {
 
 #about header h1 {
   font-size: 22px;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   font-weight: 400;
   /* text-shadow: 1px 1px 14px black; */
   position: relative;
@@ -1009,7 +1027,7 @@ h5 cite {
 #about .our-team .card p {
   color: var(--white);
   font-size: 16px;
-  font-family: "Bebas Neue", cursive;
+  font-family: var(--main-font);
   transform: scale(0);
   transition: 0.5s ease-in-out;
   letter-spacing: 0.4px;
@@ -1055,7 +1073,7 @@ h5 cite {
   text-align: center;
   font-size: 18px;
   color: var(--black);
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--main-font-alt);
   letter-spacing: 0.8px;
 }
 
@@ -1108,7 +1126,7 @@ form {
   /* position: relative;
   bottom: 10%; */
   font-size: 25px;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
   transition: 0.5s ease-in-out;
   margin-top: 5%;
 }
@@ -1132,7 +1150,7 @@ form .country-option {
 
 form .country-option,
 form select {
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
 }
 
 form .inputBox-country span {
@@ -1158,7 +1176,7 @@ form .inputBox-country {
   position: relative;
   width: 45%;
   margin-bottom: 3%;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
 }
 
 form .inputBox-country {
@@ -1235,7 +1253,7 @@ form textarea {
   font-size: 1em;
   padding: 5px 0 0;
   text-transform: unset;
-  font-family: "Cinzel", serif;
+  font-family: var(--main-font-alt);
 }
 
 form textarea:focus {
@@ -1418,7 +1436,6 @@ form textarea::-webkit-scrollbar {
     width: 100%;
     height: 35vh;
     font-size: 3.5rem;
-    font-family: "Tourney", cursive, "Cinzel" serif;
     color: #cd0404;
     /* margin: 0 0 100px; */
     display: flex;
@@ -1429,7 +1446,6 @@ form textarea::-webkit-scrollbar {
   #home .banner-statement h2 {
     width: 100%;
     font-size: 1.5rem;
-    font-family: "Tourney", cursive;
     display: flex;
     align-items: center;
     justify-content: center;

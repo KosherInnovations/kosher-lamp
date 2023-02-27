@@ -97,7 +97,7 @@ const Kmax = () => {
         <img src={card.imgSrc} alt={card.altTag} />
       </LazyLoad>
       <h2 className="product-price">$52.95</h2>
-      <a href={card.href}>Add To Cart</a>
+      <a href={card.href} title={`add ${card.titleTag} to cart`}>Add To Cart</a>
     </div>
   ));
 

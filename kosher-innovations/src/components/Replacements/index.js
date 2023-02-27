@@ -1,12 +1,13 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import backgroundImg from "../../resources/dark-pattern-bg.webp";
-import changeLettersLight from "../../helpers/changeLettersLight"
+import changeLettersLight from "../../helpers/changeLettersLight";
+// function to make the header hide on card hover
+import HideHeader from "../../helpers/HideHeader";
 import LazyLoad from "react-lazyload";
 import replacementShade from "../../resources/replacement-shade.webp";
 import adapterImg from "../../resources/adapter-1.webp";
 
 const Replacements = () => {
-
   useEffect(() => {
     changeLettersLight();
   }, []);
@@ -17,11 +18,13 @@ const Replacements = () => {
     header2.classList.add("transition");
   };
   return (
-    <section id="cards" className="product-cards" onLoad={addOpacityView}>
+    <section id="cards" className="product-cards" onLoad={() => {
+      addOpacityView();
+      HideHeader();
+    }}>
       <img className="bg-img" src={backgroundImg} alt="background"></img>
       <h2 className="shipping-header" id="header2">
-        Free Shipping On Any Replacement Parts<br></br>Shipping
-        Within USA Only
+        Free Shipping On Any Replacement Parts<br></br>Shipping Within USA Only
       </h2>
       <div className="card">
         <div className="imgBox">
@@ -40,7 +43,7 @@ const Replacements = () => {
         </div>
         <h2 className="product-price">$5.00</h2>
         <div className="content">
-        <h3>Free Shipping</h3>
+          <h3>Free Shipping</h3>
           <div className="flex-box-replacements-page">
             <a
               rel="noreferrer"

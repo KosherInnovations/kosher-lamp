@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import backgroundImg from "../../resources/dark-pattern-bg.webp";
 import changeLettersLight from "../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
+// function to make the header hide on card hover
+import HideHeader from "../../helpers/HideHeader";
 // The hardcoded card components
 import bugChecker from "../../resources/bug-checker/bug-checker.webp";
 import BugCheckerModal from "../../modals/BugCheckerModal";
@@ -40,7 +42,10 @@ const Products = () => {
     header1.classList.add("transition");
   };
   return (
-    <section id="cards" className="product-cards" onLoad={addOpacityView}>
+    <section id="cards" className="product-cards" onLoad={() => {
+      addOpacityView();
+      HideHeader();
+    }}>
       <img className="bg-img" src={backgroundImg} alt="background"></img>
       <h2 className="shipping-header">
         Orders to New York State and New Jersey tend to arrive in a week or
