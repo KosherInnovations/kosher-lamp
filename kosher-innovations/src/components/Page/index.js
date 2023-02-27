@@ -34,19 +34,19 @@ const Page = ({ currentPage, setCurrentPage, pages }) => {
     }
     if (currentPage.name === "Travel KosherLamp") {
       document.title = "Travel KosherLamp";
-      return <Travel />;
+      return <Travel pages={pages} setCurrentPage={setCurrentPage} />;
     }
     if (currentPage.name === "KosherLamp MAX") {
       document.title = "KosherLamp MAX";
-      return <Kmax />;
+      return <Kmax pages={pages} setCurrentPage={setCurrentPage} />;
     }
     if (currentPage.name === "SafePlate") {
       document.title = "Shabbos Safe Warming Tray";
-      return <SafePlate />;
+      return <SafePlate pages={pages} setCurrentPage={setCurrentPage} />;
     }
     if (currentPage.name === "KosherClock") {
       document.title = "KosherClock";
-      return <KosherClock />;
+      return <KosherClock pages={pages} setCurrentPage={setCurrentPage} />;
     }
   };
 

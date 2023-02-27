@@ -4,12 +4,23 @@ import LazyLoad from "react-lazyload";
 import kosherClock from "../../../resources/kosher-clock/kosherclock.webp";
 
 const KosherClock = () => {
+  // props
+  // const { pages = [], setCurrentPage } = props;
+
   useEffect(() => {
     changeLettersDark();
   }, []);
 
   return (
     <section id="kosherclock">
+      {/* <button
+        className="homepage-btn"
+        onClick={() => {
+          setCurrentPage(pages[0]);
+        }}
+      >
+        ←
+      </button> */}
       <div className="single-page-card only-card">
         <LazyLoad height={200} offset={100}>
           <img id="only-card-img" src={kosherClock} alt="KosherClock" />

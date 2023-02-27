@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import shoppingCart from "../../resources/shopping-cart.webp";
 // import menuBar from "../../resources/menu-bar.webp";
-import menuBar from "../../resources/list.webp"
+import menuBar from "../../resources/list.webp";
 
 const hideUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");
+  const backArrow = document.querySelector(".homepage-btn");
   upArrow.style.display = "none";
+  backArrow.style.display = "none";
 };
 
 const showUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");
+  const backArrow = document.querySelector(".homepage-btn");
   if (window.matchMedia("(min-width: 500px)").matches) {
     upArrow.style.display = "initial";
+    backArrow.style.display = "initial";
   } else {
     upArrow.style.display = "none";
+    backArrow.style.display = "none";
   }
 };
 
@@ -38,7 +43,7 @@ const Navbar = (props) => {
   return (
     <>
       <ul className={active}>
-      <li
+        <li
           className="nav-link"
           onClick={() => {
             setCurrentPage(pages[0]);

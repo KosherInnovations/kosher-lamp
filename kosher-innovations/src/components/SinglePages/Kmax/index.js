@@ -12,6 +12,10 @@ import kLampIvory from "../../../resources/kmax/ivory-kmax.webp";
 import kLampPink from "../../../resources/kmax/pink-kmax.webp";
 
 const Kmax = () => {
+  
+  // props
+  // const { pages = [], setCurrentPage } = props;
+
   useEffect(() => {
     changeLettersDark();
   }, []);
@@ -97,11 +101,26 @@ const Kmax = () => {
         <img src={card.imgSrc} alt={card.altTag} />
       </LazyLoad>
       <h2 className="product-price">$52.95</h2>
-      <a href={card.href} title={`add ${card.titleTag} to cart`}>Add To Cart</a>
+      <a href={card.href} title={`add ${card.titleTag} to cart`}>
+        Add To Cart
+      </a>
     </div>
   ));
 
-  return <section id="kmax">{kmaxCardElements}</section>;
+  return (
+    <section id="kmax">
+      {" "}
+      {/* <button
+        className="homepage-btn"
+        onClick={() => {
+          setCurrentPage(pages[0]);
+        }}
+      >
+        ←
+      </button> */}
+      {kmaxCardElements}
+    </section>
+  );
 };
 
 export default Kmax;

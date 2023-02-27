@@ -26,7 +26,7 @@ function App() {
     <>
       <div id="top"></div>
       <a href="#top" title="Back to top" className="up-arrow">
-        Back To Top
+        ↑
       </a>
       <Header>
         <Navbar

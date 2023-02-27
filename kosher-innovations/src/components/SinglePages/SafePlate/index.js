@@ -4,15 +4,30 @@ import LazyLoad from "react-lazyload";
 import safePlate from "../../../resources/warming-tray/warming-tray.webp";
 
 const SafePlate = () => {
+  // props
+  // const { pages = [], setCurrentPage } = props;
+
   useEffect(() => {
     changeLettersDark();
   }, []);
 
   return (
     <section id="safeplate">
+      {/* <button
+        className="homepage-btn"
+        onClick={() => {
+          setCurrentPage(pages[0]);
+        }}
+      >
+        ←
+      </button> */}
       <div className="single-page-card only-card">
         <LazyLoad height={200} offset={100}>
-          <img id="only-card-img" src={safePlate} alt="Shabbos Safe Warming Tray" />
+          <img
+            id="only-card-img"
+            src={safePlate}
+            alt="Shabbos Safe Warming Tray"
+          />
         </LazyLoad>
         <h2 className="product-price">$52.95</h2>
         <a
