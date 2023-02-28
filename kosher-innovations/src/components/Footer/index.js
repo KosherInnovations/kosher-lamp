@@ -1,4 +1,5 @@
 import React from "react";
+// import backgroundImg from "../../resources/dark-pattern-bg.webp";
 import scrollToTop from "../../helpers/scrollToTop";
 
 const Footer = (props) => {
@@ -106,6 +107,7 @@ const Footer = (props) => {
 
   return (
     <footer>
+        {/* <img className="bg-img" src={backgroundImg} alt="background"></img> */}
       <FooterBtns />
     </footer>
   );
