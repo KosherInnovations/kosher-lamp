@@ -5,20 +5,15 @@ import menuBar from "../../resources/list.webp";
 
 const hideUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");
-  const backArrow = document.querySelector(".homepage-btn");
   upArrow.style.display = "none";
-  backArrow.style.display = "none";
 };
 
 const showUpArrow = () => {
-  const upArrow = document.querySelector(".up-arrow");
-  const backArrow = document.querySelector(".homepage-btn");
+  const upArrow = document.querySelector(".up-arrow");;
   if (window.matchMedia("(min-width: 500px)").matches) {
     upArrow.style.display = "initial";
-    backArrow.style.display = "initial";
   } else {
     upArrow.style.display = "none";
-    backArrow.style.display = "none";
   }
 };
 
