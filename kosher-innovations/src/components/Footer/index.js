@@ -27,11 +27,11 @@ const Footer = (props) => {
       page: 4,
     },
     {
-      btnText: "KosherLamp MAX",
+      btnText: "Travel KosherLamp",
       page: 5,
     },
     {
-      btnText: "Travel KosherLamp",
+      btnText: "KosherLamp MAX",
       page: 6,
     },
     {

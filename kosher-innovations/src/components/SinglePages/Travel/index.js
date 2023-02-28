@@ -7,8 +7,6 @@ import travelBlack from "../../../resources/travel-lamp/black-travel.webp";
 import travelBrown from "../../../resources/travel-lamp/brown-travel.webp";
 
 const Travel = () => {
-  // props
-  // const { pages = [], setCurrentPage } = props;
 
   useEffect(() => {
     changeLettersDark();
@@ -63,14 +61,6 @@ const Travel = () => {
 
   return (
     <section id="travel">
-      {/* <button
-        className="homepage-btn"
-        onClick={() => {
-          setCurrentPage(pages[0]);
-        }}
-      >
-        ←
-      </button> */}
       {travelCardElements}
     </section>
   );

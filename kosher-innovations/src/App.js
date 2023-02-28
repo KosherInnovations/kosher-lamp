@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 
 function App() {
-  // logic to set the page to the first one
   const [pages] = useState([
     { name: "Home" },
     { name: "Products" },
@@ -15,8 +14,19 @@ function App() {
     { name: "Contact" },
     { name: "Travel KosherLamp" },
     { name: "KosherLamp MAX" },
+    { name: "Bug Checker" },
     { name: "SafePlate" },
+    { name: "Shabbos Scrub Gloves" },
+    { name: "Smart Shissel" },
+    { name: "Go Wash" },
     { name: "KosherClock" },
+    { name: "Fridg-eez" },
+    { name: "Shabbos Bottle Opener" },
+    { name: "Mushroom KosherLamp" },
+    { name: "Shabbos Bathroom Tissue" },
+    { name: "Jewish Wall Decals" },
+    { name: "Shabbos Toothbrush" },
+    { name: "Uncle Moishy Weekday Toothbrush" },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);

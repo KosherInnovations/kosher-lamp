@@ -47,7 +47,7 @@ const HomePage = (props) => {
             ></img>
           </LazyLoad>
           <div className="card-info-area">
-            <h1>KosherLamp</h1>
+            <h1>Travel KosherLamp</h1>
             <p>
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
@@ -71,7 +71,7 @@ const HomePage = (props) => {
             ></img>
           </LazyLoad>
           <div className="card-info-area">
-            <h1>KosherLamp</h1>
+            <h1>KosherLamp MAX</h1>
             <p>
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
@@ -108,14 +108,14 @@ const HomePage = (props) => {
             ></img>
           </LazyLoad>
           <div className="card-info-area">
-            <h1>KosherLamp</h1>
+            <h1>Shabbos Safe Warming Tray</h1>
             <p>
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
             </p>
             <button
               onClick={() => {
-                setCurrentPage(pages[7]);
+                setCurrentPage(pages[8]);
                 scrollToTop();
               }}
             >
@@ -132,14 +132,14 @@ const HomePage = (props) => {
             ></img>
           </LazyLoad>
           <div className="card-info-area">
-            <h1>KosherLamp</h1>
+            <h1>KosherClock</h1>
             <p>
               HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
               AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
             </p>
             <button
               onClick={() => {
-                setCurrentPage(pages[8]);
+                setCurrentPage(pages[12]);
                 scrollToTop();
               }}
             >
