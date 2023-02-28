@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const ScrubGloves = () => {
-    return <div>Scrub Gloves</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>Scrub Gloves</div>;
+};
 
 export default ScrubGloves;

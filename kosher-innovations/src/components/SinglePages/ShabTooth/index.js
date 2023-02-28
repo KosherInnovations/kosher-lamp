@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const ShabTooth = () => {
-    return <div>ShabTooth</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>ShabTooth</div>;
+};
 
 export default ShabTooth;

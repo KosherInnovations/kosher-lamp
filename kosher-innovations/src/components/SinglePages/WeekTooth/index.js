@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const WeekTooth = () => {
-    return <div>WeekTooth</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>WeekTooth</div>;
+};
 
 export default WeekTooth;

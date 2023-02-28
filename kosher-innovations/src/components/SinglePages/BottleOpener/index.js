@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const BottleOpener = () => {
-    return <div>BottleOpener</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>BottleOpener</div>;
+};
 
 export default BottleOpener;

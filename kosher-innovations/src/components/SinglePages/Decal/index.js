@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const Decal = () => {
-    return <div>Decal</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>Decal</div>;
+};
 
 export default Decal;

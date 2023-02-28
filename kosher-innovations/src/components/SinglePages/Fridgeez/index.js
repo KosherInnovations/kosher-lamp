@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const Fridgeez = () => {
-    return <div>Fridgeez</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>Fridgeez</div>;
+};
 
 export default Fridgeez;

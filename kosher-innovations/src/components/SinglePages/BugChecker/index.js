@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const BugChecker = () => {
-    return <div>BCKR</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>BCKR</div>;
+};
 
 export default BugChecker;

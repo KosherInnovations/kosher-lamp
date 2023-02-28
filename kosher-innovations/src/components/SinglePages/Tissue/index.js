@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const Tissue = () => {
-    return <div>Tissue</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>Tissue</div>;
+};
 
 export default Tissue;

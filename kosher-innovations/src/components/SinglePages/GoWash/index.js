@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const GoWash = () => {
-    return <div>GoWash</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>GoWash</div>;
+};
 
 export default GoWash;

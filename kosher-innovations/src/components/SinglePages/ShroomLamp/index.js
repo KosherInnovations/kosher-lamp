@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import changeLettersDark from "../../../helpers/changeLettersDark";
+
 const ShroomLamp = () => {
-    return <div>ShroomLamp</div>
-}
+  useEffect(() => {
+    changeLettersDark();
+  }, []);
+  return <div>ShroomLamp</div>;
+};
 
 export default ShroomLamp;
