@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
 
@@ -42,7 +42,7 @@ function App() {
           currentPage={currentPage}
         ></Page>
       </main>
-      {/* <Footer /> */}
+      <Footer pages={pages} setCurrentPage={setCurrentPage} />
     </>
   );
 }

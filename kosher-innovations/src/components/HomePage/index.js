@@ -8,13 +8,10 @@ import displayProd2 from "../../resources/kmax/example-2.webp";
 import displayProd3 from "../../resources/warming-tray/warmtray-example.webp";
 import displayProd4 from "../../resources/kosher-clock/kc3-example.webp";
 import kiLogo from "../../resources/kmax/all-kmax.webp";
+import scrollToTop from "../../helpers/scrollToTop";
 
 const HomePage = (props) => {
   const { pages = [], setCurrentPage } = props;
-
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
 
   useEffect(() => {
     // changeLettersDark();

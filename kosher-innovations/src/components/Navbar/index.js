@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import shoppingCart from "../../resources/shopping-cart.webp";
 // import menuBar from "../../resources/menu-bar.webp";
 import menuBar from "../../resources/list.webp";
+import scrollToTop from "../../helpers/scrollToTop";
 
 const hideUpArrow = () => {
   const upArrow = document.querySelector(".up-arrow");
@@ -15,10 +16,6 @@ const showUpArrow = () => {
   } else {
     upArrow.style.display = "none";
   }
-};
-
-const scrollToTop = () => {
-  window.scrollTo(0, 0);
 };
 
 const Navbar = (props) => {

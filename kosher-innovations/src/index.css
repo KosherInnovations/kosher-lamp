@@ -242,12 +242,20 @@ section {
 
 #home .banner-container button {
   all: unset;
-  background: var(--red);
-  color: var(--white);
+  background: var(--pink);
+  color: var(--black);
   font-family: var(--main-font-alt);
+  font-size: 1.25rem;
   padding: 5px 10px;
   border-radius: 5px;
   letter-spacing: 1px;
+  min-width: 60%;
+  transition: 0.5s ease-in-out;
+}
+
+#home .banner-container button:hover {
+  background: var(--red);
+  color: var(--white);
 }
 
 #home .display-grid {
@@ -326,13 +334,15 @@ section {
 
 #home .feature-area {
   width: 100%;
-  min-height: 75vh;
+  min-height: 85vh;
   background: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   z-index: 455;
+  border-top: 1px solid var(--red);
+  border-bottom: 1px solid var(--red);
 }
 
 #home .feature-area:last-child {
@@ -1310,6 +1320,48 @@ form textarea::-webkit-scrollbar {
   transition: 0.5s ease-in-out;
 }
 
+/* footer section */
+
+footer {
+  position: relative;
+  /* z-index: 655; */
+  width: 100%;
+  /* min-height: 75vh; */
+  background: url("resources/dark-pattern-bg.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: minmax(50px, auto)  minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+  padding: 50px 0;
+}
+
+footer button {
+  all: unset;
+  color: var(--white);
+  background: var(--dark-transparent);
+  /* min-width: 50px; */
+  margin: 15px 0;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  transition: 0.5s ease-in-out;
+}
+
+footer button:hover {
+  background: var(--light-transparent);
+  color: var(--black);
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 992px) {
   #contact {
     flex-direction: column-reverse;
@@ -1334,6 +1386,14 @@ form textarea::-webkit-scrollbar {
 
   .inputBoxBtn {
     margin: 20px 0;
+  }
+
+  footer {
+    grid-template-columns: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+  }
+
+  footer button {
+    margin: 10px 0;
   }
 }
 
@@ -1430,7 +1490,7 @@ form textarea::-webkit-scrollbar {
   /* homepage */
 
   #home {
-    padding: 10vh 0;
+    padding: 10vh 0 0;
   }
 
   #home .banner-container {
@@ -1641,6 +1701,17 @@ form textarea::-webkit-scrollbar {
   form textarea {
     width: 100%;
   }
+
+  /* footer section */
+
+  footer {
+    grid-template-columns: minmax(50px, auto) minmax(50px, auto);
+  }
+
+  footer button {
+    margin: 8px 0;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1709,5 +1780,13 @@ form textarea::-webkit-scrollbar {
     padding: 20px;
   }
 
-  /* contact section */
+  /* footer section */
+
+  footer {
+    grid-template-columns: 85vw;
+  }
+
+  footer button {
+    margin: 10px 0;
+  }
 }
