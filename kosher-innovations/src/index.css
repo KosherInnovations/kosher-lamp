@@ -64,6 +64,7 @@ img {
   background: #066ac7;
 }
 
+
 .navbar {
   width: 100%;
   height: 0;
@@ -316,7 +317,7 @@ section {
 }
 
 #home .card-info-area h1 {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #home .card-info-area p {
@@ -1502,7 +1503,7 @@ footer button:hover {
 
   #home .display-grid {
     padding: 25px 0;
-    grid-template-columns: 90vw;
+    grid-template-columns: 97vw;
   }
 
   #home .card-info-area p {

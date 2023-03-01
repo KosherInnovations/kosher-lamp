@@ -30,12 +30,17 @@ function App() {
     { name: "Uncle Moishy Weekday Toothbrush" },
   ]);
 
+  // sets the current page to 0 and can be dynamically updated based on the buttons that are clicked inside the components
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   // App will return all the components and pass down the necesarry functionality to its children
   return (
     <>
-      <button  onClick={() => scrollToTop()} title="Back to top" className="up-arrow">
+      <button
+        onClick={() => scrollToTop()}
+        title="Back to top"
+        className="up-arrow"
+      >
         ↑
       </button>
       <Header>
