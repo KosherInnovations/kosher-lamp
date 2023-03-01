@@ -14,7 +14,8 @@
   --blue: #2c94f7;
   --light-transparent: rgba(255, 255, 255, 0.5);
   --dark-transparent: rgba(0, 0, 0, 0.5);
-  --header-font: Tourney, cursive;
+  --header-font: "Tourney", cursive;
+  --header-font-secondary: "Rampart One", cursive;
   --main-font: "Bebas Neue", cursive;
   --main-font-alt: "Cinzel", serif;
   --secondary-font: "Josefin Sans", sans-serif;
@@ -42,6 +43,7 @@ img {
 }
 
 .up-arrow {
+  all: unset;
   display: none;
   position: fixed;
   bottom: 10px;
@@ -230,7 +232,7 @@ section {
   width: 45%;
   min-height: 10rem;
   font-size: 4.5rem;
-  font-family: var(--header-font);
+  font-family: var(--header-font), var(--header-font-secondary);
   color: var(--red);
 }
 
@@ -238,7 +240,7 @@ section {
   width: 45%;
   min-height: 10rem;
   font-size: 2.5rem;
-  font-family: var(--header-font);
+  font-family: var(--header-font), var(--header-font-secondary);
   background: rgb(255, 255, 255, 0.65);
   color: var(--black);
   border-radius: 5px;

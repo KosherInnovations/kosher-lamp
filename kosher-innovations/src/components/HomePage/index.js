@@ -30,8 +30,9 @@ const HomePage = (props) => {
         </header>
         <button
           onClick={() => {
-            setCurrentPage(pages[1]);
-            scrollToTop();
+            scrollToTop().then(() => {
+              setCurrentPage(pages[1]);
+            });
           }}
         >
           View Products
@@ -54,8 +55,9 @@ const HomePage = (props) => {
             </p>
             <button
               onClick={() => {
-                setCurrentPage(pages[5]);
-                scrollToTop();
+                scrollToTop().then(() => {
+                  setCurrentPage(pages[5]);
+                });
               }}
             >
               Learn More
@@ -78,8 +80,9 @@ const HomePage = (props) => {
             </p>
             <button
               onClick={() => {
-                setCurrentPage(pages[6]);
-                scrollToTop();
+                scrollToTop().then(() => {
+                  setCurrentPage(pages[6]);
+                });
               }}
             >
               Learn More
@@ -115,8 +118,9 @@ const HomePage = (props) => {
             </p>
             <button
               onClick={() => {
-                setCurrentPage(pages[8]);
-                scrollToTop();
+                scrollToTop().then(() => {
+                  setCurrentPage(pages[8]);
+                });
               }}
             >
               Learn More
@@ -139,8 +143,9 @@ const HomePage = (props) => {
             </p>
             <button
               onClick={() => {
-                setCurrentPage(pages[12]);
-                scrollToTop();
+                scrollToTop().then(() => {
+                  setCurrentPage(pages[12]);
+                });
               }}
             >
               Learn More
@@ -160,8 +165,9 @@ const HomePage = (props) => {
         <br></br>
         <button
           onClick={() => {
-            setCurrentPage(pages[1]);
-            scrollToTop();
+            scrollToTop().then(() => {
+              setCurrentPage(pages[1]);
+            });
           }}
         >
           View Products

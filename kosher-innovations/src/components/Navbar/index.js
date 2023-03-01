@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import shoppingCart from "../../resources/shopping-cart.webp";
-// import menuBar from "../../resources/menu-bar.webp";
 import menuBar from "../../resources/list.webp";
 import scrollToTop from "../../helpers/scrollToTop";
 
@@ -10,7 +9,7 @@ const hideUpArrow = () => {
 };
 
 const showUpArrow = () => {
-  const upArrow = document.querySelector(".up-arrow");;
+  const upArrow = document.querySelector(".up-arrow");
   if (window.matchMedia("(min-width: 500px)").matches) {
     upArrow.style.display = "initial";
   } else {
@@ -38,11 +37,12 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[0]);
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop();
+            scrollToTop().then(() => {
+              setCurrentPage(pages[0]);
+            });
           }}
           title="Shop Our Products"
           rel="noopener noreferrer"
@@ -54,11 +54,12 @@ const Navbar = (props) => {
           className="nav-link"
           id="nav1"
           onClick={() => {
-            setCurrentPage(pages[1]);
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop();
+            scrollToTop().then(() => {
+              setCurrentPage(pages[1]);
+            });
           }}
           title="Shop Our Products"
           rel="noopener noreferrer"
@@ -70,11 +71,12 @@ const Navbar = (props) => {
           className="nav-link"
           id="nav2"
           onClick={() => {
-            setCurrentPage(pages[2]);
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop();
+            scrollToTop().then(() => {
+              setCurrentPage(pages[2]);
+            });
           }}
           title="Shop Our Replacements"
           rel="noopener noreferrer"
@@ -85,11 +87,12 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[3]);
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop();
+            scrollToTop().then(() => {
+              setCurrentPage(pages[3]);
+            });
           }}
           title="Learn More About Our Company"
           rel="noopener noreferrer"
@@ -100,11 +103,12 @@ const Navbar = (props) => {
         <li
           className="nav-link"
           onClick={() => {
-            setCurrentPage(pages[4]);
             hideUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop();
+            scrollToTop().then(() => {
+              setCurrentPage(pages[4]);
+            });
           }}
           title="Get in Touch with Us"
           rel="noopener noreferrer"

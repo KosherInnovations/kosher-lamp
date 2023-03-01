@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Page from "./components/Page";
+import scrollToTop from "./helpers/scrollToTop";
 
 function App() {
   const [pages] = useState([
@@ -34,10 +35,9 @@ function App() {
   // App will return all the components and pass down the necesarry functionality to its children
   return (
     <>
-      <div id="top"></div>
-      <a href="#top" title="Back to top" className="up-arrow">
+      <button  onClick={() => scrollToTop()} title="Back to top" className="up-arrow">
         ↑
-      </a>
+      </button>
       <Header>
         <Navbar
           pages={pages}
