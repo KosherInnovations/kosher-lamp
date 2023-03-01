@@ -1,11 +1,35 @@
 import React, { useEffect } from "react";
 import changeLettersDark from "../../../helpers/changeLettersDark";
+import LazyLoad from "react-lazyload";
+import bottleOpener from "../../../resources/bottle-opener/bottle-opener_1.webp";
 
 const BottleOpener = () => {
   useEffect(() => {
     changeLettersDark();
   }, []);
-  return <div>BottleOpener</div>;
+  return (
+    <section id="bottle-opener">
+      <div className="single-page-card only-card" title="">
+        <LazyLoad height={200} offset={100}>
+          <img
+            className="medium-only-card-img"
+            src={bottleOpener}
+            alt="The Shabbos Bottle Opener, a tool that allows yout to open bottles open shabbos in accordance with Halacha"
+            title="Shabbos Bottle Opener"
+          />
+        </LazyLoad>
+        <h2 className="product-price">$14.95</h2>
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://www.kosherimage.com/cmd.php?pid=a9f059a9b16d4f12a9f10f188911df3b"
+          title="add Shabbos Bottle Opener to cart"
+        >
+          Add To Cart
+        </a>
+      </div>
+    </section>
+  );
 };
 
 export default BottleOpener;

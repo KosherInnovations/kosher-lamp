@@ -107,7 +107,7 @@ const Footer = (props) => {
 
   return (
     <footer>
-        {/* <img className="bg-img" src={backgroundImg} alt="background"></img> */}
+      {/* <img className="bg-img" src={backgroundImg} alt="background"></img> */}
       <FooterBtns />
     </footer>
   );

@@ -75,7 +75,7 @@ const Products = () => {
               rel="noreferrer"
               target="_blank"
               href="https://www.kosherimage.com/cmd.php?pid=e418af322bd347a18412af62a324be4e"
-              title="add Bug Checker to cart"
+              title="add Bug Checker MAX to cart"
             >
               Add To Cart
             </a>

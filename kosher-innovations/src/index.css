@@ -37,7 +37,6 @@ li {
   list-style: none;
 }
 
-
 img {
   z-index: 980;
 }
@@ -410,18 +409,40 @@ section {
 #travel,
 #kmax,
 #safeplate,
-#kosherclock {
+#kosherclock,
+#bug-checker,
+#scrub-gloves,
+#smart-shissel,
+#go-wash,
+#fridgeez,
+#bottle-opener,
+#mushroom-kosherlamp,
+#tissue,
+#decal,
+#shabbos-toothbrush,
+#weekday-toothbrush {
   background: var(--white);
 }
 
 #travel,
-#kmax {
+#kmax,
+#scrub-gloves,
+#smart-shissel,
+#tissue,
+#decal {
   display: grid;
   grid-template-columns: 30vw 30vw 30vw;
 }
 
 #safeplate,
-#kosherclock {
+#kosherclock,
+#bug-checker,
+#go-wash,
+#fridgeez,
+#bottle-opener,
+#mushroom-kosherlamp,
+#shabbos-toothbrush,
+#weekday-toothbrush {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -431,8 +452,20 @@ section {
   min-width: 350px;
 }
 
-#only-card-img {
+.large-only-card-img {
   width: 300px;
+}
+
+.medium-only-card-img {
+  width: 200px;
+}
+
+.small-only-card-img {
+  width: 75px;
+}
+
+.custom-only-card-img {
+  width: 105px;
 }
 
 .single-page-card {
@@ -444,10 +477,6 @@ section {
   flex-direction: column;
   margin: 25px 0;
   border-radius: 5px;
-}
-
-.single-page-card img {
-  width: 75px;
 }
 
 .single-page-card a {
@@ -678,6 +707,8 @@ section .card .content .type .type-picker:hover {
 section .card .product-price,
 .single-page-card .product-price {
   color: #2d4263;
+  text-align: center;
+  min-width: 175px;
 }
 
 section .card .product-price,
@@ -1342,10 +1373,9 @@ footer {
   display: grid;
   justify-content: space-evenly;
   align-items: center;
-  grid-template-columns: minmax(50px, auto) minmax(50px, auto) minmax(
-      50px,
-      auto
-    ) minmax(50px, auto);
+  grid-template-columns:
+    minmax(50px, auto) minmax(50px, auto) minmax(50px, auto)
+    minmax(50px, auto);
   padding: 50px 0;
 }
 
@@ -1479,8 +1509,10 @@ footer button:hover {
 
   #travel,
   #kmax,
-  #safeplate,
-  #kosherclock {
+  #scrub-gloves,
+  #smart-shissel,
+  #tissue,
+  #decal {
     grid-template-columns: 40vw 40vw;
   }
 }
@@ -1550,8 +1582,10 @@ footer button:hover {
 
   #travel,
   #kmax,
-  #safeplate,
-  #kosherclock {
+  #scrub-gloves,
+  #smart-shissel,
+  #tissue,
+  #decal {
     grid-template-columns: 55vw;
   }
 
@@ -1723,7 +1757,7 @@ footer button:hover {
   /* footer section */
 
   footer {
-    grid-template-columns: minmax(50px, auto) minmax(50px, auto);
+    grid-template-columns: minmax(40%, auto) minmax(40%, auto);
   }
 
   footer button {
@@ -1742,8 +1776,10 @@ footer button:hover {
 
   #travel,
   #kmax,
-  #safeplate,
-  #kosherclock {
+  #scrub-gloves,
+  #smart-shissel,
+  #tissue,
+  #decal {
     grid-template-columns: 90vw;
   }
 
@@ -1800,7 +1836,7 @@ footer button:hover {
   /* footer section */
 
   footer {
-    grid-template-columns: 85vw;
+    grid-template-columns: 80vw;
   }
 
   footer button {

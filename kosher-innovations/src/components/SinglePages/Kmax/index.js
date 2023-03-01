@@ -12,7 +12,6 @@ import kLampIvory from "../../../resources/kmax/ivory-kmax.webp";
 import kLampPink from "../../../resources/kmax/pink-kmax.webp";
 
 const Kmax = () => {
-  
   // props
   // const { pages = [], setCurrentPage } = props;
 
@@ -98,7 +97,11 @@ const Kmax = () => {
   const kmaxCardElements = kmaxCards.map((card) => (
     <div className="single-page-card" title={card.titleTag} key={card.id}>
       <LazyLoad height={200} offset={100}>
-        <img src={card.imgSrc} alt={card.altTag} />
+        <img
+          className="small-only-card-img"
+          src={card.imgSrc}
+          alt={card.altTag}
+        />
       </LazyLoad>
       <h2 className="product-price">$52.95</h2>
       <a href={card.href} title={`add ${card.titleTag} to cart`}>

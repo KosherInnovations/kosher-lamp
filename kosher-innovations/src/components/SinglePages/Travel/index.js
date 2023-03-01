@@ -7,7 +7,6 @@ import travelBlack from "../../../resources/travel-lamp/black-travel.webp";
 import travelBrown from "../../../resources/travel-lamp/brown-travel.webp";
 
 const Travel = () => {
-
   useEffect(() => {
     changeLettersDark();
   }, []);
@@ -50,20 +49,25 @@ const Travel = () => {
   const travelCardElements = travelCards.map((card) => (
     <div className="single-page-card" title={card.titleTag} key={card.id}>
       <LazyLoad height={200} offset={100}>
-        <img src={card.imgSrc} alt={card.altTag} />
+        <img
+          className="small-only-card-img"
+          src={card.imgSrc}
+          alt={card.altTag}
+        />
       </LazyLoad>
       <h2 className="product-price">$52.95</h2>
-      <a href={card.href} title={`add ${card.titleTag} to cart`}>
+      <a
+        rel="noreferrer"
+        target="_blank"
+        href={card.href}
+        title={`add ${card.titleTag} to cart`}
+      >
         Add To Cart
       </a>
     </div>
   ));
 
-  return (
-    <section id="travel">
-      {travelCardElements}
-    </section>
-  );
+  return <section id="travel">{travelCardElements}</section>;
 };
 
 export default Travel;
