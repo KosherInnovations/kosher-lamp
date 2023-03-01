@@ -437,6 +437,10 @@ section {
   grid-template-columns: 30vw 30vw 30vw;
 }
 
+#scrub-gloves {
+  grid-template-columns: 30vw 30vw;
+}
+
 #safeplate,
 #kosherclock,
 #bug-checker,
@@ -1512,7 +1516,6 @@ footer button:hover {
 
   #travel,
   #kmax,
-  #scrub-gloves,
   #smart-shissel,
   #tissue,
   #decal {
