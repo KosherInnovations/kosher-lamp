@@ -95,9 +95,10 @@ const Footer = (props) => {
           key={btn.page}
           className="footer-btn"
           onClick={() => {
-            scrollToTop().then(() => {
+            scrollToTop();
+            setTimeout(() => {
               setCurrentPage(pages[btn.page]);
-            });
+            }, 1000);
           }}
         >
           {btn.btnText}

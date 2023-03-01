@@ -30,9 +30,10 @@ const HomePage = (props) => {
         </header>
         <button
           onClick={() => {
-            scrollToTop().then(() => {
+            scrollToTop();
+            setTimeout(() => {
               setCurrentPage(pages[1]);
-            });
+            }, 1000);
           }}
         >
           View Products
@@ -55,9 +56,10 @@ const HomePage = (props) => {
             </p>
             <button
               onClick={() => {
-                scrollToTop().then(() => {
+                scrollToTop();
+                setTimeout(() => {
                   setCurrentPage(pages[5]);
-                });
+                }, 1000);
               }}
             >
               Learn More
@@ -80,9 +82,10 @@ const HomePage = (props) => {
             </p>
             <button
               onClick={() => {
-                scrollToTop().then(() => {
+                scrollToTop();
+                setTimeout(() => {
                   setCurrentPage(pages[6]);
-                });
+                }, 1000);
               }}
             >
               Learn More
@@ -118,9 +121,10 @@ const HomePage = (props) => {
             </p>
             <button
               onClick={() => {
-                scrollToTop().then(() => {
+                scrollToTop();
+                setTimeout(() => {
                   setCurrentPage(pages[8]);
-                });
+                }, 1000);
               }}
             >
               Learn More
@@ -143,9 +147,10 @@ const HomePage = (props) => {
             </p>
             <button
               onClick={() => {
-                scrollToTop().then(() => {
+                scrollToTop();
+                setTimeout(() => {
                   setCurrentPage(pages[12]);
-                });
+                }, 1000);
               }}
             >
               Learn More
@@ -165,9 +170,10 @@ const HomePage = (props) => {
         <br></br>
         <button
           onClick={() => {
-            scrollToTop().then(() => {
+            scrollToTop();
+            setTimeout(() => {
               setCurrentPage(pages[1]);
-            });
+            }, 1000);
           }}
         >
           View Products

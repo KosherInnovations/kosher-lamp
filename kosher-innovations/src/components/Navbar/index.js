@@ -9,7 +9,7 @@ const hideUpArrow = () => {
 };
 
 const showUpArrow = () => {
-  const upArrow = document.querySelector(".up-arrow");
+  const upArrow = document.querySelector(".up-arrow");;
   if (window.matchMedia("(min-width: 500px)").matches) {
     upArrow.style.display = "initial";
   } else {
@@ -40,9 +40,10 @@ const Navbar = (props) => {
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop().then(() => {
+            scrollToTop();
+            setTimeout(() => {
               setCurrentPage(pages[0]);
-            });
+            }, 1000);
           }}
           title="Shop Our Products"
           rel="noopener noreferrer"
@@ -57,9 +58,10 @@ const Navbar = (props) => {
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop().then(() => {
+            scrollToTop();
+            setTimeout(() => {
               setCurrentPage(pages[1]);
-            });
+            }, 1000);
           }}
           title="Shop Our Products"
           rel="noopener noreferrer"
@@ -74,9 +76,10 @@ const Navbar = (props) => {
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop().then(() => {
+            scrollToTop();
+            setTimeout(() => {
               setCurrentPage(pages[2]);
-            });
+            }, 1000);
           }}
           title="Shop Our Replacements"
           rel="noopener noreferrer"
@@ -90,9 +93,10 @@ const Navbar = (props) => {
             showUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop().then(() => {
+            scrollToTop();
+            setTimeout(() => {
               setCurrentPage(pages[3]);
-            });
+            }, 1000);
           }}
           title="Learn More About Our Company"
           rel="noopener noreferrer"
@@ -106,9 +110,10 @@ const Navbar = (props) => {
             hideUpArrow();
             setActive("nav-menu");
             turned("menu-btn");
-            scrollToTop().then(() => {
+            scrollToTop();
+            setTimeout(() => {
               setCurrentPage(pages[4]);
-            });
+            }, 1000);
           }}
           title="Get in Touch with Us"
           rel="noopener noreferrer"
