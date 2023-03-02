@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
+    
 import LazyLoad from "react-lazyload";
 import safePlate from "../../../resources/warming-tray/warming-tray.webp";
 
@@ -8,7 +10,8 @@ const SafePlate = () => {
   // const { pages = [], setCurrentPage } = props;
 
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
 
   return (

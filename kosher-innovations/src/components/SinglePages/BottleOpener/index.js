@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import bottleOpener from "../../../resources/bottle-opener/bottle-opener_1.webp";
 
 const BottleOpener = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
   return (
     <section id="bottle-opener">

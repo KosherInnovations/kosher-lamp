@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
+    
 import LazyLoad from "react-lazyload";
 import bugChecker from "../../../resources/bug-checker/bug-checker.webp";
 
 const BugChecker = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
 
   return (

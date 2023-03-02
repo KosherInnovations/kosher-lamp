@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";   
 import LazyLoad from "react-lazyload";
 import shisselBlue from "../../../resources/smart-shissel/blue-shissel.webp";
 import shisselGrey from "../../../resources/smart-shissel/grey-shissel.webp";
@@ -8,7 +9,8 @@ import shisselPink from "../../../resources/smart-shissel/pink-shissel.webp";
 
 const SmartShissel = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
   const shisselCards = [
     {

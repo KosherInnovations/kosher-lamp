@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import kosherClock from "../../../resources/kosher-clock/kosherclock.webp";
 
@@ -8,7 +9,8 @@ const KosherClock = () => {
   // const { pages = [], setCurrentPage } = props;
 
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
 
   return (

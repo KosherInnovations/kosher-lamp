@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
+
 import LazyLoad from "react-lazyload";
 import goWash from "../../../resources/go-wash/go-wash (1).webp";
 
 const GoWash = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
   return (
     <section id="go-wash">

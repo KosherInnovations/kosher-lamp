@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
+
 import LazyLoad from "react-lazyload";
 import fridgeez from "../../../resources/fridg-eez/fridg-eez_1.webp";
 
 const Fridgeez = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
   return (
     <section id="fridgeez">

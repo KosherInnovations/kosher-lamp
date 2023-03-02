@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
+    
 import LazyLoad from "react-lazyload";
 import alephBet from "../../../resources/decals/aleph-bet.webp";
 import asherYatzar from "../../../resources/decals/asher-yatzar.webp";
@@ -7,7 +9,8 @@ import mitzvahTrain from "../../../resources/decals/mitzvah-train.webp";
 
 const Decal = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
 
   const decalCards = [

@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import weekTooth from "../../../resources/toothbrush/uncle-moishy-toothbrush.webp";
 
 const WeekTooth = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
   return (
     <section id="weekday-toothbrush">

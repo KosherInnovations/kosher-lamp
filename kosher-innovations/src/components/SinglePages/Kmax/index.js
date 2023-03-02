@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import kLampWhite from "../../../resources/kmax/white-kmax.webp";
 import kLampSteel from "../../../resources/kmax/silver-kmax.webp";
@@ -16,7 +17,8 @@ const Kmax = () => {
   // const { pages = [], setCurrentPage } = props;
 
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
 
   const kmaxCards = [

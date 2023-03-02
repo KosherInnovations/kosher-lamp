@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight"; 
 import LazyLoad from "react-lazyload";
 import tissueImg from "../../../resources/tissue/tissue.webp";
 
 const Tissue = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
 
   const tissueCards = [

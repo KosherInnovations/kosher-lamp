@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";   
 import LazyLoad from "react-lazyload";
 import shroomLamp from "../../../resources/shroom-lamp/red-shroom.webp";
 
 const ShroomLamp = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
   return (
     <section id="mushroom-kosherlamp">

@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import shabTooth from "../../../resources/toothbrush/shabbos-toothbrush.webp";
 
 const ShabTooth = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
   return (
     <section id="shabbos-toothbrush">

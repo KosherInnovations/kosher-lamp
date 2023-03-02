@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import backgroundImg from "../../resources/dark-pattern-bg.webp";
+import homepageImg from "../../resources/KosherInnovations.webp";
 // import changeLettersDark from "../../helpers/changeLettersDark";
  import changeLettersLight from "../../helpers/changeLettersLight"
 import LazyLoad from "react-lazyload";
@@ -23,10 +24,11 @@ const HomePage = (props) => {
       <img className="bg-img" src={backgroundImg} alt="background"></img>
       <div className="banner-container">
         <header className="banner-statement">
-          <h1>
-            Kosher<br></br>Innovations
+          <h1 title="Kosher Innovations, The KosherLamp People">
+            {/* Kosher<br></br>Innovations */}
+            <img src={homepageImg} alt="Kosher Innovations"></img>
           </h1>
-          <h2>The Makers of Your favorite Jewish Home Products</h2>
+          <h2><em>Practical and Innovative products to enhance the Jewish home</em></h2>
         </header>
         <button
           onClick={() => {

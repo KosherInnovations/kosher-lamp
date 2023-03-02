@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import travelWhite from "../../../resources/travel-lamp/white-travel.webp";
 import travelGrey from "../../../resources/travel-lamp/grey-travel.webp";
@@ -8,7 +9,8 @@ import travelBrown from "../../../resources/travel-lamp/brown-travel.webp";
 
 const Travel = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
 
   const travelCards = [

@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-import changeLettersDark from "../../../helpers/changeLettersDark";
+// import changeLettersDark from "../../../helpers/changeLettersDark";
+import changeLetterLight from "../../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import glovesRed from "../../../resources/scrub-gloves/gloves-red.webp";
 import glovesBlue from "../../../resources/scrub-gloves/gloves-blue.webp";
 
 const ScrubGloves = () => {
   useEffect(() => {
-    changeLettersDark();
+    // changeLettersDark();
+    changeLetterLight();
   }, []);
 
   const gloveCards = [
