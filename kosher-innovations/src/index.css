@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&family=Bungee+Inline&family=Cinzel:wght@500&family=Josefin+Sans:ital,wght@1,100&family=Londrina+Shadow&family=Philosopher&family=Rampart+One&family=Tilt+Prism&family=Titan+One&family=Tourney:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Philosopher&display=swap");
 
 * {
   padding: 0;
@@ -16,12 +16,11 @@
   --blue: #2c94f7;
   --light-transparent: rgba(255, 255, 255, 0.5);
   --dark-transparent: rgba(0, 0, 0, 0.5);
-  --header-font: 'Tilt Prism', cursive;
-  /* --header-font: 'Londrina Shadow', cursive; */
-  --header-font-secondary: 'Tilt Prism', cursive;
+  --header-font: "Philosopher", sans-serif;
+  --header-font-secondary: "Cinzel", serif;
   --main-font: "Bebas Neue", cursive;
   --main-font-alt: "Cinzel", serif;
-  --secondary-font: "Josefin Sans", sans-serif;
+  --secondary-font: "Philosopher", sans-serif;
 }
 
 body {
@@ -259,20 +258,21 @@ section {
   justify-self: center;
 }
 
-#home .banner-container button {
+#home .banner-container button, #home .feature-area button {
   all: unset;
+  min-width: 50%;
   background: var(--pink);
   color: var(--black);
   font-family: var(--main-font-alt);
-  font-size: 1.25rem;
-  padding: 5px 10px;
+  font-size: 1.5rem;
+  padding: 5px 15px;
   border-radius: 5px;
   letter-spacing: 1px;
-  min-width: 60%;
   transition: 0.5s ease-in-out;
+  text-align: center;
 }
 
-#home .banner-container button:hover {
+#home .banner-container button:hover, #home .feature-area button:hover {
   background: var(--red);
   color: var(--white);
 }
@@ -386,20 +386,6 @@ section {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--main-font-alt);
-}
-
-#home .feature-area button {
-  all: unset;
-  background: var(--pink);
-  color: var(--white);
-  border-radius: 5px;
-  padding: 5px 20px;
-  font-family: var(--main-font-alt);
-  transition: 0.5s ease-in-out;
-}
-
-#home .feature-area button:hover {
-  background: var(--off-pink);
 }
 
 /* single item pages */
