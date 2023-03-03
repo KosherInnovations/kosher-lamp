@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import DecalModal from "../../modals/DecalModal";
+import DecalBtn from "../../modals/DecalBtn";
 import alephBet from "../../resources/decals/aleph-bet.webp";
 import asherYatzar from "../../resources/decals/asher-yatzar.webp";
 import mitzvahTrain from "../../resources/decals/mitzvah-train.webp";
@@ -102,7 +102,7 @@ class DecalCard extends React.Component {
             >
               Add To Cart
             </a>
-            <DecalModal />
+            <DecalBtn pages={this.props.pages} setCurrentPage={this.props.setCurrentPage} />
           </div>
         </div>
       </div>

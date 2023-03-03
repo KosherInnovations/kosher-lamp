@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import backgroundImg from "../../resources/dark-pattern-bg.webp";
 import homepageImg from "../../resources/KosherInnovations.webp";
 // import changeLettersDark from "../../helpers/changeLettersDark";
- import changeLettersLight from "../../helpers/changeLettersLight"
+import changeLettersLight from "../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import displayProd1 from "../../resources/travel-lamp/4Lamps-lit.webp";
 import displayProd2 from "../../resources/kmax/example-2.webp";
@@ -28,7 +28,11 @@ const HomePage = (props) => {
             {/* Kosher<br></br>Innovations */}
             <img src={homepageImg} alt="Kosher Innovations"></img>
           </h1>
-          <h2><em>Practical and Innovative products to enhance the Jewish home</em></h2>
+          <h2>
+            <em>
+              Practical and Innovative products to enhance the Jewish home
+            </em>
+          </h2>
         </header>
         <button
           onClick={() => {
@@ -53,8 +57,8 @@ const HomePage = (props) => {
           <div className="card-info-area">
             <h1>Travel KosherLamp</h1>
             <p>
-              HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
-              AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
+              Small enough for travel while still bright enough to light up an
+              entire room.
             </p>
             <button
               onClick={() => {
@@ -79,8 +83,8 @@ const HomePage = (props) => {
           <div className="card-info-area">
             <h1>KosherLamp MAX</h1>
             <p>
-              HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
-              AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
+              An aestheically pleasing lamp which is handy for shutting out the
+              lights on Shabbos and Yom Tov
             </p>
             <button
               onClick={() => {
@@ -118,8 +122,8 @@ const HomePage = (props) => {
           <div className="card-info-area">
             <h1>Shabbos Safe Warming Tray</h1>
             <p>
-              HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
-              AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
+              A functional and sleek warming tray used to safely heat food to
+              the perfect temperature on shabbos, in accordance with halacha
             </p>
             <button
               onClick={() => {
@@ -143,10 +147,7 @@ const HomePage = (props) => {
           </LazyLoad>
           <div className="card-info-area">
             <h1>KosherClock</h1>
-            <p>
-              HJFJAF ajsOIAJSFIOJ AISJDIOJSAIOD IAJSFOIJSAIF IAJSFIOJAIOF
-              AOISJFOIAS ASIJFOIASJF aSJDIOASJD ASFOIASJF
-            </p>
+            <p>Our portable clock that keeps your schedule running on Shabbat & Yom Tov</p>
             <button
               onClick={() => {
                 scrollToTop();

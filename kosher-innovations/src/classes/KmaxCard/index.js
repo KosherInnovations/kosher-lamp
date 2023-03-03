@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import KmaxModal from "../../modals/KmaxModal";
+import KmaxBtn from "../../modals/KmaxBtn";
 import kLampWhite from "../../resources/kmax/white-kmax.webp";
 import kLampSteel from "../../resources/kmax/silver-kmax.webp";
 import kLampBlack from "../../resources/kmax/black-kmax.webp";
@@ -216,7 +216,7 @@ class KmaxCard extends React.Component {
             >
               Add To Cart
             </a>
-            <KmaxModal />
+            <KmaxBtn pages={this.props.pages} setCurrentPage={this.props.setCurrentPage} />
           </div>
         </div>
       </div>

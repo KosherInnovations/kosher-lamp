@@ -44,6 +44,10 @@ img {
   z-index: 980;
 }
 
+button {
+  all: unset;
+}
+
 .up-arrow {
   all: unset;
   display: none;

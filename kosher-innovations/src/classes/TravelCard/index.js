@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import TravelModal from "../../modals/TravelModal";
+import TravelBtn from "../../modals/TravelBtn";
 import travelWhite from "../../resources/travel-lamp/white-travel.webp";
 import travelGrey from "../../resources/travel-lamp/grey-travel.webp";
 import travelBlack from "../../resources/travel-lamp/black-travel.webp";
@@ -108,7 +108,7 @@ class travelCard extends React.Component {
             >
               Add To Cart
             </a>
-            <TravelModal />
+            <TravelBtn pages={this.props.pages} setCurrentPage={this.props.setCurrentPage}/>
           </div>
         </div>
       </div>

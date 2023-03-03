@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import ShisselModal from "../../modals/ShisselModal";
+import ShisselBtn from "../../modals/ShisselBtn";
 import shisselBlue from "../../resources/smart-shissel/blue-shissel.webp";
 import shisselGrey from "../../resources/smart-shissel/grey-shissel.webp";
 import shisselBeige from "../../resources/smart-shissel/beige-shissel.webp";
@@ -108,7 +108,7 @@ class ShisselCard extends React.Component {
             >
               Add To Cart
             </a>
-            <ShisselModal />
+            <ShisselBtn pages={this.props.pages} setCurrentPage={this.props.setCurrentPage} />
           </div>
         </div>
       </div>

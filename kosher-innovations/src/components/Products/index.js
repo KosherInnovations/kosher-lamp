@@ -6,32 +6,34 @@ import LazyLoad from "react-lazyload";
 import HideHeader from "../../helpers/HideHeader";
 // The hardcoded card components
 import bugChecker from "../../resources/bug-checker/bug-checker.webp";
-import BugCheckerModal from "../../modals/BugCheckerModal";
+import BugCheckerBtn from "../../buttons/BugCheckerBtn";
 import warmingTray from "../../resources/warming-tray/warming-tray.webp";
-import WarmTrayModal from "../../modals/WarmTrayModal";
+import WarmTrayBtn from "../../buttons/WarmTrayBtn";
 import goWash from "../../resources/go-wash/go-wash (1).webp";
-import GoWashModal from "../../modals/GoWashModal";
+import GoWashBtn from "../../buttons/GoWashBtn";
 import kosherClock from "../../resources/kosher-clock/kosherclock.webp";
-import KosherClockModal from "../../modals/KosherClockModal";
+import KosherClockBtn from "../../buttons/KosherClockBtn";
 import fridgeez from "../../resources/fridg-eez/fridg-eez_1.webp";
-import FridgeezModal from "../../modals/FridgeezModal";
+import FridgeezBtn from "../../buttons/FridgeezBtn";
 import bottleOpener from "../../resources/bottle-opener/bottle-opener_1.webp";
-import OpenerModal from "../../modals/OpenerModal";
+import OpenerBtn from "../../buttons/OpenerBtn";
 import shabTooth from "../../resources/toothbrush/shabbos-toothbrush.webp";
-import ShabToothModal from "../../modals/ShabToothModal";
+import ShabToothBtn from "../../buttons/ShabToothBtn";
 import weekTooth from "../../resources/toothbrush/uncle-moishy-toothbrush.webp";
-import WeekToothModal from "../../modals/WeekToothModal";
+import WeekToothBtn from "../../buttons/WeekToothBtn";
 // The imported card components
 import KmaxCard from "../../classes/KmaxCard";
 import TravelCard from "../../classes/TravelCard";
 import GloveCard from "../../classes/GloveCard";
 import ShisselCard from "../../classes/ShisselCard";
 import shroomImg from "../../resources/shroom-lamp/red-shroom.webp";
-import ShroomModal from "../../modals/ShroomModal";
+import ShroomBtn from "../../buttons/ShroomBtn";
 import TissueCard from "../../classes/TissueCard";
 import DecalCard from "../../classes/DecalCard";
 
-const Products = () => {
+const Products = (props) => {
+  const { pages = [], setCurrentPage } = props;
+
   useEffect(() => {
     changeLettersLight();
   }, []);
@@ -42,47 +44,22 @@ const Products = () => {
     header1.classList.add("transition");
   };
   return (
-    <section id="cards" className="product-cards" onLoad={() => {
-      addOpacityView();
-      HideHeader();
-    }}>
+    <section
+      id="cards"
+      className="product-cards"
+      onLoad={() => {
+        addOpacityView();
+        HideHeader();
+      }}
+    >
       <img className="bg-img" src={backgroundImg} alt="background"></img>
       <h2 className="shipping-header">
         Orders to New York State and New Jersey tend to arrive in a week or
         less. For other areas, please allow up to two weeks. These times are
         approximate.<br></br>Shipping Within USA Only
       </h2>
-      <KmaxCard />
-      <TravelCard />
-      <div className="card">
-        <div className="imgBox">
-          <header>
-            <h1 title="Bug Checker">Bug Checker</h1>
-          </header>
-          <LazyLoad height={200} offset={100}>
-            <img
-              rel="prefetch"
-              src={bugChecker}
-              alt="The Bug Checker, a tool used to check fresh produce for bugs"
-              title="Bug Checker"
-            ></img>
-          </LazyLoad>
-        </div>
-        <h2 className="product-price">$53.95</h2>
-        <div className="content">
-          <div className="flex-box-products-page">
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://www.kosherimage.com/cmd.php?pid=e418af322bd347a18412af62a324be4e"
-              title="add Bug Checker MAX to cart"
-            >
-              Add To Cart
-            </a>
-            <BugCheckerModal />
-          </div>
-        </div>
-      </div>
+      <KmaxCard pages={pages} setCurrentPage={setCurrentPage}/>
+      <TravelCard pages={pages} setCurrentPage={setCurrentPage} />
       <div className="card">
         <div className="imgBox">
           <header>
@@ -108,12 +85,41 @@ const Products = () => {
             >
               Add To Cart
             </a>
-            <WarmTrayModal />
+            <WarmTrayBtn />
           </div>
         </div>
       </div>
-      <GloveCard />
-      <ShisselCard />
+      <div className="card">
+        <div className="imgBox">
+          <header>
+            <h1 title="Bug Checker">Bug Checker</h1>
+          </header>
+          <LazyLoad height={200} offset={100}>
+            <img
+              rel="prefetch"
+              src={bugChecker}
+              alt="The Bug Checker, a tool used to check fresh produce for bugs"
+              title="Bug Checker"
+            ></img>
+          </LazyLoad>
+        </div>
+        <h2 className="product-price">$53.95</h2>
+        <div className="content">
+          <div className="flex-box-products-page">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.kosherimage.com/cmd.php?pid=e418af322bd347a18412af62a324be4e"
+              title="add Bug Checker MAX to cart"
+            >
+              Add To Cart
+            </a>
+            <BugCheckerBtn />
+          </div>
+        </div>
+      </div>
+      <GloveCard pages={pages} setCurrentPage={setCurrentPage} />
+      <ShisselCard pages={pages} setCurrentPage={setCurrentPage} />
       <div className="card">
         <div className="imgBox">
           <header>
@@ -139,7 +145,7 @@ const Products = () => {
             >
               Add To Cart
             </a>
-            <GoWashModal />
+            <GoWashBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
@@ -169,7 +175,7 @@ const Products = () => {
             >
               Add To Cart
             </a>
-            <KosherClockModal />
+            <KosherClockBtn />
           </div>
         </div>
       </div>
@@ -198,7 +204,7 @@ const Products = () => {
             >
               Add To Cart
             </a>
-            <FridgeezModal />
+            <FridgeezBtn />
           </div>
         </div>
       </div>
@@ -227,7 +233,7 @@ const Products = () => {
             >
               Add To Cart
             </a>
-            <OpenerModal />
+            <OpenerBtn />
           </div>
         </div>
       </div>
@@ -259,12 +265,12 @@ const Products = () => {
             >
               Add To Cart
             </a>
-            <ShroomModal />
+            <ShroomBtn />
           </div>
         </div>
       </div>
-      <TissueCard />
-      <DecalCard />
+      <TissueCard pages={pages} setCurrentPage={setCurrentPage}/>
+      <DecalCard pages={pages} setCurrentPage={setCurrentPage}/>
       <div className="card">
         <div className="imgBox">
           <header>
@@ -291,7 +297,7 @@ const Products = () => {
             >
               Add To Cart
             </a>
-            <ShabToothModal />
+            <ShabToothBtn />
           </div>
         </div>
       </div>
@@ -323,7 +329,7 @@ const Products = () => {
             >
               Add To Cart
             </a>
-            <WeekToothModal />
+            <WeekToothBtn />
           </div>
         </div>
       </div>

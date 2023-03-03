@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import GlovesModal from "../../modals/GlovesModal";
+import GlovesBtn from "../../modals/GlovesBtn";
 import glovesRed from "../../resources/scrub-gloves/gloves-red.webp";
 import glovesBlue from "../../resources/scrub-gloves/gloves-blue.webp";
 
@@ -90,7 +90,10 @@ class GloveCard extends React.Component {
             >
               Add To Cart
             </a>
-            <GlovesModal />
+            <GlovesBtn
+              pages={this.props.pages}
+              setCurrentPage={this.props.setCurrentPage}
+            />
           </div>
         </div>
       </div>

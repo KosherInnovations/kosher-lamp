@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import TissueModal from "../../modals/TissueModal";
+import TissueBtn from "../../modals/TissueBtn";
 import tissueImg from "../../resources/tissue/tissue.webp";
 // import twoBoxesImg from "../../resources/tissue/twoBoxes.webp";
 
@@ -96,7 +96,10 @@ class TissueCard extends React.Component {
             >
               Add To Cart
             </a>
-            <TissueModal />
+            <TissueBtn
+              pages={this.props.pages}
+              setCurrentPage={this.props.setCurrentPage}
+            />
           </div>
         </div>
       </div>
