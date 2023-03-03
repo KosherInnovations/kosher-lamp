@@ -10,7 +10,7 @@ const BottleOpener = () => {
     changeLetterLight();
   }, []);
   return (
-    <section id="bottle-opener">
+    <section id="bottle-opener" className="single-page-section">
       <div className="single-page-card only-card" title="">
         <LazyLoad height={200} offset={100}>
           <img

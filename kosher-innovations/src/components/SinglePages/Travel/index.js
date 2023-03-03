@@ -69,7 +69,7 @@ const Travel = () => {
     </div>
   ));
 
-  return <section id="travel">{travelCardElements}</section>;
+  return <section id="travel" className="single-page-section">{travelCardElements}</section>;
 };
 
 export default Travel;

@@ -6,8 +6,6 @@ import LazyLoad from "react-lazyload";
 import safePlate from "../../../resources/warming-tray/warming-tray.webp";
 
 const SafePlate = () => {
-  // props
-  // const { pages = [], setCurrentPage } = props;
 
   useEffect(() => {
     // changeLettersDark();
@@ -15,15 +13,7 @@ const SafePlate = () => {
   }, []);
 
   return (
-    <section id="safeplate">
-      {/* <button
-        className="homepage-btn"
-        onClick={() => {
-          setCurrentPage(pages[0]);
-        }}
-      >
-        ←
-      </button> */}
+    <section id="safeplate" className="single-page-section">
       <div className="single-page-card only-card">
         <LazyLoad height={200} offset={100}>
           <img

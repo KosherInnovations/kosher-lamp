@@ -14,15 +14,7 @@ const KosherClock = () => {
   }, []);
 
   return (
-    <section id="kosherclock">
-      {/* <button
-        className="homepage-btn"
-        onClick={() => {
-          setCurrentPage(pages[0]);
-        }}
-      >
-        ←
-      </button> */}
+    <section id="kosherclock" className="single-page-section">
       <div className="single-page-card only-card">
         <LazyLoad height={200} offset={100}>
           <img

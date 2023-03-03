@@ -51,7 +51,7 @@ const ScrubGloves = () => {
     </div>
   ));
 
-  return <section id="scrub-gloves">{gloveCardElements}</section>;
+  return <section id="scrub-gloves" className="single-page-section">{gloveCardElements}</section>;
 };
 
 export default ScrubGloves;

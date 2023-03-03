@@ -10,7 +10,7 @@ const ShroomLamp = () => {
     changeLetterLight();
   }, []);
   return (
-    <section id="mushroom-kosherlamp">
+    <section id="mushroom-kosherlamp" className="single-page-section">
       <div className="single-page-card only-card" title="">
         <LazyLoad height={200} offset={100}>
           <img

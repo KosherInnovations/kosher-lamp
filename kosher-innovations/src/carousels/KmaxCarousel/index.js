@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
 import carouselArrow from "../../resources/carousel-arrow.webp";
 
 const KmaxCarousel = () => {
@@ -83,7 +82,6 @@ const KmaxCarousel = () => {
       text: "Thank you... Your service is as good as your products -- and I love my KosherLamp. I have it on a zeiger on Shabbos and Yom Tov in our bedroom",
       author: "Haviva G.",
     },
-
   ];
 
   // function to handle going to the next testimonial
@@ -103,22 +101,28 @@ const KmaxCarousel = () => {
       setIndex(index - 1);
     }
   };
-
   return (
-    <Box className="carousel-box">
-      <h4 className="review-header">Reviews</h4>
-      <h5 className="testimonials-text" title="Read reviews about this product">
-        <p className="testimonials-p" title="Reviews">{testimonials[index].text}</p>
-      </h5>
-      <h5 className="author">
-        <cite title="Review author">{testimonials[index].author}</cite>
-      </h5>
+    <div className="review-box">
+      <h4 className="review-text"><q>{testimonials[index].text}</q></h4>
+      <div className="separation-line"></div>
       <div className="btn-box">
-      
-        <button onClick={handlePrev} title="go to previous testimonial"><img src={carouselArrow} className="carousel-arrow prev" alt="press to go to previous testimonial" ></img ></ button>
-        <button onClick={handleNext} title="go to next testimonial"><img src={carouselArrow} className="carousel-arrow next" alt="press to go to next testimonial"></img></ button>
+        <button onClick={handlePrev} title="go to previous testimonial">
+          <img
+            src={carouselArrow}
+            className="carousel-arrow prev"
+            alt="press to go to previous testimonial"
+          ></img>
+        </button>
+        <button onClick={handleNext} title="go to next testimonial">
+          <img
+            src={carouselArrow}
+            className="carousel-arrow next"
+            alt="press to go to next testimonial"
+          ></img>
+        </button>
       </div>
-    </Box>
+      <h5 className="review-author">{testimonials[index].author}</h5>
+    </div>
   );
 };
 

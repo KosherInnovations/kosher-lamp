@@ -12,7 +12,7 @@ const BugChecker = () => {
   }, []);
 
   return (
-    <section id="bug-checker">
+    <section id="bug-checker" className="single-page-section">
       <div className="single-page-card only-card" title="">
         <LazyLoad height={200} offset={100}>
           <img

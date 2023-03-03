@@ -61,7 +61,7 @@ const Decal = () => {
     </div>
   ));
 
-  return <section id="decal">{decalCardElements}</section>;
+  return <section id="decal" className="single-page-section">{decalCardElements}</section>;
 };
 
 export default Decal;

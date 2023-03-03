@@ -62,7 +62,7 @@ const Tissue = () => {
     </div>
   ));
 
-  return <section id="tissue">{tissueCardElements}</section>;
+  return <section id="tissue" className="single-page-section">{tissueCardElements}</section>;
 };
 
 export default Tissue;

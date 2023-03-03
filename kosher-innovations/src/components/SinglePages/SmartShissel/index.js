@@ -68,7 +68,7 @@ const SmartShissel = () => {
     </div>
   ));
 
-  return <section id="smart-shissel">{shisselCardElements}</section>;
+  return <section id="smart-shissel" className="single-page-section">{shisselCardElements}</section>;
 };
 
 export default SmartShissel;

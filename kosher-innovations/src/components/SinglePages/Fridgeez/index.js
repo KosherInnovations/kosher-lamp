@@ -11,7 +11,7 @@ const Fridgeez = () => {
     changeLetterLight();
   }, []);
   return (
-    <section id="fridgeez">
+    <section id="fridgeez" className="single-page-section">
       <div className="single-page-card only-card" title="">
         <LazyLoad height={200} offset={100}>
           <img

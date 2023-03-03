@@ -10,7 +10,7 @@ const ShabTooth = () => {
     changeLetterLight();
   }, []);
   return (
-    <section id="shabbos-toothbrush">
+    <section id="shabbos-toothbrush" className="single-page-section">
       <div className="single-page-card only-card" title="">
         <LazyLoad height={200} offset={100}>
           <img
