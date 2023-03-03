@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import GlovesBtn from "../../modals/GlovesBtn";
+import GlovesBtn from "../../buttons/GlovesBtn";
 import glovesRed from "../../resources/scrub-gloves/gloves-red.webp";
 import glovesBlue from "../../resources/scrub-gloves/gloves-blue.webp";
 

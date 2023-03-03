@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import KmaxBtn from "../../modals/KmaxBtn";
+import KmaxBtn from "../../buttons/KmaxBtn";
 import kLampWhite from "../../resources/kmax/white-kmax.webp";
 import kLampSteel from "../../resources/kmax/silver-kmax.webp";
 import kLampBlack from "../../resources/kmax/black-kmax.webp";

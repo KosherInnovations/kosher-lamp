@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import DecalBtn from "../../modals/DecalBtn";
+import DecalBtn from "../../buttons/DecalBtn";
 import alephBet from "../../resources/decals/aleph-bet.webp";
 import asherYatzar from "../../resources/decals/asher-yatzar.webp";
 import mitzvahTrain from "../../resources/decals/mitzvah-train.webp";

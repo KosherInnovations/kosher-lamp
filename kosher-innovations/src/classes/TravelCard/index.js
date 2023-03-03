@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import TravelBtn from "../../modals/TravelBtn";
+import TravelBtn from "../../buttons/TravelBtn";
 import travelWhite from "../../resources/travel-lamp/white-travel.webp";
 import travelGrey from "../../resources/travel-lamp/grey-travel.webp";
 import travelBlack from "../../resources/travel-lamp/black-travel.webp";

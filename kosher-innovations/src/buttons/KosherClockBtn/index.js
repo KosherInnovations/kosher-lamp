@@ -1,6 +1,7 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 import infoBtn from "../../resources/info.webp";
+import scrollToTop from "../../helpers/scrollToTop";
 
 const KosherClockBtn = (props) => {
   const { pages = [], setCurrentPage } = props;
@@ -8,11 +9,18 @@ const KosherClockBtn = (props) => {
   return (
     <button
       onClick={() => {
-        setCurrentPage(pages[6]);
+        scrollToTop();
+        setTimeout(() => {
+          setCurrentPage(pages[12]);
+        }, 1000);
       }}
     >
       <LazyLoad height={200} offset={100}>
-        <img className="info-btn" src={infoBtn} alt="Go to KosherClock page"></img>
+        <img
+          className="info-btn"
+          src={infoBtn}
+          alt="Go to KosherClock page"
+        ></img>
       </LazyLoad>
     </button>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import TissueBtn from "../../modals/TissueBtn";
+import TissueBtn from "../../buttons/TissueBtn";
 import tissueImg from "../../resources/tissue/tissue.webp";
 // import twoBoxesImg from "../../resources/tissue/twoBoxes.webp";
 

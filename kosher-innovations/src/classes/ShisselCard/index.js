@@ -1,6 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import ShisselBtn from "../../modals/ShisselBtn";
+import ShisselBtn from "../../buttons/ShisselBtn";
 import shisselBlue from "../../resources/smart-shissel/blue-shissel.webp";
 import shisselGrey from "../../resources/smart-shissel/grey-shissel.webp";
 import shisselBeige from "../../resources/smart-shissel/beige-shissel.webp";

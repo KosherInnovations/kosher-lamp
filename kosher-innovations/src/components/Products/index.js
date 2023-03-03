@@ -85,7 +85,7 @@ const Products = (props) => {
             >
               Add To Cart
             </a>
-            <WarmTrayBtn />
+            <WarmTrayBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ const Products = (props) => {
             >
               Add To Cart
             </a>
-            <BugCheckerBtn />
+            <BugCheckerBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
@@ -175,7 +175,7 @@ const Products = (props) => {
             >
               Add To Cart
             </a>
-            <KosherClockBtn />
+            <KosherClockBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
@@ -204,7 +204,7 @@ const Products = (props) => {
             >
               Add To Cart
             </a>
-            <FridgeezBtn />
+            <FridgeezBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
@@ -233,7 +233,7 @@ const Products = (props) => {
             >
               Add To Cart
             </a>
-            <OpenerBtn />
+            <OpenerBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
@@ -265,7 +265,7 @@ const Products = (props) => {
             >
               Add To Cart
             </a>
-            <ShroomBtn />
+            <ShroomBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@ const Products = (props) => {
             >
               Add To Cart
             </a>
-            <ShabToothBtn />
+            <ShabToothBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
@@ -329,7 +329,7 @@ const Products = (props) => {
             >
               Add To Cart
             </a>
-            <WeekToothBtn />
+            <WeekToothBtn pages={pages} setCurrentPage={setCurrentPage}/>
           </div>
         </div>
       </div>
