@@ -11,11 +11,9 @@ import kLampMarble from "../../../resources/kmax/marble-kmax.webp";
 import kLampCherry from "../../../resources/kmax/cherry-kmax.webp";
 import kLampIvory from "../../../resources/kmax/ivory-kmax.webp";
 import kLampPink from "../../../resources/kmax/pink-kmax.webp";
-import KmaxCarousel from "../../../carousels/KmaxCarousel";
+import KmaxReviews from "../../../reviews/KmaxReviews";
 
 const Kmax = () => {
-  // props
-  // const { pages = [], setCurrentPage } = props;
 
   useEffect(() => {
     // changeLettersDark();
@@ -115,11 +113,13 @@ const Kmax = () => {
 
   return (
     <>
-      <section id="kmax" className="single-page-section">{kmaxCardElements}</section>
+      <section id="kmax" className="single-page-section">
+        {kmaxCardElements}
+      </section>
       <div className="separation-line"></div>
-      <section className="single-page-reviews">
-        <h3>Reviews</h3>
-        <KmaxCarousel />
+      <section className="review-section">
+        <h3 className="review-section-header">Reviews</h3>
+        <KmaxReviews />
       </section>
     </>
   );

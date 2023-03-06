@@ -10,6 +10,7 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --off-black: #292929;
   --red: #cd0404;
   --pink: #ff7d7d;
   --off-pink: rgb(224, 52, 52);
@@ -471,7 +472,7 @@ section {
 
 .single-page-card {
   min-height: 375px;
-  background: #ffffff;
+  background: var(--off-black);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -497,83 +498,76 @@ section {
   margin: 0 auto;
 }
 
-.single-page-reviews {
-  background: var(--black);
-  padding: 100px 20px;
-  display: grid;
-  grid-template-columns: 600px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
+/* review section */
+
+.review-section {
+  padding: 0 20px 100px;
+  background: var(--off-black);
 }
 
-.single-page-reviews h3 {
+.review-section-header {
   color: var(--white);
   font-size: 3rem;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 
-.review-box {
-  height: 70vh;
-  background: var(--white);
-  display: flex;
-  justify-content: space-evenly;
+.reviews {
+  width: 100%;
+  padding: 0 20px 100px;
+  background: var(--off-black);
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+.review {
+  height: 400px;
+  margin: 0 20px 50px;
+  color: var(--white);
+  background: var(--black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   flex-direction: column;
-  padding: 0 20px;
-  border-radius: 25px;
+  padding: 0 15px;
+  border-radius: 15px;
+  line-height: 1.25;
 }
 
-.review-text {
-  height: 30vh;
-  overflow-y: scroll;
+.review h2 {
+  font-size: 24px;
+  font-family: var(--header-font);
+  letter-spacing: 1.2px;
+  line-height: 1.1;
+  color: var(--pink);
 }
 
-.review-text::-webkit-scrollbar {
-  display: none;
-}
-
-.carousel-arrow {
-  border: none;
-  z-index: 300;
-  width: 30px;
-}
-
-.ext,
-.prev {
-  z-index: 999;
-  position: relative;
-}
-
-.prev {
-  transform: rotate(180deg);
-}
-
-.testimonials-text q::-webkit-scrollbar {
-  display: none;
-}
-
-h5 {
-  padding: 5px 0 10px 0;
+.review h2 span {
+  color: var(--white);
   font-size: 16px;
 }
 
-.review-author {
-  font-size: 18px;
+.review q {
+  max-height: 200px;
+  font-size: 22px;
   font-family: var(--secondary-font);
   letter-spacing: 1px;
+  overflow-y: scroll;
 }
 
-.btn-box {
-  width: 550px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 20%;
+.review q::-webkit-scrollbar {
+  display: none;
 }
+
+.review q::before, .review q::after {
+  font-size: 32px;
+  color: var(--red);
+  padding: 0 5px;
+}
+
+
 /* card components */
 
 /* #cards {
@@ -796,16 +790,14 @@ section .card .content .type .type-picker:hover {
   height: 100px;
 }
 
-section .card .product-price,
-.single-page-card .product-price {
+section .card .product-price {
   color: #2d4263;
   text-align: center;
   min-width: 175px;
 }
 
 section .card .product-price,
-section .card .team-member-position,
-.single-page-card .product-price {
+section .card .team-member-position {
   transition: 0.5s ease-in-out;
   font-family: var(--main-font-alt);
   background: var(--white);
@@ -827,6 +819,17 @@ section .card .team-member-position {
   width: 100%;
   padding: 5px 0;
   font-size: 14px;
+}
+
+.single-page-card .product-price {
+  text-align: center;
+  min-width: 175px;
+  font-family: var(--main-font-alt);
+  color: var(--white);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 section .card .content a,
@@ -1508,6 +1511,10 @@ footer button:hover {
   #decal {
     grid-template-columns: 40vw 40vw;
   }
+
+  .reviews {
+    grid-template-columns: 50vw 50vw;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1579,6 +1586,10 @@ footer button:hover {
   #tissue,
   #decal {
     grid-template-columns: 55vw;
+  }
+
+  .reviews {
+    grid-template-columns: 90vw;
   }
 
   nav ul li a .shopping-cart {
@@ -1656,11 +1667,6 @@ footer button:hover {
   #modal-modal-description {
     position: relative;
     top: 20%;
-  }
-
-  .btn-box {
-    top: 15px;
-    bottom: unset;
   }
 
   .carousel-box {

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 // import changeLettersDark from "../../../helpers/changeLettersDark";
 import changeLetterLight from "../../../helpers/changeLettersLight";
-    
+import DecalReviews from "../../../reviews/DecalReviews";
 import LazyLoad from "react-lazyload";
 import alephBet from "../../../resources/decals/aleph-bet.webp";
 import asherYatzar from "../../../resources/decals/asher-yatzar.webp";
@@ -61,7 +61,17 @@ const Decal = () => {
     </div>
   ));
 
-  return <section id="decal" className="single-page-section">{decalCardElements}</section>;
+  return (
+    <>
+    <section id="decal" className="single-page-section">
+      {decalCardElements}
+    </section>
+    <div className="separation-line"></div>
+    <section className="review-section">
+      <h3 className="review-section-header">Reviews</h3>
+      <DecalReviews />
+    </section></>
+  );
 };
 
 export default Decal;
