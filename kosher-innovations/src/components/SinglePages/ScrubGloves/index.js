@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 // import changeLettersDark from "../../../helpers/changeLettersDark";
 import changeLetterLight from "../../../helpers/changeLettersLight";
+import GloveReviews from "../../../reviews/GloveReviews"
 import LazyLoad from "react-lazyload";
 import glovesRed from "../../../resources/scrub-gloves/gloves-red.webp";
 import glovesBlue from "../../../resources/scrub-gloves/gloves-blue.webp";
@@ -51,7 +52,18 @@ const ScrubGloves = () => {
     </div>
   ));
 
-  return <section id="scrub-gloves" className="single-page-section">{gloveCardElements}</section>;
+  return (
+    <>
+      <section id="scrub-gloves" className="single-page-section">
+        {gloveCardElements}
+      </section>
+      <div className="separation-line"></div>
+      <section className="review-section">
+        <h3 className="review-section-header">Reviews</h3>
+        <GloveReviews />
+      </section>
+    </>
+  );
 };
 
 export default ScrubGloves;

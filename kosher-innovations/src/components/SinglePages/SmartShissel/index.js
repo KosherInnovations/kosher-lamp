@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 // import changeLettersDark from "../../../helpers/changeLettersDark";
-import changeLetterLight from "../../../helpers/changeLettersLight";   
+import changeLetterLight from "../../../helpers/changeLettersLight";
+import ShisselReviews from "../../../reviews/ShisselReviews";
 import LazyLoad from "react-lazyload";
 import shisselBlue from "../../../resources/smart-shissel/blue-shissel.webp";
 import shisselGrey from "../../../resources/smart-shissel/grey-shissel.webp";
@@ -68,7 +69,18 @@ const SmartShissel = () => {
     </div>
   ));
 
-  return <section id="smart-shissel" className="single-page-section">{shisselCardElements}</section>;
+  return (
+    <>
+      <section id="smart-shissel" className="single-page-section">
+        {shisselCardElements}
+      </section>
+      <div className="separation-line"></div>
+      <section className="review-section">
+        <h3 className="review-section-header">Reviews</h3>
+        <ShisselReviews />
+      </section>
+    </>
+  );
 };
 
 export default SmartShissel;

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 // import changeLettersDark from "../../../helpers/changeLettersDark";
-import changeLetterLight from "../../../helpers/changeLettersLight"; 
+import changeLetterLight from "../../../helpers/changeLettersLight";
+import TissueReviews from "../../../reviews/TissueReviews";
 import LazyLoad from "react-lazyload";
 import tissueImg from "../../../resources/tissue/tissue.webp";
 
@@ -36,8 +37,8 @@ const Tissue = () => {
       titleTag: "Shabbos Tissue Club Pack | 12 x 8",
       altTag:
         "The Shabbos Tissue, club pack, the bathroom tissue made for use on Shabbos and Yom Tov, and is in accordance with Halacha",
-        price: "125.40"
-      },
+      price: "125.40",
+    },
   ];
 
   const tissueCardElements = tissueCards.map((card) => (
@@ -49,8 +50,11 @@ const Tissue = () => {
           alt={card.altTag}
         />
       </LazyLoad>
-      <h2 className="product-price">${card.price}<br></br>
-      {card.heading}</h2>
+      <h2 className="product-price">
+        ${card.price}
+        <br></br>
+        {card.heading}
+      </h2>
       <a
         rel="noreferrer"
         target="_blank"
@@ -62,7 +66,18 @@ const Tissue = () => {
     </div>
   ));
 
-  return <section id="tissue" className="single-page-section">{tissueCardElements}</section>;
+  return (
+    <>
+      <section id="tissue" className="single-page-section">
+        {tissueCardElements}
+      </section>
+      <div className="separation-line"></div>
+      <section className="review-section">
+        <h3 className="review-section-header">Reviews</h3>
+        <TissueReviews />
+      </section>
+    </>
+  );
 };
 
 export default Tissue;

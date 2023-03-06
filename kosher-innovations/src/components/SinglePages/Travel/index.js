@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 // import changeLettersDark from "../../../helpers/changeLettersDark";
 import changeLetterLight from "../../../helpers/changeLettersLight";
+import TravelReviews from "../../../reviews/TravelReviews";
 import LazyLoad from "react-lazyload";
 import travelWhite from "../../../resources/travel-lamp/white-travel.webp";
 import travelGrey from "../../../resources/travel-lamp/grey-travel.webp";
@@ -69,7 +70,18 @@ const Travel = () => {
     </div>
   ));
 
-  return <section id="travel" className="single-page-section">{travelCardElements}</section>;
+  return (
+    <>
+      <section id="travel" className="single-page-section">
+        {travelCardElements}
+      </section>
+      <div className="separation-line"></div>
+      <section className="review-section">
+        <h3 className="review-section-header">Reviews</h3>
+        <TravelReviews />
+      </section>
+    </>
+  );
 };
 
 export default Travel;
