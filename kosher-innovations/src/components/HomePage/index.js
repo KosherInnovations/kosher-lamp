@@ -1,26 +1,29 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import backgroundImg from "../../resources/dark-pattern-bg.webp";
 import homepageImg from "../../resources/KosherInnovations.webp";
 // import changeLettersDark from "../../helpers/changeLettersDark";
+import RunHomePageAnimation from "../../helpers/animations/RunHomePageAnimation";
 import changeLettersLight from "../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import displayProd1 from "../../resources/travel-lamp/4Lamps-lit.webp";
-import displayProd2 from "../../resources/kmax/example-2.webp";
+import displayProd2 from "../../resources/MAX BGW.png";
 import displayProd3 from "../../resources/warming-tray/warmtray-example.webp";
-import displayProd4 from "../../resources/kosher-clock/kc3-example.webp";
+import displayProd4 from "../../resources/kosher-clock/kc3.png";
 import kiLogo from "../../resources/kmax/all-kmax.webp";
 import scrollToTop from "../../helpers/scrollToTop";
 
 const HomePage = (props) => {
+  const appRef = useRef(null);
   const { pages = [], setCurrentPage } = props;
 
   useEffect(() => {
     // changeLettersDark();
+    RunHomePageAnimation(appRef.current);
     changeLettersLight();
   }, []);
 
   return (
-    <section id="home">
+    <section id="home" ref={appRef}>
       <img className="bg-img" src={backgroundImg} alt="background"></img>
       <div className="banner-container">
         <header className="banner-statement">
@@ -68,7 +71,7 @@ const HomePage = (props) => {
                 }, 1000);
               }}
             >
-              Learn More
+              See Travel KosherLamp
             </button>
           </div>
         </div>
@@ -94,7 +97,7 @@ const HomePage = (props) => {
                 }, 1000);
               }}
             >
-              Learn More
+              See KosherLamp MAX
             </button>
           </div>
         </div>
@@ -133,7 +136,7 @@ const HomePage = (props) => {
                 }, 1000);
               }}
             >
-              Learn More
+              See Shabbos Safe Warming Tray
             </button>
           </div>
         </div>
@@ -147,7 +150,10 @@ const HomePage = (props) => {
           </LazyLoad>
           <div className="card-info-area">
             <h1>KosherClock</h1>
-            <p>Our portable clock that keeps your schedule running on Shabbat & Yom Tov</p>
+            <p>
+              Our portable clock that keeps your schedule running on Shabbat &
+              Yom Tov
+            </p>
             <button
               onClick={() => {
                 scrollToTop();
@@ -156,7 +162,7 @@ const HomePage = (props) => {
                 }, 1000);
               }}
             >
-              Learn More
+              See KosherClock
             </button>
           </div>
         </div>

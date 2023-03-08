@@ -27,16 +27,40 @@ const Footer = (props) => {
       page: 4,
     },
     {
-      btnText: "Travel KosherLamp",
-      page: 5,
+      btnText: "Bug Checker",
+      page: 7,
+    },
+    {
+      btnText: "Fridg-eez",
+      page: 13,
+    },
+    {
+      btnText: "Go Wash",
+      page: 11,
+    },
+    {
+      btnText: "Jewish Wall Decals",
+      page: 17,
+    },
+    {
+      btnText: "KosherClock",
+      page: 12,
     },
     {
       btnText: "KosherLamp MAX",
       page: 6,
     },
     {
-      btnText: "Bug Checker",
-      page: 7,
+      btnText: "Mushroom KosherLamp",
+      page: 15,
+    },
+    {
+      btnText: "Shabbos Bathroom Tissue",
+      page: 16,
+    },
+    {
+      btnText: "Shabbos Bottle Opener",
+      page: 14,
     },
     {
       btnText: "Shabbos Safe Warming Tray",
@@ -51,36 +75,12 @@ const Footer = (props) => {
       page: 10,
     },
     {
-      btnText: "Go Wash",
-      page: 11,
-    },
-    {
-      btnText: "KosherClock",
-      page: 12,
-    },
-    {
-      btnText: "Fridg-eez",
-      page: 13,
-    },
-    {
-      btnText: "Shabbos Bottle Opener",
-      page: 14,
-    },
-    {
-      btnText: "Mushroom KosherLamp",
-      page: 15,
-    },
-    {
-      btnText: "Shabbos Bathroom Tissue",
-      page: 16,
-    },
-    {
-      btnText: "Jewish Wall Decals",
-      page: 17,
-    },
-    {
       btnText: "Shabbos Toothbrush",
       page: 18,
+    },
+    {
+      btnText: "Travel KosherLamp",
+      page: 5,
     },
     {
       btnText: "Uncle Moishy Weekday Toothbrush",

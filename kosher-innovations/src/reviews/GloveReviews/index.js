@@ -4,18 +4,8 @@ const GloveReviews = () => {
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the Shabbos Scrub Gloves! It's so convenient and easy to use.",
-      author: "Dan",
-      location: "",
-    },
-    {
-      text: "The Shabbos Scrub Gloves has really improved my Shabbos reading experience.",
-      author: "Derek",
-      location: "",
-    },
-    {
-      text: "I love the sleek design of the Shabbos Scrub Gloves. It's the perfect addition to my home.",
-      author: "Rani",
+      text: "",
+      author: "",
       location: "",
     },
   ];

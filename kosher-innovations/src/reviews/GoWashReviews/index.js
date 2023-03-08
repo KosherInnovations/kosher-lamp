@@ -1,54 +1,63 @@
 import React from "react";
 
 const GoWashReviews = () => {
-
   // list of testimonials
   const testimonials = [
     {
       text: "Good size and quality. Really nice for travelers.",
       author: "Daniel M.",
-      location: ""
+      location: "",
     },
     {
       text: "Nice. So practical for travel.",
       author: "Isamar Perez",
-      location: ""},
+      location: "",
+    },
     {
       text: "Good size for travel and even for home use.",
       author: "	D.Pessa",
-      location: ""},
+      location: "",
+    },
     {
       text: "Great cup. Very compact, easy to use. I take it with me all the time, I leave it in my car.",
       author: "S. Fasten",
-      location: ""},
+      location: "",
+    },
     {
       text: "Very practical thank you.",
       author: "Ariel Montana",
-      location: ""},
+      location: "",
+    },
     {
       text: "It is a great invention. I travel weekly for work and it's small enough not to be cumbersome in my luggage but big enough to satisfy the mitzvoth.",
       author: "FlyguyATL",
-      location: ""},
+      location: "",
+    },
     {
       text: "Gave this as a Chanukah gift to a family member. He loved it and everyone seeing it thought it was really cool",
       author: "Nurit",
-      location: ""},
+      location: "",
+    },
     {
       text: "Good for travel.",
       author: "Boris",
-      location: ""},
+      location: "",
+    },
     {
       text: "Nice to carry with you",
       author: "Amazon Customer",
-      location: "Lakewood NJ"},
+      location: "Lakewood NJ",
+    },
     {
       text: "Unique item! High quality!!",
       author: "ShariShap",
-      location: ""},
+      location: "",
+    },
     {
       text: "Bought as a gift for a friend who travels often and is recently more observant. He loves that it fits in his briefcase and travels without taking up space.",
       author: "Sarah May",
-      location: ""},
+      location: "",
+    },
   ];
 
   // {testimonials[index].text}

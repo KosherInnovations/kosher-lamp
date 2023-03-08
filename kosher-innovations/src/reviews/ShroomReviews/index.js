@@ -4,9 +4,9 @@ const ShroomReviews = () => {
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the Mushroom KosherLamp! It's so convenient and easy to use.",
-      author: "Dan",
-      lca: "",
+      text: "",
+      author: "",
+      location: "",
     },
   ];
 

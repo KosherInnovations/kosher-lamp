@@ -4,20 +4,10 @@ const DecalReviews = () => {
   // list of testimonials
   const testimonials = [
     {
-      text: "I love the Jewish Wall Decals! It's so convenient and easy to use.",
-      author: "Dan",
+      text: "",
+      author: "",
       location: "",
-    },
-    {
-      text: "The Jewish Wall Decals has really improved my Shabbos reading experience.",
-      author: "Derek",
-      location: "",
-    },
-    {
-      text: "I love the sleek design of the Jewish Wall Decals. It's the perfect addition to my home.",
-      author: "Rani",
-      location: "",
-    },
+    }
   ];
 
   // {testimonials[index].text}

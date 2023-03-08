@@ -163,7 +163,7 @@ const EmailForm = () => {
         <input type="hidden" name="Preview" value=""></input>
       </ul>
 
-      <div className="inputBoxBtnContainer">
+      <div className="inputBoxBtnContainer lastButton">
         <input
           className="inputBoxBtn"
           type="submit"

@@ -78,6 +78,8 @@ button {
   position: relative;
   top: 0;
   z-index: 975;
+  visibility: hidden;
+  opacity: 0;
 }
 
 nav {
@@ -240,6 +242,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-100%) scale(0);
 }
 
 #home .banner-statement h1 img {
@@ -252,6 +257,9 @@ section {
 #home .banner-statement h2 {
   /* width: 45%; */
   /* min-height: 10rem; */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%) scale(0);
   font-size: 2.25rem;
   font-family: var(--header-font), var(--header-font-secondary);
   background: rgb(255, 255, 255, 0.65);
@@ -261,6 +269,12 @@ section {
   display: flex;
   align-items: center;
   justify-self: center;
+}
+
+#home .banner-statement em {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%) scale(0);
 }
 
 #home .banner-container button,
@@ -286,7 +300,7 @@ section {
 
 #home .display-grid {
   width: 100%;
-  min-height: 80vh;
+  min-height: 120vh;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -303,6 +317,9 @@ section {
 
 #home .display-grid .container {
   position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%) scale(0);
 }
 
 #home .card-info-area {
@@ -561,12 +578,12 @@ section {
   display: none;
 }
 
-.review q::before, .review q::after {
+.review q::before,
+.review q::after {
   font-size: 32px;
   color: var(--red);
   padding: 0 5px;
 }
-
 
 /* card components */
 
@@ -1349,6 +1366,10 @@ form textarea::-webkit-scrollbar {
   transition: 0.5s ease-in-out;
 }
 
+.lastButton {
+  margin-top: 10px;
+}
+
 /* footer section */
 
 footer {
@@ -1356,8 +1377,8 @@ footer {
   z-index: 655;
   width: 100%;
   /* min-height: 75vh; */
-  background: linear-gradient(150deg, var(--white), var(--black), var(--red));
-  background-color: rgba(0, 0, 0, 0.5);
+  background: var(--black);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   background-blend-mode: multiply;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1380,7 +1401,7 @@ footer button {
   margin: 15px 0;
   text-align: center;
   padding: 10px;
-  border: 1px solid var(--red);
+  border: 1px solid transparent;
   border-radius: 5px;
   font-family: var(--secondary-font);
   font-weight: bold;
@@ -1392,6 +1413,7 @@ footer button {
 
 footer button:hover {
   background: var(--light-transparent);
+  border: 1px solid var(--red);
   color: var(--black);
   transform: scale(1.1);
 }
