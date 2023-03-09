@@ -50,7 +50,7 @@ const SmartShissel = () => {
 
   const shisselCardElements = shisselCards.map((card) => (
     <div className="single-page-card" title={card.titleTag} key={card.id}>
-      <LazyLoad height={200} offset={100}>
+      <LazyLoad height={200} offset={400}>
         <img
           className="medium-only-card-img"
           src={card.imgSrc}

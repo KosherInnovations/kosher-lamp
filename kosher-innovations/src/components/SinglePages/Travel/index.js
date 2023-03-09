@@ -51,7 +51,7 @@ const Travel = () => {
 
   const travelCardElements = travelCards.map((card) => (
     <div className="single-page-card" title={card.titleTag} key={card.id}>
-      <LazyLoad height={200} offset={100}>
+      <LazyLoad height={200} offset={400}>
         <img
           className="small-only-card-img"
           src={card.imgSrc}

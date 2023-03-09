@@ -42,7 +42,7 @@ const Decal = () => {
 
   const decalCardElements = decalCards.map((card) => (
     <div className="single-page-card" title={card.titleTag} key={card.id}>
-      <LazyLoad height={200} offset={100}>
+      <LazyLoad height={200} offset={400}>
         <img
           className="custom-only-card-img"
           src={card.imgSrc}

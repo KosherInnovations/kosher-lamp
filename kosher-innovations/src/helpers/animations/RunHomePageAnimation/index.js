@@ -5,7 +5,8 @@ const RunAnimation = () => {
   gsap.registerPlugin(ScrollTrigger);
   const tl = gsap.timeline();
 
-  const containers = gsap.utils.toArray('.container');
+  const containers = gsap.utils.toArray(".container");
+  const paragraphs = gsap.utils.toArray("#home .feature-area p");
 
   containers.forEach((container) => {
     gsap.to(container, {
@@ -15,14 +16,58 @@ const RunAnimation = () => {
       scale: 1,
       scrollTrigger: {
         trigger: container,
-        markers: true,
-        // start: "top 100%",
+        start: "top 100%",
         end: "top 90%",
         scrub: 2.5,
         once: true,
       },
     });
   });
+
+  gsap.to("#home .logo-container", {
+    duration: 2.5,
+    autoAlpha: 1,
+    y: 0,
+    scale: 1,
+    scrollTrigger: {
+      trigger: "#home .feature-area",
+      start: "top 70%",
+      end: "top 40%",
+      scrub: 2.5,
+      once: true,
+    },
+  });
+
+  paragraphs.forEach((paragraph) => {
+    gsap.to(paragraph, {
+      duration: 1.5,
+      autoAlpha: 1,
+      y: 0,
+      scale: 1,
+      scrollTrigger: {
+        trigger: paragraph,
+        start: "top 100%",
+        end: "top 90%",
+        scrub: 2.5,
+        once: true,
+      },
+    });
+  });
+
+  // gsap.to("#home .feature-area p", {
+  //   duration: 2.5,
+  //   autoAlpha: 1,
+  //   y: 0,
+  //   scale: 1,
+  //   scrollTrigger: {
+  //     trigger: "#home .feature-area",
+  //     start: "top 70%",
+  //     end: "top 40%",
+  //     scrub: 2.5,
+  //     once: true,
+  //     markers: true,
+  //   },
+  // });
 
   tl.to("#home .banner-statement h1", {
     duration: 1.5,

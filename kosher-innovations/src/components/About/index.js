@@ -52,7 +52,7 @@ const About = () => {
                   {teamMember.name}
                 </h2>
               </header>
-              <LazyLoad height={200} offset={100}>
+              <LazyLoad height={200} offset={400}>
                 <img
                   rel="prefetch"
                   src={smilingMan}

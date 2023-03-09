@@ -15,7 +15,7 @@ const WeekToothBtn = (props) => {
         }, 1000);
       }}
     >
-      <LazyLoad height={200} offset={100}>
+      <LazyLoad height={200} offset={400}>
         <img
           className="info-btn"
           src={infoBtn}

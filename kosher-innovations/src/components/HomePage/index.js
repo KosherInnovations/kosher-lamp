@@ -50,7 +50,7 @@ const HomePage = (props) => {
       </div>
       <div className="display-grid">
         <div className="container">
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={400}>
             <img
               className="display-card card-1"
               src={displayProd1}
@@ -76,7 +76,7 @@ const HomePage = (props) => {
           </div>
         </div>
         <div className="container">
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={400}>
             <img
               className="display-card card-2"
               src={displayProd2}
@@ -103,8 +103,8 @@ const HomePage = (props) => {
         </div>
       </div>
       <div className="feature-area">
-        <header title="Kosher Innovations">
-          <LazyLoad height={200} offset={100}>
+        <header title="Kosher Innovations" className="logo-container">
+          <LazyLoad height={200} offset={300}>
             <img
               src={kiLogo}
               alt="Kosher Innovations"
@@ -115,7 +115,7 @@ const HomePage = (props) => {
       </div>
       <div className="display-grid">
         <div className="container">
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={300}>
             <img
               className="display-card card-3"
               src={displayProd3}
@@ -141,7 +141,7 @@ const HomePage = (props) => {
           </div>
         </div>
         <div className="container">
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={300}>
             <img
               className="display-card card-4"
               src={displayProd4}

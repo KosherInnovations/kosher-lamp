@@ -14,7 +14,7 @@ const GoWash = () => {
     <>
       <section id="go-wash" className="single-page-section">
         <div className="single-page-card only-card" title="">
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={400}>
             <img
               className="medium-only-card-img"
               src={goWash}

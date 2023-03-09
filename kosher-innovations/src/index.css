@@ -22,6 +22,7 @@
   --main-font: "Bebas Neue", cursive;
   --main-font-alt: "Cinzel", serif;
   --secondary-font: "Philosopher", sans-serif;
+  --transition-5s: 0.5 ease-in-out;
 }
 
 body {
@@ -78,8 +79,7 @@ button {
   position: relative;
   top: 0;
   z-index: 975;
-  visibility: hidden;
-  opacity: 0;
+  transform: translateY(-100%);
 }
 
 nav {
@@ -377,11 +377,11 @@ section {
 
 #home .feature-area {
   width: 100%;
-  min-height: 85vh;
+  min-height: 90vh;
   background: var(--black);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   z-index: 455;
   border-top: 1px solid var(--red);
@@ -399,17 +399,25 @@ section {
   margin: 0;
 }
 
-#home .feature-area img {
+#home .logo-container {
   width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%) scale(0);
+  text-align: center;
 }
 
 #home .feature-area p {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%) scale(0);
   padding: 10px 25px;
   width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
-  font-family: var(--main-font-alt);
+  font-family: var(--secondary-font);
+  letter-spacing: 1.2px;
 }
 
 /* single item pages */
@@ -608,6 +616,11 @@ section .card {
   /* border: 1px solid var(--red); */
 }
 
+section .card-container {
+  visibility: hidden;
+  clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+}
+
 section .card:hover {
   backdrop-filter: blur(5px);
   box-shadow: 5px 5px 10px black;
@@ -623,6 +636,7 @@ section .card .imgBox {
   flex-direction: column-reverse;
   padding: 20px;
   transition: 0.5s ease-in-out;
+  z-index: 985;
 }
 
 section .card:hover .imgBox {
@@ -634,7 +648,7 @@ section .card .imgBox img {
   max-width: 100%;
   margin: 0 0 20px;
   transition: 0.5s ease-in-out;
-  z-index: 985;
+  z-index: 999;
 }
 
 section .card:hover .imgBox img {

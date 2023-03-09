@@ -31,7 +31,7 @@ const Replacements = () => {
           <header>
             <h1 title="Bug Checker">KosherLamp MAX Shade</h1>
           </header>
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={400}>
             <img
               rel="prefetch"
               className="replacement-images"
@@ -63,7 +63,7 @@ const Replacements = () => {
               Travel Lamp Adapter{" "}
             </h1>
           </header>
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={400}>
             <img
               rel="prefetch"
               className="replacement-images"

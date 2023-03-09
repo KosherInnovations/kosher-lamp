@@ -15,7 +15,7 @@ const SafePlate = () => {
     <>
       <section id="safeplate" className="single-page-section">
         <div className="single-page-card only-card">
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={400}>
             <img
               className="large-only-card-img"
               src={safePlate}

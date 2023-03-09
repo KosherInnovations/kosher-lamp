@@ -190,7 +190,7 @@ class KmaxCard extends React.Component {
             <h1 title={this.state.title}>KosherLamp MAX</h1>
           </header>
           <div className="zoom-wrapper">
-            <LazyLoad height={200} offset={100}>
+            <LazyLoad height={200} offset={400}>
               <img
                 rel="prefetch"
                 className="zoom-target"

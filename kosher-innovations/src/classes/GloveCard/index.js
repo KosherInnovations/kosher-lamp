@@ -66,7 +66,7 @@ class GloveCard extends React.Component {
           <header>
             <h1 title={this.state.title}>Shabbos Scrub Gloves</h1>
           </header>
-          <LazyLoad height={200} offset={100}>
+          <LazyLoad height={200} offset={400}>
             <img
               rel="prefetch"
               src={this.state.src}
