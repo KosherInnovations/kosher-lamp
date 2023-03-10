@@ -62,13 +62,13 @@ const Products = (props) => {
         less. For other areas, please allow up to two weeks. These times are
         approximate.<br></br>Shipping Within USA Only
       </h2>
-      <div className="card-container">
+      <div id="card-container-0" className="card-container .card-container-0">
         <KmaxCard pages={pages} setCurrentPage={setCurrentPage} />
       </div>
-      <div className="card-container">
+      <div id="card-container-1" className="card-container .card-container-1">
         <TravelCard pages={pages} setCurrentPage={setCurrentPage} />
       </div>
-      <div className="card-container">
+      <div id="card-container-2" className="card-container .card-container-2">
         <div className="card">
           <div className="imgBox">
             <header>
@@ -101,7 +101,7 @@ const Products = (props) => {
           </div>
         </div>
       </div>
-      <div className="card-container">
+      <div id="card-container-3" className="card-container .card-container-3">
         <div className="card">
           <div className="imgBox">
             <header>
@@ -132,13 +132,13 @@ const Products = (props) => {
           </div>
         </div>
       </div>
-      <div className="card-container">
+      <div id="card-container-4" className="card-container .card-container-4">
         <GloveCard pages={pages} setCurrentPage={setCurrentPage} />
       </div>
-      <div className="card-container">
+      <div id="card-container-5" className="card-container .card-container-5">
         <ShisselCard pages={pages} setCurrentPage={setCurrentPage} />
       </div>
-      <div className="card-container">
+      <div id="card-container-6" className="card-container .card-container-6">
         <div className="card">
           <div className="imgBox">
             <header>
@@ -169,7 +169,7 @@ const Products = (props) => {
           </div>
         </div>
       </div>
-      <div className="card-container">
+      <div id="card-container-7" className="card-container .card-container-7">
         <div className="card">
           <div className="imgBox">
             <header>
@@ -201,7 +201,7 @@ const Products = (props) => {
           </div>
         </div>
       </div>
-      <div className="card-container">
+      <div id="card-container-8" className="card-container .card-container-8">
         <div className="card">
           <div className="imgBox">
             <header>
@@ -232,7 +232,7 @@ const Products = (props) => {
           </div>
         </div>
       </div>
-      <div className="card-container">
+      <div id="card-container-9" className="card-container .card-container-9">
         <div className="card">
           <div className="imgBox">
             <header>
@@ -263,7 +263,7 @@ const Products = (props) => {
           </div>
         </div>
       </div>
-      <div className="card-container">
+      <div id="card-container-10" className="card-container .card-container-10">
         <div className="card">
           <div className="imgBox">
             <header>
@@ -297,13 +297,13 @@ const Products = (props) => {
           </div>
         </div>
       </div>
-      <div className="card-container">
+      <div id="card-container-11" className="card-container .card-container-11">
         <TissueCard pages={pages} setCurrentPage={setCurrentPage} />
       </div>
-      <div className="card-container">
+      <div id="card-container-12" className="card-container .card-container-12">
         <DecalCard pages={pages} setCurrentPage={setCurrentPage} />
       </div>
-      <div className="card-container">
+      <div id="card-container-13" className="card-container .card-container-13">
         <div className="card">
           <div className="imgBox">
             <header>
@@ -335,7 +335,7 @@ const Products = (props) => {
           </div>
         </div>
       </div>
-      <div className="card-container">
+      <div id="card-container-14" className="card-container .card-container-14">
         <div className="card">
           <div className="imgBox">
             <header>

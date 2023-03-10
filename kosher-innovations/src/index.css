@@ -384,8 +384,13 @@ section {
   justify-content: space-evenly;
   flex-direction: column;
   z-index: 455;
-  border-top: 1px solid var(--red);
-  border-bottom: 1px solid var(--red);
+  /* border-top: 1px solid var(--red);
+  border-bottom: 1px solid var(--red); */
+}
+
+#home .separation-line {
+  visibility: hidden;
+  width: 0;
 }
 
 #home .feature-area:last-child {
@@ -397,6 +402,10 @@ section {
   height: 100%;
   padding: 0;
   margin: 0;
+}
+
+#home .feature-area img {
+  max-width: 100%;
 }
 
 #home .logo-container {
@@ -521,6 +530,7 @@ section {
   height: 1px;
   background: var(--red);
   margin: 0 auto;
+  z-index: 850;
 }
 
 /* review section */
@@ -618,6 +628,7 @@ section .card {
 
 section .card-container {
   visibility: hidden;
+  transform: translateY(50%);
   clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
 }
 

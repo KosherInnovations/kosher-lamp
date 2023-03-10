@@ -38,6 +38,7 @@ const HomePage = (props) => {
           </h2>
         </header>
         <button
+          className="prod-button"
           onClick={() => {
             scrollToTop();
             setTimeout(() => {
@@ -48,6 +49,7 @@ const HomePage = (props) => {
           View Products
         </button>
       </div>
+      <div className="separation-line"></div>
       <div className="display-grid">
         <div className="container">
           <LazyLoad height={200} offset={400}>
@@ -102,6 +104,7 @@ const HomePage = (props) => {
           </div>
         </div>
       </div>
+      <div className="separation-line"></div>
       <div className="feature-area">
         <header title="Kosher Innovations" className="logo-container">
           <LazyLoad height={200} offset={300}>
@@ -113,6 +116,7 @@ const HomePage = (props) => {
           </LazyLoad>
         </header>
       </div>
+      <div className="separation-line"></div>
       <div className="display-grid">
         <div className="container">
           <LazyLoad height={200} offset={300}>
@@ -178,6 +182,7 @@ const HomePage = (props) => {
         <br></br>
         <br></br>
         <button
+          className="prod-button"
           onClick={() => {
             scrollToTop();
             setTimeout(() => {
