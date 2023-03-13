@@ -184,7 +184,7 @@ class KmaxCard extends React.Component {
 
   render() {
     return (
-      <div className="card">
+      <div className="card" id="first">
         <div className="imgBox">
           <header>
             <h1 title={this.state.title}>KosherLamp MAX</h1>

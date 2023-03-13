@@ -79,7 +79,7 @@ class ShisselCard extends React.Component {
 
   render() {
     return (
-      <div className="card">
+      <div className="card" id="sixth">
         <div className="imgBox">
           <header>
             <h1 title={this.state.title}>Smart Shissel</h1>

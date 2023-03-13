@@ -73,7 +73,7 @@ class DecalCard extends React.Component {
 
   render() {
     return (
-      <div className="card">
+      <div className="card" id="thirteenth">
         <div className="imgBox">
           <header>
             <h1 title={this.state.title}>Jewish Wall Decals</h1>

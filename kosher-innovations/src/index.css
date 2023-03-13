@@ -609,6 +609,11 @@ section {
   
 } */
 
+/* .product-cards .card {
+  opacity: 0;
+  transform: translateY(100%) scale(0);
+} */
+
 section .card {
   position: relative;
   width: 300px;
@@ -624,12 +629,6 @@ section .card {
   border-radius: 5px;
   z-index: 111;
   /* border: 1px solid var(--red); */
-}
-
-section .card-container {
-  visibility: hidden;
-  transform: translateY(50%);
-  clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
 }
 
 section .card:hover {
@@ -655,8 +654,8 @@ section .card:hover .imgBox {
 }
 
 section .card .imgBox img {
-  height: 220px;
-  max-width: 100%;
+  max-height: 195px;
+  max-width: 195px;
   margin: 0 0 20px;
   transition: 0.5s ease-in-out;
   z-index: 999;
@@ -1070,6 +1069,7 @@ h4 {
   background-repeat: no-repeat;
   padding-top: 0;
   text-align: center;
+  padding: 11vh 0;
 }
 
 #about header h1 {
@@ -1150,7 +1150,9 @@ h4 {
   z-index: 50;
 }
 
-#about .ki-info h4 {
+#about .ki-info h1 {
+  visibility: hidden;
+  transform: translateY(100%) scale(0);
   color: var(--white);
   font-size: 56px;
   height: 300px;
@@ -1160,6 +1162,8 @@ h4 {
 }
 
 #about .ki-info .info-box {
+  visibility: hidden;
+  transform: translateY(100%) scale(0);
   width: 80vw;
   margin: 20px 40px;
   padding: 30px 50px;
@@ -1170,7 +1174,7 @@ h4 {
   background: rgba(250, 249, 249, 0.562);
   box-shadow: 0 10px 25px rgba(252, 250, 250, 0.2);
   backdrop-filter: blur(5px);
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
   text-align: center;
   font-size: 18px;
   color: var(--black);

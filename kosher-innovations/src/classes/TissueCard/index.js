@@ -68,7 +68,7 @@ class TissueCard extends React.Component {
 
   render() {
     return (
-      <div className="card">
+      <div className="card" id="twelfth">
         <div className="imgBox">
           <header>
             <h1 title={this.state.title}>Shabbos Bathroom Tissue</h1>

@@ -79,7 +79,7 @@ class travelCard extends React.Component {
 
   render() {
     return (
-      <div className="card">
+      <div className="card" id="second">
         <div className="imgBox">
           <header>
             <h1 title={this.state.title}>Travel Lamp</h1>
