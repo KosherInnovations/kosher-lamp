@@ -10,14 +10,14 @@ const RunAboutAnimation = () => {
 
   headers.forEach((header) => {
     gsap.to(header, {
-      duration: 0.5,
+      duration: 1,
       autoAlpha: 1,
       y: 0,
       scale: 1,
       scrollTrigger: {
         trigger: header,
-        start: "top 100%",
-        end: "top 90%",
+        start: "top 130%",
+        end: "top 95%",
         once: true,
       },
     });
@@ -33,11 +33,10 @@ const RunAboutAnimation = () => {
       scale: 1,
       scrollTrigger: {
         trigger: paragraph,
-        start: "top 100%",
-        end: "top 80%",
+        start: "top 90%",
+        end: "top 90%",
         scrub: 2.5,
         once: true,
-        markers: true,
       },
     });
   });
