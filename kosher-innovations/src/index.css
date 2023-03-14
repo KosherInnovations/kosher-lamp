@@ -1649,6 +1649,7 @@ footer button:hover {
   }
 
   #home .banner-statement h1 {
+
     width: 100%;
     padding-bottom: 50px;
     font-size: 3.5rem;
@@ -1666,6 +1667,8 @@ footer button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+    color: var(--white);
     transform: translateY(-50%) scale(0);
   }
 
