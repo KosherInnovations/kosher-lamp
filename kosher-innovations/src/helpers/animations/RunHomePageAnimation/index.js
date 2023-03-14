@@ -89,7 +89,7 @@ const RunAnimation = () => {
     );
   });
 
-  mm.add("(min-width: 400px)", () => {
+  mm.add("(min-width: 100px)", () => {
     // optional
     // custom cleanup code here (runs when it STOPS matching)
     tl.to("#home .banner-statement h1", {
