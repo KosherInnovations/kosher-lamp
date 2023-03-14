@@ -116,7 +116,6 @@ const HomePage = (props) => {
           </LazyLoad>
         </header>
       </div>
-      <div className="separation-line"></div>
       <div className="display-grid">
         <div className="container">
           <LazyLoad height={200} offset={300}>

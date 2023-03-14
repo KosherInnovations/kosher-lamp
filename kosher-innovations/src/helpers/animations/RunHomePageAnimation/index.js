@@ -70,27 +70,14 @@ const RunAnimation = () => {
     });
   });
 
-  // gsap.to("#home .feature-area p", {
-  //   duration: 2.5,
-  //   autoAlpha: 1,
-  //   y: 0,
-  //   scale: 1,
-  //   scrollTrigger: {
-  //     trigger: "#home .feature-area",
-  //     start: "top 70%",
-  //     end: "top 40%",
-  //     scrub: 2.5,
-  //     once: true,
-  //     markers: true,
-  //   },
-  // });
-
-  tl.to("#home .banner-statement h1", {
-    duration: 1.5,
-    autoAlpha: 1,
-    transform: "translateX(0) scale(1)",
-  })
-    .to(
+  let mm = gsap.matchMedia();
+  // add a media query. When it matches, the associated function will run
+  mm.add("(min-width: 1000px)", () => {
+    tl.to("#home .banner-statement h1", {
+      duration: 1.5,
+      autoAlpha: 1,
+      transform: "translateX(0) scale(1)",
+    }).to(
       "#home .banner-statement h2",
       {
         duration: 1.5,
@@ -98,21 +85,27 @@ const RunAnimation = () => {
         scale: 1,
         x: 0,
       },
-      0.3
-    )
-    .to(
-      "#home .banner-statement em",
+      0
+    );
+  });
+
+  mm.add("(min-width: 400px)", () => {
+    // optional
+    // custom cleanup code here (runs when it STOPS matching)
+    tl.to("#home .banner-statement h1", {
+      duration: 1.5,
+      autoAlpha: 1,
+      transform: "translateY(0) scale(1)",
+    }).to(
+      "#home .banner-statement h2",
       {
-        duration: 2,
+        duration: 1.5,
         autoAlpha: 1,
-        transform: "translateX(0) scale(1) rotate(0)",
+        transform: "translateY(0) scale(1)",
       },
-      0.5
-    )
-    // .to(".navbar", {
-    //   autoAlpha: 1,
-    //   duration: 2.5,
-    // });
+      0
+    );
+  });
 };
 
 export default RunAnimation;
