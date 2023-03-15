@@ -1911,7 +1911,7 @@ footer button:hover {
 @media screen and (max-width: 1000px) {
 
   #about .ki-info .header-container {
-    min-height: 100px;
+    min-height: unset;
   }
 
   #about .ki-info h1 {
