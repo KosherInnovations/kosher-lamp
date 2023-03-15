@@ -39,9 +39,9 @@ const About = () => {
       ></img>
       <div className="ki-info">
         <div className="header-container">
-        <h1>
-          Who We Are
-        </h1><img className="down-icon" src={downIcon} alt="scroll down"></img></div>
+          <h1>Who We Are</h1>
+          <img className="down-icon" src={downIcon} alt="scroll down"></img>
+        </div>
         <div className="info-flexbox info-flexbox-first">
           <div className="info-container info-left">
             <p className="info-box">
