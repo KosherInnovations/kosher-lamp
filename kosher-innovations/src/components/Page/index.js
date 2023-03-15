@@ -37,7 +37,7 @@ const Page = ({ currentPage, setCurrentPage, pages }) => {
     }
     if (currentPage.name === "About") {
       document.title = "About";
-      return <About />;
+      return <About pages={pages} setCurrentPage={setCurrentPage} />;
     }
     if (currentPage.name === "Contact") {
       document.title = "Contact";
