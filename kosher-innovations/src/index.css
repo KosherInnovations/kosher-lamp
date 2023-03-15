@@ -1150,6 +1150,15 @@ h4 {
   z-index: 50;
 }
 
+#about .ki-info .header-container {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+
 #about .info-flexbox {
   display: flex;
   align-items: center;
@@ -1164,7 +1173,7 @@ h4 {
 }
 
 #about .ki-info h1:first-child {
-  height: 150px;
+  height: unset;
 }
 
 #about .ki-info h1 {
@@ -1177,6 +1186,11 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#about .ki-info .down-icon {
+  width: 64px;
+  height: 64px;
 }
 
 #about .ki-info span {
@@ -1955,6 +1969,13 @@ footer button:hover {
 }
 
 @media screen and (max-width: 1000px) {
+
+ 
+
+  #about .ki-info h1 {
+    height: 150px;
+    letter-spacing: 3.5px;
+  }
 
   #about .info-flexbox {
     flex-direction: column;

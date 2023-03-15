@@ -3,6 +3,7 @@ import backgroundImg from "../../resources/dark-pattern-bg.webp";
 import RunAboutAnimation from "../../helpers/animations/RunAboutAnimation";
 import LazyLoad from "react-lazyload";
 import changeLettersLight from "../../helpers/changeLettersLight";
+import downIcon from "../../resources/down-icon.png";
 import travelWhite from "../../resources/travel-lamp/white-travel.webp";
 import travelGrey from "../../resources/travel-lamp/grey-travel.webp";
 import travelBrown from "../../resources/travel-lamp/brown-travel.webp";
@@ -37,7 +38,10 @@ const About = () => {
         rel="prefetch"
       ></img>
       <div className="ki-info">
-        <h1>Who We Are</h1>
+        <div className="header-container">
+        <h1>
+          Who We Are
+        </h1><img className="down-icon" src={downIcon} alt="scroll down"></img></div>
         <div className="info-flexbox info-flexbox-first">
           <div className="info-container info-left">
             <p className="info-box">
