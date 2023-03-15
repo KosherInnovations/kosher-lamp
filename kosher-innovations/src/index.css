@@ -377,14 +377,17 @@ section {
 #home .feature-area {
   width: 100%;
   min-height: 90vh;
-  background: var(--black);
+  background: rgb(0, 0, 0, 0.3);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   z-index: 455;
-  /* border-top: 1px solid var(--red);
-  border-bottom: 1px solid var(--red); */
+}
+
+#home .kmax-feature {
+  background: var(--black);
 }
 
 #home .separation-line,
@@ -393,9 +396,6 @@ section {
   width: 0;
 }
 
-#home .feature-area:last-child {
-  background: var(--white);
-}
 
 #home .feature-area h1 {
   width: 75%;

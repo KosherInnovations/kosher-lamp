@@ -6,7 +6,7 @@ import RunHomePageAnimation from "../../helpers/animations/RunHomePageAnimation"
 import changeLettersLight from "../../helpers/changeLettersLight";
 import LazyLoad from "react-lazyload";
 import displayProd1 from "../../resources/travel-lamp/4Lamps-lit.webp";
-import displayProd2 from "../../resources/MAX BGW.png";
+import displayProd2 from "../../resources/MAX BGW.webp";
 import displayProd3 from "../../resources/warming-tray/warmtray-example.webp";
 import displayProd4 from "../../resources/kosher-clock/kc3.png";
 import kiLogo from "../../resources/kmax/all-kmax.webp";
@@ -105,7 +105,7 @@ const HomePage = (props) => {
         </div>
       </div>
       <div className="separation-line"></div>
-      <div className="feature-area">
+      <div className="feature-area kmax-feature">
         <header title="Kosher Innovations" className="logo-container">
           <LazyLoad height={200} offset={300}>
             <img

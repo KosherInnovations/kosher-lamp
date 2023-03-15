@@ -3,7 +3,7 @@ import backgroundImg from "../../resources/dark-pattern-bg.webp";
 import RunAboutAnimation from "../../helpers/animations/RunAboutAnimation";
 import LazyLoad from "react-lazyload";
 import changeLettersLight from "../../helpers/changeLettersLight";
-import downIcon from "../../resources/down-icon.png";
+import downIcon from "../../resources/down-icon.webp";
 import travelWhite from "../../resources/travel-lamp/white-travel.webp";
 import travelGrey from "../../resources/travel-lamp/grey-travel.webp";
 import travelBrown from "../../resources/travel-lamp/brown-travel.webp";
