@@ -1072,70 +1072,10 @@ h4 {
   padding: 11vh 0;
 }
 
-#about header h1 {
-  font-size: 22px;
-  font-family: var(--main-font-alt);
-  font-weight: 400;
-  /* text-shadow: 1px 1px 14px black; */
-  position: relative;
-  top: 5vh;
-  padding: 0 10vw;
-  height: 50vh;
-  width: 80vw;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgb(255, 255, 255, 0);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-}
+
 
 #about header h2 {
   color: var(--white);
-}
-
-#about .our-team {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 100px 25px 0;
-}
-
-#about .our-team .card {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  margin: 20px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: rgb(255, 255, 255, 0);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-  transition: all 0.5s ease;
-}
-
-#about .card:hover img {
-  transform: scale(0.9) translateY(-40px);
-}
-
-#about .our-team .card p {
-  color: var(--white);
-  font-size: 16px;
-  font-family: var(--main-font);
-  transform: scale(0);
-  transition: 0.5s ease-in-out;
-  letter-spacing: 0.4px;
-}
-
-#about .our-team .card:hover p {
-  transform: scale(1);
 }
 
 #about .ki-info {
@@ -1151,7 +1091,7 @@ h4 {
 }
 
 #about .ki-info .header-container {
-  height: 50vh;
+  min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1970,11 +1910,13 @@ footer button:hover {
 
 @media screen and (max-width: 1000px) {
 
- 
+  #about .ki-info .header-container {
+    min-height: 100px;
+  }
 
   #about .ki-info h1 {
-    height: 150px;
     letter-spacing: 3.5px;
+    height: 100px;
   }
 
   #about .info-flexbox {
