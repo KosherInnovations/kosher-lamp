@@ -81,9 +81,6 @@ const About = () => {
           </div>
           <div className="info-container info-right">
             <p className="info-box">
-              {/* You can be assured that any <span>Kosher Innovations&trade;</span>{" "}
-              product meets all halachically applicable requirements such as for
-              keeping Shabbat or Kashrut.  */}
               Although we are best known as the creators of the{" "}
               <span>KosherLamp&trade;</span>, we have produced other popular
               items such as the{" "}
@@ -211,7 +208,7 @@ const About = () => {
             <LazyLoad height={200} offset={400}>
               <img
                 rel="prefetch"
-                className="featured-info-image"
+                className="featured-info-image clock"
                 src={kosherClock}
                 alt="KosherClock"
               ></img>

@@ -1916,7 +1916,7 @@ footer button:hover {
 
   #about .ki-info h1 {
     letter-spacing: 3.5px;
-    height: 100px;
+    height: unset;
   }
 
   #about .info-flexbox {
@@ -1938,5 +1938,9 @@ footer button:hover {
   #about .info-left,
   #about .info-right {
     transform: translateY(100%);
+  }
+
+  #about .info-image-container .featured-info-image {
+    width: 80vw;
   }
 }
