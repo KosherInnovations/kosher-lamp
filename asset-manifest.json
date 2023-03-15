@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kosher-lamp/static/css/main.bdc6e17b.css",
-    "main.js": "/kosher-lamp/static/js/main.fd2ce8bf.js",
+    "main.css": "/kosher-lamp/static/css/main.608e2bcb.css",
+    "main.js": "/kosher-lamp/static/js/main.ae7faf67.js",
     "static/js/787.90000931.chunk.js": "/kosher-lamp/static/js/787.90000931.chunk.js",
     "static/media/bottle-opener_1.webp": "/kosher-lamp/static/media/bottle-opener_1.21c9d3439db14d4d6a3f.webp",
     "static/media/gloves-blue.webp": "/kosher-lamp/static/media/gloves-blue.4790738f6da9b4153373.webp",
@@ -16,7 +16,6 @@
     "static/media/green-kmax.webp": "/kosher-lamp/static/media/green-kmax.f1199cbad323b4ce0684.webp",
     "static/media/grey-shissel.webp": "/kosher-lamp/static/media/grey-shissel.d97358a36f4a61f9453f.webp",
     "static/media/silver-kmax.webp": "/kosher-lamp/static/media/silver-kmax.cb6b5b6c2675bb3cbf8f.webp",
-    "static/media/MAX BGW.png": "/kosher-lamp/static/media/MAX BGW.4a0ab14f81024f8c814e.png",
     "static/media/fridg-eez_1.webp": "/kosher-lamp/static/media/fridg-eez_1.4d2d27b93b62a9b8f4e3.webp",
     "static/media/pink-kmax.webp": "/kosher-lamp/static/media/pink-kmax.bb77976598f66b5c0173.webp",
     "static/media/kc3.png": "/kosher-lamp/static/media/kc3.bc6e09efb57bbfece313.png",
@@ -33,6 +32,7 @@
     "static/media/go-wash (1).webp": "/kosher-lamp/static/media/go-wash (1).e8cac7cef90b80c7518c.webp",
     "static/media/kosherclock.webp": "/kosher-lamp/static/media/kosherclock.d153b1b9e706ebf017d1.webp",
     "static/media/blue-kmax.webp": "/kosher-lamp/static/media/blue-kmax.b5c8f276e5d55a0a5923.webp",
+    "static/media/MAX BGW.webp": "/kosher-lamp/static/media/MAX BGW.effd6bb52728d978d6d0.webp",
     "static/media/adapter-1.webp": "/kosher-lamp/static/media/adapter-1.eea195aacc12d1a9f921.webp",
     "static/media/all-kmax.webp": "/kosher-lamp/static/media/all-kmax.b2cde5d311b309754ecc.webp",
     "static/media/ivory-kmax.webp": "/kosher-lamp/static/media/ivory-kmax.41f7ddad02eded774c48.webp",
@@ -47,14 +47,15 @@
     "static/media/list.webp": "/kosher-lamp/static/media/list.7eb9d75e6f810d4845d6.webp",
     "static/media/shopping-cart.webp": "/kosher-lamp/static/media/shopping-cart.9a5543397fca873af658.webp",
     "static/media/replacement-shade.webp": "/kosher-lamp/static/media/replacement-shade.dacf598165d7bac2777e.webp",
+    "static/media/down-icon.webp": "/kosher-lamp/static/media/down-icon.bbf2500325734b9e1a45.webp",
     "static/media/ki-logo-no-background.webp": "/kosher-lamp/static/media/ki-logo-no-background.22f7c14c47cba8df16f7.webp",
     "index.html": "/kosher-lamp/index.html",
-    "main.bdc6e17b.css.map": "/kosher-lamp/static/css/main.bdc6e17b.css.map",
-    "main.fd2ce8bf.js.map": "/kosher-lamp/static/js/main.fd2ce8bf.js.map",
+    "main.608e2bcb.css.map": "/kosher-lamp/static/css/main.608e2bcb.css.map",
+    "main.ae7faf67.js.map": "/kosher-lamp/static/js/main.ae7faf67.js.map",
     "787.90000931.chunk.js.map": "/kosher-lamp/static/js/787.90000931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdc6e17b.css",
-    "static/js/main.fd2ce8bf.js"
+    "static/css/main.608e2bcb.css",
+    "static/js/main.ae7faf67.js"
   ]
 }
