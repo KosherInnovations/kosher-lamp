@@ -4,6 +4,7 @@ import RunAboutAnimation from "../../helpers/animations/RunAboutAnimation";
 import LazyLoad from "react-lazyload";
 import changeLettersLight from "../../helpers/changeLettersLight";
 import downIcon from "../../resources/down-icon.webp";
+import scrollToTop from "../../helpers/scrollToTop";
 import travelWhite from "../../resources/travel-lamp/white-travel.webp";
 import travelGrey from "../../resources/travel-lamp/grey-travel.webp";
 import travelBrown from "../../resources/travel-lamp/brown-travel.webp";
@@ -13,15 +14,8 @@ import kmaxBlue from "../../resources/kmax/blue-kmax.webp";
 import kosherClock from "../../resources/kosher-clock/kosherclock.webp";
 import scrubGlovesRed from "../../resources/scrub-gloves/gloves-red.webp";
 
-const About = () => {
-  // props
-  // const { pages = [], setCurrentPage } = props;
-  // onClick={() => {
-  //   scrollToTop();
-  //   setTimeout(() => {
-  //     setCurrentPage(pages[7]);
-  //   }, 1000);
-  // }}
+const About = (props) => {
+  const { pages = [], setCurrentPage } = props;
 
   const aboutRef = useRef(null);
   useEffect(() => {
@@ -47,7 +41,7 @@ const About = () => {
             <p className="info-box">
               We are a small Jewish company based out of Toronto. Our name
               explains our mission:{" "}
-              <span>
+              <span title="Kosher Innovations mission statement">
                 Our goal is to invent and market creative products that benefit
                 the Shomer Shabbat community.
               </span>{" "}
@@ -63,6 +57,7 @@ const About = () => {
                 className="lamp"
                 src={kmaxSteel}
                 alt="Steel KosherLamp MAX"
+                title="KosherLamp MAX"
               ></img>
             </LazyLoad>
           </div>
@@ -76,19 +71,69 @@ const About = () => {
                 className="lamp"
                 src={travelWhite}
                 alt="White Travel KosherLamp "
+                title="Travel KosherLamp"
               ></img>
             </LazyLoad>
           </div>
           <div className="info-container info-right">
             <p className="info-box">
               Although we are best known as the creators of the{" "}
-              <span>KosherLamp&trade;</span>, we have produced other popular
-              items such as the{" "}
-              <span>Bug Checker Portable Light Board&trade;</span>, the{" "}
-              <span>KosherClock&trade;</span>, and the{" "}
-              <span>Shabbos Toothbrush&trade;</span> We are always working on
-              new and exciting ideas. Check back from time to time to see what's
-              new!
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[6]);
+                  }, 1000);
+                }}
+              >
+                KosherLamp&trade;
+              </button>
+              , we have produced other popular items such as the{" "}
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[5]);
+                  }, 1000);
+                }}
+              >
+                Travel KosherLamp
+              </button>
+              ,{" "}
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[7]);
+                  }, 1000);
+                }}
+              >
+                Bug Checker Portable Light Board&trade;
+              </button>
+              , the{" "}
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[12]);
+                  }, 1000);
+                }}
+              >
+                KosherClock&trade;
+              </button>
+              , and the{" "}
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[18]);
+                  }, 1000);
+                }}
+              >
+                Shabbos Toothbrush&trade;
+              </button>{" "}
+              We are always working on new and exciting ideas. Check back from
+              time to time to see what's new!
             </p>
           </div>
         </div>
@@ -110,6 +155,7 @@ const About = () => {
                 className="lamp"
                 src={kmaxBlack}
                 alt="Black KosherLamp MAX"
+                title="KosherLamp MAX"
               ></img>
             </LazyLoad>
           </div>
@@ -122,7 +168,8 @@ const About = () => {
                 rel="prefetch"
                 className="lamp"
                 src={travelGrey}
-                alt="Grey Travel KosherLamp "
+                alt="Grey Travel KosherLamp"
+                title="Travel KosherLamp"
               ></img>
             </LazyLoad>
           </div>
@@ -131,7 +178,17 @@ const About = () => {
               Reb Shmuel and Moshe began to create a prototype for this new type
               of lamp. After much experimentation, and testing, they were ready
               to start production of this new innovation, the{" "}
-              <span>KosherLamp&trade;</span>.
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[6]);
+                  }, 1000);
+                }}
+              >
+                KosherLamp&trade;
+              </button>
+              .
             </p>
           </div>
         </div>
@@ -141,10 +198,19 @@ const About = () => {
           <div className="info-container info-left">
             <p className="info-box">
               On his many trips visiting factories overseas, Moshe was able to
-              select a place to manufacture and refine the
-              <span> KosherLamp&trade;</span> until it was just right. Letters
-              were soon filed by a patent attorney, a website was set up and
-              poskim were consulted.
+              select a place to manufacture and refine the{" "}
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[6]);
+                  }, 1000);
+                }}
+              >
+                KosherLamp&trade;
+              </button>{" "}
+              until it was just right. Letters were soon filed by a patent
+              attorney, a website was set up and poskim were consulted.
             </p>
           </div>
           <div className="info-image-container info-right">
@@ -154,6 +220,7 @@ const About = () => {
                 className="lamp"
                 src={kmaxBlue}
                 alt="Blue KosherLamp MAX"
+                title="KosherLamp MAX"
               ></img>
             </LazyLoad>
           </div>
@@ -167,16 +234,26 @@ const About = () => {
                 className="lamp"
                 src={travelBrown}
                 alt="Brown Travel KosherLamp"
+                title="Travel KosherLamp"
               ></img>
             </LazyLoad>
           </div>
           <div className="info-container info-right">
             <p className="info-box">
-              The initial model of
-              <span> KosherLamp&trade;</span> was an instant success. Stores in
-              Canada and the United States started to carry it and then interest
-              spread to Israel, Europe, South Africa, Australia and South
-              America.
+              The initial model of{" "}
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[6]);
+                  }, 1000);
+                }}
+              >
+                KosherLamp&trade;
+              </button>{" "}
+              was an instant success. Stores in Canada and the United States
+              started to carry it and then interest spread to Israel, Europe,
+              South Africa, Australia and South America.
             </p>
           </div>
         </div>
@@ -184,8 +261,18 @@ const About = () => {
         <div className="info-flexbox">
           <div className="info-container info-left">
             <p className="info-box">
-              After the success of the<span> KosherLamp&trade;</span>,
-              <span> Kosher Innovations&trade;</span> is still working on
+              After the success of the{" "}
+              <button
+                onClick={() => {
+                  scrollToTop();
+                  setTimeout(() => {
+                    setCurrentPage(pages[6]);
+                  }, 1000);
+                }}
+              >
+                KosherLamp&trade;
+              </button>
+              ,{" "}<span>Kosher Innovations&trade;</span>{" "}is still working on
               producing practical and innovative new products to enhance the
               Jewish home. All it takes is a few thoughts like "What if" and
               "Wouldn't it be great if..." to get something started.
@@ -198,6 +285,7 @@ const About = () => {
                 className="featured-info-image gloves"
                 src={scrubGlovesRed}
                 alt="Red Shabbos Scrub Gloves"
+                title="Shabbos Scrub Gloves"
               ></img>
             </LazyLoad>
           </div>
@@ -211,6 +299,7 @@ const About = () => {
                 className="featured-info-image clock"
                 src={kosherClock}
                 alt="KosherClock"
+                title="KosherClock"
               ></img>
             </LazyLoad>
           </div>

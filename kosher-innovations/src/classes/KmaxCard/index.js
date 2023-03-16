@@ -5,7 +5,7 @@ import kLampWhite from "../../resources/kmax/white-kmax.webp";
 import kLampSteel from "../../resources/kmax/silver-kmax.webp";
 import kLampBlack from "../../resources/kmax/black-kmax.webp";
 import kLampBlue from "../../resources/kmax/blue-kmax.webp";
-import kLampGreen from "../../resources/kmax/green-kmax.webp";
+import kLampGreen from "../../resources/kmax/green-kmax.png";
 import kLampMarble from "../../resources/kmax/marble-kmax.webp";
 import kLampCherry from "../../resources/kmax/cherry-kmax.webp";
 import kLampIvory from "../../resources/kmax/ivory-kmax.webp";

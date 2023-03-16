@@ -1149,8 +1149,16 @@ h4 {
   }
 }
 
+#about .ki-info button {
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+}
 
-#about .ki-info span {
+#about .ki-info button:hover {
+  color: var(--blue);
+}
+
+#about .ki-info span, #about .ki-info button {
   color: var(--off-pink);
   display: inline;
   font-weight: bolder;
